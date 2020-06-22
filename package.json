@@ -1,0 +1,19 @@
+{
+  "name": "next-tutorial",
+  "version": "1.0.0",
+  "description": "Este repositório contém os códigos desenvolvidos ao seguir o tutorial disponibilizado na página principal do Next JS.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/64J0/Next-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/64J0/Next-tutorial/issues"
+  },
+  "homepage": "https://github.com/64J0/Next-tutorial#readme"
+}
