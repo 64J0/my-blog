@@ -7,7 +7,7 @@ import utilStyles from "../styles/utils.module.css";
 const name = "Vinícius Gajo";
 export const siteTitle = "Next.js Sample Website";
 
-function Layout({ children, home }) {
+export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -66,5 +66,3 @@ function Layout({ children, home }) {
     </div>
   );
 }
-
-export default Layout;

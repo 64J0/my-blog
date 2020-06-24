@@ -1,15 +1,17 @@
 import Head from "next/head";
+import Link from "next/link";
 
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import { getSortedPostData } from "../lib/posts";
+import Date from "../components/date";
 
-import { getSortedPostsData } from "../lib/posts";
+import utilStyles from "../styles/utils.module.css";
 
 // This is a Next.js function that runs to get data from external sources
 // like API's, DB's or even the file-system like in this case.
 // In production, `getStaticProps` runs at build time
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const allPostsData = getSortedPostData();
   return {
     props: {
       allPostsData,
@@ -49,11 +51,13 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              {title}
+              <Link href="/posts/[id]" as={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
