@@ -1,6 +1,16 @@
-# Next.js tutorial :tada:
+<p align="center">
+  <img src="nextjs-blog/public/vercel.svg" alt="Ícone da Vercel" />
+  <h1 align="center">Next.js tutorial 🎉</h1>
+</p>
 
-### Requisitos:
+## Tabela de conteúdos:
+
+1. [Requisitos](#requisitos)
+2. [Resumo](#resumo)
+3. [Demonstração](#demonstração)
+4. [Objetivo pessoal](#objetivo-pessoal)
+
+### Requisitos
 
 - JavaScript básico
 - ReactJS básico
@@ -18,6 +28,12 @@ Algumas das características deste _framework_ que melhoram a experiência de de
 - Etc... Para ler a lista completa acesse: https://nextjs.org/learn/basics/create-nextjs-app
 
 O objetivo ao final do tutorial é desenvolver um _blog_ muito simples, como poder visto no site: https://next-tutorial.gajo.vercel.app/.
+
+### Demonstração
+
+<p align="center">
+  <img src="assets-readme/site-demonstration.gif" alt="Gif de demonstração do resultado do tutorial" />
+</p>
 
 ### Objetivo pessoal
 
