@@ -13,13 +13,17 @@ O objetivo principal da utilização do **Next.js** é aumentar a eficiência e 
 4. [Objetivo pessoal](#objetivo-pessoal)
 5. [Discussões avançadas](#discussões-avançadas)
 
-### Requisitos
+<hr>
+
+## Requisitos
 
 - JavaScript
 - ReactJS
 - NodeJS
 
-### Resumo
+<hr>
+
+## Resumo
 
 O código deste repositório é um projeto básico desenvolvido seguindo o tutorial do site do _framework_ **Next.js**.
 Segundo a própria documentação, o **Next.js** é um _framework_ criado para melhorar a experiência de desenvolvimento de projetos WEB utilizando o **ReactJS**.
@@ -36,21 +40,27 @@ Algumas das características deste _framework_ que melhoram a experiência de de
 
 O objetivo ao final do tutorial é desenvolver um _blog_ muito simples, como poder visto no site: https://next-tutorial.gajo.vercel.app/.
 
-### Demonstração
+<hr>
+
+## Demonstração
 
 <p align="center">
   <img src="assets-readme/site-demonstration.gif" alt="Gif de demonstração do resultado do tutorial" />
 </p>
 
-### Objetivo pessoal
+<hr>
+
+## Objetivo pessoal
 
 Meu objetivo ao estudar este _framework_ é verificar se essa ferramenta atenderá minha necessidade de criar um _blog_ pessoal onde postarei conteúdos próprios sobre coisas que estou estudando e desenvolvendo, além de me promover como programador.
 
-### Discussões avançadas
+<hr>
+
+## Discussões avançadas
 
 Neste tópico serão discutidos alguns termos chave para o entendimento do **Next.js**. São discussões com um nível mais elevado e portanto, direcionadas para um público com mais conhecimento.
 
-#### Pré-renderização:
+### Pré-renderização:
 
 Por padrão, o **Next.js** pré-renderiza cada página de maneira antecipada. Isso significa que o **Next.js** gera o _HTML_ de cada página antecipadamente, ao contrário do método padrão do **ReactJS** que deixa o próprio navegador do cliente renderizar o projeto. Essa pré-renderização pode resultar em uma performance melhor e consequentemente um melhor _SEO_.
 
@@ -63,7 +73,7 @@ O **Next.js** tem duas formas de pré-renderização:
 
 Além disso, é possível definir qual o tipo de pré-renderização será utilizada em **cada página**. Portanto é possível criar um aplicativo **Next.js** "híbrido" que usa as duas formas de pré-renderização.
 
-#### Quando usar cada tipo de pré-renderização:
+### Quando usar cada tipo de pré-renderização:
 
 É recomendado sempre dar preferência para a **Geração estática** sempre que possível porque a página pode ser construída apenas uma vez e servida de um _CDN_, o que a torna muito mais rápida que um servidor tendo que renderizar as páginas a cada requisição.
 
@@ -84,12 +94,14 @@ Para utilizar a estratégia de renderização _SSR_ (_Server-side Rendering_) é
 
 Caso não seja necessário pré-renderizar os dados, é possível ainda utilizar a estratégia de renderizar os dados no navegador do cliente (_Client-side Rendering_). Essa estratégia funciona bem para casos como _Dashboards_ de usuários, que tem seus dados alterados constantemente. Para fazer as requisições no lado do cliente, o time de desenvolvimento do **Next.js** criou um _hook_ específico chamado **SWR**, e portanto, é recomendado utilizá-lo.
 
-#### Rotas dinâmicas:
+### Rotas dinâmicas:
 
 Esse tópico trata da situação em que os caminhos para determinadas páginas dependem de dados externos, que foram obtidos a partir de uma _API_, banco de dados, etc.
 
-#### Rotas de API:
+### Rotas de API:
 
 O Next.js tem suporte a Rotas de _API_, que permite criar facilmente um _endpoint_ de _API_ como uma função do **Node.js**.
+
+<hr>
 
 Vinícius Gajo Marques Oliveira, 2020.
