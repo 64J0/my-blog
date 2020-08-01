@@ -41,22 +41,6 @@ export function getAllPostIds() {
   // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
 
-  /*
-  Return an array that looks like this:
-  [
-    {
-      params: {
-        id: 'ssg-ssr
-      }
-    },
-    {
-      params: {
-        id: 'pre-rendering'
-      }
-    }
-  ]
-  */
-
   return fileNames.map((fileName) => {
     return {
       params: {

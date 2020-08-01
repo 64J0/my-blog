@@ -1,23 +1,33 @@
 .container {
-  max-width: 36rem;
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+  height: 100%;
+  width: 100%;
+  max-width: 48rem;
+  min-width: 38rem;
+
+  margin: 1rem auto 0;
+  padding: 0 0.5rem;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+
+  border-radius: 5rem 5rem 0 0;
 }
 
 .headerImage {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
 }
 
 .headerHomeImage {
-  width: 8rem;
-  height: 8rem;
+  width: 11rem;
+  height: 11rem;
+  margin: 0 auto;
+  border: 4px solid rgba(255, 255, 255, 0.5);
 }
 
 .backToHome {

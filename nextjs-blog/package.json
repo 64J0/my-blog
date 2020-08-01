@@ -1,6 +1,7 @@
 {
-  "name": "learn-starter",
-  "version": "0.1.0",
+  "name": "personal-blog-next",
+  "version": "0.1.1",
+  "description": "Esse blog está sendo desenvolvido a partir do layout do tutorial encontrado no site do projeto Next.js.",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -8,12 +9,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "date-fns": "^2.14.0",
+    "date-fns": "^2.15.0",
     "gray-matter": "^4.0.2",
     "next": "9.3.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "remark": "^12.0.0",
-    "remark-html": "^11.0.2"
-  }
+    "react-icons": "^3.10.0",
+    "remark": "^12.0.1",
+    "remark-html": "^11.0.2",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {}
 }
