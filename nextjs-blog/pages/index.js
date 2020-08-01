@@ -25,7 +25,8 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div className={`${utilStyles.mainContent} ${utilStyles.backgroundWhite}`}>
+
+      <div className={`${utilStyles.mainContent}`}>
         <section className={utilStyles.headingMd}>
           <p>
             Formando em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React e Node.js principalmente), analista de redes de teleprocessamento no NOC (<i>Network Operations Center</i>) da Master Internet.

@@ -33,3 +33,8 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.mainContainer {
+  background: #fff;
+  padding: 1rem 1.2rem;
+}

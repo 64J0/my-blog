@@ -1,7 +1,4 @@
-import Link from "next/link";
-
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 
 import HeaderHome from './HeaderHome';
 import HeaderPost from './HeaderPost';
@@ -19,15 +16,9 @@ export default function Layout({ children, home }) {
           )}
       </header>
 
-      <main className={utilStyles.backgroundWhite}>{children}</main>
-
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>Back to home</a>
-          </Link>
-        </div>
-      )}
+      <main className={styles.mainContainer}>
+        {children}
+      </main>
     </div>
   );
 }

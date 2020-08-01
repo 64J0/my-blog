@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0.5rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+      margin-right: 1rem;
+    }
+  }
+}

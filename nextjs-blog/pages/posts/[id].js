@@ -7,13 +7,16 @@ import Date from "../../components/date";
 
 import utilStyles from "../../styles/utils.module.css";
 
+import postStyles from './styles.module.scss';
+
 export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
+
+      <article className={postStyles.container}>
         <h1 className={utilStyles.headingX1}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
