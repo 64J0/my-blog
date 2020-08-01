@@ -1,19 +1,19 @@
 ---
-title: "When to Use Static Generation v.s. Server-side Rendering"
-date: "2020-01-02"
+title: "Quando usar Geração Estática v.s. Renderização do Lado do Servidor"
+date: "2020-08-01"
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+É recomendado usar a **Geração Estática** (com ou sem dados) sempre que possível porque a página pode ser construída apenas uma vez e servida por um CDN, o que torna muito mais rápido servir os conteúdos para os usuários.
 
-You can use Static Generation for many types of pages, including:
+É possível usar a Geração Estática para muitos tipos de páginas, incluindo:
 
-- Marketing pages
-- Blog posts
-- E-commerce product listings
-- Help and documentation
+- Páginas de marketing
+- Posts de blog
+- Listagem de produtos de e-commerce
+- Documentação e páginas de ajuda
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+Você deve se perguntar: "Eu posso pré-renderizar esta página **antes** da requisição de um usuário?" Se a resposta for sim então deve ser escolhida a Geração Estática.
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
+Por outro lado, a Geração Estática **não** é uma boa ideia se não for possível pré-renderizar uma página antes da requisição do usuário. Talvez a página mostre muitos dados atualizados frequentemente, e o conteúdo da página muda em cada requisição.
 
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+Neste caso é possível usar a **Renderização do Lado do Servidor**. Será mais lento, mas as páginas pré-renderizadas serão sempre atualizadas. Ou então é possível pular a pré-renderização e usar JavaScript no lado do cliente para popular os dados, sendo esta a abordagem convencional do React JS.

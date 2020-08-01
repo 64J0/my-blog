@@ -1,7 +1,8 @@
 <p align="center">
-  <img src="nextjs-blog/public/vercel.svg" alt="Ícone da Vercel" />
   <h1 align="center">Next.js tutorial 🎉</h1>
 </p>
+
+Este projeto está sendo desenvolvido a partir da estrutura do blog feito no tutorial do **Next.js**. Abaixo estão algumas anotações dos meus estudos sobre este **framework**.
 
 O objetivo principal da utilização do **Next.js** é aumentar a eficiência e melhorar a experiência de desenvolvimento de projetos **React**, pois diversas questões ligadas a configurações iniciais e procedimentos são automatizados, e o resultado final do desenvolvimento é um produto otimizado de diversos modos.
 
