@@ -38,3 +38,15 @@
   background: #fff;
   padding: 1rem 1.2rem;
 }
+
+@media (max-width: 34rem) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .mainContainer {
+    padding: 1rem 2rem;
+  }
+}
