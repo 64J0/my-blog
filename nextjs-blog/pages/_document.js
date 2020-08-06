@@ -1,5 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
+import GoogleAnalytics from '../components/GoogleAnalytics';
+
 class MyDocument extends Document {
   render() {
     return (
@@ -17,6 +19,9 @@ class MyDocument extends Document {
           <meta name="og:locale" content="pt_BR" />
           <meta name="og:url" content="https://gajo.vercel.app" />
           <meta name="og:type" content="website" />
+
+          <GoogleAnalytics />
+
         </Head>
         <body>
           <Main />
