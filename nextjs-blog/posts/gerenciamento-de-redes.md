@@ -109,10 +109,10 @@ Existem duas versões do **ICMP**:
       Possibilita
     </th>
     <th>
-      | ICMPv4
+      ICMPv4
     </th>
     <th>
-      | ICMPv6
+      ICMPv6
     </th>
   </tr>
   <tr>
@@ -120,10 +120,10 @@ Existem duas versões do **ICMP**:
       Testes e diagnóstico
     </td>
     <td>
-      | X
+      X
     </td>
     <td>
-      | X
+      X
     </td>
   </tr>
   <tr>
@@ -131,10 +131,10 @@ Existem duas versões do **ICMP**:
       Descoberta de vizinhança
     </td>
     <td>
-      | -
+      -
     </td>
     <td>
-      | X
+      X
     </td>
   </tr>
   <tr>
@@ -142,10 +142,10 @@ Existem duas versões do **ICMP**:
       Gerenciamento de grupos multicast
     </td>
     <td>
-      | -
+      -
     </td>
     <td>
-      | X
+      X
     </td>
   </tr>
 </table>
