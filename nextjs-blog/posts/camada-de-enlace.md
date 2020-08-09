@@ -29,7 +29,7 @@ O principal equipamento que opera nesta camada é o **switch**, que é responsá
 * 1 domínio de *broadcast* (pode ser alterado com a utilização de VLAN's);
 * Utilizado para grandes taxas de banda.
 
-![image info](../public/post-images/camada-de-enlace/dominio-switch.png)
+![image info](/post-images/camada-de-enlace/dominio-switch.png "Domínio de colisão do switch")
 
 ### Hub
 
