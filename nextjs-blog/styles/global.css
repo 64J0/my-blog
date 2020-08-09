@@ -55,3 +55,10 @@ td {
 td + td {
     text-align: center;
 }
+
+pre {
+    background-color: rgb(246, 248, 250);
+    border-radius: 6px;
+    margin: 1rem;
+    padding: 1rem;
+}
