@@ -3,7 +3,9 @@ title: "A camada de enlace"
 date: "2020-08-06"
 ---
 
-Segundo [1], a segunda camada da pilha do modelo OSI é chamada **camada de enlace de dados**. Essa camada implementa diversos algoritmos que permitem uma comunicação eficiente e confiável de unidades de informação inteiras, chamadas de quadros (ou *frames*, em inglês), em vez de bits individuais, como na camada física, entre dois computadores adjacentes.
+Neste post irei escrever um resumo dos meus estudos acerca da segunda camada da pilha do modelo OSI, também conhecida como camada de enlace. Grande parte do conteúdo está sendo retirado do livro citado na referência [1], pois é o livro que estou lendo no momento para aprender mais coisas sobre redes.
+
+Segundo [1], a segunda camada da pilha do modelo OSI é chamada **camada de enlace de dados**. Essa camada implementa diversos algoritmos que permitem uma comunicação eficiente e confiável de unidades de informação inteiras, chamadas de quadros (ou *frames*, em inglês), em vez de bits individuais, como na camada física, entre dois computadores adjacentes. 
 
 Em outras palavras, a camada de enlace de dados usa os serviços da camada física para enviar e receber bits pelos canais de comunicação. Algumas das funções dessa camada são:
 
@@ -13,6 +15,29 @@ Em outras palavras, a camada de enlace de dados usa os serviços da camada físi
 
 Para alcançar esses objetivos, a camada de enlace de dados recebe os pacotes da camada de rede e os encapsula em **quadros** para transmissão. Cada quadro contém um cabeçalho (*header*), um campo de carga útil que conterá o pacote, e um final de quadro (*trailer*). O gerenciamento de quadros constitui o núcleo das atividades da camada de enlace de dados.
 
+## Equipamentos dessa camada
+
+### Switch
+
+O principal equipamento que opera nesta camada é o **switch**, que é responsável por realizar o tráfego de dados dentro de uma mesma rede LAN. Algumas características desse dispositivo são:
+
+* Trabalha de modo local (LAN);
+* Equipamento mais barato que os roteadores;
+* Conecta vários dispositivos no mesmo domínio de *broadcast*;
+* Apresenta várias interfaces (portas para conexão);
+* N domínios de colisão;
+* 1 domínio de *broadcast* (pode ser alterado com a utilização de VLAN's);
+* Utilizado para grandes taxas de banda.
+
+![image info](../public/post-images/camada-de-enlace/dominio-switch.png)
+
+### Hub
+
+Foi um dispositivo muito usado principalmente nos anos 70, antes da popularização dos *switchs*. Porém, devido aos problemas apresentados foi logo substituído por novas tecnologias. Algumas características desse dispositivo são:
+
+* 1 domínio de *broadcast*;
+* 1 domínio de colisão, ou seja, apenas um equipamento pode se comunicar por vez;
+* Hoje em dia é utilizado para ligações de equipamentos USB (Hub USB).
 
 ### Serviço orientado a conexões
 
@@ -33,15 +58,21 @@ Quando um quadro chega a seu destino, o *checksum* é recalculado. Se o *checksu
 
 É possível lidar com erros na camada de enlace, verificando os quadros que trafegam na rede, certificando-se que a entrega dos pacotes ocorreu corretamente.
 
-A forma mais comum de garantir uma entrega confiável é dar ao transmissor algum tipo de feedback sobre o que está acontecendo no outro extremo da linha. Normalmente, o protocolo solicita que o receptor retorne quadros de controle especiais com confirmações positivas ou negativas sobre os quadros recebidos. Se receber uma mensagem positiva sobre o quadro, o transmissor saberá que o quadro chegou em segurança ao destino. Por outro lado, uma mensagem negativa significa que algo saiu errado e o quadro deve ser retransmitido.
+A forma mais comum de garantir uma entrega confiável é dar ao transmissor algum tipo de feedback sobre o que está acontecendo no outro extremo da linha. Normalmente, o protocolo solicita que o receptor retorne quadros de controle especiais com confirmações positivas ou negativas sobre os quadros recebidos.
+
+Os projetistas de redes desenvolveram duas estratégias básicas para lidar com os erros. Ambas acrescentam informações redundantes aos dados enviados. Uma estratégia é incluir informações redundantes suficientes para permitir que o receptor deduza quais foram os dados transmitidos. A outra é incluir apenas a redundância suficiente para permitir que o receptor deduza que houve um erro (mas não qual erro) e solicite uma retransmissão.
+
+A primeira estratégia usa **códigos de correção de erros**, enquanto a segunda usa **códigos de detecção de erros**. O uso de códigos de correção de erros normalmente é conhecido como **correção adiantada de erros**, ou **FEC** (**Forward Error Correction**).
+
+Cada uma dessas técnicas ocupa um nicho em ambientes específicos. Em canais altamente confiáveis, como os de fibra, é mais econômico utilizar um código de detecção de erros e simplesmente retransmitir o bloco defeituoso ocasional. Porém, em canais como enlaces sem fio, que geram muitos erros, é melhor adicionar redundância suficiente a cada bloco para que o receptor seja capaz de descobrir qual era o bloco transmitido originalmente.
 
 Deve ficar claro que um protocolo no qual o transmissor envia um quadro e depois espera por uma confirmação, positiva ou negativa, permanecerá suspenso para sempre caso um quadro tenha sido completamente perdido - por exemplo, em consequência de mau funcionamento do hardware ou canal de comunicação deficiente.
 
-Essa possibilidade é tratada com a introdução de timers na camada de enlace de dados. Quando o transmissor envia um quadro, em geral ele também inicializa um timer. Este é ajustado para ser desativado após um intervalo suficientemente longo para o quadro chegar ao destino, ser processado ali e ter sua confirmação enviada de volta ao transmissor. Em geral, o quadro será recebido de forma correta e a confirmação voltará antes que se alcance o tempo-limite do timer e, nesse caso, ele será cancelado.
+Essa possibilidade é tratada com a introdução de *timers* na camada de enlace de dados. Quando o transmissor envia um quadro, em geral ele também inicializa um *timer*. Este é ajustado para ser desativado após um intervalo suficientemente longo para o quadro chegar ao destino, ser processado ali e ter sua confirmação enviada de volta ao transmissor. Em geral, o quadro será recebido de forma correta e a confirmação voltará antes que se alcance o tempo-limite do *timer* e, nesse caso, ele será cancelado.
 
 Esse reenvio de quadros cria um novo problema pois o recepetor pode receber um quadro mais de uma vez. Para contornar este problema os quadros são numerados de forma sequencial, de modo que o receptor possa distinguir as retransmissões dos originais.
 
-A questão do gerenciamento dos timers e dos números de sequências para garantir que cada quadro seja realmente passado para a camada de rede no destino exatamente uma vez, nem mais nem menos, é uma parte importante das atribuições da camada de enlace de dados (e das camadas mais altas).
+A questão do gerenciamento dos *timers* e dos números de sequências para garantir que cada quadro seja realmente passado para a camada de rede no destino exatamente uma vez, nem mais nem menos, é uma parte importante das atribuições da camada de enlace de dados (e das camadas mais altas).
 
 ### Controle de fluxo
 
