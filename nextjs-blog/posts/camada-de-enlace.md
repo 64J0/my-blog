@@ -1,11 +1,57 @@
 ---
 title: "A camada de enlace"
 date: "2020-08-06"
+tags: ["telecom", "redes"]
 ---
 
 Neste post irei escrever um resumo dos meus estudos acerca da segunda camada da pilha do modelo OSI, também conhecida como camada de enlace. Grande parte do conteúdo está sendo retirado do livro citado na referência [1], pois é o livro que estou lendo no momento para aprender mais coisas sobre redes.
 
-Segundo [1], a segunda camada da pilha do modelo OSI é chamada **camada de enlace de dados**. Essa camada implementa diversos algoritmos que permitem uma comunicação eficiente e confiável de unidades de informação inteiras, chamadas de quadros (ou *frames*, em inglês), em vez de bits individuais, como na camada física, entre dois computadores adjacentes. 
+De acordo com [1], a segunda camada da pilha do modelo OSI é chamada **camada de enlace de dados**. Essa camada implementa diversos algoritmos que permitem uma comunicação eficiente e confiável de unidades de informação inteiras, chamadas de quadros (ou *frames*, em inglês), em vez de bits individuais, como na camada física, entre dois computadores adjacentes.
+
+* MODELO OSI:
+
+<table>
+  <tr>
+    <th>Camada</th>
+    <th>Nome</th>
+    <th>Nome da informação</th>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Aplicação</td>
+    <td>Dado</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Apresentação</td>
+    <td>Dado</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Sessão</td>
+    <td>Dado</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Transporte</td>
+    <td>Segmento</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Rede</td>
+    <td>Pacotes ou datagramas</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Enlace</td>
+    <td>Frame ou quadro</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Física</td>
+    <td>Bit</td>
+  </tr>
+</table>
 
 Em outras palavras, a camada de enlace de dados usa os serviços da camada física para enviar e receber bits pelos canais de comunicação. Algumas das funções dessa camada são:
 
@@ -13,7 +59,11 @@ Em outras palavras, a camada de enlace de dados usa os serviços da camada físi
 2. Lidar com erros de transmissão;
 3. Regular o fluxo de dados de tal forma que receptores lentos não sejam atropelados por transmissores rápidos.
 
-Para alcançar esses objetivos, a camada de enlace de dados recebe os pacotes da camada de rede e os encapsula em **quadros** para transmissão. Cada quadro contém um cabeçalho (*header*), um campo de carga útil que conterá o pacote, e um final de quadro (*trailer*). O gerenciamento de quadros constitui o núcleo das atividades da camada de enlace de dados.
+Para alcançar esses objetivos, a camada de enlace de dados recebe os pacotes, que consistem em dados puros, da camada de rede e os encapsula em **quadros** para transmissão. 
+
+Cada quadro contém um cabeçalho (*header*), um campo de carga útil que conterá o pacote, e um final de quadro (*trailer*). Portanto, um quadro consiste em um pacote incorporado de algumas informações de controle (no cabeçalho) e em um *checksum* (no final). 
+
+O gerenciamento de quadros constitui o núcleo das atividades da camada de enlace de dados.
 
 ## Equipamentos dessa camada
 
@@ -39,22 +89,21 @@ Foi um dispositivo muito usado principalmente nos anos 70, antes da popularizaç
 * 1 domínio de colisão, ou seja, apenas um equipamento pode se comunicar por vez;
 * Hoje em dia é utilizado para ligações de equipamentos USB (Hub USB).
 
-### Serviço orientado a conexões
+## Serviço orientado a conexões
 
 O serviço mais sofisticado que a camada de enlace de dados é capaz de oferecer à camada de rede é o serviço orientado a conexões. Com ele, as máquinas de origem e destino estabelecem uma conexão antes de qualquer dado ser transferido. Cada quadro enviado pela conexão é numerado, e a camada de enlace de dados garante que cada quadro será, de fato, recebido. Além disso, essa camada garante que todos os quadros serão recebidos uma única vez e na ordem correta. Assim, os serviços orientados a conexões fornecem aos processos da camada de rede o equivalente a um fluxo de bits confiável. Isso é apropriado para enlaces longos, não confiáveis, como um canal de satélite ou um circuito telefônico interurbano.
 
 Quando o serviço orientado a conexões é usado, as transferências passam por três fases distintas. Na primeira fase, a conexão é estabelecida, fazendo ambos os lados inicializar as variáveis e os contadores necessários para controlar os quadros que são recebidos e os que não são. Na segunda fase, um ou mais quadros são realmente transmitidos. Na terceira e última fase, a conexão é desfeita, liberando-se as variáveis, os buffers e os outros recursos usados para mantê-la.
 
+## Enquadramento
 
-### Enquadramento
-
-Para transmitir os quadros gerados recebidos na segunda camada são utilizados os serviços fornecidos a ela pela primeira camada (camada física). O que a camada física faz é aceitar um fluxo de bits brutos e tentar entregá-lo ao destino.
+Para transmitir os quadros da camada de enlace são utilizados os serviços fornecidos a ela pela primeira camada (camada física). O que a camada física faz é aceitar um fluxo de bits brutos e tentar entregá-lo ao destino.
 
 Para contornar os possíveis problemas ocasionados na transmissão, em geral, a estratégia adotada pela camada de enlace de dados é dividir o fluxo de bits em quadros distintos, calcular um pequeno valor (um *token*), chamado de **checksum** (somatório de verificação), para cada quadro e incluir essa soma de verificação no quadro quando ele for transmitido.
 
 Quando um quadro chega a seu destino, o *checksum* é recalculado. Se o *checksum* recém-calculado for diferente do que está contido no quadro, a camada de enlace de dados saberá que houve um erro e tomará providências para lidar com ele (por exemplo, descartando o quadro defeituoso e possivelmente também enviando de volta um relatório de erros).
 
-### Controle de erros
+## Controle de erros
 
 É possível lidar com erros na camada de enlace, verificando os quadros que trafegam na rede, certificando-se que a entrega dos pacotes ocorreu corretamente.
 
@@ -74,13 +123,13 @@ Esse reenvio de quadros cria um novo problema pois o recepetor pode receber um q
 
 A questão do gerenciamento dos *timers* e dos números de sequências para garantir que cada quadro seja realmente passado para a camada de rede no destino exatamente uma vez, nem mais nem menos, é uma parte importante das atribuições da camada de enlace de dados (e das camadas mais altas).
 
-### Controle de fluxo
+## Controle de fluxo
 
 Outro aspecto de projeto importante que ocorre na camada de enlace de dados (e também nas camadas mais altas) é o que fazer com um transmissor que sistematicamente deseja transmitir quadros mais rápido do que o receptor pode aceitá-los.
 
 Para contornar essa situação são usadas comumente duas abordagens. Na primeira, chamada **controle de fluxo baseado em feedback**, o receptor envia de volta ao transmissor informações que permitam a ele enviar mais dados, ou que pelo menos mostrem ao transmissor a situação real do receptor. Na segunda, chamada **controle de fluxo baseado na velocidade**, o protocolo tem um mecanismo interno que limita a velocidade com que os transmissores podem enviar os dados, sem usar o feedback do receptor.
 
 ---
-### Referência:
+## Referências:
 
 [1] - Redes de Computadores - 5ª edição.
