@@ -62,3 +62,8 @@ pre {
     margin: 1rem;
     padding: 1rem;
 }
+
+p {
+    tab-size: 2rem;
+    -moz-tab-size: 2rem; /* Firefox */
+}
