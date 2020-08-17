@@ -6,7 +6,7 @@ export default function Date({ dateString }) {
   const date = parseISO(dateString);
   return (
     <time dateTime={dateString}>
-      Postado em {format(date, `d ' de ' LLLL ' de ' yyyy`, { locale: ptBR })}
+      Postado em {date ? format(date, `d ' de ' LLLL ' de ' yyyy`, { locale: ptBR }) : 'Não definido'}
     </time>
   );
 }

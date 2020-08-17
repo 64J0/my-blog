@@ -3,17 +3,23 @@ title: "Desafio 1 da Maratona Behind the Code"
 date: "2020-08-15"
 ---
 
-Nesse post irei colocar algumas informações e divagações a respeito do desafio 1 da Maratona Behind the Code da IBM.
+Nesse post irei colocar algumas informações e comentários a respeito do desafio 1 da Maratona Behind the Code da IBM de 2020. 
 
-Esse desafio foi proposto pela **Cocamar** e as informações a respeito estão disponíveis no seguinte [link do github](https://github.com/maratonadev-br/desafio-1-2020). Essa empresa começou suas operações focada na produção de café porém atualmente atende uma variedade maior de culturas (**soja**, milho, trigo, café e laranja).
+Esse primeiro desafio foi lançado no dia 15 de agosto às 10:00 da manhã e as primeiras avaliações serão divulgadas na quarta-feira pelo e-mail.
+
+A **Cocamar** foi a empresa responsável por idealizar o problema e as informações a respeito deste estão disponíveis no seguinte [link do github](https://github.com/maratonadev-br/desafio-1-2020). 
+
+Sobre a Cocamar: essa empresa começou suas operações focada no auxílio de produres de café porém atualmente atende uma variedade maior de culturas (**soja**, milho, trigo, café e laranja).
 
 *Observação:* O título da segunda seção do README do github é Desafio de Negócio, será que os desafios posteriores serão focados em outras áreas fora do mercado, por exemplo Desafio Acadêmico? 
 
-Seguindo a leitura é citado o objetivo do desafio: 
+Seguindo a leitura do README no github é citado o objetivo do desafio: 
 
-* **Criar uma ferramenta rápida e automatizada de identificação de pragas que atingem a lavoura de soja com a utilização de técnicas de reconhecimento visual.**
+* **Criar uma ferramenta rápida e automatizada de identificação das pragas mais comuns que atingem a lavoura de soja, implementando técnicas computacionais de reconhecimento visual.**
 
 Como a Maratona está sendo desenvolvida pela IBM eles sugerem a utilização do serviço de reconhecimento de imagens da própria empresa, o *IBM Watson Visual Recognition*. 
+
+O serviço *IBM Watson Visual Recognition*, pelo que consta na documentação, usa algoritmos de **deep learning** para analisar imagens, cenas, objetos e outros conteúdos para gerar um modelo que será usado para classificar outras imagens. A resposta desse módulo inclui palavras-chave que fornecem informações sobre a correlação entre o conteúdo analisado e algum dos objetos do modelo.
 
 Para utilizar essa ferramenta devemos definir uma base de imagens que serão usadas para treinar o algoritmo.
 
@@ -28,31 +34,35 @@ Para facilitar o desafio, o sistema que será implementado deve reconhecer apena
 3. Percevejo pequeno
 4. Percevejo verde
 
-A primeira parte do desafio é buscar imagens dessas pragas e criar um modelo de reconhecimento visual capaz de identificar corretamente cada uma delas.
+A primeira parte do desafio é buscar imagens dessas pragas para criar um modelo de reconhecimento visual capaz de classificar corretamente as imagens posteriores.
 
 ## Resumo das tarefas
 
 O resumo das tarefas segundo o próprio README é:
 
 1. Instanciar o IBM Watson Visual Recognition na IBM Cloud, que é a ferramenta responsável por reconhecer as imagens, classificando-as e detectando objetos;
-2. Instanciar o Watson Studio (Cloud Pak for Data as a Service) na IBM Cloud, que é uma interface gráfica para os procedimentos que estão sendo realizados, tornando mais intuitivo e agradável o processo de configuração de alguma ação;
+2. Instanciar o Watson Studio (Cloud Pak for Data as a Service) na IBM Cloud, que é uma interface gráfica para os procedimentos que estão sendo realizados, tornando mais intuitivo e agradável o processo de configuração;
 3. Instanciar o Cloud Object Storage na IBM Cloud, que funciona como um HD onde podemos armazenar arquivos que serão usados para criação dos modelos;
 4. Buscar por imagens que representam as classes especificadas: **lagarta**, **percevejo_marrom**, **percevejo_pequeno** e **percevejo_verde**;
 5. Treinar o modelo;
 6. Subir a aplicação de submissão;
 7. Acessar a aplicação de submissão e submeter sua solução.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ODorFVi9bL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/ODorFVi9bL4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Algumas dicas
 
-Para o modelo ficar bom é necessário fornecer imagens de qualidade. Não necessariamente é necessário enviar 1000 imagens de cada praga, porém é necessário fornecer imagens com boas propriedades.
+Para o modelo ficar bom é necessário fornecer imagens de qualidade. Não necessariamente devemos enviar 1000 imagens de cada praga, porém é recomendado fornecer imagens com algumas características e quantidades específicas.
 
-Segundo o instrutor, um valor recomendado de quantidade de imagens com qualidade é entre 10 e 50. 
+Segundo o instrutor, um valor recomendado de imagens com qualidade é 50 para cada classe que deverá ser identificada.
 
 Uma imagem de qualidade deve apresentar pouco ruído, ou seja, o objeto que será identificado deve estar em destaque na imagem, evitando outros detalhes ao redor.
 
-É importante enviar também um conjunto de imagens relacionadas a alguns insetos parecidos com as pragas que desejamos detectar porém que se caracterizariam como falsos positivos. Nesse caso o conjunto de imagens terá o nome de Negative, por exemplo, joaninhas, borboletas, etc. 
+É importante enviar também um conjunto de imagens relacionadas a alguns insetos parecidos com as pragas que desejamos detectar porém que se caracterizariam como falsos positivos. Nesse caso o conjunto de imagens terá o nome de Negative, por exemplo, joaninhas, borboletas, etc. Além disso, o modelo deve ser treinado com uma quantidade idêntica de imagens positivas e negativas.
+
+Certifique-se de que os segundos planos em suas imagens de treinamento sejam comparáveis ao que você espera classificar.
+
+Por exemplo, se estiver treinando o classificador "tigre", seu classificador poderá ser menos preciso se você treinar somente com imagens de tigres em um zoológico capturadas por um telefone celular, mas analisar imagens que foram capturadas no meio selvagem por fotógrafos profissionais.
 
 ## Avaliação
 
@@ -72,6 +82,8 @@ Bom, baseado no que foi descrito acima, a minha estratégia vai ser:
 
 * Coletar um conjunto de imagens de boa qualidade, sem ruído, das pragas em suas fases de vida, contendo pelo menos 10 imagens de cada fase;
 * Coletar um conjunto de imagens relacionadas a alguns outros tipos de insetos que podem ser encontrados numa lavoura e que poderiam gerar falsos positivos, e salvar no conjunto de Negatives;
+
+![Imagem do fluxograma da estratégia adotada](/post-images/desafio-1-maratona-behind-the-code/fluxograma-watson-visual-recognition.JPG)
 
 Quando terminar de fazer isso volto aqui e atualizo o post. É isso.
 

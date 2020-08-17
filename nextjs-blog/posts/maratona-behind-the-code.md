@@ -10,7 +10,7 @@ Provavelmente o post vai ser longo, mas é a vida...
 Algumas informações introdutórias.
 
 ## Inteligência artificial: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kOmgVS9v0rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/kOmgVS9v0rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Dar as soluções a capacidade cognitiva de aprender e interpretar dados não estruturados. Watson é o sistema de inteligência artificial e serviço da IBM.
 
@@ -19,7 +19,7 @@ Dar as soluções a capacidade cognitiva de aprender e interpretar dados não es
 * Watson assistant -> Chat bot, tem a capacidade de aprender com perguntas e respostas.
 
 ## IoT: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yaE0dQYYy4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/yaE0dQYYy4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Interconexão de dispositivos na rede, coletando dados automaticamente para resolver problemas sem a necessidade de supervisão humana.
 
@@ -30,7 +30,7 @@ Estrutura de um sistema iot:
 * Subscribers -> aplicações e serviços que consomem os dados coletados pelos sensores através do processamento dessas informações
 
 ## kubernetes: 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o8JO5aNZ82g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/o8JO5aNZ82g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Popularmente conhecido como orquestrador de containeres (tecnologia de virtualização de sistemas operacionais, semelhante a VM porém mais leves). 
 Auxilia os desenvolvedores no desenvolvimento de uma aplicação utilizando micro-serviços.
@@ -49,7 +49,7 @@ Mais informações: [link](https://developer.ibm.com/br/technologies/containers/
 
 Abaixo vou colocar um resumo das minhas anotações a respeito da live que ocorreu em 14/08/2020 no canal da Rocketseat em conjunto com o canal da Shawee. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/34fiafm5gz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/34fiafm5gz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **Quais informações seriam mais necessárias para salvar no banco de dados para se guiar no futuro ao desenvolver uma ferramenta de inteligência artificial? Como estruturar melhor um setor da empresa para abrigar uma área dedicada à análise de dados?**
 

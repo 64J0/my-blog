@@ -9,6 +9,15 @@
 
   border-radius: 5px;
   background-color: #fff;
+
+  @media (max-width: 34rem) {
+    padding: 1rem 2rem;
+
+    img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
 }
 
 .backToHome {

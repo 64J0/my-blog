@@ -12,6 +12,12 @@
     letter-spacing: -0.05rem;
 }
 
+@media (max-width: 34rem) {
+    .headingX1 {
+        margin-top: 1rem;
+    }
+}
+
 .headingLg {
     font-size: 1.5rem;
     line-height: 1.4;
