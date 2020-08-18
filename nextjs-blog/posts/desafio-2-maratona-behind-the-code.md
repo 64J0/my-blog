@@ -43,7 +43,7 @@ Das ferramentas que serão utilizadas a principal é a linguagem Python. Não é
 
 Algumas biblitecas que serão usadas com o Python:
 
-* Sect-learn -> treinamento e criação de modelos de machine learning;
+* Scikit-learn -> treinamento e criação de modelos de machine learning;
 * Pandas -> manipulação e processamento de machine learning;
 
 O robô virtual já está pronto e basta integrá-lo com a API disponbilizada pelo modelo de machine learning do Watson.
