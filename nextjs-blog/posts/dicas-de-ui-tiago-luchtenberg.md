@@ -68,9 +68,9 @@ Elas afetam nosso comportamento e decisões em ações online. Transmitem emoç�
 
 A imagem abaixo ilustra algumas possibilidades de utilização do círculo cromático para definir quais cores devemos utilizar no nosso design.
 
-![Combinação harmônica das cores](/post-images/dicas-de-ui-tiago-luchtenberg/Combincacao_harmonica_das_cores.jpg "Combinação harmônica das cores")
+![Combinação harmônica das cores](/post-images/dicas-de-ui-tiago-luchtenberg/Circulo_cromatico.jpg "Combinação harmônica das cores")
 
-Imagem retirada desse [link da Wikipédia](https://pt.wikipedia.org/wiki/Ficheiro:Combinacao_harmonica_das_cores.jpg), que fala sobre combinação cromática.
+Imagem retirada desse [link do Pinterest](https://br.pinterest.com/pin/150870656251690468/), que fala sobre combinação cromática.
 
 O entedimento do círculo cromático é de fundamental importância para criar uma boa paleta de cores.
 
