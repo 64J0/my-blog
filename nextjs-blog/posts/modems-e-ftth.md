@@ -1,9 +1,9 @@
 ---
-title: "O que é um modem e ftth?"
+title: "O que é um modem e  informações sobre FTTH?"
 date: "2020-08-02"
 ---
 
-Nesse post trataremos sobre uma tecnologia relativamente antiga da área de telecomunicações. Provavelmente muitos de vocês leitores já utilizam esse equipamento, numa época em que as velocidades de internet eram bastante limitadas... Hoje falaremos sobre o nem tão bom e velho **modem**!
+Nesse post falarei sobre uma tecnologia relativamente antiga da área de telecomunicações. Provavelmente muitos dos leitores já utilizaram esse equipamento, numa época em que as velocidades de internet eram bastante limitadas... Hoje falaremos sobre o velho e nem tão bom **modem**!
 
 Segundo [1], o **modem** é um dispositivo que converte um fluxo de bits digitais em sinais analógicos e vice-versa. A palavra **modem** é uma abreviação de 'modulador-de-modulador'. Existem muitas variedades de modems: modem de telefone, DSL, a cabo, sem fio, etc.
 
