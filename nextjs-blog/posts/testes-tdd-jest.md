@@ -295,7 +295,7 @@ E também o código do users-repository "mockado":
 
 Após tudo isso basta executar no terminal um *npm test* e o próprio sistema irá testar a minha implementação do código, verificando os requisitos que eu mesmo defini para a funcionalidade. Abaixo segue uma imagem mostrando o resultado da execução dos testes.
 
-![Execução dos testes](/post-images/testes-tdd-jest/test-suites.PNG)
+![Execução dos testes](/post-images/testes-tdd-jest/test-suite.PNG)
 
 Por enquanto foi isso. A medida que for descobrindo mais coisas pretendo incrementar o texto.
 
