@@ -42,6 +42,16 @@ O grid é de extrema importância para criar alinhamento e harmonia na interface
   * Width: 41
   * Gutter: 16
 
+A imagem abaixo, retirada da referência [1], ilustra algumas propriedades mencionadas nesse tópico.
+
+![Sistema Grid](/post-images/dicas-de-ui-tiago-luchtenberg/grid-system.png "Sistema Grid")
+
+Legenda:
+
+1. Columns
+2. Gutters
+3. Margins
+
 ## Tipografia
 
 É a parte mais difícil da UI design. Tipos expressam sentimentos, emoções e precisam ser no mínimo legíveis.
@@ -89,3 +99,8 @@ Assim como os ícones, as imagens e ilustrações também são importantes na co
 É uma metodologia que nos ajuda a pensar na interface do usuário de maneira hierárquica.
 
 O atomic design detalha o que acontece durante a criação e manutenção de sistemas de design (design system), permitindo mais consistência e qualidade.
+
+---
+## Referências:
+
+[1] - https://material.io/design/layout/understanding-layout.html
