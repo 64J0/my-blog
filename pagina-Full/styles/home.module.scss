@@ -1,0 +1,201 @@
+$bgColor: rgba(15, 103, 154, 0.8);
+$textColorDark: #222222;
+$textColorLight: #888888;
+
+.topImage {
+  background: url("../public/images/Team-Positivity.jpg") no-repeat center center scroll;
+}
+
+.contactImage {
+  background: url("../public/images/contact.jpg") no-repeat center center scroll;
+}
+
+.banner {
+  .bannerTitle {
+    height: 80vh;
+    background-color: $bgColor;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    color: #fff;
+    font-size: 2.7em;
+
+    width: 40%;
+    text-align: center;
+  }
+
+  .bottomHr {
+    margin-top: 80px;
+    color: #fff;
+    height: 3px;
+    background-color: #fff;
+    width: 80px;
+  }
+}
+
+.mainContainer {
+  padding: 100px 80px;
+
+  .mainTitle {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 1.1em;
+
+    color: $textColorDark;
+  }
+
+  .mainContent {
+    display: flex;
+    flex-direction: row;
+
+    h3 {
+      color: $textColorDark;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $textColorLight;
+      font-size: 15px;
+      line-height: 1.65em;
+      text-align: justify;
+
+      margin-top: 15px;
+      margin-right: 80px;
+    }
+  }
+
+  .carrousel {
+    margin-top: 130px;
+    justify-content: center;
+
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+}
+
+.contactBanner {
+  .bannerTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 50vh;
+    background-color: $bgColor;
+  }
+
+  p {
+    color: #fff;
+    font-size: 2.7em;
+
+    width: 70%;
+    text-align: center;
+  }
+
+  .contactBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 30px;
+
+    svg {
+      border: 5px solid #ffffff;
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: 10px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    p {
+      font-size: 15px;
+      width: 100%;
+    }
+  }
+}
+
+// Configuração do Bootstrap
+
+// Small devices
+@media (max-width: 576px) {
+  .mainContainer {
+    padding: 100px 10px;
+  }
+}
+
+// Medium devices
+@media (max-width: 768px) {
+}
+
+// Large devices
+@media (max-width: 992px) {
+  .contactBanner {
+    .bannerTitle {
+      flex-direction: column;
+
+      padding-top: 10px;
+      height: 100%;
+
+      p {
+        font-size: 2em;
+      }
+
+      .contactBtn {
+        padding: 20px;
+
+        svg {
+          border: 3px solid #ffffff;
+          border-radius: 50%;
+          padding: 5px;
+          margin-bottom: 5px;
+
+          width: 50px;
+          height: 50px;
+        }
+
+        p {
+          font-size: 1em;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Extra large devices
+@media (max-width: 1200px) {
+  .mainContainer {
+    padding: 100px 50px;
+    margin: 0 auto;
+
+    .mainContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        margin: 15px 0 0 0;
+      }
+
+      .videoContent {
+        margin-top: 15px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

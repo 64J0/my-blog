@@ -1,0 +1,38 @@
+$bgColor: rgba(15, 103, 154, 0.8);
+$fontColor: rgba(255, 255, 255, 1);
+
+.btPrimarioStyles {
+  background-color: $bgColor;
+  color: $fontColor;
+  font-size: 1em;
+
+  a {
+    color: $fontColor;
+  }
+}
+
+.btPrimarioStyles:hover {
+  background-color: rgba(15, 103, 154, 1);
+}
+
+// =====================================
+// Estrutura
+
+.btRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.btPrimarioStructure {
+  margin: 5px;
+  padding: 7px;
+
+  border: none;
+  border-radius: 20px;
+}

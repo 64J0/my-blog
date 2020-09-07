@@ -1,33 +1,30 @@
-<p align="center">
-  <h1 align="center">Next.js tutorial 🎉</h1>
-</p>
+# Projetos usando Next.js
 
-Este projeto está sendo desenvolvido a partir da estrutura do blog feito no tutorial do **Next.js**. Abaixo estão algumas anotações dos meus estudos sobre este **framework**.
+Neste repositório estão os códigos relacionados a projetos pessoais implementados utilizando a ferramenta **Next.js** da **Vercel**, que é um *framework* bem famoso atualmente (2020) e trás um conjunto de funcionalidades e otimizações bastante interessantes.
 
-O objetivo principal da utilização do **Next.js** é aumentar a eficiência e melhorar a experiência de desenvolvimento de projetos **React**, pois diversas questões ligadas a configurações iniciais e procedimentos são automatizados, e o resultado final do desenvolvimento é um produto otimizado de diversos modos.
+O objetivo principal da utilização do **Next.js** é aumentar a eficiência e melhorar a experiência de desenvolvimento de projetos **React JS**, pois diversas questões ligadas a configurações iniciais e procedimentos são automatizados, e o resultado final do desenvolvimento é um produto otimizado de diversos modos.
+
+Abaixo está um resumo das funcionalidades e atrativos apresentados pelo *framework*.
 
 ## Tabela de conteúdos:
 
 1. [Requisitos](#requisitos)
 2. [Resumo](#resumo)
-3. [Demonstração](#demonstração)
-4. [Objetivo pessoal](#objetivo-pessoal)
-5. [Discussões avançadas](#discussões-avançadas)
+3. [Discussões avançadas](#discussões-avançadas)
+4. [Projetos criados](#projetos-criados)
 
 <hr>
 
 ## Requisitos
 
-- JavaScript
+- HTML, CSS e JavaScript
 - ReactJS
 - NodeJS
 
-<hr>
-
 ## Resumo
 
-O código deste repositório é um projeto básico desenvolvido seguindo o tutorial do site do _framework_ **Next.js**.
-Segundo a própria documentação, o **Next.js** é um _framework_ criado para melhorar a experiência de desenvolvimento de projetos WEB utilizando o **ReactJS**.
+Segundo a própria documentação, o **Next.js** é um _framework_ criado para melhorar a experiência de desenvolvimento de projetos WEB utilizando o **ReactJS**. 
+
 Algumas das características deste _framework_ que melhoram a experiência de desenvolvimento consistem em:
 
 - O código já é empacotado (_bundled_) utilizando um _bundler_ tipo o **Webpack**, e é transpilado usando um compilador semelhante ao **Babel**.
@@ -38,24 +35,6 @@ Algumas das características deste _framework_ que melhoram a experiência de de
 - Pré-renderização, podendo ser estática (_SSG_) ou _server-side rendering_ (_SSR_).
 - Suporte nativo a **Sass** (podem ser importados arquivos com extensão _.sass_, desde que o módulo **sass** esteja presente no projeto), e qualquer biblioteca do tipo _CSS-in-JS_ (_styled-components_ por exemplo).
 - Etc... Para ler a lista completa acesse: [Tutorial Nextjs](https://nextjs.org/learn/basics/create-nextjs-app)
-
-O objetivo ao final do tutorial é desenvolver um _blog_ muito simples, como poder visto no site: https://next-tutorial.gajo.vercel.app/.
-
-<hr>
-
-## Demonstração
-
-<p align="center">
-  <img src="assets-readme/site-demonstration.gif" alt="Gif de demonstração do resultado do tutorial" />
-</p>
-
-<hr>
-
-## Objetivo pessoal
-
-Meu objetivo ao estudar este _framework_ é verificar se essa ferramenta atenderá minha necessidade de criar um _blog_ pessoal onde postarei conteúdos próprios sobre coisas que estou estudando e desenvolvendo, além de me promover como programador.
-
-<hr>
 
 ## Discussões avançadas
 
@@ -103,6 +82,12 @@ Esse tópico trata da situação em que os caminhos para determinadas páginas d
 
 O Next.js tem suporte a Rotas de _API_, que permite criar facilmente um _endpoint_ de _API_ como uma função do **Node.js**.
 
-<hr>
+## Projetos criados
 
+Segue uma lista dos projetos pessoais que estou criando com a ferramenta:
+
+* Blog pessoal
+* Página da Full Engenharia
+
+---
 Vinícius Gajo Marques Oliveira, 2020.

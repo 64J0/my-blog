@@ -1,0 +1,21 @@
+{
+  "name": "next-full",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full Engenharia landing page",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Vinícius Gajo Marques Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "sass": "^1.26.10"
+  }
+}
