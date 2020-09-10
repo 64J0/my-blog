@@ -97,17 +97,23 @@ Neste exemplo vou mostrar e explicar um trecho de código de um dos testes que i
 O objetivo do teste mostrado é verificar um *service* responsável por autenticar um usuário no sistema - fazer *login*.
 
 ```javascript
-  // Carregando o módulo bcryptjs que foi baixado utilizando o NPM e está atualmente na pasta node_modules
+  // Carregando o módulo bcryptjs que foi baixado utilizando o NPM e 
+  // está atualmente na pasta node_modules
   const bcrypt = require("bcryptjs");
 
-  // Importando o service que será testado e que é responsável por autenticar o usuário
+  // Importando o service que será testado e que é responsável por 
+  // autenticar o usuário
   const AuthenticateUserService = require("./AuthenticateUserService");
 
   // Nesse trecho está sendo "mockado" o repositório de usuários
-  // Isso se deve ao fato de que o teste não engloba essa parte do sistema, portanto ela está sendo substituída por uma versão customizada e falsa, que implementa as mesmas funcionalidades do repositório real
+  // Isso se deve ao fato de que o teste não engloba essa parte do sistema, 
+  // portanto ela está sendo substituída por uma versão customizada e falsa, 
+  // que implementa as mesmas funcionalidades do repositório real
   jest.mock("../../repositories/users-repository");
 
-  // Também estou "mockando" uma função do framework bcryptjs, pois não é necessário testar essa funcionalidade, visto que não foi desenvolvida por mim
+  // Também estou "mockando" uma função do framework bcryptjs, pois não é 
+  // necessário testar essa funcionalidade, visto que não foi desenvolvida 
+  // por mim
   jest.mock("bcryptjs", () => {
     const compare = async (password, userPassword) => {
       return (
@@ -122,7 +128,9 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
     }
   });
 
-  // Além disso, também estou "mockando" uma função responsável por fazer sign-in e gerar um token de acesso baseado em tempo da biblioteca jsonwebtoken
+  // Além disso, também estou "mockando" uma função responsável por 
+  // fazer sign-in e gerar um token de acesso baseado em tempo da 
+  // biblioteca jsonwebtoken
   jest.mock("jsonwebtoken", () => {
     const sign = () => {
       return "token-test";
@@ -137,33 +145,40 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
   // Nessa linha é definido que será testado o service AuthenticateUserService
   describe("AuthenticateUserService", () => {
 
-    // Aqui é definido qual o funcionamento esperado do código, neste caso o service deve executar da maneira correta
-    // São especificados os parâmetros que serão usados para fazer login e abaixo é descrito o funcionamento esperado da implementação do código
+    // Aqui é definido qual o funcionamento esperado do código, neste caso 
+    // o service deve executar da maneira correta
+    // São especificados os parâmetros que serão usados para fazer login e 
+    // abaixo é descrito o funcionamento esperado da implementação do código
     it("should authenticate", async () => {
       const result = await AuthenticateUserService.execute({
         email: "teste1@teste.com",
         password: "123456"
       });
 
-      // Espera-se que o resultado da execução do service seja um objeto com as chaves auth, token e user
+      // Espera-se que o resultado da execução do service seja um objeto 
+      // com as chaves auth, token e user
       expect(result).toHaveProperty("auth");
       expect(result).toHaveProperty("token");
       expect(result).toHaveProperty("user");
 
-      // Além disso espera-se que o objeto user tenha uma chave de nome "_id" com valor "1"
+      // Além disso espera-se que o objeto user tenha uma chave de nome 
+      // "_id" com valor "1"
       expect(result.user).toHaveProperty("_id", "1");
       // E uma chave chamada "password" com valor undefined
       expect(result.user).toHaveProperty("password", undefined);
     });
 
-    // Nesse teste esperamos que o service não faça a autenticação caso seja enviado um e-mail não presente dentre os valores cadastrados no banco de dados
+    // Nesse teste esperamos que o service não faça a autenticação caso seja 
+    // enviado um e-mail não presente dentre os valores cadastrados no 
+    // banco de dados
     it("should not authenticate when it's used a non-existent e-mail in the database", async () => {
       const result = await AuthenticateUserService.execute({
         email: "non-existent@email.com",
         password: "123456"
       });
 
-      // Neste trecho estamos especificando um "espião" para monitorar o chamado da função do módulo bcryptjs chamado compare.
+      // Neste trecho estamos especificando um "espião" para monitorar o chamado 
+      // da função do módulo bcryptjs chamado compare.
       const spyOnBcrypt_Compare = jest.spyOn(bcrypt, "compare");
 
       // Esperamos que bcrypt.compare() não tenha sido chamado
@@ -173,7 +188,9 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
       expect(result).toHaveProperty("auth", false);
     });
 
-    // Por fim, neste teste verificamos se o service deixará de autenticar um usuário cuja senha informada seja diferente da senha cadastrada na base de dados
+    // Por fim, neste teste verificamos se o service deixará de autenticar um 
+    // usuário cuja senha informada seja diferente da senha cadastrada na 
+    // base de dados
     it("should not authenticate when it's send a wrong password", async () => {
       const result = await AuthenticateUserService.execute({
         email: "teste1@teste.com",
@@ -183,10 +200,13 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
       // Novamente estamos "espiando" a execução da função bcrypt.compare()
       const spyOnBcrypt_Compare = jest.spyOn(bcrypt, "compare");
 
-      // Esperamos que essa função tenha sido chamada apenas uma vez, para verificar se o e-mail informado está presente no banco
+      // Esperamos que essa função tenha sido chamada apenas uma vez, para verificar 
+      // se o e-mail informado está presente no banco
       expect(spyOnBcrypt_Compare).toHaveBeenCalledTimes(1);
 
-      // Assim como anteriormente, espera-se que o resultado da aplicação do service recebamos como resultado um objeto com chave "auth" e valor false
+      // Assim como anteriormente, espera-se que o resultado da aplicação 
+      // do service 
+      // recebamos como resultado um objeto com chave "auth" e valor false
       expect(result).toHaveProperty("auth", false);
     });
   });
