@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import hljs from "highlight.js";
-import javascript from "highlight.js/lib/languages/javascript";
 
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
@@ -15,28 +14,21 @@ import postStyles from "./styles.module.scss";
 export default function Post({ postData }) {
   useEffect(() => {
     function highlightPreElement() {
-      hljs.registerLanguage("language-javascript", javascript);
       let preEl = document.querySelectorAll("pre");
 
       return (
         preEl && preEl.forEach((element) => {
-          /*
-          Esse bloco era usado para configurar o nome da 
-          class do elemento ficar de acordo com o padrão
-          do highlight.js
-
           element.childNodes.forEach((child) => {
             child.className = child.className.replace(/language-/, "");
-          });
-          */
 
-          hljs.highlightBlock(element);
+            return hljs.highlightBlock(child);
+          });
         })
       );
     }
 
     highlightPreElement();
-  });
+  }, []);
 
   return (
     <Layout>
