@@ -1,5 +1,8 @@
 // Pages that begin with '[' and end with ']' are dynamic pages in Next.js
+import React, { useEffect } from "react";
 import Head from "next/head";
+import hljs from "highlight.js";
+import javascript from "highlight.js/lib/languages/javascript";
 
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
@@ -7,9 +10,34 @@ import Date from "../../components/date";
 
 import utilStyles from "../../styles/utils.module.css";
 
-import postStyles from './styles.module.scss';
+import postStyles from "./styles.module.scss";
 
 export default function Post({ postData }) {
+  useEffect(() => {
+    function highlightPreElement() {
+      hljs.registerLanguage("language-javascript", javascript);
+      let preEl = document.querySelectorAll("pre");
+
+      return (
+        preEl && preEl.forEach((element) => {
+          /*
+          Esse bloco era usado para configurar o nome da 
+          class do elemento ficar de acordo com o padrão
+          do highlight.js
+
+          element.childNodes.forEach((child) => {
+            child.className = child.className.replace(/language-/, "");
+          });
+          */
+
+          hljs.highlightBlock(element);
+        })
+      );
+    }
+
+    highlightPreElement();
+  });
+
   return (
     <Layout>
       <Head>
@@ -17,7 +45,9 @@ export default function Post({ postData }) {
       </Head>
 
       <article className={postStyles.container}>
-        <h1 className={utilStyles.headingX1}>{postData.title}</h1>
+        <h1 className={utilStyles.headingX1}>
+          {postData.title}
+        </h1>
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
@@ -25,7 +55,7 @@ export default function Post({ postData }) {
       </article>
 
       <footer className={postStyles.footer}>
-        Fim do post
+        ... Fim do post ...
       </footer>
     </Layout>
   );

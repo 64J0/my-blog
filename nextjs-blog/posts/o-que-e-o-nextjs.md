@@ -32,7 +32,7 @@ O **Next.js** tem duas formas de pré-renderização:
 - **Geração estática**: é o método de pré-renderização que gera o _HTML_ em tempo de _build_ (_build time_). O _HTML_ pré-renderizado é então reutilizado em cada requisição.
 - **Server-side Rendering**: é o método de pré-renderização que gera um novo _HTML_ a cada requisição.
 
-Além disso, é possível definir qual o tipo de pré-renderização será utilizada em **cada página**. Portanto é possível criar um aplicativo **Next.js** "híbrido" que usa as duas formas de pré-renderização.
+Importante: O Next.js deixa você **escolher** qual a forma de pré-renderização será utilizada em cada página. É possível criar uma aplicação **híbrida** com o Next.js, usando a Geração Estática para a maioria das páginas e usando a Renderização do Lado do Servidor para outras.
 
 ### Quando usar cada tipo de pré-renderização:
 

@@ -1,6 +1,6 @@
 {
   "name": "personal-blog-next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Esse blog está sendo desenvolvido a partir do layout do tutorial encontrado no site do projeto Next.js.",
   "private": true,
   "scripts": {
@@ -9,10 +9,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "date-fns": "^2.16.0",
+    "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
+    "highlight.js": "^10.2.0",
     "next": "9.3.5",
-    "polished": "^3.6.5",
+    "polished": "^3.6.6",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-icons": "^3.11.0",
@@ -20,5 +21,8 @@
     "remark-html": "^11.0.2",
     "sass": "^1.26.10"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-plugin-react": "^7.20.6"
+  }
 }

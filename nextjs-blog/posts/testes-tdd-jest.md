@@ -5,21 +5,37 @@ date: "2020-08-30"
 
 Saudações leitores, nesse post vou colocar algumas anotações e resumos dos meus estudos sobre testes automatizados e tudo que cerca esse assunto, como o padrão de projetos TDD (*Test Driven Development*) e a ferramenta que estou usando atualmente para criar e executar os testes - Jest.
 
-Antes de iniciarmos o post é bom definir o significado de alguns termos. As arquiteturas de software são regras aplicáveis a projetos que deverão escalar e permitir uma manutenção do código mais simples, evitando acoplamento de funcionalidades.
+Antes de iniciarmos o post é bom definir o significado de alguns termos que serão encontrados a seguir. 
 
-Assim como não devemos matar uma formiga com uma bazuca, **nem sempre é necessário aplicar uma arquitetura de software complexa para projetos mais simples**.
+-- **Arquiteturas de software** são regras aplicáveis a projetos que deverão escalar e permitir uma manutenção do código de maneira simplificada, evitando acoplamento de funcionalidades.
+
+Cuidado: Assim como não devemos matar uma formiga com uma bazuca, **nem sempre é necessário aplicar uma arquitetura de software complexa para projetos mais simples**. É necessário ponderar com calma para decidir qual a melhor arquitetura para cada projeto.
+
+-- **Front-end** é o código responsável por gerar os elementos que interagem diretamente com o usuário da aplicação de forma visual e intuitiva, na maioria das vezes.
+
+-- **Back-end** é o código que implementa as **regras de negócio** da aplicação. Usando um jargão popular podemos dizer que é o mecanismo que *funciona por baixo dos panos*, lidando com servidores, bancos de dados e tarefas mais complexas sem que o usuário precise efetuar qualquer ação.
+
+-- **TDD** (*Test Driven Development*) é uma arquitetura de software que foca basicamente em criar os testes da aplicação antes de desenvolver as funcionalidades.
+
+-- **Jest** é uma ferramenta desenvolvida por uma equipe do Facebook para ser utilizada na criação e execução de testes automatizados.
+
+A seguir são apresentados de maneira mais detalhada alguns conceitos referentes a estes tópicos.
 
 ## Testes automatizados
 
-Os testes automatizados monitoram o funcionamento da aplicação mesmo após as atualizações realizadas do código, com o acréscimo de novas funcionalidades e do número de devs do time.
+Os testes automatizados verificam o funcionamento da aplicação. Estes testes consistem em regras pré-definidas que devem ser respeitadas, mesmo após as atualizações realizadas do código.
+
+Em projetos maiores é de fundamental importância a utilização dos testes automatizados com o acréscimo de novas funcionalidades e do número de *devs* no time para garantir o correto funcionamento da aplicação.
+
+Existem basicamente três tipos de testes, que são definidos com relação ao escopo em que são aplicados.
 
 ### Tipos de testes:
 
 1. Teste unitário:
 
-Testam funcionalidades específicas e isoladas da aplicação (precisam ser funções puras => não dependem de outras partes da aplicação).
+Testam funcionalidades específicas e isoladas da aplicação (precisam ser funções puras, ou seja, que não dependem de outras partes da aplicação).
 
-**JAMAIS** realizará chamadas a API's, não apresenta efeitos colaterais, depende apenas da própria aplicação.
+Esse tipo de teste **JAMAIS** realizará chamadas a API's, não apresenta efeitos colaterais e depende apenas da própria aplicação.
 
 2. Teste de integração:
 
@@ -31,11 +47,13 @@ Por exemplo, um teste que passe por arquivos de: Route -> Controller -> Service 
 
 São testes que simulam a ação do usuário dentro da aplicação. É uma categoria de teste mais comum nos códigos *front-end*.
 
-Exemplo: Clique no input de e-mail -> Preencha com diego@rocketseat.com.br -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o *dashboard*.
+Exemplo: Clique no input de e-mail -> Preencha com vinicius.gajo@blog.com.br -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o *dashboard*.
 
 ## TDD (Test Driven Development)
 
 É uma metodologia de desenvolvimento onde os testes são criados antes das próprias funcionalidades. Dessa forma garante-se que os requisitos do código estão explícitos e documentados.
+
+Segundo a literatura, essa metodologia foi criada (ou descoberta) por Kent Beck e está relacionado a conceitos de programação de *Extreme Programming*.
 
 Segundo [1], o TDD se baseia em pequenos ciclos de repetições, onde para cada funcionalidade do sistema um teste é criado antes.
 
@@ -44,6 +62,10 @@ Essa metodologia apresenta três estágios:
 * **Red:** Nesta fase os testes são escritos e consequentemente vão falhar quando executados, pois não existe a lógica ainda;
 * **Green:** Após serem definidos os testes são escritos os códigos que atendem os requisitos definidos na fase anterior;
 * **Refactor:** Por fim, nesta última fase, o código escrito na etapa anterior é refatorado para implementar as melhores práticas do desenvolvimento de *software*.
+
+![Ciclo do TDD](/post-images/testes-tdd-jest/tdd-cycle.JPG "Ciclo do TDD")
+
+Fonte da imagem: [3]. 
 
 De acordo com [1], temos diversos ganhos com esta estratégia:
 
@@ -54,19 +76,21 @@ De acordo com [1], temos diversos ganhos com esta estratégia:
 ✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
 ✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
 
-## Ferramentas
+## Jest
 
 Agora vou escrever sobre as ferramentas que podem ser utilizadas para implementar o TDD.
 
 A pouco tempo atrás era muito comum encontrar a *stack* de tecnologias *mocha* + *chai* para criar os testes automatizados do projeto no ambiente do Node.js [2].
 
-Atualmente, a ferramenta mais utilizada é o [Jest](https://jestjs.io/), um *framework* simplificado para escrever e executar os testes com Node.js.
+Atualmente, a ferramenta mais utilizada é o [Jest](https://jestjs.io/), um *framework* simples mas completa, utilizada para escrever e executar os testes no ambiente do Node.js.
 
 Um dos pontos fortes dessa ferramenta é a capacidade de se integrar com vários outros *frameworks* e ferramentas, como: Babel, TypeScript, Node, React, Angular, Vue, etc.
 
-Além disso, é possível executar uma instrução que gera um relatório detalhado informando a quantidade de % coberta pelos testes. Dessa forma temos uma indicação visual de quanto código ainda precisa ser testado.
+Além disso, é possível executar uma instrução que gera um relatório detalhado informando a porcentagem do código coberta pelos testes. 
 
-## Exemplo
+Dessa forma temos uma indicação visual de quanto código ainda precisa ser testado, o que facilita bastante no início dos estudos.
+
+## Jest na prática
 
 Neste exemplo vou mostrar e explicar um trecho de código de um dos testes que implementei no meu projeto Full Plans (pode ser acessado [clicando aqui](https://github.com/64J0/FULL_PLANS)).
 
@@ -297,7 +321,7 @@ Após tudo isso basta executar no terminal um *npm test* e o próprio sistema ir
 
 ![Execução dos testes](/post-images/testes-tdd-jest/test-suite.PNG)
 
-Por enquanto foi isso. A medida que for descobrindo mais coisas pretendo incrementar o texto.
+Por enquanto foi isso. A medida que for estudando e descobrindo mais coisas pretendo incrementar o texto, então fique atento.
 
 ---
 ## Referências:
@@ -305,3 +329,5 @@ Por enquanto foi isso. A medida que for descobrindo mais coisas pretendo increme
 [1] - Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
 
 [2] - Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
+
+[3] - When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).

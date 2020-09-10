@@ -1,6 +1,7 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import React from "react";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-import GoogleAnalytics from '../components/GoogleAnalytics';
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 class MyDocument extends Document {
   render() {
@@ -22,6 +23,9 @@ class MyDocument extends Document {
 
           <GoogleAnalytics />
 
+          <link rel="stylesheet"
+            href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/styles/default.min.css" />
+          <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.0/build/highlight.min.js"></script>
         </Head>
         <body>
           <Main />
