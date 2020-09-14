@@ -56,6 +56,11 @@ td + td {
     text-align: center;
 }
 
+u {
+    text-decoration-color: #8257e5;
+    text-decoration-style: wavy;
+}
+
 pre {
     background-color: rgb(246, 248, 250);
     border-radius: 6px;

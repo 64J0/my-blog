@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -30,7 +31,7 @@ export default function Home({ allPostsData }) {
         <section className={utilStyles.headingMd}>
           <p>
             Formando em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React e Node.js principalmente), analista de redes de teleprocessamento no NOC (<i>Network Operations Center</i>) da Master Internet.
-        </p>
+          </p>
         </section>
         <section className={utilStyles.headingMd}>
           <h2 className={utilStyles.headingLg}>Posts</h2>

@@ -1,9 +1,10 @@
-import Head from 'next/head';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import React from "react";
+import Head from "next/head";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 import Layout from "../../components/layout";
 
-import contatoStyles from './styles.module.scss';
+import contatoStyles from "./styles.module.scss";
 
 export default function Contato() {
   return (
@@ -31,8 +32,18 @@ export default function Contato() {
               </a>
             </h3>
           </li>
+          <li>
+            <h3>
+              <a href="https://twitter.com/viniciusgajo">
+                <FaTwitter size="2rem" />
+                Twitter
+              </a>
+            </h3>
+          </li>
         </ul>
+
+        <footer className="footer"></footer>
       </div>
     </Layout>
-  )
+  );
 }
