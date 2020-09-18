@@ -83,3 +83,11 @@ p {
     tab-size: 2rem;
     -moz-tab-size: 2rem; /* Firefox */
 }
+
+@media (max-width: 375px) {
+    p,
+    div,
+    li {
+        font-size: 1.4rem;
+    }
+}

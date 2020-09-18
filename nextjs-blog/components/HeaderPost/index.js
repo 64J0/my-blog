@@ -15,7 +15,7 @@ export default function HeaderPost() {
           <a>
             <img
               src="/images/profile.jpg"
-              className={`${styles.headerImage} ${utilStyles.borderCircle} ${utilStyles.shadow}`}
+              className={`${styles.headerImage} ${utilStyles.borderCircle} ${headerStyles.contactLink}`}
               alt={"Uma foto minha"}
             />
           </a>
@@ -28,10 +28,6 @@ export default function HeaderPost() {
             </a>
           </Link>
         </h2>
-      </div>
-
-      <div className={headerStyles.division}>
-        <hr />
       </div>
     </>
   );

@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   width: 100%;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem 0;
   margin: 0;
 
   border-radius: 5px;
@@ -19,6 +19,15 @@
       height: 8rem;
     }
   }
+}
+
+.contactLink {
+  transition: transform 4s;
+}
+
+.contactLink:hover {
+  transition: transform 4s;
+  transform: rotateZ(360deg);
 }
 
 .backToHome {
@@ -37,18 +46,5 @@
     .moveToLeft {
       transform: translate(-1.2rem, 0);
     }
-  }
-}
-
-.division {
-  background-color: #fff;
-  width: 100%;
-
-  hr {
-    margin: 0 auto;
-    width: 80%;
-    height: 0.5rem;
-    background-color: #e5e5e5;
-    border: none;
   }
 }
