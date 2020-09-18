@@ -6,7 +6,14 @@
 
   p,
   div {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 375px) {
+    p,
+    div {
+      font-size: 1.4rem;
+    }
   }
 }
 

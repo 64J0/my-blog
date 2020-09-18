@@ -22,7 +22,7 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-plugin-react": "^7.20.6"
   }
 }
