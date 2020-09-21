@@ -1,6 +1,7 @@
 ---
 title: "As gerações do sistema de telefonia móvel"
 date: "2020-08-04"
+show: true
 ---
 
 O sistema de telefonia móvel é usado para comunicação remota de voz e dados. Os telefones móveis (também chamados de telefones celulares) passaram por quatro gerações distintas, normalmente chamadadas de 1G, 2G, 3G e 4G. Atualmente estão sendo implementados equipamentos de quinta geração (5G), visando atender a demanda de uma rede gigante formada por vários dispositivos conectados. Em resumo essas gerações são:

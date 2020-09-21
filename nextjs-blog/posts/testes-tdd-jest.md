@@ -1,6 +1,7 @@
 ---
 title: "Testes, TDD e Jest"
 date: "2020-08-30"
+show: true
 ---
 
 Saudações leitores, nesse post vou colocar algumas anotações e resumos dos meus estudos sobre testes automatizados e tudo que cerca esse assunto, como o padrão de projetos TDD (*Test Driven Development*) e a ferramenta que estou usando atualmente para criar e executar os testes - Jest.
@@ -63,18 +64,18 @@ Essa metodologia apresenta três estágios:
 * **Green:** Após serem definidos os testes são escritos os códigos que atendem os requisitos definidos na fase anterior;
 * **Refactor:** Por fim, nesta última fase, o código escrito na etapa anterior é refatorado para implementar as melhores práticas do desenvolvimento de *software*.
 
-![Ciclo do TDD](/post-images/testes-tdd-jest/tdd-cycle.JPG "Ciclo do TDD")
+![Ciclo do TDD](/post-images/testes-tdd-jest/tdd-cycle.jpg "Ciclo do TDD")
 
 Fonte da imagem: [3]. 
 
 De acordo com [1], temos diversos ganhos com esta estratégia:
 
-✔ Feedback rápido sobre a nova funcionalidade e sobre as outras existentes no projeto
-✔ Código mais limpo, já que escrevemos códigos simples para o teste passar
-✔ Segurança no Refactoring pois podemos ver o que estamos ou não afetando
-✔ Segurança na correção de bugs
-✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
-✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
+- ✔ Feedback rápido sobre a nova funcionalidade e sobre as outras existentes no projeto
+- ✔ Código mais limpo, já que escrevemos códigos simples para o teste passar
+- ✔ Segurança no Refactoring pois podemos ver o que estamos ou não afetando
+- ✔ Segurança na correção de bugs
+- ✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
+- ✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
 
 ## Jest
 

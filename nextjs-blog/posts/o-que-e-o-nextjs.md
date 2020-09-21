@@ -1,6 +1,7 @@
 ---
 title: "O que é o Next.js"
 date: "2020-07-30"
+show: true
 ---
 
 Saudações caro leitor, neste primeiro post do blog irei apresentar uma introdução a respeito do *framework* que funciona em conjunto com o *React JS* e se chama **Next.js**. Esse framework foi a tecnologia escolhida para criar este o blog devido principalmente a sua otimização em relação ao **SEO** (*Search Engine Optimization*). Sem mais delongas...

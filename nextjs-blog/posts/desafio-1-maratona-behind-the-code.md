@@ -1,6 +1,7 @@
 ---
 title: "Desafio 1 da Maratona Behind the Code"
 date: "2020-08-15"
+show: true
 ---
 
 Nesse post irei colocar algumas informações e comentários a respeito do desafio 1 da Maratona Behind the Code da IBM de 2020. 

@@ -1,6 +1,7 @@
 ---
 title: "Código Limpo - Um resumo"
 date: "2020-09-14"
+show: true
 ---
 
 Fala clã, tudo jóia? 
@@ -98,6 +99,8 @@ Por outro lado, usando as excessões temos:
 
 -- Isso é bem legal e é uma coisa que nunca tinha pensado antes. Agora vou dar mais valor aos blocos de *try catch* com certeza.
 
+<hr />
+
 # Comentários
 
 Nesse ponto o autor do livro é bastante contrário à utilização de comentários no código. 
@@ -143,6 +146,24 @@ O autor lista algumas situações em que os comentários podem ser utilizados de
 * Avisar sobre consequências de executar alguma ação.
 
 * Listar coisas que ainda devem ser feitas (*TODO List*).
+
+<hr />
+
+# Formatação
+
+<hr />
+
+# Objetos e estruturas
+
+<hr />
+
+# Lidando com erros
+
+<hr />
+
+# Fronteiras
+
+Neste capítulo são discutidas algumas ideias para resguardar o projeto que está sendo desenvolvido quando é utilizado código de terceiros, por exemplo de um projeto *open source*.
 
 ---
 ## Referências:

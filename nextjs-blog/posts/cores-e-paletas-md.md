@@ -1,6 +1,7 @@
 ---
 title: "Cores e paletas - Material Design"
 date: "2020-08-28"
+show: true
 ---
 
 Saudações leitores. No post de hoje vou falar sobre cores e paletas, segundo a abordagem do **Design Guide** do *Google*, conhecido como **Material Design**.

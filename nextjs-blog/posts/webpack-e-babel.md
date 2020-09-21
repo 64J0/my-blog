@@ -1,6 +1,7 @@
 ---
 title: "Webpack e Babel - introdução"
 date: "2020-08-13"
+show: false
 ---
 
 Saudações leitores, nesse post irei apresentar algumas informações a respeito das famosas ferramentas **Webpack** e **Babel**.

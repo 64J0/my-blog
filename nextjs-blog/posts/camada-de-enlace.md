@@ -1,6 +1,7 @@
 ---
 title: "A camada de enlace"
 date: "2020-08-06"
+show: true
 tags: ["telecom", "redes"]
 ---
 

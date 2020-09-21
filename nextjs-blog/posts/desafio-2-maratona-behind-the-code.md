@@ -1,6 +1,7 @@
 ---
 title: "Desafio 2 da Maratona Behind the Code"
 date: "2020-08-16"
+show: true
 ---
 
 Segundo dia de maratona!!! Bora clã!!!

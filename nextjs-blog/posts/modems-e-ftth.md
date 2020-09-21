@@ -1,6 +1,7 @@
 ---
 title: "O que é um modem e  informações sobre FTTH?"
 date: "2020-08-02"
+show: true
 ---
 
 Nesse post falarei sobre uma tecnologia relativamente antiga da área de telecomunicações. Provavelmente muitos dos leitores já utilizaram esse equipamento, numa época em que as velocidades de internet eram bastante limitadas... Hoje falaremos sobre o velho e nem tão bom **modem**!

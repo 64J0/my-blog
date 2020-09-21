@@ -1,6 +1,7 @@
 ---
 title: "Algumas informações sobre o Wireshark"
 date: "2020-08-02"
+show: false
 ---
 
 Saudações leitores do blog. Nesse post irei escrever um pouco sobre o **Wireshark** que é um programa que tenho estudado recentemente. Abaixo seguem as minhas anotações.

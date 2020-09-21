@@ -5,7 +5,13 @@
   min-width: 38rem;
 
   margin: 1rem auto 0;
-  padding: 0 0.5rem;
+  padding: 0;
+  border-radius: 30px 30px 0 0;
+
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  /*
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.3);
+  */
 }
 
 .header {
@@ -53,4 +59,14 @@
     padding: 1rem 2rem;
     font-size: 20px;
   }
+}
+
+.footerDesign {
+  height: 100%;
+  width: 100%;
+  max-width: 48rem;
+  min-width: 38rem;
+
+  margin: 0 auto 2rem;
+  padding: 0;
 }

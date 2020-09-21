@@ -46,9 +46,14 @@ export default function Post({ postData }) {
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
 
-      <footer className={postStyles.footer}>
-        ... Fim do post ...
-      </footer>
+      {
+        /*
+          <footer className={postStyles.footer}>
+            ... Fim do post ...
+          </footer>
+        */
+      }
+
     </Layout>
   );
 }

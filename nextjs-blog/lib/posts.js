@@ -7,7 +7,6 @@ import html from "remark-html";
 const postsDirectory = path.join(process.cwd(), "posts");
 
 export function getSortedPostData() {
-  // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
 
   const allPostData = fileNames.map((fileName) => {
@@ -21,6 +20,10 @@ export function getSortedPostData() {
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(fileContents);
 
+    if (!matterResult.data.show) {
+      return undefined;
+    }
+
     // Combine the data with the id
     return {
       id,
@@ -28,18 +31,20 @@ export function getSortedPostData() {
     };
   });
 
-  //Sort posts by date
-  return allPostData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
-  });
+  // Sort posts by date
+  return (allPostData
+    .filter((postData) => postData !== undefined)
+    .sort((a, b) => {
+      if (a.date < b.date) {
+        return 1;
+      } else {
+        return -1;
+      }
+    })
+  );
 }
 
 export function getAllPostIds() {
-  // Get file names under /posts
   const fileNames = fs.readdirSync(postsDirectory);
 
   return fileNames.map((fileName) => {

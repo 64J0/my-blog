@@ -1,6 +1,7 @@
 ---
 title: "A subcamada de controle de acesso ao meio"
 date: "2020-08-11"
+show: true
 tags: ["telecom", "redes"]
 ---
 

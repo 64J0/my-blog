@@ -1,6 +1,7 @@
 ---
 title: "Introdução da Maratona Behind the Code"
 date: "2020-08-14"
+show: true
 ---
 
 Saudações caro leitor, neste post irei tratar alguns assuntos sobre a **Maratona Behind The Code** que é composta por alguns desafios de tecnologia propostos pela IBM e outras empresas parceiras visando implementar as soluções com a plataforma da própria IBM.

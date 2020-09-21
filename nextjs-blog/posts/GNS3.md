@@ -1,6 +1,7 @@
 ---
 title: "Algumas informações sobre o GNS3"
 date: "2020-08-20"
+show: false
 ---
 
 Saudações caro leitor. Nesse post estão algumas informações sobre o software **GNS3**, que segundo a própria documentação é usado por centenas de milhares de engenheiros de redes ao redor do mundo para simular, configurar, testar e resolver problemas em redes virtuais e reais.

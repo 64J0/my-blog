@@ -1,6 +1,7 @@
 ---
 title: "Sobre gerenciamento de redes"
 date: "2020-08-04"
+show: true
 ---
 
 Saudações leitor, neste post irei abordar alguns tópicos de gerenciamento de redes. 
