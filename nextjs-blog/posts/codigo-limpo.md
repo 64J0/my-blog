@@ -1,7 +1,7 @@
 ---
 title: "Código Limpo - Um resumo"
 date: "2020-09-14"
-show: true
+show: false
 ---
 
 Fala clã, tudo jóia? 
