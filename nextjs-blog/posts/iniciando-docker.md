@@ -35,6 +35,16 @@ Um dos aspectos mais importantes do isolamento de containers é que cada contain
 
 Uma imagem inclui tudo que é necessário para executar uma aplicação - o código ou binário, runtimes, dependências, e qualquer outro arquivo de arquivo de sistema.
 
+Alguns exemplos de imagens sendo instaladas pela linha de comando:
+
+```bash
+# Instala o mongodb
+sudo docker run --name mongodb -p 27017:27017 --detach -t mongo
+
+# Instala o postgres
+sudo docker run --name postgres_sql -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+```
+
 ## Containers e máquinas virtuais
 
 Um container executa nativamente no Linux e compartilha o kernel da máquina host com outros containers. Ele executa um processo discreto, pegando o mínimo de memória necessária para executar, tornando-o leve.
