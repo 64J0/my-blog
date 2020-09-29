@@ -41,8 +41,6 @@ export default function Contato() {
             </h3>
           </li>
         </ul>
-
-        <footer className="footer"></footer>
       </div>
     </Layout>
   );
