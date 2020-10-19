@@ -1,4 +1,5 @@
 import React, { useState, useRef, useCallback } from "react";
+import Head from "next/head";
 import Chartjs from "chart.js";
 
 import Layout from "../../components/layout";
@@ -79,6 +80,10 @@ export default function GraficosPage() {
 
   return (
     <Layout>
+      <Head>
+        <title>Gráficos</title>
+      </Head>
+
       <div className={styles.container}>
         <h1>Gere um Gráfico</h1>
 
