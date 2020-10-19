@@ -1,11 +1,11 @@
-import Head from 'next/head';
-import { useState, useCallback } from 'react';
-import { MdAddCircle } from 'react-icons/md';
+import Head from "next/head";
+import React, { useState, useCallback } from "react";
+import { MdAddCircle } from "react-icons/md";
 
 import Layout from "../../components/layout";
-import ColorSection from './ColorSection';
+import ColorSection from "./ColorSection";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 export default function Cores() {
   const [childArray, setChildArray] = useState([0]);
@@ -27,7 +27,7 @@ export default function Cores() {
         <ul>
           {
             childArray.map((element) => {
-              return (<ColorSection key={element} />)
+              return (<ColorSection key={element} />);
             })
           }
         </ul>
