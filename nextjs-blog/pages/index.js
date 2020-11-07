@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
       <div className={`${utilStyles.mainContent}`}>
         <section className={utilStyles.headingMd}>
           <p>
-            Formando em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React e Node.js principalmente), analista de redes de teleprocessamento no NOC (<i>Network Operations Center</i>) da Master Internet.
+            Formando em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React e Node.js principalmente) atualmente trabalhando com front-end na JMV Technology.
           </p>
         </section>
         <section className={utilStyles.headingMd}>
