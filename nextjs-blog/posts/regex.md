@@ -2,13 +2,16 @@
 title: "Regex - Expressões regulares"
 date: "2020-10-15"
 show: true
+tags: ["javascript"]
 ---
 
-Expressões regulares, ou *RegEx*, é uma ferramenta utilizada para encontrar padrões textuais.
+*RegEx* (Regular Expressions - "Expressões Regulares"), é uma ferramenta utilizada para encontrar padrões textuais em um conjunto de dados específico.
 
-Uma expressão regular sozinha é apenas uma string. É preciso ter um software para interpretar a regex e aplicá-la no alvo (*target*). Esse software é o *RegEx Engine* que existe para a maioria das plataformas de desenvolvimento, como JavaScript, C#, Python, PHP, Java, etc.
+Uma expressão regular sozinha é apenas uma string, sem qualquer serventia prática. É necessário ter um software para interpretar a *RegEx* e aplicá-la no alvo (*target*). Esse software é o *RegEx Engine* que existe para a maioria das plataformas de desenvolvimento, como JavaScript, C#, Python, PHP, Java, etc.
 
-A imagem abaixo, retirada do curso de RegEx da Alura ilustra alguns conceitos relacionados ao RegEx.
+A imagem abaixo, retirada do curso de *RegEx* da Alura ilustra alguns conceitos relacionados a essa ferramenta, mostrando que toda expressão regular deve ter um padrão que será buscado, e ela também deve receber um alvo, que é a base de dados onde esse padrão será buscado.
+
+Essas informações são então encaminhadas para um motor capaz de interpretar e executar a *RegEx*, podendo utilizar basicamente qualquer linguagem de desenvolvimento moderna como Java, C#, JavaScript, etc. Por fim é mostrado o resultado dessa busca pelo padrão, onde esse resultado pode ser trabalhado posteriormente.
 
 ![Fluxo do RegEx](/post-images/regex/regex-flux.png)
 
@@ -96,7 +99,9 @@ O email deve ter um @ e terminar com caelum.com.br ou alura.com.br. O nome do us
 Por exemplo:
 
 super.mario@caelum.com.br extrai super.mario
+
 donkey.kong@alura.com.br extrai donkey.kong
+
 bowser1@alura.com.br extrai bowser1
 
 ```javascript

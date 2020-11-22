@@ -27,9 +27,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <div className={`${utilStyles.mainContent}`}>
+      <div className={utilStyles.mainContent}>
         <section className={utilStyles.headingMd}>
-          <p>
+          <p className={utilStyles.adjustText}>
             Formando em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React e Node.js principalmente) atualmente trabalhando com front-end na JMV Technology.
           </p>
         </section>
