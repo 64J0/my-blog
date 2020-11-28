@@ -40,8 +40,9 @@ export default function Post({ postData }) {
         <h1 className={utilStyles.headingX1}>
           {postData.title}
         </h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+        <div className={`${utilStyles.textRight} + ${utilStyles.lightText}`}>
+          <Date dateString={postData.date} /><br/>
+          {postData.tags && <small>Tags: [{postData.tags.join(", ")}]</small>}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

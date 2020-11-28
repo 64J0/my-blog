@@ -78,3 +78,8 @@
     text-indent: 4rem;
     text-align: justify;
 }
+
+.textRight {
+    text-align: right;
+    margin: 0.1rem initial;
+}
