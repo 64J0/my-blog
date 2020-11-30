@@ -3,11 +3,14 @@ import Head from "next/head";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 import Layout from "../../components/layout";
+import GithubContribGraph from "../../components/GithubContribGraph";
+
 import Age from "../../utils/Age";
+import { getGithubData } from "../../lib/github";
 
 import contatoStyles from "./styles.module.scss";
 
-export default function Contato() {
+export default function Contato({ contribChartHTML }) {
   const pEl = useRef(null);
 
   useEffect(() => {
@@ -40,32 +43,39 @@ export default function Contato() {
           <h1>Entre em contato:</h1>
           <ul>
             <li>
-              <h3>
-                <a href="https://www.linkedin.com/in/vinicius-gajo/">
-                  <FaLinkedin size="2rem" />
+              <a href="https://www.linkedin.com/in/vinicius-gajo/">
+                <FaLinkedin size="2rem" />
                 LinkedIn
-                </a>
-              </h3>
+              </a>
             </li>
             <li>
-              <h3>
-                <a href="https://github.com/64J0">
-                  <FaGithub size="2rem" />
+              <a href="https://github.com/64J0">
+                <FaGithub size="2rem" />
                 GitHub
-                </a>
-              </h3>
+              </a>
             </li>
             <li>
-              <h3>
-                <a href="https://twitter.com/viniciusgajo">
-                  <FaTwitter size="2rem" />
+              <a href="https://twitter.com/viniciusgajo">
+                <FaTwitter size="2rem" />
                 Twitter
-                </a>
-              </h3>
+              </a>
             </li>
           </ul>
         </section>
       </div>
+
+      <GithubContribGraph contribChartHTML={contribChartHTML} />
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const contribChartHTML = await getGithubData();
+  
+  return {
+    props: {
+      contribChartHTML
+    },
+    revalidate: 1 * 60 * 60 // 1 hora
+  };
 }

@@ -1,0 +1,58 @@
+import React, { useCallback, useEffect, useMemo } from "react";
+
+export default function GithubContribGraph({ contribChartHTML }) {
+  const svgInitialWidth = 828;
+  const layoutMaxScale = 672; // 48rem = 48 * 14
+  const svgMaxScale = 644; // 46rem = 46 * 14
+  const layoutMinScale = 476; // 34rem = 34 * 14
+  const svgMinScale = 476; // 34rem = 34 * 14
+
+  const maxScale = useMemo(() => {
+    return svgMaxScale / svgInitialWidth;
+  }, []);
+  const minScale = useMemo(() => {
+    return svgMinScale / svgInitialWidth;
+  }, []);
+
+  const handleSetSvgScale = useCallback(({ scale }) => {
+    const svgElement = window.document.querySelector(".js-calendar-graph-svg");
+    svgElement.currentScale = scale;
+    svgElement.width.baseVal.value = svgInitialWidth * scale;
+  }, []);
+
+  const handleSelectCorrectScale = useCallback(() => {
+    const screenWidth = Math.min(window.innerWidth, window.screen.width);
+    if (screenWidth >= layoutMaxScale) {
+      return handleSetSvgScale({ scale: maxScale });
+    } else if (screenWidth <= layoutMinScale) {
+      return handleSetSvgScale({ scale: minScale });
+    } else {
+      const scale = (screenWidth - 36) / svgInitialWidth;
+      return handleSetSvgScale({ scale });
+    }
+  }, []);
+
+  const handleAddResizeEvent = useCallback(() => {
+    return window.addEventListener("resize", handleSelectCorrectScale);
+  });
+
+  useEffect(() => {
+    handleSelectCorrectScale();
+    handleAddResizeEvent();
+
+    return function cleanup() {
+      return window.removeEventListener("resize", handleSelectCorrectScale);
+    };
+  }, []);
+
+  return (
+    <>
+      <h2 style={{ textAlign: "center" }}>Minhas contribuições no Github:</h2>
+      <div
+        style={{ marginTop: "3rem" }}
+        id="contrib-chart" 
+        dangerouslySetInnerHTML={{ __html: contribChartHTML }} 
+      />
+    </>
+  );
+}

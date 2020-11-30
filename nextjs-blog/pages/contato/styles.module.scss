@@ -23,12 +23,9 @@
 }
 
 .networks {
-  h3 {
-    margin: 0.5rem;
-  }
-
   ul {
     list-style: none;
+    margin-bottom: 3rem;
   }
 
   a {
@@ -36,6 +33,9 @@
     flex-direction: row;
     align-items: center;
     padding-top: 0.6rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 
     svg {
       margin-right: 1rem;

@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo } from "react";
 
 export default function GoogleAnalytics() {
   const analyticsString = useMemo(() => {
@@ -17,5 +17,5 @@ export default function GoogleAnalytics() {
       }}>
       </script>
     </>
-  )
+  );
 }
