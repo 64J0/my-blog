@@ -1,7 +1,7 @@
 ---
 title: "Regex - Expressões regulares"
 date: "2020-10-15"
-show: true
+show: false
 tags: ["javascript"]
 ---
 

@@ -2,8 +2,8 @@ import React, { useCallback, useEffect, useMemo } from "react";
 
 export default function GithubContribGraph({ contribChartHTML }) {
   const svgInitialWidth = 828;
-  const layoutMaxScale = 672; // 48rem = 48 * 14
-  const svgMaxScale = 644; // 46rem = 46 * 14
+  const layoutMaxScale = 756; // 54rem = 54 * 14
+  const svgMaxScale = 728; // 52rem = 52 * 14
   const layoutMinScale = 476; // 34rem = 34 * 14
   const svgMinScale = 476; // 34rem = 34 * 14
 
@@ -50,8 +50,8 @@ export default function GithubContribGraph({ contribChartHTML }) {
       <h2 style={{ textAlign: "center" }}>Minhas contribuições no Github:</h2>
       <div
         style={{ marginTop: "3rem" }}
-        id="contrib-chart" 
-        dangerouslySetInnerHTML={{ __html: contribChartHTML }} 
+        id="contrib-chart"
+        dangerouslySetInnerHTML={{ __html: contribChartHTML }}
       />
     </>
   );

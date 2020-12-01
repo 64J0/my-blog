@@ -1,7 +1,7 @@
 .container {
   height: 100%;
   width: 100%;
-  max-width: 48rem;
+  max-width: 54rem;
   min-width: 38rem;
 
   margin: 1rem auto 0;
@@ -59,7 +59,7 @@
 .footerDesign {
   height: 100%;
   width: 100%;
-  max-width: 48rem;
+  max-width: 54rem;
   min-width: 38rem;
 
   margin: 0 auto 2rem;

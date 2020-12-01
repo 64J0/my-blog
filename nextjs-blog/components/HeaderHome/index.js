@@ -1,9 +1,10 @@
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 import styles from "../layout.module.css";
 import utilStyles from "../../styles/utils.module.css";
 
-import headerStyles from './styles.module.scss';
+import headerStyles from "./styles.module.scss";
 
 export default function Header() {
   return (
