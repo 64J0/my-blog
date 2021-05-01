@@ -7,7 +7,7 @@ import ColorSection from "./ColorSection";
 
 import styles from "./styles.module.scss";
 
-export default function Cores() {
+const Cores: React.FC = () => {
   const [childArray, setChildArray] = useState([0]);
 
   const handleAddNewElement = useCallback(() => {
@@ -16,7 +16,7 @@ export default function Cores() {
   }, [setChildArray, childArray]);
 
   return (
-    <Layout>
+    <Layout home="">
       <Head>
         <title>Paleta de cores</title>
       </Head>
@@ -42,3 +42,5 @@ export default function Cores() {
     </Layout>
   );
 }
+
+export default Cores;

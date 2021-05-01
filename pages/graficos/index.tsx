@@ -1,13 +1,14 @@
 import React, { useState, useRef, useCallback } from "react";
 import Head from "next/head";
-import Chartjs from "chart.js";
+import Chartjs, { ChartConfiguration } from "chart.js";
 
 import Layout from "../../components/layout";
 import styles from "./styles.module.scss";
 
-export default function GraficosPage() {
-  const canvasRef = useRef(null);
-  const [chartInstance, setChartInstance] = useState(null);
+const GraficosPage: React.FC = () => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  const [chartInstance, setChartInstance] = useState<Chart | null>(null);
 
   const [graphTitle, setGraphTitle] = useState("");
   const [verticalName, setVerticalName] = useState("");
@@ -18,13 +19,13 @@ export default function GraficosPage() {
   const handleGraph = useCallback(() => {
     try {
       const yDataWithSpaces = verticalData.split(",");
-      const yData = [];
+      const yData: string[] = [];
       yDataWithSpaces.forEach((y) => {
         return yData.push(y.trim());
       });
 
       const xDataWithSpaces = horizontalData.split(",");
-      const xData = [];
+      const xData: string[] = [];
       xDataWithSpaces.forEach((x) => {
         return xData.push(x.trim());
       });
@@ -66,9 +67,11 @@ export default function GraficosPage() {
 
       if (canvasRef.current) {
         chartInstance && chartInstance.destroy();
+
+        const context2d = canvasRef.current.getContext("2d");
         const newChartInstance = new Chartjs(
-          canvasRef.current.getContext("2d"),
-          chartConfig
+          (context2d as CanvasRenderingContext2D), 
+          (chartConfig as ChartConfiguration)
         );
         setChartInstance(newChartInstance);
       }
@@ -79,7 +82,7 @@ export default function GraficosPage() {
   }, [graphTitle, verticalName, verticalData, horizontalName, horizontalData, canvasRef]);
 
   return (
-    <Layout>
+    <Layout home="">
       <Head>
         <title>Gráficos</title>
       </Head>
@@ -112,7 +115,6 @@ export default function GraficosPage() {
             <label htmlFor="vertical-data">Dados de y:</label>
             <textarea
               id="vertical-data"
-              type="text"
               value={verticalData}
               onChange={(e) => setVerticalData(e.target.value)}
             />
@@ -133,19 +135,16 @@ export default function GraficosPage() {
             <label htmlFor="horizontal-data">Dados de x:</label>
             <textarea
               id="horizontal-data"
-              type="text"
               value={horizontalData}
               onChange={(e) => setHorizontalData(e.target.value)}
             />
           </div>
           <span>Exemplo: 0, 1, 3, 4</span>
 
-          <center>
-            <button
-              onClick={handleGraph}
-              type="button"
-            >Gerar!</button>
-          </center>
+          <button
+            onClick={handleGraph}
+            type="button"
+          >Gerar!</button>
         </form>
 
         <canvas ref={canvasRef}></canvas>
@@ -153,3 +152,5 @@ export default function GraficosPage() {
     </Layout>
   );
 }
+
+export default GraficosPage;

@@ -8,6 +8,12 @@ import Date from "../components/date";
 
 import utilStyles from "../styles/utils.module.css";
 
+interface AllPostsData {
+  id: string;
+  date: string;
+  title: string;
+}
+
 // This is a Next.js function that runs to get data from external sources
 // like API's, DB's or even the file-system like in this case.
 // In production, `getStaticProps` runs at build time
@@ -20,7 +26,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({ allPostsData }) {
+const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => {
   return (
     <Layout home>
       <Head>
@@ -30,14 +36,14 @@ export default function Home({ allPostsData }) {
       <div className={utilStyles.mainContent}>
         <section className={utilStyles.headingMd}>
           <p className={utilStyles.adjustText}>
-            Formando em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React, Vue, Next.js e Node.js, principalmente) atualmente trabalhando com front-end na JMV Technology.
+            Formado em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React, Vue, Next.js e Node.js, principalmente) atualmente trabalhando na <a href="https://jmvtechnology.com/">JMV Technology</a>.
           </p>
         </section>
         <section className={utilStyles.headingMd}>
           <h2 className={utilStyles.headingLg}>Posts</h2>
           <ul className={utilStyles.list}>
             {
-              allPostsData.map(({ id, date, title }) => (
+              allPostsData.map(({ id, date, title }: AllPostsData) => (
                 <li className={utilStyles.listItem} key={id}>
                   <Link href="/posts/[id]" as={`/posts/${id}`}>
                     <a>{title}</a>
@@ -55,3 +61,5 @@ export default function Home({ allPostsData }) {
     </Layout>
   );
 }
+
+export default Home;

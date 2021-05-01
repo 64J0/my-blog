@@ -1,5 +1,6 @@
 // Pages that begin with '[' and end with ']' are dynamic pages in Next.js
 import React, { useEffect } from "react";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import hljs from "highlight.js";
 
@@ -9,21 +10,26 @@ import Date from "../../components/date";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
 import utilStyles from "../../styles/utils.module.css";
-
 import postStyles from "./styles.module.scss";
 
-export default function Post({ postData }) {
+interface PostData {
+  title: string;
+  date: string;
+  tags?: string[];
+  contentHtml: string;
+}
+
+const Post: React.FC<{ postData: PostData }> = ({ postData }) => {
   useEffect(() => {
     function highlightPreElement() {
-      let preEl = document.querySelectorAll("pre");
+      const preEl = document.querySelectorAll("pre");
 
       return (
         preEl && preEl.forEach((element) => {
-          element.childNodes.forEach((child) => {
+          for (let child of element.children) {
             child.className = child.className.replace(/language-/, "");
-
-            return hljs.highlightBlock(child);
-          });
+            return hljs.highlightBlock((child as HTMLElement));
+          }
         })
       );
     }
@@ -32,7 +38,7 @@ export default function Post({ postData }) {
   }, []);
 
   return (
-    <Layout>
+    <Layout home="">
       <Head>
         <title>{postData.title}</title>
       </Head>
@@ -51,7 +57,9 @@ export default function Post({ postData }) {
   );
 }
 
-export async function getStaticPaths() {
+export default Post;
+
+export const getStaticPaths: GetStaticPaths = async () => {
   // Return a list of possible value for id
   const paths = getAllPostIds();
   return {
@@ -60,9 +68,10 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async (context) => {
   // Fetch necessary data for the blog post using params.id
-  const postData = await getPostData(params.id);
+  const { params } = context;
+  const postData = await getPostData(params?.id);
   return {
     props: {
       postData,

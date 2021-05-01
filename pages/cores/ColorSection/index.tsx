@@ -1,18 +1,17 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
-import { invert } from 'polished';
+import { useState, useEffect, useRef, useCallback } from "react";
+import { invert } from "polished";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
-export default function ColorSection() {
-  const liElement = useRef(null);
-  const pElement = useRef(null);
-  const inputElement = useRef(null);
+const ColorSection: React.FC = () => {
+  const liElement = useRef<HTMLLIElement>(null);
+  const pElement = useRef<HTMLParagraphElement>(null);
+  const inputElement = useRef<HTMLInputElement>(null);
+  
   const [pickedColor, setPickedColor] = useState("#000000");
 
   const handleBtnClick = useCallback(() => {
-    if (inputElement.current) {
-      inputElement.current.click();
-    }
+    inputElement.current && inputElement.current.click();
   }, [inputElement.current]);
 
   useEffect(() => {
@@ -41,3 +40,5 @@ export default function ColorSection() {
     </li>
   );
 }
+
+export default ColorSection;
