@@ -9,23 +9,23 @@
     "start": "next start"
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.4",
-    "cheerio": "^1.0.0-rc.3",
-    "date-fns": "^2.16.1",
-    "gray-matter": "^4.0.2",
-    "highlight.js": "^10.4.0",
+    "cheerio": "^1.0.0-rc.6",
+    "date-fns": "^2.21.1",
+    "gray-matter": "^4.0.3",
+    "highlight.js": "^10.7.2",
     "next": "^9.5.5",
-    "polished": "^3.6.7",
+    "polished": "^3.7.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-icons": "^3.11.0",
     "remark": "^12.0.1",
     "remark-html": "^11.0.2",
-    "sass": "^1.29.0"
+    "sass": "^1.32.12"
   },
   "devDependencies": {
-    "eslint": "^7.14.0",
-    "eslint-plugin-react": "^7.21.5"
+    "eslint": "^7.25.0",
+    "eslint-plugin-react": "^7.23.2"
   }
 }
