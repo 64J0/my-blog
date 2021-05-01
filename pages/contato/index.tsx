@@ -10,22 +10,26 @@ import { getGithubData } from "../../lib/github";
 
 import contatoStyles from "./styles.module.scss";
 
-export default function Contato({ contribChartHTML }) {
-  const pEl = useRef(null);
+interface ContribChartHTML {
+  contribChartHTML: string;
+}
+
+const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
+  const pEl = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
-    const defineMyAge = () => {
+    const defineMyAge = (): void => {
       const myAge = new Age();
 
-      const myAgeMessage = `Saudações leitor, meu nome é Vinícius Gajo Marques Oliveira e tenho ${myAge.calculate()} anos.`;
-      return pEl.current ? pEl.current.innerHTML = myAgeMessage : null;
+      const myAgeMessage = `Saudações leitor, meu nome é Vinícius Gajo Marques Oliveira e tenho ${myAge.getMyAge()} anos.`;
+      pEl.current ? pEl.current.innerHTML = myAgeMessage : null;
     };
 
     defineMyAge();
   }, []);
 
   return (
-    <Layout>
+    <Layout home="">
       <Head>
         <title>Contato</title>
       </Head>
@@ -69,6 +73,8 @@ export default function Contato({ contribChartHTML }) {
   );
 }
 
+export default Contato;
+
 export async function getStaticProps() {
   const contribChartHTML = await getGithubData();
   
@@ -79,3 +85,5 @@ export async function getStaticProps() {
     revalidate: 1 * 60 * 60 // 1 hora
   };
 }
+
+
