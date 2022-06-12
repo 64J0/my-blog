@@ -39,8 +39,6 @@ const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
         <section>
           <h1>Sobre mim:</h1>
           <p ref={pEl}>Saudações leitor, meu nome é Vinícius Gajo Marques Oliveira e tenho X anos.</p>
-          <p>Estou terminando o curso de Engenharia Mecatrônica no <a href="http://www.divinopolis.cefetmg.br/">CEFET-MG</a> e trabalhando como dev front-end na <a href="https://jmvtechnology.com/">JMV Technology</a>.</p>
-          <p>Antes disso já fui analista de redes de teleprocessamento no NOC (<i>Network Operations Center</i>) da <a href="https://www.soumaster.com.br/">Master Internet</a> e estagiário de engenharia na <a href="http://fullengenharia.com.br/">Full Engenharia</a>.</p>
         </section>
 
         <section className={contatoStyles.networks}>
@@ -56,12 +54,6 @@ const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
               <a href="https://github.com/64J0">
                 <FaGithub size="2rem" />
                 GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/viniciusgajo">
-                <FaTwitter size="2rem" />
-                Twitter
               </a>
             </li>
           </ul>

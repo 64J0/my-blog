@@ -36,7 +36,7 @@ const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => 
       <div className={utilStyles.mainContent}>
         <section className={utilStyles.headingMd}>
           <p className={utilStyles.adjustText}>
-            Formado em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React, Vue, Next.js e Node.js, principalmente) atualmente trabalhando na <a href="https://jmvtechnology.com/">JMV Technology</a>.
+            Formado em engenharia mecatrônica no CEFET-MG, desenvolvedor WEB focado na stack JS (React, Vue, Next.js e Node.js, principalmente).
           </p>
         </section>
         <section className={utilStyles.headingMd}>
