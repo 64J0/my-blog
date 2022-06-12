@@ -151,6 +151,6 @@ const GraficosPage: React.FC = () => {
       </div>
     </Layout>
   );
-}
+};
 
 export default GraficosPage;

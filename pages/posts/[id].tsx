@@ -55,7 +55,7 @@ const Post: React.FC<{ postData: PostData }> = ({ postData }) => {
       </article>
     </Layout>
   );
-}
+};
 
 export default Post;
 
@@ -66,7 +66,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths,
     fallback: false,
   };
-}
+};
 
 export const getStaticProps: GetStaticProps = async (context) => {
   // Fetch necessary data for the blog post using params.id
@@ -77,4 +77,4 @@ export const getStaticProps: GetStaticProps = async (context) => {
       postData,
     },
   };
-}
+};

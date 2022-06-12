@@ -6,7 +6,9 @@
 	},
 	"extends": [
 		"eslint:recommended",
-		"plugin:react/recommended"
+		"plugin:react/recommended",
+		"plugin:@next/next/recommended",
+		"next"
 	],
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -32,6 +34,10 @@
 			"error",
 			"always"
 		],
-		"react/prop-types": 0
+		"react/prop-types": 0,
+		"@next/next/no-img-element": "off",
+		"@next/next/next-script-for-ga": "off",
+		"react-hooks/exhaustive-deps": "off",
+		"no-undef": "off"
 	}
 }

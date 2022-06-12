@@ -60,6 +60,6 @@ const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => 
       </div>
     </Layout>
   );
-}
+};
 
 export default Home;

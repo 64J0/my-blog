@@ -39,6 +39,6 @@ const ColorSection: React.FC = () => {
       </button>
     </li>
   );
-}
+};
 
 export default ColorSection;

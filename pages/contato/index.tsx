@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Head from "next/head";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Layout from "../../components/layout";
 import GithubContribGraph from "../../components/GithubContribGraph";
@@ -63,7 +63,7 @@ const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
       <GithubContribGraph contribChartHTML={contribChartHTML} />
     </Layout>
   );
-}
+};
 
 export default Contato;
 

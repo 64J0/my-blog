@@ -41,6 +41,6 @@ const Cores: React.FC = () => {
       </div>
     </Layout>
   );
-}
+};
 
 export default Cores;
