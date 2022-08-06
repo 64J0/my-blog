@@ -18,6 +18,6 @@ const GoogleAnalytics: React.FC = () => {
       </script>
     </>
   );
-}
+};
 
 export default GoogleAnalytics;

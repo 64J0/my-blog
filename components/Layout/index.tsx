@@ -33,6 +33,6 @@ const Layout: React.FC<LayoutProps> = ({ children, home }) => {
       </div>
     </>
   );
-}
+};
 
 export default Layout;

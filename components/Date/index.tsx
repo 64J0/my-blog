@@ -14,6 +14,6 @@ const Date: React.FC<DateProps> = ({ dateString }) => {
       Postado em {date ? format(date, "d ' de ' LLLL ' de ' yyyy", { locale: ptBR }) : "Não definido"}
     </time>
   );
-}
+};
 
 export default Date;

@@ -18,10 +18,10 @@ const Header: React.FC = () => {
         />
       </Link>
       <h1 className={utilStyles.heading2X}>
-        Vinícius Gajo's Blog
+        Vinícius Gajo&apos;s Blog
       </h1>
     </div >
   );
-}
+};
 
 export default Header;

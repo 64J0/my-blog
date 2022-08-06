@@ -70,6 +70,6 @@ const GithubContribGraph: React.FC<ContribChartHTML> = ({ contribChartHTML }) =>
       />
     </>
   );
-}
+};
 
 export default GithubContribGraph;
