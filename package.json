@@ -1,8 +1,13 @@
 {
   "name": "personal-blog-next",
   "version": "1.0.2",
-  "description": "Esse blog está sendo desenvolvido a partir do layout do tutorial encontrado no site do projeto Next.js.",
+  "description": "My personal blog built with TypeScript and Next.js.",
   "private": true,
+  "author": {
+    "name": "Vinícius Gajo",
+    "email": "vinigaio97@gmail.com",
+    "url": "https://gaio.dev"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,7 +16,6 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "chart.js": "^2.9.4",
     "cheerio": "^1.0.0-rc.6",
     "date-fns": "^2.21.1",
     "gray-matter": "^4.0.3",
@@ -27,7 +31,6 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.6",
-    "@types/chart.js": "^2.9.32",
     "@types/node": "^15.0.1",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
