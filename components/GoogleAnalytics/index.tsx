@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 
-export default function GoogleAnalytics() {
+const GoogleAnalytics: React.FC = () => {
   const analyticsString = useMemo(() => {
     return ("window.dataLayer = window.dataLayer || []; " +
       "function gtag(){dataLayer.push(arguments);} " +
@@ -18,4 +18,6 @@ export default function GoogleAnalytics() {
       </script>
     </>
   );
-}
+};
+
+export default GoogleAnalytics;

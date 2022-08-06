@@ -2,9 +2,9 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/Layout";
 import { getSortedPostData } from "../lib/posts";
-import Date from "../components/date";
+import Date from "../components/Date";
 
 import utilStyles from "../styles/utils.module.css";
 

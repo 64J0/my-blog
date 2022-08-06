@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FiHome, FiChevronLeft } from "react-icons/fi";
 
-import styles from "../layout.module.css";
+import styles from "../Layout/styles.module.scss";
 import utilStyles from "../../styles/utils.module.css";
 
 import headerStyles from "./styles.module.scss";
