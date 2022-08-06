@@ -3,7 +3,7 @@ import cheerio from "cheerio";
 
 const url = "https://github.com/64J0";
 
-export async function getGithubData() {
+export async function getGithubData(): Promise<string | null> {
   return axios
     .get(url)
     .then((response) => {
@@ -14,6 +14,6 @@ export async function getGithubData() {
     })
     .catch((err) => {
       console.error(err);
-      return undefined;
+      return null;
     });
 }

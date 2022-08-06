@@ -1,6 +1,19 @@
 import React, { useCallback, useEffect, useMemo } from "react";
 
-export default function GithubContribGraph({ contribChartHTML }) {
+interface ContribChartHTML {
+  contribChartHTML: string;
+}
+
+interface CustomSVG extends SVGElement {
+  currentScale: number;
+  width: {
+    baseVal: {
+      value: number;
+    }
+  }
+}
+
+const GithubContribGraph: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
   const svgInitialWidth = 828;
   const layoutMaxScale = 756; // 54rem = 54 * 14
   const svgMaxScale = 728; // 52rem = 52 * 14
@@ -16,16 +29,18 @@ export default function GithubContribGraph({ contribChartHTML }) {
 
   const handleSetSvgScale = useCallback(({ scale }) => {
     const svgElement = window.document.querySelector(".js-calendar-graph-svg");
-    svgElement.currentScale = scale;
-    svgElement.width.baseVal.value = svgInitialWidth * scale;
+    (svgElement as CustomSVG).currentScale = scale;
+    (svgElement as CustomSVG).width.baseVal.value = svgInitialWidth * scale;
   }, []);
 
   const handleSelectCorrectScale = useCallback(() => {
     const screenWidth = Math.min(window.innerWidth, window.screen.width);
     if (screenWidth >= layoutMaxScale) {
       return handleSetSvgScale({ scale: maxScale });
+
     } else if (screenWidth <= layoutMinScale) {
       return handleSetSvgScale({ scale: minScale });
+
     } else {
       const scale = (screenWidth - 36) / svgInitialWidth;
       return handleSetSvgScale({ scale });
@@ -34,7 +49,7 @@ export default function GithubContribGraph({ contribChartHTML }) {
 
   const handleAddResizeEvent = useCallback(() => {
     return window.addEventListener("resize", handleSelectCorrectScale);
-  });
+  }, []);
 
   useEffect(() => {
     handleSelectCorrectScale();
@@ -56,3 +71,5 @@ export default function GithubContribGraph({ contribChartHTML }) {
     </>
   );
 }
+
+export default GithubContribGraph;

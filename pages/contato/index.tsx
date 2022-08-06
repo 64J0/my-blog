@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Head from "next/head";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import GithubContribGraph from "../../components/GithubContribGraph";
 
 import Age from "../../utils/Age";

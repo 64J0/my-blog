@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-import styles from "../layout.module.css";
+import styles from "../Layout/styles.module.scss";
 import utilStyles from "../../styles/utils.module.css";
 
 import headerStyles from "./styles.module.scss";
 
-export default function Header() {
+const Header: React.FC = () => {
   return (
     <div className={headerStyles.backgroundHeader}>
       <Link href="/contato">
@@ -17,7 +17,11 @@ export default function Header() {
           alt="Vinícius Gajo"
         />
       </Link>
-      <h1 className={utilStyles.heading2X}>Vinícius Gajo</h1>
+      <h1 className={utilStyles.heading2X}>
+        Vinícius Gajo's Blog
+      </h1>
     </div >
   );
 }
+
+export default Header;

@@ -1,12 +1,16 @@
 import React from "react";
-import styles from "./layout.module.css";
+import styles from "./styles.module.scss";
 
-import HeaderHome from "./HeaderHome";
-import HeaderPost from "./HeaderPost";
+import HeaderHome from "../HeaderHome";
+import HeaderPost from "../HeaderPost";
 
 export const siteTitle = "64j0 Blog";
 
-export default function Layout({ children, home }) {
+interface LayoutProps {
+    home?: any;
+  }
+
+const Layout: React.FC<LayoutProps> = ({ children, home }) => {
   return (
     <>
       <div className={styles.container}>
@@ -30,3 +34,5 @@ export default function Layout({ children, home }) {
     </>
   );
 }
+
+export default Layout;
