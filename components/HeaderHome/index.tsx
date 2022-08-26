@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 
 import styles from "../Layout/styles.module.scss";
-import utilStyles from "../../styles/utils.module.css";
 
 import headerStyles from "./styles.module.scss";
 
@@ -12,12 +11,11 @@ const Header: React.FC = () => {
       <Link href="/contato">
         <img
           src="/images/profile.jpg"
-          className={`${styles.headerHomeImage} ${utilStyles.borderCircle}
-              ${utilStyles.shadow}`}
+          className={styles.headerHomeImage}
           alt="Vinícius Gajo"
         />
       </Link>
-      <h1 className={utilStyles.heading2X}>
+      <h1>
         Vinícius Gajo&apos;s Blog
       </h1>
     </div >

@@ -52,7 +52,13 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(filename: string) {
+export async function getPostData(filename?: string) {
+  if (!filename) {
+    return {
+      id: "error"
+    }
+  }
+
   const fullPath = path.join(postsDirectory, `${filename}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
 

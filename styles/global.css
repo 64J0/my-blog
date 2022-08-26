@@ -1,4 +1,7 @@
 :root, [data-color-mode=light] {
+    --color-template-background: #e5e5e5;
+    --color-anchor: #0070f3;
+
     --color-calendar-graph-day-bg: #ebedf0;
     --color-calendar-graph-day-border: rgba(27,31,35,0.06);
     --color-calendar-graph-day-L1-bg: #9be9a8;
@@ -19,7 +22,7 @@ body {
     line-height: 1.6;
     font-size: 14px;
 
-    background-color: #e5e5e5;
+    background-color: var(--color-template-background);
 }
 
 * {
@@ -27,7 +30,7 @@ body {
 }
 
 a {
-    color: #0070f3;
+    color: var(--color-anchor);
     text-decoration: none;
 }
 
