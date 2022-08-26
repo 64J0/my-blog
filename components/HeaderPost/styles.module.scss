@@ -18,6 +18,34 @@
     margin: 0 auto;
   }
 
+  .contactLink {
+    transition: transform 4s;
+  }
+  
+  .contactLink:hover {
+    transition: transform 4s;
+    transform: rotateZ(360deg);
+  }
+
+  .backToHome {
+    margin: 0;
+    height: 100%;
+  
+    a {
+      color: inherit;
+    }
+  
+    .moveToLeft {
+      transition: transform 1s;
+    }
+  
+    &:hover {
+      .moveToLeft {
+        transform: translate(-1.2rem, 0);
+      }
+    }
+  }
+
   @media (max-width: 34rem) {
     padding: 1rem 2rem;
     border-radius: 0;
@@ -25,34 +53,6 @@
     img {
       width: 8rem;
       height: 8rem;
-    }
-  }
-}
-
-.contactLink {
-  transition: transform 4s;
-}
-
-.contactLink:hover {
-  transition: transform 4s;
-  transform: rotateZ(360deg);
-}
-
-.backToHome {
-  margin: 0;
-  height: 100%;
-
-  a {
-    color: inherit;
-  }
-
-  .moveToLeft {
-    transition: transform 1s;
-  }
-
-  &:hover {
-    .moveToLeft {
-      transform: translate(-1.2rem, 0);
     }
   }
 }

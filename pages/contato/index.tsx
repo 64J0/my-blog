@@ -20,9 +20,12 @@ const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
   useEffect(() => {
     const defineMyAge = (): void => {
       const myAge = new Age();
+      const ageMark = "$X$";
 
-      const myAgeMessage = `Saudações leitor, meu nome é Vinícius Gajo Marques Oliveira e tenho ${myAge.getMyAge()} anos.`;
-      pEl.current ? pEl.current.innerHTML = myAgeMessage : null;
+      if (!pEl.current) return;
+      
+      const currentText = pEl.current.innerHTML;
+      pEl.current.innerHTML = currentText.replace(ageMark, `${myAge.getMyAge()}`);
     };
 
     defineMyAge();
@@ -38,7 +41,16 @@ const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
 
         <section>
           <h1>Sobre mim:</h1>
-          <p ref={pEl}>Saudações leitor, meu nome é Vinícius Gajo Marques Oliveira e tenho X anos.</p>
+          <p ref={pEl}>Hey people, hope you're ok. My name is Vinícius Gajo and I'm the owner of this blog. I'm currently $X$ years old, living in Brazil, and I'm graduated at Mechatronics Engineering by CEFET-MG.</p>
+          <p>
+            I have being presented to several topics along my graduation, covering other engineering fields like mechanics, electric, control systems, electronic and computation. Nowadays I'm working as a software/infrastructure engineer, dealing with many tools and technologies, ranging from the JS/TS stack (React.JS, Vue, Next.js, Node.js) to F# (Saturn, Fable/Feliz), and DevOps stuff (Docker, Kubernetes, Terraform, Azure, Gitlab CI/Github Actions).
+          </p>
+          <p>
+            In my free time I like to read books, watch movies, learn new things, relax with my family and sometimes play some sport.
+          </p>
+          <p>
+            At this moment I'm striving to learn technologies like Functional Programming, Azure, Nix, Ansible and Security. But, in the future, my goal is to dive deeper in Control Theory.
+          </p>
         </section>
 
         <section className={contatoStyles.networks}>
@@ -60,7 +72,7 @@ const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
         </section>
       </div>
 
-      <GithubContribGraph contribChartHTML={contribChartHTML} />
+      {/* <GithubContribGraph contribChartHTML={contribChartHTML} /> */}
     </Layout>
   );
 };

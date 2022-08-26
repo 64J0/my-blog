@@ -37,7 +37,6 @@ const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => 
         <section>
           <p className={homeStyles.paragraphHeading}>
             Mechatronics engineer graduated by CEFET-MG, turned software engineer with infrastructure (cloud) and DevOps skills. Currently working in Datarisk with functional programming (F#).
-            {/* I have being presented to several topics along my graduation, covering other engineering fields like mechanics, electric, control systems, electronic and computation. Nowadays I'm working as a software/infrastructure engineer, dealing with many tools and technologies, ranging from the JS/TS stack (React.JS, Vue, Next.js, Node.js) to F# (Saturn, Fable/Feliz), and DevOps stuff (Docker, Kubernetes, Terraform, Azure, Gitlab CI/Github Actions). */}
           </p>
         </section>
         <section>
