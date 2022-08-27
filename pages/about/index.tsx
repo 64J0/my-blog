@@ -3,18 +3,13 @@ import Head from "next/head";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Layout from "../../components/Layout";
-import GithubContribGraph from "../../components/GithubContribGraph";
 
 import Age from "../../utils/Age";
 import { getGithubData } from "../../lib/github";
 
 import contatoStyles from "./styles.module.scss";
 
-interface ContribChartHTML {
-  contribChartHTML: string;
-}
-
-const Contato: React.FC<ContribChartHTML> = ({ contribChartHTML }) => {
+const Contato: React.FC = () => {
   const pEl = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {

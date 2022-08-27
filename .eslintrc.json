@@ -38,6 +38,7 @@
 		"@next/next/no-img-element": "off",
 		"@next/next/next-script-for-ga": "off",
 		"react-hooks/exhaustive-deps": "off",
+		"react/no-unescaped-entities": 0,
 		"no-undef": "off"
 	}
 }
