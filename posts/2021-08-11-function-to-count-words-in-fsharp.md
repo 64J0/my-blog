@@ -5,7 +5,7 @@ show: true
 tags: ["F#", ".NET"]
 ---
 
-* Disclaimer: This post was originally posted in Medium. [Link](https://medium.com/datarisk-io/create-a-function-to-count-words-in-f-docs-using-f-dfecf19e3c38).
+> Disclaimer: This post was originally posted in Medium. [Link](https://medium.com/datarisk-io/create-a-function-to-count-words-in-f-docs-using-f-dfecf19e3c38).
 
 Hello folks, hope you’re good. In this post I’ll be sharing a program I wrote with F# to count how many words are in the F# docs in the Microsoft platform.
 

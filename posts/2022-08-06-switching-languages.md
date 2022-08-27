@@ -17,8 +17,8 @@ Also, my intetion for now is to now delete the old articles written in portugues
 
 During this time that this blog was abandoned, I have used different platforms to host my articles, where I can cite those two:
 
-* [https://dev.to/64j0](https://dev.to/64j0)
-* [https://medium.com/@64J0](https://medium.com/@64J0)
+* [Dev.to](https://dev.to/64j0)
+* [Medium](https://medium.com/@64J0)
 
 Why I decided to do this?
 

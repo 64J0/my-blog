@@ -1,40 +1,21 @@
 <p align="center">
-  <h1 align="center">Blog Next.js 🎉</h1>
+  <h1 align="center">Blog made with Next.js 🎉</h1>
 </p>
 
-Este projeto está sendo desenvolvido a partir da estrutura do blog feito no tutorial do próprio **Next.js**.
+I decided to create this project to store some articles I'm writing while learning new things. In the beginning I decided to use **Next.js** so I was able to study this tool, and now I'm happy with the result using Google Chrome Lighthouse report.
 
-Neste blog irei colocar informações referentes aos tópicos que estou estudando para poder ler posteriormente. Além disso serve também como uma maneira de compartilhar essas informações e poder ajudar outras pessoas.
+You can access this blog in the following URL: [https://gaio.dev](https://gaio.dev).
 
-Para acessar o site basta navegar até: https://gaio.dev.
-
-## Tabela de conteúdos:
-
-1. [Tecnologias](#tecnologias)
-2. [Demonstração](#demonstração)
-3. [TO-DO](#to-do)
-
-## Tecnologias
-
-- JavaScript
-- ReactJS
-- NodeJS
-- Next.js
-- Sass
-
-## Demonstração
+## Demonstration
 
 <p align="center">
-  <img src="./assets-readme/blog-demonstration.gif" alt="Gif de demonstração do resultado do tutorial" />
+  <img src="./assets-readme/blog-demo-08-2022.gif" alt="Demonstration gif of my blog" />
 </p>
-
 
 ## TO-DO:
 
-* Comentários nos posts;
-* Buscar um post pela palavra-chave;
-* Seguir o blog e ser avisado pelo e-mail quando sair algum post novo.
+A non-exhaustive list of features I would like to add to this project in the long run.
 
-
----
-Vinícius Gajo Marques Oliveira, 2020.
+* Comments in the posts;
+* Search posts by keywords;
+* Follow the blog and set an alarm when a new post is released;

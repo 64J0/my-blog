@@ -5,7 +5,7 @@ show: true
 tags: ["Python", "OpenCV", "Azure", "Azure Functions"]
 ---
 
-* Disclaimer: This post was originally posted in Dev.to. [Link](https://dev.to/64j0/microsoft-azure-trial-hackathon-on-dev-opencv-with-azure-functions-and-python-33lf).
+> Disclaimer: This post was originally posted in Dev.to. [Link](https://dev.to/64j0/microsoft-azure-trial-hackathon-on-dev-opencv-with-azure-functions-and-python-33lf).
 
 I wrote it to participate in a contest made by Microsoft in the Dev.to platform.
 

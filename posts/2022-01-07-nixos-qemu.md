@@ -5,7 +5,7 @@ show: true
 tags: ["NixOS", "QEMU"]
 ---
 
-* Disclaimer: This post was originally posted in Dev.to. [Link](https://dev.to/64j0/starting-with-nixos-using-qemu-2ngh).
+> Disclaimer: This post was originally posted in Dev.to. [Link](https://dev.to/64j0/starting-with-nixos-using-qemu-2ngh).
 
 In this post I'll basically present the result of a research I did to understand better several components of a virtualization tool called QEMU. My goal, in the end, is to start a NixOS virtualized machine to run some experiments with this interesting OS.
 

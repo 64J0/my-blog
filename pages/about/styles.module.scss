@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+  }
+
+  footer {
+    width: 100%;
+    margin-top: 4rem;
+    padding: 0;
+    height: 4rem;
+    background-color: #333;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 1.1rem;
+    text-indent: 4rem;
+    margin: 1rem 1.5rem;
+  }
+}
+
+.networks {
+  ul {
+    list-style: none;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0.6rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    svg {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -5,7 +5,7 @@ show: true
 tags: ["F#", ".NET", "nuget"]
 ---
 
-* Disclaimer: This post was originally posted in Medium. [Link](https://medium.com/datarisk-io/how-to-publish-a-nuget-package-using-dotnet-cli-d393de7b4a96).
+> Disclaimer: This post was originally posted in Medium. [Link](https://medium.com/datarisk-io/how-to-publish-a-nuget-package-using-dotnet-cli-d393de7b4a96).
 
 ## Introduction
 
