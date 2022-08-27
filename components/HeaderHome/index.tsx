@@ -8,7 +8,7 @@ import headerStyles from "./styles.module.scss";
 const Header: React.FC = () => {
   return (
     <div className={headerStyles.backgroundHeader}>
-      <Link href="/contato">
+      <Link href="/about">
         <img
           src="/images/profile.jpg"
           className={styles.headerHomeImage}
