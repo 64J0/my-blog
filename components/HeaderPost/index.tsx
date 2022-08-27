@@ -7,7 +7,7 @@ import headerStyles from "./styles.module.scss";
 export default function HeaderPost() {
   return (
     <div className={headerStyles.container}>
-      <Link href="/contato">
+      <Link href="/about">
         <a>
           <img
             src="/images/profile.jpg"
