@@ -56,7 +56,7 @@ export async function getPostData(filename?: string) {
   if (!filename) {
     return {
       id: "error"
-    }
+    };
   }
 
   const fullPath = path.join(postsDirectory, `${filename}.md`);
