@@ -107,8 +107,6 @@ const Contato: React.FC = () => {
           </ul>
         </section>
       </div>
-
-      {/* <GithubContribGraph contribChartHTML={contribChartHTML} /> */}
     </Layout>
   );
 };
