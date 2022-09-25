@@ -38,6 +38,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:visited {
+    color: green;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -64,11 +68,7 @@ th {
 }
 
 td {
-    padding-right: 0.3rem;
-}
-
-td + td {
-    text-align: center;
+    padding: 0.6rem;
 }
 
 u {
