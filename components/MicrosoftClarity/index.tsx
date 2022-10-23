@@ -1,13 +1,10 @@
 import React from "react";
-import Script from "next/script";
 
-// https://nextjs.org/docs/basic-features/script
 // https://clarity.microsoft.com/
 const MicrosoftClarity: React.FC = () => {
   return (
-    <Script
-      id="microsoft-clarity"
-      strategy="beforeInteractive"
+    <script
+      type="text/javascript"
       dangerouslySetInnerHTML={{
         __html: `
         (function(c,l,a,r,i,t,y){
@@ -17,7 +14,7 @@ const MicrosoftClarity: React.FC = () => {
         })(window, document, "clarity", "script", "e7nckw1nc5");
         `
       }}>
-    </Script>
+    </script>
   );
 };
 
