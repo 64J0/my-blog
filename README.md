@@ -6,6 +6,12 @@ I decided to create this project to store some articles I'm writing while learni
 
 You can access this blog in the following URL: [https://gaio.dev](https://gaio.dev).
 
+## External Tools
+
+* Google Analytics - [link](https://analytics.google.com/analytics/web/)
+* Microsoft Clarity - [link](https://clarity.microsoft.com/)
+* Vercel - [link](https://vercel.com/)
+
 ## Demonstration
 
 <p align="center">
