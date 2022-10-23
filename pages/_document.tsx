@@ -2,6 +2,7 @@ import React from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import MicrosoftClarity from "../components/MicrosoftClarity";
 
 class MyDocument extends Document {
   render() {
@@ -22,6 +23,7 @@ class MyDocument extends Document {
           <meta name="og:type" content="website" />
 
           <GoogleAnalytics />
+          <MicrosoftClarity />
 
         </Head>
         <body>
