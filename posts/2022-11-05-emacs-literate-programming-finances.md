@@ -48,19 +48,45 @@ To make it more clear, let's use some mathematical notation.
 
 Consider that in the first month, the money you have ($z_0$) is only the initial quantity you decided to invest ($x_0$).
 
-![Equation 1.](/post-images/emacs-literate-programming-finances/eq-1-blackbg.png "Equation 1")
+$$
+\begin{equation} \tag{1}
+z_0 = x_0
+\end{equation}
+$$
 
 Then, in the second month, the initial money will increase by a quantity given by $h$ and you're going to increment the value adding $y$. So, in the second month, your money will be:
 
-![Equation 2.](/post-images/emacs-literate-programming-finances/eq-2-blackbg.png "Equation 2")
+$$
+\begin{equation} \tag{2}
+\begin{aligned}
+z_1 & = z_0 \times h + y \\
+    & = x_0 \times h + y
+\end{aligned}
+\end{equation}
+$$
 
 In the third month you repeat the same operation. This time, your money will be:
 
-![Equation 3.](/post-images/emacs-literate-programming-finances/eq-3-blackbg.png "Equation 3")
+$$
+\begin{equation} \tag{3}
+\begin{aligned}
+z_2 & = z_1 \times h + y\\
+    & = (x_0 \times h + y) \times h + y\\
+    & = (x_0 \times h^2) + (y \times h) + y
+\end{aligned}
+\end{equation}
+$$
 
 And the following months you keep doing the same operation, until the month $n$. By the n-month your money will be:
 
-![Equation 4.](/post-images/emacs-literate-programming-finances/eq-4-blackbg.png "Equation 4")
+$$
+\begin{equation} \tag{4}
+\begin{aligned}
+z_n & = z_{n-1} \times h + y\\
+    & = (x_0 \times h^n) + (y \times h^{n - 1}) + (y \times h^{n - 2}) + ... + (y \times h) + y
+\end{aligned}
+\end{equation}
+$$
 
 The objective of this problem is, then, to discover how much money this person will have after $n$ months in this investment adding $y$ moneys each month.
 
@@ -162,6 +188,45 @@ let main () =
 main ()
 ```
 
+As one could see, this solution does not work very well. The result is very polluted, as mentioned before.
+
+
+<a id="orgca5be50"></a>
+
+### Fsharp in Shell
+
+After testing many combinations of headers for the Fsharp SRC block, I went to the package repository in GitHub and asked the author about this behavior.
+
+You can find more details in this link: [issue 1](https://github.com/juergenhoetzel/ob-fsharp/issues/1).
+
+In essence, he confirmed that it was happening in his setup as well, and there is not a good solution yet.
+
+Knowing this, I started thinking in other ways to run the script. My first idea was to use the *shell SRC block* with the right [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)), pointing to the Fsharp interpreter (*fsi*).
+
+The block:
+
+```shell
+# fsharp code directly:
+printfn "abc"
+```
+
+Unfortunately, this configuration did not work.
+
+One can read more about the shebang configuration in [this link](https://learn.microsoft.com/en-us/dotnet/fsharp/whats-new/fsharp-6#f-tooling-pin-the-sdk-version-of-your-f-scripts), from the .NET 6 release notes.
+
+Then, I thought about a combination of steps.
+
+First, one must tangle the Fsharp script. Then, he must use the Shell SRC block to run the *FSX* file and collect the output.
+
+The final block is:
+
+```shell
+set -euo pipefail
+
+dotnet fsi $FSHARP_FILE
+```
+
+And this configuration worked properly, although it is not very optimized (you need 2 SRC blocks in this scenario).
 
 <a id="org546f054"></a>
 
