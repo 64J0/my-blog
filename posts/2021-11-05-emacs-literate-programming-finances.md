@@ -48,37 +48,19 @@ To make it more clear, let's use some mathematical notation.
 
 Consider that in the first month, the money you have ($z_0$) is only the initial quantity you decided to invest ($x_0$).
 
-\begin{equation} \tag{1}
-z_0 = x_0
-\end{equation}
+![Equation 1.](/post-images/emacs-literate-programming-finances/eq-1-blackbg.png "Equation 1")
 
 Then, in the second month, the initial money will increase by a quantity given by $h$ and you're going to increment the value adding $y$. So, in the second month, your money will be:
 
-\begin{equation} \tag{2}
-\begin{aligned}
-z_1 & = z_0 \times h + y \\
-    & = x_0 \times h + y
-\end{aligned}
-\end{equation}
+![Equation 2.](/post-images/emacs-literate-programming-finances/eq-2-blackbg.png "Equation 2")
 
 In the third month you repeat the same operation. This time, your money will be:
 
-\begin{equation} \tag{3}
-\begin{aligned}
-z_2 & = z_1 \times h + y\\
-    & = (x_0 \times h + y) \times h + y\\
-    & = (x_0 \times h^2) + (y \times h) + y
-\end{aligned}
-\end{equation}
+![Equation 3.](/post-images/emacs-literate-programming-finances/eq-3-blackbg.png "Equation 3")
 
 And the following months you keep doing the same operation, until the month $n$. By the n-month your money will be:
 
-\begin{equation} \tag{4}
-\begin{aligned}
-z_n & = z_{n-1} \times h + y\\
-    & = (x_0 \times h^n) + (y \times h^{n - 1}) + (y \times h^{n - 2}) + ... + (y \times h) + y
-\end{aligned}
-\end{equation}
+![Equation 4.](/post-images/emacs-literate-programming-finances/eq-4-blackbg.png "Equation 4")
 
 The objective of this problem is, then, to discover how much money this person will have after $n$ months in this investment adding $y$ moneys each month.
 
