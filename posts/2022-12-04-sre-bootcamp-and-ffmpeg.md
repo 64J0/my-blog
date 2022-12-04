@@ -1,5 +1,5 @@
 ---
-title: "Solving Video Size Problem Using FFMPEG"
+title: "Solving Bootcamp Video Size Problem Using FFMPEG"
 date: "2022-12-04"
 show: true
 tags: ["FFMPEG", "Bootcamp", "SRE", "Video"]
