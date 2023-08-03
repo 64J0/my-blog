@@ -18,7 +18,7 @@ const Contato: React.FC = () => {
       const ageMark = "$X$";
 
       if (!pEl.current) return;
-      
+
       const currentText = pEl.current.innerHTML;
       pEl.current.innerHTML = currentText.replace(ageMark, `${myAge.getMyAge()}`);
     };
@@ -86,8 +86,51 @@ const Contato: React.FC = () => {
           </p>
         </section>
 
+        <hr />
+
         <section className={contatoStyles.networks}>
-          <h1>Contact:</h1>
+          <h2>Open-source projects:</h2>
+          <p>
+            At this section I share some open-source projects that I have created along the time and that I think are cool. To know more about them, you can follow their links to the GitHub repository.
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/64J0/daily-verse-telegram-bot">
+                <FaGithub size="2rem" />
+                daily-verse-telegram-bot
+              </a>
+              <a href="https://github.com/64J0/fsharp-monitoring">
+                <FaGithub size="2rem" />
+                fsharp-monitoring
+              </a>
+              <a href="https://github.com/64J0/my-blog">
+                <FaGithub size="2rem" />
+                my-blog
+              </a>
+              <a href="https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix">
+                <FaGithub size="2rem" />
+                custom-fsharp-gh-action-and-dynamic-matrix
+              </a>
+              <a href="https://github.com/64J0/literate-prog-finance">
+                <FaGithub size="2rem" />
+                literate-prog-finance
+              </a>
+              <a href="https://github.com/64J0/AzureFunctions-OpenCV">
+                <FaGithub size="2rem" />
+                AzureFunctions-OpenCV
+              </a>
+              <a href="https://github.com/64J0/Extensions_Chrome">
+                <FaGithub size="2rem" />
+                Extensions_Chrome
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <hr />
+
+        <section className={contatoStyles.networks}>
+          <h2>Contact:</h2>
           <p>
             You can reach me in the following platforms:
           </p>
@@ -115,7 +158,7 @@ export default Contato;
 
 export async function getStaticProps() {
   const contribChartHTML = await getGithubData();
-  
+
   return {
     props: {
       contribChartHTML
