@@ -1,29 +1,29 @@
 .mainContent {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 1.5rem 2rem 1.5rem;
-    font-size: 1.2rem;
-    line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1.5rem 2rem 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 .paragraphHeading {
-    overflow-wrap: break-word;
-    text-indent: 4rem;
-    text-align: justify;
-    line-height: 1.9rem;
+  overflow-wrap: break-word;
+  text-indent: 4rem;
+  text-align: justify;
+  line-height: 1.9rem;
 }
 
 .postsList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .postsListItem {
-    margin: 0 0 1.25rem;
+  margin: 0 0 1.25rem;
 }
 
 .postsListDate {
-    color: #888;
+  color: #888;
 }

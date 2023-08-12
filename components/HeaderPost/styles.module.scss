@@ -21,7 +21,7 @@
   .contactLink {
     transition: transform 4s;
   }
-  
+
   .contactLink:hover {
     transition: transform 4s;
     transform: rotateZ(360deg);
@@ -30,15 +30,15 @@
   .backToHome {
     margin: 0;
     height: 100%;
-  
+
     a {
       color: inherit;
     }
-  
+
     .moveToLeft {
       transition: transform 1s;
     }
-  
+
     &:hover {
       .moveToLeft {
         transform: translate(-1.2rem, 0);

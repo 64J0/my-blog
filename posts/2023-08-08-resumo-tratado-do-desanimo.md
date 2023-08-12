@@ -10,7 +10,7 @@ Como gostei bastante do conteúdo dessa obra, decidi escrever um post específic
 
 ![Capa do livro Tratado do Desânimo](/post-images/resumo-tratado-do-desanimo/tratado-do-desanimo-capa.jpeg "Capa do livro tratado do desânimo")
 
-Font da imagem: Amazon.
+Fonte da imagem: Amazon.
 
 Pois bem, no início do post mencionei a palavra "tentações", todavia, qual o significado dessa palavra no contexto do livro? Segundo o autor, é todo sentimento que é oposto à lei de Deus, seja em si mesmo ou pelas consequências que pode ter.
 

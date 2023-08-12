@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-import styles from "../Layout/styles.module.scss";
-
 import headerStyles from "./styles.module.scss";
 
 const Header: React.FC = () => {
@@ -11,8 +9,9 @@ const Header: React.FC = () => {
       <Link href="/about">
         <img
           src="/images/profile.jpg"
-          className={styles.headerHomeImage}
+          className={headerStyles.headerHomeImage}
           alt="Vinícius Gajo"
+          title="Sobre"
         />
       </Link>
       <h1>
