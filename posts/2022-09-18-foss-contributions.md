@@ -63,6 +63,11 @@ project work with some different tool.
 
 -   Example: [Saturn#315 - Add test instructions to the README.md and fix the test instructions in the CONTRIBUTING.md](https://github.com/SaturnFramework/Saturn/pull/315)
 
+Or it could be something aesthetic (make sure to explain why you think it makes
+sense to change it, you need to convince the maintainer):
+
+-   Example: [Giraffe#549 - Change sample EndpointRoutingApp level](https://github.com/giraffe-fsharp/Giraffe/pull/549)
+
 ### Bonus
 
 Still in this section, another thing that you can do to contribute for open
@@ -92,6 +97,7 @@ And, another aspect is that in this step I'm usually confident enough to start
 sending PRs to solve bugs reported by some users.
 
 -   Example: [Nacara#161 - Fix: The menu should be scrollable](https://github.com/MangelMaxime/Nacara/pull/161)
+-   Example: [Giraffe#547 - Add GetWebHostEnvironment function and add deprecation warning to GetHostingEnvironment](https://github.com/giraffe-fsharp/Giraffe/pull/547)
 
 ## New Features
 
@@ -106,6 +112,10 @@ feature that you're proposing.
 -   Example: [node-gitlab-2-github#149 - Dockerize this application](https://github.com/piceaTech/node-gitlab-2-github/pull/149)
 -   Example: [p88#1 - Enhance Dockerfile security and README readability](https://github.com/rafaelbmateus/p88/pull/1)[
 -   Example: [Saturn.CLI#39 - Fix the code generation feature due to .NET 6](https://github.com/SaturnFramework/Saturn.Cli/pull/39)
+
+Sometimes it does not work that well, but have patience:
+
+-   Example: [YoloDev.Expecto.TestSdk#131 - Add filter-test-case to readExpectoConfig](https://github.com/YoloDev/YoloDev.Expecto.TestSdk/pull/131)
 
 # Conclusion
 
