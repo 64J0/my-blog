@@ -45,7 +45,7 @@ const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => 
             {
               allPostsData.map(({ id, date, title }: AllPostsData) => (
                 <li className={homeStyles.postsListItem} key={id}>
-                  <Link href="/posts/[id]" as={`/posts/${id}`}>
+                  <Link legacyBehavior href="/posts/[id]" as={`/posts/${id}`}>
                     <a>{title}</a>
                   </Link>
                   <br />

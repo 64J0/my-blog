@@ -7,7 +7,7 @@ import headerStyles from "./styles.module.scss";
 export default function HeaderPost() {
   return (
     <div className={headerStyles.container}>
-      <Link href="/about">
+      <Link legacyBehavior href="/about">
         <a>
           <img
             src="/images/profile.jpg"
@@ -17,7 +17,7 @@ export default function HeaderPost() {
         </a>
       </Link>
       <h2 className={headerStyles.backToHome}>
-        <Link href="/">
+        <Link legacyBehavior href="/">
           <a>
             <FiChevronLeft size="4rem" className={headerStyles.moveToLeft} />
             <FiHome size="4rem" />
