@@ -4,17 +4,6 @@ date: "2024-01-05"
 show: true
 ---
 
-- [Introduction](#org589d1dd)
-- [What is data governance?](#orgda26922)
-- [What are the benefits of data governance?](#org26ac6f1)
-- [What is data management?](#orgbaa8bcf)
-- [What is machine learning (ML) governance?](#org6d29431)
-- [How to implement a data governance strategy?](#orge33f7b9)
-- [References](#org5d4de64)
-
-
-<a id="org589d1dd"></a>
-
 # Introduction
 
 From time to time I step into the term "data governance", which sounds a mysterious idea that could potentially mean many different things. In fact, what is it? Why is it necessary? How to implement it? Who is responsible for it? How is it different from "data management"?
@@ -22,9 +11,6 @@ From time to time I step into the term "data governance", which sounds a mysteri
 This happened recently during one of my pos-graduation classes, where the teacher was talking about "Privacy by Design in Software Projects". She gave a short description of this term, and I decided to complement it with other sources, just to know how other people defines it.
 
 Well, with this in mind I wrote this blog post with the information collected from my research on Google's first page links. Hope it is useful for you too. The links I read are mentioned in the last section under the **References** part.
-
-
-<a id="orgda26922"></a>
 
 # What is data governance?
 
@@ -51,9 +37,6 @@ And the list goes on, with specific demands from different scenarios.
 
 A well-designed data governance program typically includes a governance team, a steering committee that acts as the governing body, and a group of data stewards. They work together to create the standards and policies for governing data, as well as implementation and enforcement procedures that are primarily carried out by the data stewards. Ideally, executives and other representatives from an organization's business operations take part, in addition to the IT and [data management](https://www.techtarget.com/searchdatamanagement/definition/data-management) teams. [5]
 
-
-<a id="org26ac6f1"></a>
-
 # What are the benefits of data governance?
 
 Governance has historically been employed to lock down data in silos, with the goal of preventing data leakage or misuse. However, the consequence of data silos is that legitimate users must navigate barriers to get access to data when they need it. Inadvertently, data-driven innovation gets stifled. [2]
@@ -67,9 +50,6 @@ But, with the right data governance process we could:
 -   **Manage risk more easily.** With strong governance, you can allay concerns about exposure of sensitive data to individuals or systems who lack proper authorization, security breaches from malicious outsiders, or even insiders accessing data they don't have the right to see. [1]
 -   **Allow more personnel access to more data.** Strong data governance allows more personnel access to more data, with the confidence that these personnel get access to the right data and that this democratization of data does not negatively impact the organization. [1]
 
-
-<a id="orgbaa8bcf"></a>
-
 # What is data management?
 
 According to [1], this is a broad concept encompassing all aspects of managing data as an enterprise asset, from collection and storage to usage and oversight, making sure it's being leveraged securely, efficiently, and cost-effectively before it's disposed of.
@@ -79,9 +59,6 @@ The scope of [data management](https://www.ibm.com/topics/data-management) is br
 Now comes the difference as presented by this reference:
 
 [&#x2026;] While this is inclusive of data governance, it also includes other areas of the data management lifecycle, such as data processing, data storage and data security. Since these other areas of data management can also impact data governance, these teams need to work together to execute against a data governance strategy. For example, a data governance team may identify commonalities across disparate datasets, but if they want to integrate them, they'll need to partner with a data management team to define the [data model](https://www.ibm.com/topics/data-modeling) and data architecture to facilitate those linkages. Another example can include data access, where a data governance team may set the policies around data access to specific types of data (e.g. personally identifiable information (PII)), but a data management team will either provide that access directly or set the mechanism in place to provide that access (e.g. leverage internally defined user roles to approve access). [3]
-
-
-<a id="org6d29431"></a>
 
 # What is machine learning (ML) governance?
 
@@ -95,9 +72,6 @@ Finally, sensitive data needs to be protected appropriately, so your team can mi
 
 Much like analytics in general, you have to govern the use of AI/ML models that you build or customize. Ideally, this should be closely associated with analytics governance, because that function will know how to support various business areas. [2]
 
-
-<a id="orge33f7b9"></a>
-
 # How to implement a data governance strategy?
 
 Since this was out of scope, and considering that it could potentially become something pretty big, I decided to not dive into it this time. But, while doing my research, I found an interesting reference: [creating a data governance strategy](https://www.techtarget.com/searchdatamanagement/tip/6-key-steps-to-develop-a-data-governance-strategy) from Donald Farmer, principal of consultancy TreeHive Strategy.
@@ -105,9 +79,6 @@ Since this was out of scope, and considering that it could potentially become so
 Other than that, if you're already using public cloud services like AWS, Azure or GCP, there are many tools available in their ecosystem to help you start this process. Some are mentioned in the references listed in this article, so take a look there.
 
 If you're not using public cloud, there are some data governance tools mentioned in reference [5] that could fit your need, just check their section on "Data governance vendors and tools".
-
-
-<a id="org5d4de64"></a>
 
 # References
 
