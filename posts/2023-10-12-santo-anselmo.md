@@ -4,6 +4,10 @@ date: "2023-10-12"
 show: true
 ---
 
+Changelog:
+
+- 2024-04-03: Adicionei uma referência ao repositório com a formalização do argumento de Gödel, que é baseada principalmente no argumento de Santo Anselmo e de Gottfried Leibniz. [Link](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof) para a página da Wikipedia para mais informações.
+
 Também conhecido como argumento ontológico de Santo Anselmo, esta foi uma das primeiras tentativas na história de conciliar razão e fé católica para "provar" a existência de Deus (uma verdade da fé).
 
 Minha jornada cruzou com esse autor recentemente enquanto lia o livro [Grandes Teses Da Filosofia Tomista](https://a.co/d/e5IV1oc), de A. D. Sertillanges. Neste livro somos apresentados brevemente às ideias fundamentais da filosofia de Santo Tomás de Aquino, um dos maiores pensadores da religião católica, que também apresentou seus argumentos para a existência de Deus, todavia seguindo uma lógica mais rígida e mais bem definida que Anselmo.
@@ -22,7 +26,18 @@ Pois bem, passando agora ao argumento, este pode ser apresentado resumidamente c
 
 E ele é chamado de argumento ontológico pois, um argumento ontológico é qualquer argumento que defende a existência de Deus através da ideia de que Ele é obrigatoriamente um ser perfeito e, portanto, deve existir.
 
+## Formalização matemática
+
+Numa tentativa de formalizar matematicamente o argumento de Santo Anselmo, levando em consideração sua versão um pouco mais moderna elaborada por Gottfried Leibniz, Gödel estabeleceu esse argumento usando notação simbólica da lógica moderna. [5]
+
+Mais recentemente, em uma conversa com meu amigo Magueta, fui informado que esse argumento foi codificado usando as linguagens Coq e Isabelle, que são sistemas usados para gerenciar e verificar provas formais usando definições matemáticas.
+
+O resultado pode ser encontrado neste repositório no GitHub: [FormalTheology/GoedelGod](https://github.com/FormalTheology/GoedelGod).
+
+## Referências
+
 - [1] - [Anselmo de Cantuária](https://pt.wikipedia.org/wiki/Anselmo_de_Cantu%C3%A1ria). Wikipedia.
 - [2] - [Grandes Teses Da Filosofia Tomista](https://a.co/d/e5IV1oc). Amazon.
 - [3] - [Proslógio](https://a.co/d/gvMsEk4). Amazon.
 - [4] - [Argumento ontológico](https://pt.wikipedia.org/wiki/Argumento_ontol%C3%B3gico). Wikipedia.
+- [5] - [Gödel's ontological proof](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof). Wikipedia.
