@@ -56,7 +56,7 @@ terraform destroy
 
 After looking for very simple projects in the web, I eventually decided to use the [[1]​](#orgb1aeb3c) configuration. It is basically composed of an *output* block, along with a *terraform* block specifying the minimum Terraform version required to run the code:
 
-```hcl
+```bash
 # terraform/instance-1/network/main.tf
 terraform {
   required_version = ">=1.3.6"
@@ -647,7 +647,7 @@ Eventually, I learned more about the GitHub usage of Linguist ([[11]​](#orgb1a
 
 In order to change the default configuration, and allow GitHub to check the language within the *.github/fsharp-custom-action/* directory, it was required to add this *.gitattributes* file:
 
-```git
+```sh
 .github/fsharp-custom-action/** -linguist-vendored
 ```
 
