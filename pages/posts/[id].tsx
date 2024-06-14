@@ -27,7 +27,7 @@ const Post: React.FC<{ postData: PostData }> = ({ postData }) => {
         preEl && preEl.forEach((element) => {
           for (let child of element.children) {
             child.className = child.className.replace(/language-/, "");
-            return hljs.highlightBlock((child as HTMLElement));
+            return hljs.highlightElement((child as HTMLElement));
           }
         })
       );
