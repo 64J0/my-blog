@@ -1,24 +1,24 @@
 ---
 title: "Desafio 1 da Maratona Behind the Code"
 date: "2020-08-15"
-show: true
+show: false
 ---
 
-Nesse post irei colocar algumas informações e comentários a respeito do desafio 1 da Maratona Behind the Code da IBM de 2020. 
+Nesse post irei colocar algumas informações e comentários a respeito do desafio 1 da Maratona Behind the Code da IBM de 2020.
 
 Esse primeiro desafio foi lançado no dia 15 de agosto às 10:00 da manhã e as primeiras avaliações serão divulgadas na quarta-feira pelo e-mail.
 
-A **Cocamar** foi a empresa responsável por idealizar o problema e as informações a respeito deste estão disponíveis no seguinte [link do github](https://github.com/maratonadev-br/desafio-1-2020). 
+A **Cocamar** foi a empresa responsável por idealizar o problema e as informações a respeito deste estão disponíveis no seguinte [link do github](https://github.com/maratonadev-br/desafio-1-2020).
 
 Sobre a Cocamar: essa empresa começou suas operações focada no auxílio de produres de café porém atualmente atende uma variedade maior de culturas (**soja**, milho, trigo, café e laranja).
 
-*Observação:* O título da segunda seção do README do github é Desafio de Negócio, será que os desafios posteriores serão focados em outras áreas fora do mercado, por exemplo Desafio Acadêmico? 
+*Observação:* O título da segunda seção do README do github é Desafio de Negócio, será que os desafios posteriores serão focados em outras áreas fora do mercado, por exemplo Desafio Acadêmico?
 
-Seguindo a leitura do README no github é citado o objetivo do desafio: 
+Seguindo a leitura do README no github é citado o objetivo do desafio:
 
 * **Criar uma ferramenta rápida e automatizada de identificação das pragas mais comuns que atingem a lavoura de soja, implementando técnicas computacionais de reconhecimento visual.**
 
-Como a Maratona está sendo desenvolvida pela IBM eles sugerem a utilização do serviço de reconhecimento de imagens da própria empresa, o *IBM Watson Visual Recognition*. 
+Como a Maratona está sendo desenvolvida pela IBM eles sugerem a utilização do serviço de reconhecimento de imagens da própria empresa, o *IBM Watson Visual Recognition*.
 
 O serviço *IBM Watson Visual Recognition*, pelo que consta na documentação, usa algoritmos de **deep learning** para analisar imagens, cenas, objetos e outros conteúdos para gerar um modelo que será usado para classificar outras imagens. A resposta desse módulo inclui palavras-chave que fornecem informações sobre a correlação entre o conteúdo analisado e algum dos objetos do modelo.
 

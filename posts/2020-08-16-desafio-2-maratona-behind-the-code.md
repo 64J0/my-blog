@@ -1,14 +1,14 @@
 ---
 title: "Desafio 2 da Maratona Behind the Code"
 date: "2020-08-16"
-show: true
+show: false
 ---
 
 Segundo dia de maratona!!! Bora clã!!!
 
 O desafio lançado hoje foi proposto por uma empresa chamada **UNINASSAU** que é um grupo focado em educação disponibilizando cursos de graduação, pós-graduação, técnico e EAD (Ensino a distância). Para acessar o README com todas as informações basta clicar [neste link](https://github.com/maratonadev-br/desafio-2-2020).
 
-Uma coisa bem bacana desse desafio é que ele tem uma premiação própria ✨. 
+Uma coisa bem bacana desse desafio é que ele tem uma premiação própria ✨.
 
 O primeiro e segundo colocado serão premiados com bolsas integrais de bacharelado da UNINASSAU na modalidade EAD. Já os dez melhores colocados no ranking final da Maratona serão premiados com bolsas de estudos integrais na modalidade EAD na empresa, nos seguintes cursos: *Coding*, *Data Science*, *Digital Security* e *Game Design*.
 
@@ -20,7 +20,7 @@ Esse desafio foi pensado para ser implementado no ambiente virtual de um curso d
 
 Esses assistentes podem ser integrados com modelos avançados de **aprendizado de máquina**, que são alimentados com dados sobre o estudante e seu desempenho nas diferentes disciplinas de seu curso. Os modelos, por sua vez, podem ser capazes de **identificar áreas ou competências específicas em que o estudante tenha certa dificuldade e recomendar conteúdo personalizado para cada aluno, de forma completamente escalável e com atendimento 24/7**.
 
-Portanto nesse desafio o participante deve criar um assistente virtual baseado em machine learning, utilizando ferramentas da IBM como o *Watson Machine Learning* e o *Cloud Pak for Data*, voltado para tutoria remota. 
+Portanto nesse desafio o participante deve criar um assistente virtual baseado em machine learning, utilizando ferramentas da IBM como o *Watson Machine Learning* e o *Cloud Pak for Data*, voltado para tutoria remota.
 
 **Sua tarefa será aprimorar um modelo já fornecido e integrar os diversos serviços envolvidos nessa solução!**
 
@@ -67,7 +67,7 @@ A biblioteca **scikit-learn** -- uma das mais populares bibliotecas de código-a
 
 Para facilitar o trabalho com esse tipo de fluxo, o **scikit-learn** possui também uma ferramenta chamada **Pipeline**, que nada mais é do que uma lista ordenada de transformações que devem ser aplicadas nos dados.
 
-Para auxiliar no desenvolvimento e no gerenciamento de todo o ciclo-de-vida dessas aplicações, além do uso de Pipelines, as equipes de cientistas de dados podem utilizar em conjunto o **Watson Machine Learning**, que possui dezenas de ferramentas para treinar, gerenciar, hospedar e avaliar modelos baseados em aprendizado de máquina. 
+Para auxiliar no desenvolvimento e no gerenciamento de todo o ciclo-de-vida dessas aplicações, além do uso de Pipelines, as equipes de cientistas de dados podem utilizar em conjunto o **Watson Machine Learning**, que possui dezenas de ferramentas para treinar, gerenciar, hospedar e avaliar modelos baseados em aprendizado de máquina.
 
 Além disso, o Watson Machine Learning é capaz de encapsular pipelines e modelos em uma API pronta para uso e integração com outras aplicações.
 
