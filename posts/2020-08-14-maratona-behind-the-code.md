@@ -1,7 +1,7 @@
 ---
 title: "Introdução da Maratona Behind the Code"
 date: "2020-08-14"
-show: true
+show: false
 ---
 
 Saudações caro leitor, neste post irei tratar alguns assuntos sobre a **Maratona Behind The Code** que é composta por alguns desafios de tecnologia propostos pela IBM e outras empresas parceiras visando implementar as soluções com a plataforma da própria IBM.
@@ -10,7 +10,7 @@ Provavelmente o post vai ser longo, mas é a vida...
 
 Algumas informações introdutórias.
 
-## Inteligência artificial: 
+## Inteligência artificial:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/kOmgVS9v0rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Dar as soluções a capacidade cognitiva de aprender e interpretar dados não estruturados. Watson é o sistema de inteligência artificial e serviço da IBM.
@@ -19,7 +19,7 @@ Dar as soluções a capacidade cognitiva de aprender e interpretar dados não es
 * Natural Language Understanding -> reconhecimento de textos em várias línguas diferentes retirando meta-dados, palavras-chave, sentimentos.
 * Watson assistant -> Chat bot, tem a capacidade de aprender com perguntas e respostas.
 
-## IoT: 
+## IoT:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/yaE0dQYYy4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Interconexão de dispositivos na rede, coletando dados automaticamente para resolver problemas sem a necessidade de supervisão humana.
@@ -30,10 +30,10 @@ Estrutura de um sistema iot:
 * Broker -> recebe os dados dos sensores e repassa pros sistemas que analisarão estes dados (protocolo MQTT)
 * Subscribers -> aplicações e serviços que consomem os dados coletados pelos sensores através do processamento dessas informações
 
-## kubernetes: 
+## kubernetes:
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/o8JO5aNZ82g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Popularmente conhecido como orquestrador de containeres (tecnologia de virtualização de sistemas operacionais, semelhante a VM porém mais leves). 
+Popularmente conhecido como orquestrador de containeres (tecnologia de virtualização de sistemas operacionais, semelhante a VM porém mais leves).
 Auxilia os desenvolvedores no desenvolvimento de uma aplicação utilizando micro-serviços.
 
 Contruído em cima do docker que é o framework mais famoso para trabalhar com containers.
@@ -48,7 +48,7 @@ Mais informações: [link](https://developer.ibm.com/br/technologies/containers/
 ---
 ## Live: Inteligência Artificial, por onde começar?
 
-Abaixo vou colocar um resumo das minhas anotações a respeito da live que ocorreu em 14/08/2020 no canal da Rocketseat em conjunto com o canal da Shawee. 
+Abaixo vou colocar um resumo das minhas anotações a respeito da live que ocorreu em 14/08/2020 no canal da Rocketseat em conjunto com o canal da Shawee.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/34fiafm5gz4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
