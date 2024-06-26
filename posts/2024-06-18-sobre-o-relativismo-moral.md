@@ -4,6 +4,10 @@ date: "2024-06-18"
 show: true
 ---
 
+Changelog:
+
+-   <span class="timestamp-wrapper"><span class="timestamp">[2024-06-26 qua] </span></span> Adiciona referência [6] "Dez erros filosóficos" e melhora o texto da seção de conclusão.
+
 # Introdução
 
 O relativismo { cultural, moral } pode ser definido como:
@@ -39,7 +43,7 @@ Quando um indivíduo extrapola os limites de aplicação dessa doutrina, e come�
 
 # Outros erros filosóficos
 
-Caso tenha interesse em se aprofundar na análise de outros erros filosóficos modernos, recomendo a leitura do livro "Dez erros filosóficos" escrito por Mortimer J. Adler: [link](https://a.co/d/07ethfC).
+Caso tenha interesse em se aprofundar na análise de outros erros filosóficos modernos, recomendo a leitura da referência [6]. Neste livro, temos no capítulo V "Valores Morais" uma discussão mais aprofundada, tratando das vertentes filosóficas que levam ao relativismo moral moderno, indo da antiguidade com Epicuro, até os tempos modernos com Hume, Spinoza, John Stuart Mill e A. J. Ayer.
 
 # Referências
 
@@ -53,3 +57,5 @@ Caso tenha interesse em se aprofundar na análise de outros erros filosóficos m
     -   *Vale a pena demais ler este artigo, trás bem mais insights que os apresentados aqui.*
 
 -   [5] JULGAMENTO E IMPARCIALIDADE | COMO ESTUDAR HISTÓRIA? História do mundo. YouTube. Disponível em: [link](https://www.youtube.com/watch?v=_LRb0bungm8).
+
+-   [6] Dez erros filosóficos. Mortimer J. Adler. Disponível em: [link](https://a.co/d/07ethfC).
