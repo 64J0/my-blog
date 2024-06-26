@@ -6,7 +6,7 @@ show: true
 
 # Introduction
 
-Suppose that you are the responsible for a central repository that takes care of several projects using infrastructure as code tools ([Terraform](https://developer.hashicorp.com/terraform/docs), for example), and that the you can't know for certain how this repository is going to evolve (especially related to the instances of this project that will be needed).
+Suppose that you are the responsible for a central repository that takes care of several projects using infrastructure as code tools ([Terraform](https://developer.hashicorp.com/terraform/docs), for example), and that you can't know for certain how this repository is going to evolve, especially related to the instances of this project that will be needed.
 
 Maybe you're thinking, why you decided to centralize everything in this repository?
 
