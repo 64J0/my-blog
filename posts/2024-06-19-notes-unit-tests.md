@@ -4,6 +4,10 @@ date: "2024-06-19"
 show: true
 ---
 
+Changelog:
+
+- 2024-07-15: Add mutation testing section.
+
 Here, I'm dumping my annotations from the the book "Unit Testing: Principles, Practices and Patterns" ([link](https://a.co/d/05D7uKaK)).
 
 # Introduction
@@ -53,3 +57,13 @@ With this in mind, let's define what unit tests are not targeted:
 If you're interested in more contents, I have an old article (2020), where I talk about "Tests, TDD and Jest", you can find it here: [link](./2020-08-30-testes-tdd-jest). Notice that it was written in Portuguese.
 
 Also, check the main reference book for a more rich discussion and details of the ideas presented here.
+
+## Mutation testing
+
+While studying some chaos tests references I found this [mutation testing](https://stryker-mutator.io/docs/) concept, which looks like a good complement for the unit tests idea (thx for sharing Carvalho). It is useful to know how good your unit tests are.
+
+> Mutation testing introduces changes to your code, then runs your unit tests against the changed code. It is expected that your unit tests will now fail. If they don't fail, it might indicate your tests do not sufficiently cover the code.
+>
+> Bugs, or mutants, are automatically inserted into your production code. Your tests are run for each mutant. If your tests fail then the mutant is *killed*. If your tests passed, the mutant *survived*. The higher the percentage of mutants killed, the more effective your tests are.
+>
+> &#x2014; [link](https://stryker-mutator.io/docs/)
