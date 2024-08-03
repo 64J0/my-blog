@@ -40,7 +40,7 @@ Porém, com o passar dos anos, essa abordagem racional acabou sendo sobreposta p
 
 ## Resposta católica
 
-Ponderando sobre essas ideias e argumentos, o padre Paulo Ricardo desenvolveu um curso para explicar a resposta católica [1], baseada no princípio `caro salutis est cardo`.
+Ponderando sobre essas ideias e argumentos, o padre Paulo Ricardo desenvolveu um curso para explicar a resposta católica [1], baseada no princípio *caro salutis est cardo*.
 
 Nós católicos, além de venerar a parte mística e divina, adoramos também a humanidade de Cristo. E por venerar a humanidade de Cristo, entendemos que outras criações de Deus podem ser a extensão dessa humanidade.
 
