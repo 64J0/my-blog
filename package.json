@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "axios": "^1.7.3",
-    "cheerio": "^1.0.0-rc.6",
+    "cheerio": "^1.0.0",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.10.0",
