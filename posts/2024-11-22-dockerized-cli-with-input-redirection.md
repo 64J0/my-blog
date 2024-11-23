@@ -4,7 +4,7 @@ date: "2024-11-22"
 show: true
 ---
 
-Most times I see someone using a containerized application it's related to a long-running process, which is normally a web server along with its associated services, like databases, message brokers, etc.
+Most of the time, when I see someone using a containerized application, it involves a long-running process, typically a web server and its associated services, such as databases, message brokers, etc.
 
 But it does not need to be like this. You can actually use containerized short-lived processes as well, like CLI tools.
 
@@ -17,7 +17,7 @@ docker run -v $PWD:/myapp aquasec/trivy config /myapp
 # I got this example from https://hub.docker.com/r/aquasec/trivy
 ```
 
-Notice that for this to work, you need to create a volume binding your local directory (`$PWD`), to a folder inside the container's file system (`/myapp`).
+Notice that for this to work, you need to create a volume binding your local directory (*$PWD*), to a folder inside the container's file system (*/myapp*).
 
 By the time I found this, I thought this strategy was pretty cool, but decided to not dig deeper, since I had no real goal in mind. Then, after many months, the situation has changed.
 
