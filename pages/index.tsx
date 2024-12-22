@@ -36,7 +36,7 @@ const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => 
       <div className={homeStyles.mainContent}>
         <section>
           <p className={homeStyles.paragraphHeading}>
-            Mechatronics engineer graduated by CEFET-MG, turned software engineer with infrastructure (cloud) and DevOps skills. Currently working in Datarisk with functional programming (F#).
+            Mechatronics engineer graduated from CEFET-MG, turned software engineer with skills in infrastructure (cloud) and DevOps. Postgraduate in SWE from FIA Business School. Currently working with backend development at Datarisk using functional programming (F#), and making a better world with open source contributions.
           </p>
         </section>
         <section>
