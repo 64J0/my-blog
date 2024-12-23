@@ -6,7 +6,7 @@ import Header from "../Header";
 export const siteTitle = "64j0 Blog";
 
 interface LayoutProps {
-    children: any;
+    children: React.ReactNode;
   }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
