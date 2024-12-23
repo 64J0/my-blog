@@ -57,7 +57,7 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(filename?: string) {
+export async function getPostData(filename: string | string[] | undefined) {
   if (!filename) {
     return {
       id: "error"

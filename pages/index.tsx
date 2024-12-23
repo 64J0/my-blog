@@ -28,7 +28,7 @@ export async function getStaticProps() {
 
 const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => {
   return (
-    <Layout home>
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>

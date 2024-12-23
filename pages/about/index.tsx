@@ -5,7 +5,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Layout from "../../components/Layout";
 
 import Age from "../../utils/Age";
-import { getGithubData } from "../../lib/github";
 
 import contatoStyles from "./styles.module.scss";
 
@@ -27,7 +26,7 @@ const Contato: React.FC = () => {
   }, []);
 
   return (
-    <Layout home="">
+    <Layout>
       <Head>
         <title>About me</title>
       </Head>
@@ -155,16 +154,3 @@ const Contato: React.FC = () => {
 };
 
 export default Contato;
-
-export async function getStaticProps() {
-  const contribChartHTML = await getGithubData();
-
-  return {
-    props: {
-      contribChartHTML
-    },
-    revalidate: 1 * 60 * 60 // 1 hora
-  };
-}
-
-

@@ -1,6 +1,6 @@
 {
   "name": "personal-blog-next",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My personal blog built with TypeScript and Next.js.",
   "private": true,
   "author": {

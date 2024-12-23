@@ -1,22 +1,19 @@
 import React from "react";
 import styles from "./styles.module.scss";
 
-import HeaderHome from "../HeaderHome";
-import HeaderPost from "../HeaderPost";
+import Header from "../Header";
 
 export const siteTitle = "64j0 Blog";
 
 interface LayoutProps {
-    home?: any;
+    children: any;
   }
 
-const Layout: React.FC<LayoutProps> = ({ children, home }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className={styles.container}>
-      <header className={styles.header}>
-        {
-          home ? (<HeaderHome />) : (<HeaderPost />)
-        }
+      <header>
+        <Header />
       </header>
 
       <main className={styles.mainContainer}>
