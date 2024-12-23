@@ -23,8 +23,8 @@ const Header: React.FC = () => {
         </li>
         <li>
           <a href="https://www.linkedin.com/in/vinicius-gajo/"
-             target="_blank"
-             rel="noopener noreferrer">
+            target="_blank"
+            rel="noopener noreferrer">
             <FaLinkedin size="2rem" title="LinkedIn" aria-label="Navigate to my LinkedIn page" />
           </a>
         </li>
