@@ -22,12 +22,16 @@ const Header: React.FC = () => {
           </Link>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/vinicius-gajo/">
+          <a href="https://www.linkedin.com/in/vinicius-gajo/"
+             target="_blank"
+             rel="noopener noreferrer">
             <FaLinkedin size="2rem" title="LinkedIn" />
           </a>
         </li>
         <li>
-          <a href="https://github.com/64J0">
+          <a href="https://github.com/64J0"
+            target="_blank"
+            rel="noopener noreferrer">
             <FaGithub size="2rem" title="GitHub" />
           </a>
         </li>
