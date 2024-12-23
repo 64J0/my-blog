@@ -8,6 +8,7 @@ import remarkMath from "remark-math";
 import remarkRehype from "remark-rehype";
 import rehypeKatex from "rehype-katex";
 import rehypeStringify from "rehype-stringify";
+import rehypeSanitize from "rehype-sanitize";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -57,10 +58,13 @@ export function getAllPostIds() {
   });
 }
 
-export async function getPostData(filename?: string) {
+export async function getPostData(filename: string | string[] | undefined) {
   if (!filename) {
     return {
-      id: "error"
+      id: "error",
+      contentHtml: "",
+      title: "Error",
+      date: new Date().toISOString()
     };
   }
 
@@ -78,6 +82,7 @@ export async function getPostData(filename?: string) {
     .use(remarkRehype)
     .use(rehypeKatex)
     .use(rehypeStringify)
+    .use(rehypeSanitize)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 

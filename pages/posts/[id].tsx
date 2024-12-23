@@ -37,7 +37,7 @@ const Post: React.FC<{ postData: PostData }> = ({ postData }) => {
   }, []);
 
   return (
-    <Layout home="">
+    <Layout>
       <Head>
         <title>{postData.title}</title>
       </Head>

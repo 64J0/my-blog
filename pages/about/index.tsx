@@ -5,7 +5,6 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Layout from "../../components/Layout";
 
 import Age from "../../utils/Age";
-import { getGithubData } from "../../lib/github";
 
 import contatoStyles from "./styles.module.scss";
 
@@ -27,7 +26,7 @@ const Contato: React.FC = () => {
   }, []);
 
   return (
-    <Layout home="">
+    <Layout>
       <Head>
         <title>About me</title>
       </Head>
@@ -95,31 +94,45 @@ const Contato: React.FC = () => {
           </p>
           <ul>
             <li>
-              <a href="https://github.com/64J0/daily-verse-telegram-bot">
+              <a href="https://github.com/64J0/daily-verse-telegram-bot"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 daily-verse-telegram-bot
               </a>
-              <a href="https://github.com/64J0/fsharp-monitoring">
+              <a href="https://github.com/64J0/fsharp-monitoring"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 fsharp-monitoring
               </a>
-              <a href="https://github.com/64J0/my-blog">
+              <a href="https://github.com/64J0/my-blog"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 my-blog
               </a>
-              <a href="https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix">
+              <a href="https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 custom-fsharp-gh-action-and-dynamic-matrix
               </a>
-              <a href="https://github.com/64J0/literate-prog-finance">
+              <a href="https://github.com/64J0/literate-prog-finance"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 literate-prog-finance
               </a>
-              <a href="https://github.com/64J0/AzureFunctions-OpenCV">
+              <a href="https://github.com/64J0/AzureFunctions-OpenCV"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 AzureFunctions-OpenCV
               </a>
-              <a href="https://github.com/64J0/Extensions_Chrome">
+              <a href="https://github.com/64J0/Extensions_Chrome"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 Extensions_Chrome
               </a>
@@ -136,14 +149,18 @@ const Contato: React.FC = () => {
           </p>
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/vinicius-gajo/">
-                <FaLinkedin size="2rem" />
+              <a href="https://www.linkedin.com/in/vinicius-gajo/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FaLinkedin size="2rem" title="LinkedIn" />
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://github.com/64J0">
-                <FaGithub size="2rem" />
+              <a href="https://github.com/64J0"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FaGithub size="2rem" title="GitHub" />
                 GitHub
               </a>
             </li>
@@ -155,16 +172,3 @@ const Contato: React.FC = () => {
 };
 
 export default Contato;
-
-export async function getStaticProps() {
-  const contribChartHTML = await getGithubData();
-
-  return {
-    props: {
-      contribChartHTML
-    },
-    revalidate: 1 * 60 * 60 // 1 hora
-  };
-}
-
-
