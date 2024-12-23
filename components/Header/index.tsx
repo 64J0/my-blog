@@ -13,26 +13,26 @@ const Header: React.FC = () => {
       <ul>
         <li>
           <Link href="/">
-            <FaHome size="2rem" title="Home" />
+            <FaHome size="2rem" title="Home" aria-label="Navigate to home page" />
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <FaUser size="2rem" title="About" />
+            <FaUser size="2rem" title="About" aria-label="Navigate to about page" />
           </Link>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/vinicius-gajo/"
              target="_blank"
              rel="noopener noreferrer">
-            <FaLinkedin size="2rem" title="LinkedIn" />
+            <FaLinkedin size="2rem" title="LinkedIn" aria-label="Navigate to my LinkedIn page" />
           </a>
         </li>
         <li>
           <a href="https://github.com/64J0"
             target="_blank"
             rel="noopener noreferrer">
-            <FaGithub size="2rem" title="GitHub" />
+            <FaGithub size="2rem" title="GitHub" aria-label="Navigate to my GitHub page" />
           </a>
         </li>
       </ul>
