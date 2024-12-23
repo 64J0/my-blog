@@ -153,6 +153,7 @@ const Contato: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer">
                 <FaLinkedin size="2rem" title="LinkedIn" />
+                LinkedIn
               </a>
             </li>
             <li>
@@ -160,6 +161,7 @@ const Contato: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer">
                 <FaGithub size="2rem" title="GitHub" />
+                GitHub
               </a>
             </li>
           </ul>
