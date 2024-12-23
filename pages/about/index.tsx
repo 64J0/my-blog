@@ -94,31 +94,45 @@ const Contato: React.FC = () => {
           </p>
           <ul>
             <li>
-              <a href="https://github.com/64J0/daily-verse-telegram-bot">
+              <a href="https://github.com/64J0/daily-verse-telegram-bot"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 daily-verse-telegram-bot
               </a>
-              <a href="https://github.com/64J0/fsharp-monitoring">
+              <a href="https://github.com/64J0/fsharp-monitoring"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 fsharp-monitoring
               </a>
-              <a href="https://github.com/64J0/my-blog">
+              <a href="https://github.com/64J0/my-blog"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 my-blog
               </a>
-              <a href="https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix">
+              <a href="https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 custom-fsharp-gh-action-and-dynamic-matrix
               </a>
-              <a href="https://github.com/64J0/literate-prog-finance">
+              <a href="https://github.com/64J0/literate-prog-finance"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 literate-prog-finance
               </a>
-              <a href="https://github.com/64J0/AzureFunctions-OpenCV">
+              <a href="https://github.com/64J0/AzureFunctions-OpenCV"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 AzureFunctions-OpenCV
               </a>
-              <a href="https://github.com/64J0/Extensions_Chrome">
+              <a href="https://github.com/64J0/Extensions_Chrome"
+                target="_blank"
+                rel="noopener noreferrer">
                 <FaGithub size="2rem" />
                 Extensions_Chrome
               </a>
@@ -135,15 +149,17 @@ const Contato: React.FC = () => {
           </p>
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/vinicius-gajo/">
-                <FaLinkedin size="2rem" />
-                LinkedIn
+              <a href="https://www.linkedin.com/in/vinicius-gajo/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FaLinkedin size="2rem" title="LinkedIn" />
               </a>
             </li>
             <li>
-              <a href="https://github.com/64J0">
-                <FaGithub size="2rem" />
-                GitHub
+              <a href="https://github.com/64J0"
+                target="_blank"
+                rel="noopener noreferrer">
+                <FaGithub size="2rem" title="GitHub" />
               </a>
             </li>
           </ul>
