@@ -4,8 +4,8 @@ date: "2024-12-27"
 show: true
 ---
 
-Neste artigo meu objetivo é compartilhar alguns pensamentos a respeito da
-escolha e validade da religião católica.
+Neste artigo compartilho alguns pensamentos a respeito da fé e validação da
+religião católica.
 
 1.  Podemos dizer que nossa fé enquanto cristãos católicos pode ser realmente
     baseada em Deus desde o princípio?
@@ -62,9 +62,9 @@ Porém, considerando o âmbito pessoal, podemos considerar a observação de
 milagres como o fundamento para basear a fé na religião. Este seria o modo como
 Deus confirmaria nossas ações de maneira contundente.
 
-E isso também está ancorado em alguns pontos da bíblia:
+E isso também está ancorado em algumas passagens da bíblia:
 
--   Nos Evangelhos são apresentados alguns dos milagres feitos por Jesus, baseados
+-   Nos Evangelhos são apresentados diversos milagres feitos por Jesus, baseados
     na fé das pessoas, logo os milagres ocorriam para validar a fé;
 -   Os apóstolos receberam também o dom de relizar milagres. Como a Igreja
     consiste nos descendentes dos apóstolos, é de se esperar que ela consiga
@@ -73,11 +73,24 @@ E isso também está ancorado em alguns pontos da bíblia:
 Isso resolve o problema de ter que escolher outras religiões, ou doutrinas
 dentro da mesma religião (católicos vs protestantes vs ortodoxos vs etc).
 
-3.  Conclusão
+3.  Como lidar com milagres em outras religiões?
 
-Enfim, neste artigo abordei o processo de escolha da religião católica, sendo baseada
-na maioria dos casos em componentes emocionais, seja por influência externa,
-seja pelo desejo de ser como alguma outra pessoa (inspiração).
+Novamente podemos recorrer às Escrituras.
+
+No texto sagrado temos uma passagem que relata aa disputa de Elias no Monte
+Carmelo entre o Deus de Israel contra Baal. A passagem está relatada no livro I
+Reis 18:16-40 [link](https://www.bibliacatolica.com.br/biblia-ave-maria/i-reis/18/).
+
+Logo, em todos esses casos mencionados o Deus verdadeiro intervém de algum modo
+sobrenatural para se afirmar e guiar seus fiéis no caminho correto. Outro ponto
+que fica evidente é que podemos esperar alguns dons sobrenaturais dos ministros
+escolhidos pelo Deus verdadeiro.
+
+4.  Conclusão
+
+Enfim, neste artigo abordei o processo de escolha da religião católica, sendo
+baseada na maioria dos casos em componentes emocionais, seja por influência
+externa, seja pelo desejo de ser como alguma outra pessoa (inspiração).
 
 Dito isso, fica clara a influência que os membros da igreja tem na conversão
 através da inspiração dos leigos, e que portanto deve ser rigidamente observada
@@ -91,3 +104,8 @@ que exploram esse tema:
 -   The Case for Jesus: <https://a.co/d/ePigDiG>
 -   Between One Faith and Another: <https://a.co/d/dhyiPPm>
 -   The Real Story of Catholic History: <https://a.co/d/ax7YJUL>
+
+Porém, por agora meu entendimento é que a validação pode ocorrer apenas através
+de eventos sobrenaturais. E que conforme indicações dos textos sagrados do
+catolicismo, podemos esperar que os representantes do Deus e da doutrina real
+sejam capazes de operar milagres.
