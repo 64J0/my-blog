@@ -2,6 +2,7 @@
 title: "Sobre o relativismo moral"
 date: "2024-06-18"
 show: true
+tags: ["philosophy"]
 ---
 
 Changelog:

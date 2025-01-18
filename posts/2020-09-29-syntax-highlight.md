@@ -2,6 +2,7 @@
 title: "Syntax Highlight no Código"
 date: "2020-09-29"
 show: true
+tags: ["javascript"]
 ---
 
 * **ATENÇÂO:** *Para entender o conteúdo deste post é necessário ter conhecimento do React.js e Next.js.*
@@ -12,7 +13,7 @@ Neste post vou explicar como implementei a funcionalidade de **Syntax Highlight*
 
 Para quem não sabe, o **Syntax Highlight** serve para destacar trechos de código que aparecem nos posts, deixando-os bem mais amigáveis, facilitando o entendimento e tornando mais bonito esteticamente.
 
-Bom, para início de conversa vou deixar claro aqui que este blog foi criado com o **Next.js** devido aos motivos mencionados nos primeiros posts e por isso ele segue algumas regras bastante específicas. 
+Bom, para início de conversa vou deixar claro aqui que este blog foi criado com o **Next.js** devido aos motivos mencionados nos primeiros posts e por isso ele segue algumas regras bastante específicas.
 
 Caso queria ver o código completo do blog, ele está disponível num repositório do meu **GitHub** onde guardo meus projetos feitos com o **Next.js**: (https://github.com/64J0/Nextjs-projects/tree/master/nextjs-blog).
 
@@ -30,7 +31,7 @@ Atualmente existem diversas opções que aplicam regras de CSS automaticamente o
 
 Neste blog a opção que escolhi foi o pacote **highlight.js** ([link](https://highlightjs.org/)) pois apresenta uma grande diversidade de opções de layout para escolher, além de ser fácil de usar.
 
-Por definição do HTML5, para simbolizar trechos do conteúdo da página composta por códigos que serão exibidos para os leitores da aplicação são utilizadas, respectivamente, as tags *pre* e *code*. 
+Por definição do HTML5, para simbolizar trechos do conteúdo da página composta por códigos que serão exibidos para os leitores da aplicação são utilizadas, respectivamente, as tags *pre* e *code*.
 
 Logo são essas as tags que devemos buscar no código para estilizar.
 

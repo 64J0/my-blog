@@ -2,6 +2,7 @@
 title: "Insights do Didascalicon - Livro III"
 date: "2024-01-12"
 show: true
+tags: ["philosophy", "theology"]
 ---
 
 Recentemente, durante minhas férias no final do ano, resolvi usar parte do tempo para a leitura de textos filosóficos, tais como:

@@ -2,11 +2,12 @@
 title: "Cores e paletas - Material Design"
 date: "2020-08-28"
 show: true
+tags: ["ux/ui"]
 ---
 
 Saudações leitores. No post de hoje vou falar sobre cores e paletas, segundo a abordagem do **Design Guide** do *Google*, conhecido como **Material Design**.
 
-Segundo a própria documentação [1], o sistema de cores do Material Design ajuda a escolher e aplicar cores à interface de usuário (**UI**) de maneira significativa, refletindo a sua marca ou estilo. 
+Segundo a própria documentação [1], o sistema de cores do Material Design ajuda a escolher e aplicar cores à interface de usuário (**UI**) de maneira significativa, refletindo a sua marca ou estilo.
 
 Para utilizar essa ferramenta devemos apenas escolher as cores primária e secundária da aplicação.
 

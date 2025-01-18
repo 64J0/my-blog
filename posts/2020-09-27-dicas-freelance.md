@@ -2,6 +2,7 @@
 title: "Dicas para Freelance"
 date: "2020-09-27"
 show: true
+tags: ["entrepreneurship"]
 ---
 
 Eae clã, tudo jóia? No post de hoje vou citar algumas dicas sobre *freelance* de alguns vídeos que estou assistindo atualmente.

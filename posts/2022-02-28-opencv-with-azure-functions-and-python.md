@@ -2,7 +2,7 @@
 title: "OpenCV with Azure Functions and Python"
 date: "2022-02-28"
 show: true
-tags: ["Python", "OpenCV", "Azure", "Azure Functions"]
+tags: ["python", "opencv", "azure", "azure functions"]
 ---
 
 > Disclaimer: This post was originally posted in Dev.to. [Link](https://dev.to/64j0/microsoft-azure-trial-hackathon-on-dev-opencv-with-azure-functions-and-python-33lf).
@@ -55,7 +55,7 @@ $ func new
 ```
 
 ![Terminal 2.](/post-images/opencv-with-azure-functions-and-python/terminal-2.png "Terminal 2")
- 
+
 Open this folder in your IDE (Integrated Development Environment) of preference. In my case I'll go with VS Code, although recently I'm experimenting with Emacs and I'm really liking it (I'll write about it in a future post).
 
 Continuing, now you need to update the requirements.txt file, adding the required packages to deal with OpenCV using Python. Make sure that your local file have this content:
@@ -75,7 +75,7 @@ There we just added the numpy and opencv-contrib-python packages, setting those 
 $ pip install -r requirements.txt
 ```
 
-Now let's start exploring our real project. Its main program will be inside the `OpenCVHttpTrigger/__init__.py` file. To assert that it is working fine in your local environment, you could just change it's code to print the OpenCV version that is installed. 
+Now let's start exploring our real project. Its main program will be inside the `OpenCVHttpTrigger/__init__.py` file. To assert that it is working fine in your local environment, you could just change it's code to print the OpenCV version that is installed.
 
 First, copy this script to the __init__.py file:
 
@@ -176,14 +176,14 @@ def extractEdges (
     img = cv2.imdecode(buf, cv2.IMREAD_GRAYSCALE)
     img_edges = cv2.Canny(img, threshold1, threshold2)
     return img_edges
-    
+
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
     # CONSTANTS
     THRESHOLD1 = 20
     THRESHOLD2 = 60
-    
+
     img_buffer = loadImageFromRequestBody(req)
     img_edges = extractEdges(
         img_buffer, THRESHOLD1, THRESHOLD2)
@@ -263,7 +263,7 @@ THRESHOLD2 = 60
 ```
 
 ![Nicole 2.](/post-images/opencv-with-azure-functions-and-python/nicole-2.jpeg "Nicole 2")
- 
+
 * Output with:
 
 ```python
@@ -278,7 +278,7 @@ THRESHOLD2 = 300
 
 ---
 
-As you can see, with those different weights we get different results. I would recommend you to test those values first with your images and later update the code to use your tuned values. 
+As you can see, with those different weights we get different results. I would recommend you to test those values first with your images and later update the code to use your tuned values.
 
 Also, as a continuation idea, it would be cool if the user could send those threshold values through the request.
 
@@ -346,7 +346,7 @@ Now you can go for your Azure UI portal in [this URL](https://portal.azure.com/)
 There you'll see the services you created through the CLI:
 
 ![Azure Portal 1.](/post-images/opencv-with-azure-functions-and-python/azure-portal-1.png "Azure Portal 1")
- 
+
 Next step is to click in your function app to open its specific page. Now, in the left menu, click in the Functions button. There you must assert that your Azure Function is there:
 
 ![Azure Portal 2.](/post-images/opencv-with-azure-functions-and-python/azure-portal-2.png "Azure Portal 2")
@@ -358,12 +358,12 @@ Now, click in the `Get Function URL` in the top menu. In this part you can speci
 ![Azure Portal 3.](/post-images/opencv-with-azure-functions-and-python/azure-portal-3.png "Azure Portal 3")
 
 ![Azure Portal 4.](/post-images/opencv-with-azure-functions-and-python/azure-portal-4.png "Azure Portal 4")
- 
+
 Finally, just copy this link and update the URL you used to test this project locally to use the Azure link. That's it.
 
 Now you have an Azure Function deployed where you can send an image and get its detected edges. Pretty cool!
 
-### Submission Category: 
+### Submission Category:
 
 [Note]: # (AI Aces, Computing Captains, Low-Code Legends, Java Jackpot, or Wacky Wildcards:)
 

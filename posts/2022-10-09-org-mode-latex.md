@@ -2,7 +2,7 @@
 title: "GNU Emacs Org-Mode and LaTeX"
 date: "2022-10-09"
 show: true
-tags: ["Emacs", "Org-Mode", "LaTeX"]
+tags: ["emacs", "org-mode", "latex"]
 ---
 
 # Introduction
@@ -51,7 +51,7 @@ Some even call it a dream come true.
 > notebooks, literate programming, maintaining to-do lists, planning projects,
 > and more - in a fast and effective plain text system.
 
-Org Mode is a tool that many consider the killer feature of Emacs. 
+Org Mode is a tool that many consider the killer feature of Emacs.
 
 The description I got from the official docs and shared previously explains it
 in a good way.

@@ -2,6 +2,7 @@
 title: "What is data governance?"
 date: "2024-01-05"
 show: true
+tags: ["data engineering"]
 ---
 
 # Introduction

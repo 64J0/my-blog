@@ -2,6 +2,7 @@
 title: "Notes on unit tests"
 date: "2024-06-19"
 show: true
+tags: ["automated tests"]
 ---
 
 Changelog:

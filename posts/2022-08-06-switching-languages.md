@@ -2,13 +2,13 @@
 title: "Major updates in this blog"
 date: "2022-08-06"
 show: true
-tags: []
+tags: ["english"]
 ---
 
 After many months (years) not updating this blog, I finally decided to come back to it. In this post I'm going to:
 
-* Explain what happened, and my decision to start posting in other platforms, 
-* Why I'm getting back, and 
+* Explain what happened, and my decision to start posting in other platforms,
+* Why I'm getting back, and
 * Why I decided to use english to write my articles.
 
 Also, my intetion for now is to now delete the old articles written in portuguese, since they are still part of my journey, and I would like to keep it recorded.

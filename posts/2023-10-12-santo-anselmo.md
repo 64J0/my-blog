@@ -2,6 +2,7 @@
 title: "Argumento de Santo Anselmo para existência de Deus"
 date: "2023-10-12"
 show: true
+tags: ["philosophy", "theology"]
 ---
 
 Changelog:

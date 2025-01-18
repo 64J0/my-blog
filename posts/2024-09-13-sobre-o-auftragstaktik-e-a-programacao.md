@@ -2,6 +2,7 @@
 title: "Sobre o auftragstaktik e a programação"
 date: "2024-09-13"
 show: true
+tags: ["leadership", "programming paradigms"]
 ---
 
 O auftragstaktik é uma tática de liderança surgida no contexto militar, que mostrou suas qualidades em grandes guerras. Hoje em dia essa doutrina é mais comumente associada a unidades de elite, em vez do exército completo.

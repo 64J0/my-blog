@@ -2,7 +2,7 @@
 title: "Emacs Literate Programming with Finances Example"
 date: "2022-11-05"
 show: true
-tags: ["Emacs", "Org-mode"]
+tags: ["emacs", "org-mode"]
 ---
 
 This post was originally intended to be only a [repository in GitHub](https://github.com/64J0/literate-prog-finance) where I would store the code that I wrote while studying Emacs + Literate Programming + Finances. But, eventually I decided to add it here, so it gets more visibility. I really believe that this topic must be shared and embraced in the industry for us to evolve faster.
@@ -10,7 +10,7 @@ This post was originally intended to be only a [repository in GitHub](https://gi
 # Introduction
 
 > Literate programming is a programming paradigm introduced in 1984 by Donald Knuth in which a computer program is given an explanation of its logic in a natural language, such as English, interspersed (embedded) with snippets of macros and traditional source code, from which compilable source code can be generated. The approach is used in scientific computing and in data science routinely for reproducible research and open access purposes. Literate programming tools are used by millions of programmers today.
-> 
+>
 > &#x2014; [1]
 
 This repository holds an example of literate programming used in the finances landscape, implemented with GNU Emacs and some other packages (Org-mode). You can find the complete documentation in reference [6].

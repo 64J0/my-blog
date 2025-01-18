@@ -2,9 +2,10 @@
 title: "Iniciando com o Docker e Containers"
 date: "2020-09-28"
 show: true
+tags: ["docker", "virtualization"]
 ---
 
-Saudações caro leitor, espero que você esteja bem. 
+Saudações caro leitor, espero que você esteja bem.
 
 Neste post pretendo colocar algumas informações a respeito de uma tecnologia que tenho estudado recentemente visando entender melhor o processo de subir uma aplicação *WEB* para um servidor. Sem mais delongas vou tratar de alguns assuntos iniciais sobre **Docker**, **Containers**, **Images** e **Kubernetes** de maneira resumida apenas para dar uma ideia de como fazer as primeiras aplicações e entender a utilidade dessas ferramentas/conceitos.
 
@@ -87,7 +88,7 @@ RUN npm install
 # Adiciona metadados à imagem para descrever qual porta o container estará escutando quando em execução.
 EXPOSE 8080
 
-# Copia o resto dos códigos da aplicação do host para os arquivos de sistema da imagem. 
+# Copia o resto dos códigos da aplicação do host para os arquivos de sistema da imagem.
 COPY . .
 
 # Executa o comando de início do servidor dentro do container.
@@ -96,7 +97,7 @@ CMD [ "npm", "start" ]
 
 A receita que o *Dockerfile* acima está especificando em outras palavras está dizendo:
 
-* Iniciando de uma imagem pré-existente do **Node.js** (*node:current-slim*). 
+* Iniciando de uma imagem pré-existente do **Node.js** (*node:current-slim*).
 * Usamos o WORKDIR para especificar que todas as ações subsequentes devem ser feitas no diretório */usr/src/app* nos arquivos de sistema da imagem (nunca os arquivos de sistema do *host*).
 * Copiamos o arquivo **package.json** do *host* para a localização atual ( . ) <u>na imagem</u> (neste caso */usr/src/app/package.json*).
 * Executamos o comando *npm install* dentro dos arquivos de sistema da imagem (que irá ler o *package.json* para determinar as dependências e instalá-las).

@@ -2,6 +2,7 @@
 title: "Creating a custom GH Action using F# and dynamic matrix configuration"
 date: "2023-05-10"
 show: true
+tags: ["fsharp", "github", "github actions"]
 ---
 
 # Introduction
