@@ -1,8 +1,8 @@
 ---
 title: "Desenvolvendo a feature 'GitHub Contrib Graph'"
 date: "2020-11-28"
-show: true
-tags: ["javascript"]
+show: false
+tags: ["javascript", "project"]
 ---
 
 Boa tarde pessoal, tudo jóia? Espero que sim.
@@ -15,13 +15,13 @@ A ideia pra essa feature surgiu quando estava scrollando pelo meu perfil no GitH
 
 ![Github Contrib](/post-images/feature-github-contrib/screenshot-github-contrib.png "Gráfico de contribuições do GitHub")
 
-Como esse gráfico é bonito pensei... Hum... E se eu colocasse isso no meu blog? Talvez as pessoas também achem legal... Daí surgiu a ideia da feature. 
+Como esse gráfico é bonito pensei... Hum... E se eu colocasse isso no meu blog? Talvez as pessoas também achem legal... Daí surgiu a ideia da feature.
 
 Inicialmente minha intenção é colocar apenas na página de *contato do blog* (que pode ser acessada clicando em qualquer foto minha em qualquer página) pois é onde acredito que faça mais sentido atualmente.
 
 ## Desenvolvimento:
 
-No início estava muito iludido e acreditava que seria super simples implementar a feature, bastando apenas chamar alguma rota da API do GitHub, que por sinal é super bem feita e documentada, e **SHAZAM**, apareceria todo configurado na página certa. 
+No início estava muito iludido e acreditava que seria super simples implementar a feature, bastando apenas chamar alguma rota da API do GitHub, que por sinal é super bem feita e documentada, e **SHAZAM**, apareceria todo configurado na página certa.
 
 Porém, como a vida sempre guarda surpresas, descobri lendo a documentação que não seria assim tão simples (*ainda bem, pois esse impecilho me permitiu estudar bem mais coisas, como será abordado posteriormente*).
 
@@ -36,14 +36,14 @@ Essa ferramenta foi desenvolvida em *Ruby* e para utilizá-la basta preencher ao
 O resultado de chamar essa rota é uma imagem, com a qual podemos apenas associá-la à propriedade *src* de uma tag *img*, como ilustrado no trecho de código abaixo.
 
 ```html
-<img 
-  src="https://ghchart.rshah.org/<github-account>" 
+<img
+  src="https://ghchart.rshah.org/<github-account>"
   alt="Github's contrib chart" />
 ```
 
 E pronto, a imagem será carregada com o conteúdo das suas contribuições de maneira atualizada.
 
-Por um instante realmente considerei utilizar essa estratégia no blog, porém, fiquei bastante intrigado com a maneira como esse projeto funcionava por baixo dos panos e decidi implementar uma solução própria. 
+Por um instante realmente considerei utilizar essa estratégia no blog, porém, fiquei bastante intrigado com a maneira como esse projeto funcionava por baixo dos panos e decidi implementar uma solução própria.
 
 Para resumir, após pensar um pouco cheguei no seguinte algoritmo:
 
@@ -65,7 +65,7 @@ Haha... Sem problemas... Eu já conhecia por alto (só sabia o nome da técnica 
 
 Novamente, neste ponto recorri ao Google para buscar conhecimento e cheguei à referência [2] que me mostrou um pacote do **NPM** (*Node Package Manager*) sensacional chamado **Cheerio**[5].
 
-O **Cheerio** é como se fosse um **jQuery** para o *back-end*, inclusive com uma sintaxe muito parecida ou idêntica em alguns aspectos. 
+O **Cheerio** é como se fosse um **jQuery** para o *back-end*, inclusive com uma sintaxe muito parecida ou idêntica em alguns aspectos.
 
 Pronto. Agora bastava apenas aplicar esse pacote e pegar o conteúdo da *div*. Porém, realizando alguns testes na página verdadeira do Github percebi que apenas o componente *svg*, cuja classe é ".js-calendar-graph-svg" já seria suficiente para renderizar o gráfico como eu gostaria.
 
@@ -87,7 +87,7 @@ Porém, com arquivos estáticos, como não é necessário renderizar o projeto a
 
 Além disso, a **Vercel**, empresa dona do **Next.js** e atualmente onde este blog está hospedado conta com uma vasta rede de **CDN's** espalhados ao redor do mundo capazes de devolver os conteúdos estáticos de maneira muito veloz, devido ao *cache* dessas ferramentas.
 
-Bom, essa técnica de gerar arquivos estáticos é uma mistura de duas ideias na verdade. Temos o **Server-side rendering** (*SSR*), pois é o servidor que renderiza o conteúdo, e temos a **Static Generation** (*SG*), onde o conteúdo é servido de forma otimizada com a maior parte de forma estática. 
+Bom, essa técnica de gerar arquivos estáticos é uma mistura de duas ideias na verdade. Temos o **Server-side rendering** (*SSR*), pois é o servidor que renderiza o conteúdo, e temos a **Static Generation** (*SG*), onde o conteúdo é servido de forma otimizada com a maior parte de forma estática.
 
 Ao utilizar essas estratégias, o **Next.js** ainda disponibiliza uma função para os desenvolvedores onde passamos um parâmetro que define de quanto em quanto tempo alguma informação deve ser revalidada.
 
@@ -101,7 +101,7 @@ E foi justamente isso que eu fiz, utilizando a função <u>*getStaticProps()*</u
 // pages/contato/index.js
 export async function getStaticProps() {
   const contribChartHTML = await getGithubData();
-  
+
   return {
     props: {
       contribChartHTML
@@ -150,7 +150,7 @@ O que garante esse comportamento adequado do *svg* no site do Github são justam
 
 Surpreendemente essa parte foi uma das mais complicadas. Precisei fazer vários testes com as propriedades deste elemento e consultar alguns sites, tendo destaque o conteúdo da referência [3].
 
-Todavia, no fim utilizei uma estratégia bem mais complicada que as mostradas nas referências encontradas (*provavelmente tem alguma forma bem mais simples de se garantir a responsividade dessa tag, porém não achei*). 
+Todavia, no fim utilizei uma estratégia bem mais complicada que as mostradas nas referências encontradas (*provavelmente tem alguma forma bem mais simples de se garantir a responsividade dessa tag, porém não achei*).
 
 A minha solução trabalha com eventos da tela do usuário para setar a escala e a *width* do elemento dinamicamente.
 
@@ -267,7 +267,7 @@ Por fim segue abaixo as referências mencionadas ao longo do texto para que poss
 
 [1] - Github Chart API. Disponível neste [link](https://ghchart.rshah.org/).
 
-[2] - Criando um Web Scraper com NodeJs, *Mundo JS*. Disponível neste [link](https://www.mundojs.com.br/2020/05/25/criando-um-web-scraper-com-nodejs/). 
+[2] - Criando um Web Scraper com NodeJs, *Mundo JS*. Disponível neste [link](https://www.mundojs.com.br/2020/05/25/criando-um-web-scraper-com-nodejs/).
 
 [3] - How to Scale SVG, *CSS tricks*. Disponível neste [link](https://css-tricks.com/scale-svg/).
 

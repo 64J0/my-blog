@@ -2,9 +2,10 @@
 title: "Sobre gerenciamento de redes"
 date: "2020-08-04"
 show: true
+tags: ["telecom"]
 ---
 
-Saudações leitor, neste post irei abordar alguns tópicos de gerenciamento de redes. 
+Saudações leitor, neste post irei abordar alguns tópicos de gerenciamento de redes.
 
 Esse material está inicialmente ligado à playlist disponibilizada pelo canal do [NICbr no youtube](https://www.youtube.com/channel/UCscVLgae-2f9baEXhVbM1ng).
 

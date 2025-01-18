@@ -2,6 +2,7 @@
 title: "Resumo: Tratado do Desânimo"
 date: "2023-08-08"
 show: true
+tags: ["philosophy", "theology"]
 ---
 
 No percurso da salvação da alma, muitas são as armas a disposição do inimigo no formato das tentações. Porém, nenhuma é tão mortal quanto o desânimo, conforme nos apresenta Pe. Jean Michel no livro [Tratado do Desânimo](https://a.co/d/6dtlBpG).

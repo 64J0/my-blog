@@ -2,6 +2,7 @@
 title: "Sobre a analogia entis"
 date: "2024-08-03"
 show: true
+tags: ["philosophy", "theology"]
 ---
 
 ![A Incredulidade de São Tomé (Caravaggio).](/post-images/sobre-a-analogia-entis/640px-Caravaggio_-_The_Incredulity_of_Saint_Thomas.jpg "Por Caravaggio - ![img](http://www.christusrex.org/www2/art/images/carav10.jpg), Domínio público, <https://commons.wikimedia.org/w/index.php?curid=6804893>.")

@@ -2,6 +2,7 @@
 title: "A Educação da Vontade: Meditação"
 date: "2024-02-16"
 show: true
+tags: ["philosophy", "theology"]
 ---
 
 Como iniciar a educação da vontade para termos uma vida virtuosa e alcançar a felicidade verdadeira?

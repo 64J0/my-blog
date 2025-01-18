@@ -2,7 +2,7 @@
 title: "Create a function to count words in F# docs using F#"
 date: "2021-08-11"
 show: true
-tags: ["F#", ".NET"]
+tags: ["fsharp", ".net"]
 ---
 
 > Disclaimer: This post was originally posted in Medium. [Link](https://medium.com/datarisk-io/create-a-function-to-count-words-in-f-docs-using-f-dfecf19e3c38).
@@ -105,9 +105,9 @@ let htmlNodeIsLeaf (node: HtmlNode) =
     && not (String.IsNullOrWhiteSpace(node.InnerHtml))
 
 let countWords (textNodes: seq<HtmlNode>) =
-    Seq.fold 
-        (fun (acc) (node: HtmlNode) -> 
-            acc + node.InnerText.Split(" ").Length) 
+    Seq.fold
+        (fun (acc) (node: HtmlNode) ->
+            acc + node.InnerText.Split(" ").Length)
         0 // acc initial value
         textNodes
 
@@ -123,7 +123,7 @@ let program (url: string) =
 
         let documentNode = html.DocumentNode
 
-        // xpath -> select html components 
+        // xpath -> select html components
         let xpath = @"//*[@id=""main-column""]"
         let singleNode =
             documentNode.SelectSingleNode(xpath)

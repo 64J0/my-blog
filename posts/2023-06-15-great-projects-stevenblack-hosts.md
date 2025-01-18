@@ -2,6 +2,7 @@
 title: "Great projects: StevenBlack/hosts"
 date: "2023-06-15"
 show: true
+tags: ["project", "open-source"]
 ---
 
 # Introduction

@@ -2,7 +2,7 @@
 title: "Dicas - Currículo & LinkedIn"
 date: "2020-12-26"
 show: true
-tags: ["trabalho", "dicas"]
+tags: ["curriculum vitae", "linkedin"]
 ---
 
 Fala meu povo, tudo jóia? Primeiro post depois do natal de 2020! Desejo que as comemorações tenham sido bem bacanas pra vocês meus caros e que a virada de ano seja também.
@@ -27,7 +27,7 @@ Espero que seja útil para vocês e pra mim, pois são dicas que pretendo aplica
 
 * Colocar mais que um número para contato, além do pessoal podemos colocar os pais ou cônjuge (colocar entre parêntesis (para contato)).
 
-* Colocar as vagas e áreas de interesse para trabalhar. Caso tenha um processo seletivo de uma vaga específica em mente vale a pena atualizar este campo para este processo específico. 
+* Colocar as vagas e áreas de interesse para trabalhar. Caso tenha um processo seletivo de uma vaga específica em mente vale a pena atualizar este campo para este processo específico.
 
 * Na formação destacar na primeira informação os cursos seguindo uma ordem cronológica dos mais atuais para os mais antigos (com a formatação convencional - apenas a primeira letra em maiúsculo), seguida da instituição e do mês e ano de conclusão (ou previsão de término caso ainda não tenha finalizado). Caso tenha alguma especialização esta deve vir na sequência.
 

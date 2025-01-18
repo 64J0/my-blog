@@ -2,6 +2,7 @@
 title: "Dicas de UI - Workshop Tiago Luchtenberg"
 date: "2020-08-21"
 show: true
+tags: ["ux/ui"]
 ---
 
 Saudações leitor. Nesse post irei destacar alguns pontos sobre o workshop de UI do Tiago Luchtenberg da Rocketseat [Behance](https://www.behance.net/tiagoluchtenberg/moodboards).

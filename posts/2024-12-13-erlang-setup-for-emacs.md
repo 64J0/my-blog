@@ -2,6 +2,7 @@
 title: "Erlang programming setup for Emacs"
 date: "2024-12-13"
 show: true
+tags: ["erlang", "emacs"]
 ---
 
 Recently, after talking to some friends from the [Don’t rely on Nulls](https://www.dontrelynulls.org/) and [Dr-Nekoma](https://github.com/Dr-Nekoma), I decided to start studying the famous Erlang programming language. Since the beginning of this journey, my goal was to leverage the LSP whenever possible to help writing programs.

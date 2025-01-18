@@ -2,7 +2,7 @@
 title: "Dockerizing a Python Backdoor Scenario to Study"
 date: "2022-09-04"
 show: true
-tags: ["Security", "Docker", "Python"]
+tags: ["security", "docker", "python", "devsecops"]
 ---
 
 # Introduction
@@ -77,12 +77,12 @@ The first term I'm going to set is the backdoor.
 > A backdoor is a typically covert method of bypassing normal authentication or
 > encryption in a computer, product, embedded device (e.g. a home router), or
 > its embodiment [&#x2026;].
-> 
+>
 > A backdoor may take the form os a hidden part of a program, a separate program
 > (e.g. Back Orifice may subvert the system through a rootkit), code in the
 > firmware of the hardware, or parts of an operating system such as
 > Windows. [&#x2026;]
-> 
+>
 > &#x2014; [1]
 
 In this article, the backdoor we'll tackle is a Python script that is used in
@@ -120,7 +120,7 @@ its port is open, executing some vulnerable service and payload.
 
 > Bind shells have the **listener running** on the target and the **attacker
 > connect to the listener** in order to gain a remote shell.
-> 
+>
 > &#x2014; [3]
 
 This approach is more hard to explore in the wild since firewalls are commonly
@@ -165,12 +165,12 @@ Read the following code in order to understand better.
     # environment.
     # Notice that it takes 20 seconds before the target tries to connect
     # to the attacker.
-    
+
     # ====================================
     # In a different shell, start the target container if it's not running
     # yet.
     docker-compose up target
-    
+
     # ====================================
     # Kill everything:
     docker-compose down

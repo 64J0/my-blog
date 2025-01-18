@@ -2,6 +2,7 @@
 title: "How to run dockerized CLI programs with input redirection"
 date: "2024-11-22"
 show: true
+tags: ["project", "docker", "cli", "fsharp"]
 ---
 
 Most of the time, when I see someone using a containerized application, it involves a long-running process, typically a web server and its associated services, such as databases, message brokers, etc.

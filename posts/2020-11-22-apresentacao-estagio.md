@@ -2,7 +2,7 @@
 title: "Apresentação da disciplina 'Estágio Supervisionado'"
 date: "2020-11-22"
 show: true
-tags: ["cefet", "estágio"]
+tags: ["cefet", "internship"]
 ---
 
 Saudações caro leitor.

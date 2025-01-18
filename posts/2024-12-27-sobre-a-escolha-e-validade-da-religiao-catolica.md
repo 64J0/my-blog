@@ -2,6 +2,7 @@
 title: "Sobre a escolha e validade da religião católica"
 date: "2024-12-27"
 show: true
+tags: ["philosophy", "theology"]
 ---
 
 Neste artigo compartilho alguns pensamentos a respeito da fé e validação da

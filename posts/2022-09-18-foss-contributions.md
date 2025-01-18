@@ -2,7 +2,7 @@
 title: "FOSS Contributions"
 date: "2022-09-18"
 show: true
-tags: ["FOSS", "Open Source", "Github"]
+tags: ["foss", "open-source", "github"]
 ---
 
 Changelog:

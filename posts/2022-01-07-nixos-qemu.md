@@ -2,7 +2,7 @@
 title: "Starting with NixOS using QEMU"
 date: "2022-01-07"
 show: true
-tags: ["NixOS", "QEMU"]
+tags: ["NixOS", "QEMU", "virtualization"]
 ---
 
 > Disclaimer: This post was originally posted in Dev.to. [Link](https://dev.to/64j0/starting-with-nixos-using-qemu-2ngh).
@@ -47,7 +47,7 @@ According to the site, QEMU is a generic and open source machine emulator and vi
 1. Emulator -
 
   Hardware or software that enables one computer system (called the host) to behave like another computer system (called the guest). An emulator typically enables the host system to run software or use peripheral devices designed for the guest system. Emulation refers to the ability of a computer program in an electronic device to emulate (or imitate) another program or device.
-    
+
 2. Virtualizer -
 
   Virtualization means a variety of technologies for managing computer resources by providing a software interface, known as an "abstraction layer", between the software (operating system and applications) and the hardware. Virtualization turns "physical" RAM and storage into "logical" resources.
@@ -67,7 +67,7 @@ According to the site, QEMU is a generic and open source machine emulator and vi
   2.4. OS virtualization -
 
   Under the control of one operating system, a server is split into "containers" that each handle an application.
-  
+
   With this tool it's possible to:
   - Run operating systems for any machine, on any supported architechture. It provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS.
   - Run programs for another Linux/BSD target, on any supported architechture.
@@ -117,7 +117,7 @@ In Linux, Logical Volume Manager (LVM) is a device mapper framework that provide
 - [Reference link](https://en.wikipedia.org/wiki/Systemd).
 
 systemd is a software suite that provides an array of system components for Linux operating systems. Its main aim is to unify service configuration and behavior across Linux distributions; systemd's primary component is a "system and service manager" - an init system used to bootstrap user space and manage user processes. It also provides replacements for various daemons and utilities, including device management, login management, network connection management, and event logging. The name systemd adheres to the Unix convention of naming daemons by appending the letter d.
-    
+
 ### Software RAID devices
 
 - [Reference link](https://en.wikipedia.org/wiki/RAID).
@@ -162,9 +162,9 @@ Some differences:
 * GPT partition tables allow for up to 128 separate partitions, which is more than enough for most real world applications.
 
 * As MBR is older, it's usually paired with older Legacy BIOS systems, while GPT is found on newer UEFI systems. This means that MBR partitions have better software and hardware compatibility, though GPT is starting to catch up.
-      
+
 ## Steps
-  
+
 Choose an interface for the system
 - i3wm gaps
 - dwm -> built with C code
@@ -176,15 +176,15 @@ Download the minimal image and configure it to use with QEMU.
   # download the minimal image:
   $ wget https://channels.nixos.org/nixos-21.05/latest-nixos-minimal-x86_64-linux.iso
   # it will download a file named: latest-nixos-minimal-x86_64-linux.iso
-  
+
   # config the image
   # cmd template -> qemu-img create -f qcow2 NOME.img XG
   $ qemu-img create -f qcow2 nixos-test.img 20G
   # command used to create, convert and modify disk images
   # -f:
   #   Stands for format option. qcow2 stands for copy on write 2nd generation.
-  
-  
+
+
   # bootstrap the machine
   # cmd template -> qemu-system-x86_64 -boot d -cdrom image.iso -m 512 -hda mydisk.img
   $ qemu-system-x86_64 -enable-kvm -boot d \
@@ -206,7 +206,7 @@ Download the minimal image and configure it to use with QEMU.
   #   Set the quantity of RAM.
   # -hda
   #   Use file as hard disk 0, 1, 2 or image.
-  
+
   # start the vm after closing it
   $ qemu-system-x86_64 -enable-kvm -boot d \
   $ -m 2G -cpu host -smp 2 -hda nixos-test.img

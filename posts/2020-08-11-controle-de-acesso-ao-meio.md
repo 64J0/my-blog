@@ -2,7 +2,7 @@
 title: "A subcamada de controle de acesso ao meio"
 date: "2020-08-11"
 show: true
-tags: ["telecom", "redes"]
+tags: ["telecom"]
 ---
 
 Neste post está um resumo do assunto tratado no capítulo 4 da referência [1]. De certa forma esse assunto está diretamente ligado ao post anterior, que falou sobre a camada de enlace de dados do modelo OSI, como ficará mais claro adiante.

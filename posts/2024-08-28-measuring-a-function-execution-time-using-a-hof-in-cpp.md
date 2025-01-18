@@ -2,6 +2,7 @@
 title: "Measuring a function execution time using a higher-order function in C++"
 date: "2024-08-28"
 show: true
+tags: ["c++", "fp"]
 ---
 
 These days I have being reading some contents about functional programming style using modern C++. In order to exercise it, I thought about creating a higher-order function that receives a function with no parameters (I'll dive deeper at this decision later), and measures how much time it takes to execute this function.

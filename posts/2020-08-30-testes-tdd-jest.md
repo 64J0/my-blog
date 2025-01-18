@@ -2,11 +2,12 @@
 title: "Testes, TDD e Jest"
 date: "2020-08-30"
 show: true
+tags: ["automated tests", "javascript"]
 ---
 
 Saudações leitores, nesse post vou colocar algumas anotações e resumos dos meus estudos sobre testes automatizados e tudo que cerca esse assunto, como o padrão de projetos TDD (*Test Driven Development*) e a ferramenta que estou usando atualmente para criar e executar os testes - Jest.
 
-Antes de iniciarmos o post é bom definir o significado de alguns termos que serão encontrados a seguir. 
+Antes de iniciarmos o post é bom definir o significado de alguns termos que serão encontrados a seguir.
 
 -- **Arquiteturas de software** são regras aplicáveis a projetos que deverão escalar e permitir uma manutenção do código de maneira simplificada, evitando acoplamento de funcionalidades.
 
@@ -40,7 +41,7 @@ Esse tipo de teste **JAMAIS** realizará chamadas a API's, não apresenta efeito
 
 2. Teste de integração:
 
-Testam funcionalidades completas, passando por várias camadas da aplicação. 
+Testam funcionalidades completas, passando por várias camadas da aplicação.
 
 Por exemplo, um teste que passe por arquivos de: Route -> Controller -> Service -> Repository -> ...
 
@@ -66,7 +67,7 @@ Essa metodologia apresenta três estágios:
 
 ![Ciclo do TDD](/post-images/testes-tdd-jest/tdd-cycle.jpg "Ciclo do TDD")
 
-Fonte da imagem: [3]. 
+Fonte da imagem: [3].
 
 De acordo com [1], temos diversos ganhos com esta estratégia:
 
@@ -87,7 +88,7 @@ Atualmente, a ferramenta mais utilizada é o [Jest](https://jestjs.io/), um *fra
 
 Um dos pontos fortes dessa ferramenta é a capacidade de se integrar com vários outros *frameworks* e ferramentas, como: Babel, TypeScript, Node, React, Angular, Vue, etc.
 
-Além disso, é possível executar uma instrução que gera um relatório detalhado informando a porcentagem do código coberta pelos testes. 
+Além disso, é possível executar uma instrução que gera um relatório detalhado informando a porcentagem do código coberta pelos testes.
 
 Dessa forma temos uma indicação visual de quanto código ainda precisa ser testado, o que facilita bastante no início dos estudos.
 
@@ -98,22 +99,22 @@ Neste exemplo vou mostrar e explicar um trecho de código de um dos testes que i
 O objetivo do teste mostrado é verificar um *service* responsável por autenticar um usuário no sistema - fazer *login*.
 
 ```javascript
-  // Carregando o módulo bcryptjs que foi baixado utilizando o NPM e 
+  // Carregando o módulo bcryptjs que foi baixado utilizando o NPM e
   // está atualmente na pasta node_modules
   const bcrypt = require("bcryptjs");
 
-  // Importando o service que será testado e que é responsável por 
+  // Importando o service que será testado e que é responsável por
   // autenticar o usuário
   const AuthenticateUserService = require("./AuthenticateUserService");
 
   // Nesse trecho está sendo "mockado" o repositório de usuários
-  // Isso se deve ao fato de que o teste não engloba essa parte do sistema, 
-  // portanto ela está sendo substituída por uma versão customizada e falsa, 
+  // Isso se deve ao fato de que o teste não engloba essa parte do sistema,
+  // portanto ela está sendo substituída por uma versão customizada e falsa,
   // que implementa as mesmas funcionalidades do repositório real
   jest.mock("../../repositories/users-repository");
 
-  // Também estou "mockando" uma função do framework bcryptjs, pois não é 
-  // necessário testar essa funcionalidade, visto que não foi desenvolvida 
+  // Também estou "mockando" uma função do framework bcryptjs, pois não é
+  // necessário testar essa funcionalidade, visto que não foi desenvolvida
   // por mim
   jest.mock("bcryptjs", () => {
     const compare = async (password, userPassword) => {
@@ -129,8 +130,8 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
     }
   });
 
-  // Além disso, também estou "mockando" uma função responsável por 
-  // fazer sign-in e gerar um token de acesso baseado em tempo da 
+  // Além disso, também estou "mockando" uma função responsável por
+  // fazer sign-in e gerar um token de acesso baseado em tempo da
   // biblioteca jsonwebtoken
   jest.mock("jsonwebtoken", () => {
     const sign = () => {
@@ -146,9 +147,9 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
   // Nessa linha é definido que será testado o service AuthenticateUserService
   describe("AuthenticateUserService", () => {
 
-    // Aqui é definido qual o funcionamento esperado do código, neste caso 
+    // Aqui é definido qual o funcionamento esperado do código, neste caso
     // o service deve executar da maneira correta
-    // São especificados os parâmetros que serão usados para fazer login e 
+    // São especificados os parâmetros que serão usados para fazer login e
     // abaixo é descrito o funcionamento esperado da implementação do código
     it("should authenticate", async () => {
       const result = await AuthenticateUserService.execute({
@@ -156,21 +157,21 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
         password: "123456"
       });
 
-      // Espera-se que o resultado da execução do service seja um objeto 
+      // Espera-se que o resultado da execução do service seja um objeto
       // com as chaves auth, token e user
       expect(result).toHaveProperty("auth");
       expect(result).toHaveProperty("token");
       expect(result).toHaveProperty("user");
 
-      // Além disso espera-se que o objeto user tenha uma chave de nome 
+      // Além disso espera-se que o objeto user tenha uma chave de nome
       // "_id" com valor "1"
       expect(result.user).toHaveProperty("_id", "1");
       // E uma chave chamada "password" com valor undefined
       expect(result.user).toHaveProperty("password", undefined);
     });
 
-    // Nesse teste esperamos que o service não faça a autenticação caso seja 
-    // enviado um e-mail não presente dentre os valores cadastrados no 
+    // Nesse teste esperamos que o service não faça a autenticação caso seja
+    // enviado um e-mail não presente dentre os valores cadastrados no
     // banco de dados
     it("should not authenticate when it's used a non-existent e-mail in the database", async () => {
       const result = await AuthenticateUserService.execute({
@@ -178,7 +179,7 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
         password: "123456"
       });
 
-      // Neste trecho estamos especificando um "espião" para monitorar o chamado 
+      // Neste trecho estamos especificando um "espião" para monitorar o chamado
       // da função do módulo bcryptjs chamado compare.
       const spyOnBcrypt_Compare = jest.spyOn(bcrypt, "compare");
 
@@ -189,8 +190,8 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
       expect(result).toHaveProperty("auth", false);
     });
 
-    // Por fim, neste teste verificamos se o service deixará de autenticar um 
-    // usuário cuja senha informada seja diferente da senha cadastrada na 
+    // Por fim, neste teste verificamos se o service deixará de autenticar um
+    // usuário cuja senha informada seja diferente da senha cadastrada na
     // base de dados
     it("should not authenticate when it's send a wrong password", async () => {
       const result = await AuthenticateUserService.execute({
@@ -201,12 +202,12 @@ O objetivo do teste mostrado é verificar um *service* responsável por autentic
       // Novamente estamos "espiando" a execução da função bcrypt.compare()
       const spyOnBcrypt_Compare = jest.spyOn(bcrypt, "compare");
 
-      // Esperamos que essa função tenha sido chamada apenas uma vez, para verificar 
+      // Esperamos que essa função tenha sido chamada apenas uma vez, para verificar
       // se o e-mail informado está presente no banco
       expect(spyOnBcrypt_Compare).toHaveBeenCalledTimes(1);
 
-      // Assim como anteriormente, espera-se que o resultado da aplicação 
-      // do service 
+      // Assim como anteriormente, espera-se que o resultado da aplicação
+      // do service
       // recebamos como resultado um objeto com chave "auth" e valor false
       expect(result).toHaveProperty("auth", false);
     });

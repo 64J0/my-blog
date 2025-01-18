@@ -2,7 +2,7 @@
 title: "A camada de enlace"
 date: "2020-08-06"
 show: true
-tags: ["telecom", "redes"]
+tags: ["telecom"]
 ---
 
 Neste post irei escrever um resumo dos meus estudos acerca da segunda camada da pilha do modelo OSI, também conhecida como camada de enlace. Grande parte do conteúdo está sendo retirado do livro citado na referência [1], pois é o livro que estou lendo no momento para aprender mais coisas sobre redes.
@@ -60,9 +60,9 @@ Em outras palavras, a camada de enlace de dados usa os serviços da camada físi
 2. Lidar com erros de transmissão;
 3. Regular o fluxo de dados de tal forma que receptores lentos não sejam atropelados por transmissores rápidos.
 
-Para alcançar esses objetivos, a camada de enlace de dados recebe os pacotes, que consistem em dados puros, da camada de rede e os encapsula em **quadros** para transmissão. 
+Para alcançar esses objetivos, a camada de enlace de dados recebe os pacotes, que consistem em dados puros, da camada de rede e os encapsula em **quadros** para transmissão.
 
-Cada quadro contém um cabeçalho (*header*), um campo de carga útil que conterá o pacote, e um final de quadro (*trailer*). Portanto, um quadro consiste em um pacote incorporado de algumas informações de controle (no cabeçalho) e em um *checksum* (no final). 
+Cada quadro contém um cabeçalho (*header*), um campo de carga útil que conterá o pacote, e um final de quadro (*trailer*). Portanto, um quadro consiste em um pacote incorporado de algumas informações de controle (no cabeçalho) e em um *checksum* (no final).
 
 O gerenciamento de quadros constitui o núcleo das atividades da camada de enlace de dados.
 

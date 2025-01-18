@@ -2,6 +2,7 @@
 title: "Exercism's bank account problem and race conditions"
 date: "2024-12-26"
 show: true
+tags: ["fsharp", "distributed systems", "concurrency"]
 ---
 
 This post is a bit different since most of the comments and explanations are baked into the code. I think this will make it easier to read and understand.

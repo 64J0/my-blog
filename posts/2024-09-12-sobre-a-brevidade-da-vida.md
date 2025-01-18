@@ -2,6 +2,7 @@
 title: "Resumo do livro 'Sobre a Brevidade da Vida' (Sêneca)"
 date: "2024-09-12"
 show: true
+tags: ["philosophy"]
 ---
 
 [Neste link](https://a.co/d/gbjv5hA) que redireciona para a oferta do livro "Sobre a Brevidade da Vida" na Amazon, de edição bilíngue (latim-português), temos acesso a ensinamentos de Sêneca, um dos grandes nomes da filosofia estoica da história.

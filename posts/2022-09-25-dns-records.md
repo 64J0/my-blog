@@ -2,7 +2,7 @@
 title: "DNS Record Types"
 date: "2022-09-25"
 show: true
-tags: ["DevSecOps", "Network"]
+tags: ["telecom", "network", "devsecops", "devops"]
 ---
 
 # Introduction

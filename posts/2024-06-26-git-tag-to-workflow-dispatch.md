@@ -2,6 +2,7 @@
 title: "Creating another custom GH Action using F#: git-tag-to-workflow-dispatch"
 date: "2024-06-26"
 show: true
+tags: ["project", "fsharp", "github actions"]
 ---
 
 # Introduction
