@@ -21,7 +21,7 @@ following keys:
 And to switch between different terminal tabs one can use:
 
 -   *Alt + tab_number* (example: *Alt + 1*)
--   *M-<number>* using Emacs terminology
+-   *M-{number}* using Emacs terminology
 
 ## Searching at the history
 
