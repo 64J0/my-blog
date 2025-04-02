@@ -9,6 +9,7 @@ Changelog:
 
 -   **2022-09-18:** First version published.
 -   **2025-01-10:** Major rewrite with text enhancements.
+-   **2025-04-02:** Add reference to "The pragmatic open source contributor".
 
 ## Introduction
 
@@ -154,3 +155,9 @@ That's it. Let me know if you have any question, or would like to talk about
 this framework.
 
 -   Reach me on [LinkedIn](https://www.linkedin.com/in/vinicius-gajo/) or [GitHub](https://github.com/64J0).
+
+If you'd like to get a different although related view on this topic, check
+[The Pragmatic Open Source Contributor](https://diurnal.st/2025/03/02/the-pragmatic-open-source-contributor.html)
+article. Note that it deals with more bureaucracy parts than I covered here, so
+it could be more aligned to some specific scenarios, especially in very
+regulated industries.
