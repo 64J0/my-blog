@@ -30,7 +30,7 @@
     "remark-math": "^6.0.0",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.2",
-    "sass": "^1.86.0",
+    "sass": "^1.86.3",
     "unified": "^11.0.5"
   },
   "devDependencies": {
