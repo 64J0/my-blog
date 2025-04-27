@@ -5,10 +5,10 @@ show: true
 tags: ["english", "philosophy", "virtues", "Aristotle"]
 ---
 
-When you start studying the Greek classic philosophers it may become evident
-that a side-effect of their seek for the "Objective Truth" is to answer the most
-important questions of a human life. For example, what is knowledge, what is the
-goal of life, what is a good life, what are virtues, etc.
+When you start studying the Greek classical philosophers it may become evident
+that a side-effect of their search for the "Objective Truth" is to answer the
+most important questions of a human life. For example, what is knowledge, what
+is the goal of life, what is a good life, what are virtues, etc.
 
 And it's impressive to realize that they were able to reach rational and based
 answers for most of those questions.
@@ -44,19 +44,19 @@ Well, there are some directives you can consider before jumping into action:
    [Sobre o relativismo
    moral](https://gaio.dev/posts/2024-06-18-sobre-o-relativismo-moral)).*
 2. Take into account the errors you're especially more prone to (different
-   people are more inclined to different kind of errors, what is your personal
-   inclination?). Then, we must drag ourselves away, in the opposite direction,
-   for by steering wide of our besetting error we shall make a middle course.
+   people are more inclined to different kind of errors). Then, we must drag
+   ourselves away, in the opposite direction, for by steering wide of our
+   besetting error we shall make a middle course.
 3. Be in guard against what is purely pleasant!
 4. If it's possible, simulate by considering the radical scenarios first, then
    it may be more clear what the middle course looks like.
 
-## Related books:
+## Related books
 
 These books were my main reference while writing this post, and if you'd like to
 get a deeper understanding, I'd suggest reading it in the following order.
 
-- Nicomachean Ethics: 73. Aristotle. Amazon [link](https://a.co/d/j6kxRkd). This
+- *Nicomachean Ethics* - Aristotle. Amazon [link](https://a.co/d/j6kxRkd). This
   is my favorite edition, from Loeb Classical Library.
-- A cultura importa: fé e sentimento em um mundo sitiado. Roger Scruton. Amazon
-  [link](https://a.co/d/3dDRwsy).
+- *A cultura importa: fé e sentimento em um mundo sitiado* (*Culture matters*) -
+  Roger Scruton. Amazon [link](https://a.co/d/3dDRwsy).
