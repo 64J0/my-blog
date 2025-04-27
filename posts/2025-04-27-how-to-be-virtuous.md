@@ -30,7 +30,8 @@ aligned spirit.
 Aristotle's take is that being virtuous is similar to being strong. To be strong
 you need to exercise your muscles (conscious practice), but just exercising is
 not sufficient, you need to feed your body with the right nutrients (study what
-virtuous people did in the past), and have the necessary rest (reflection).
+virtuous people did in the past), and have the necessary rest (reflection, or
+maybe just rest to restore your energy in this context too).
 
 Finally, as noted before, virtue lies in the middle of two radical vices. But
 how can we know where this middle is?
