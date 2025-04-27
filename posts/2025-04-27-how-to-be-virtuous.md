@@ -21,7 +21,7 @@ by studying what virtuous people did in the past. While doing this, you'll
 notice that virtue lies in the middle of two vices, and that it depends on the
 actual circumstances.
 
-This idea is related to Plato's aristocrat education.
+This idea is related to Plato's aristocratic education.
 
 Furthermore, it's not sufficient to just know what virtuous people did in the
 past, one needs to put it into **practice consciously**, with the right and
