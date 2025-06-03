@@ -65,7 +65,7 @@ let trackComputationHistogram (histogram: Histogram) (computation: float -> floa
     using (histogram.NewTimer()) (fun _ -> computation data)
 ```
 
-Notice that this module provides a bunch of helper functions which are useful to create our custom metrics, being it either a counter, a gauge, a summary or a histogram (for more information about those, read the Prometheus official documentation and the prometheus-net's repository README).
+Notice that this module provides a bunch of helper functions which are useful to create our custom metrics, whether it's a counter, a gauge, a summary or a histogram (for more information about those, read the Prometheus official documentation and the prometheus-net's repository README).
 
 ## Giraffe middlewares
 
