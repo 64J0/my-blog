@@ -13,13 +13,13 @@ Recently, I invested some time into the development of a new open-source project
 2.  Expose the necessary metrics from this API to Prometheus in order to monitor the "four golden signals" as defined by Google's SRE book: [link](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals);
 3.  Present the metrics collected using a Grafana dashboard.
 
-With time I decided to add other features on top of those, but for now, with this post, I'm going to focus on the Giraffe middlewares and their interaction with prometheus-net's custom metrics.
+With time, I decided to add other features on top of those, but for now, with this post, I'm going to focus on the Giraffe middlewares and their interaction with prometheus-net's custom metrics.
 
 So, with no further ado, let's start.
 
 ## Custom metrics
 
-In order to accomplish my goals, I found out that it would be required to add some custom metrics on top of what we have by default when using prometheus-net. So, I added this module to my API project:
+To accomplish my goals, I found out that it would be required to add some custom metrics on top of what we have by default when using prometheus-net. So, I added this module to my API project:
 
 ```fsharp
 module API.MonitoringPrometheus
@@ -158,7 +158,7 @@ let appRouter: Endpoint list =
 
 ## API server
 
-Finally, the server configuration with the necessary changes to expose the Prometheus metrics in a different port from the main API is:
+Finally, the server configuration with the necessary changes to expose the Prometheus metrics on a different port from the main API is:
 
 ```fsharp
 open System.Net
