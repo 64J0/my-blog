@@ -13,14 +13,14 @@ tags: ["fsharp", ".net", "assembly", "simd", "intrinsics", "sse", "performance"]
 
 Yesterday I decided to explore the .NET [SIMD](https://learn.microsoft.com/en-us/dotnet/standard/simd) (Single Instruction, Multiple Data) abstractions using F#, so I could better understand how much more optimized my programs could perform using this technology.
 
-And from this objective, the [64J0/fsharp&#x2013;simd-vector-addition](https://github.com/64J0/fsharp--simd-vector-addition) repository was born.
+And from this objective, the [64J0/fsharp--simd-vector-addition](https://github.com/64J0/fsharp--simd-vector-addition) repository was born.
 
 ## The repository
 
-This repository contains this code that uses the generic SIMD structures from `System.Numerics`, and the specific **intrinsics** for SSE (Streaming SIMD Extensions) in x86 processors:
+This repository contains code that uses the generic SIMD structures from `System.Numerics`, and the specific **intrinsics** for SSE (Streaming SIMD Extensions) in x86 processors:
 
 ```fsharp
-# src/Sse.fs
+// src/Sse.fs
 module Simd.Sse
 
 open System
@@ -124,7 +124,7 @@ Other than that, I added some unit tests to assert the functions are working pro
 
 ## The benchmark
 
-To benchmark those different approaches, I decided to compare them with the most simple implementation I could think in terms of F# syntax:
+To benchmark those different approaches, I decided to compare them with the simplest implementation I could think of in terms of F# syntax:
 
 ```fsharp
 let scalarAdd (a: float32[]) (b: float32[]) =
@@ -163,7 +163,7 @@ dotnet run -c Release
 
 As you can see, the "optimized" code was actually a bit slower than the most simple version.
 
-My first thought when seeing this result was that I did something wrong, and then I started looking into other project's code with proper implementations. Eventually I found this [fsprojects/SIMDArray](https://github.com/fsprojects/SIMDArray/blob/master/src/SIMDArray/SIMDArray.fs#L479) repository, and found out that its `sum` implementation was using similar constructs (`while ... do`, for example).
+My first thought when seeing this result was that I did something wrong, and then I started looking into other project's code with proper implementations. Eventually, I found this [fsprojects/SIMDArray](https://github.com/fsprojects/SIMDArray/blob/master/src/SIMDArray/SIMDArray.fs#L479) repository, and found out that its `sum` implementation was using similar constructs (`while ... do`, for example).
 
 Then, I decided to check the x86 assembly using Godbolt's Compiler Explorer: [link](https://godbolt.org/z/beETe5zYE).
 
@@ -175,7 +175,7 @@ Program+scalarAdd@10:Invoke(float,float):float:this (FullOpts):
         ret
 ```
 
-Notice that this `scalarAdd@10:Invoke...` function is related to the anonymous function we used as the parameter for the `Array.map2`. You can assert that the generated assembly will be the optimized SIMD instruction by using different operations, like (-), (\*), etc, and verifying the generated assembly.
+Notice that this `scalarAdd@10:Invoke...` function is related to the anonymous function we used as the parameter for the `Array.map2`. You can assert that the generated assembly will be the optimized SIMD instruction by using different operations, like (-), (*), etc., and verifying the generated assembly..
 
 ## Conclusion
 
