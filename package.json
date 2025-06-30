@@ -39,7 +39,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "eslint": "^9.29.0",
-    "eslint-config-next": "^15.3.3",
+    "eslint-config-next": "^15.3.4",
     "eslint-plugin-react": "^7.37.5",
     "jest": "^30.0.2",
     "typescript": "^5.8.3"
