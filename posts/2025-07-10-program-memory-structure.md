@@ -103,7 +103,7 @@ As the program demands more memory in runtime, the heap usually grows upward, fr
 
 Instead of growing upward like the heap, the stack grows downward, from higher memory addresses to lower ones. It uses a basic last-in first-out (LIFO) data structure, which is why it's called a stack.
 
-When the program calls a function, the function's local variables, any passed parameters, the callers return address, and potentially other data are stored at the stack, in a structure called a stack frame.
+When the program calls a function, the function's local variables, any passed parameters, the caller’s return address, and potentially other data are stored at the stack, in a structure called a stack frame.
 
 The more nested the function calls, the more frames are stacked on top of each other. If there's a lot of frames, the program eventually breaks due to a stack overflow error.
 
