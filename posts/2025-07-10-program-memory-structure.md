@@ -13,7 +13,7 @@ A process is essentially the instance of a program being executed, with its own 
 
 Those processes that run outside the OS scope (in Linux we say that those programs run in user mode, as opposed to OS processes that run in kernel mode), do not have direct access to the physical hardware. Instead, the OS acts in the middle, using `syscall` s triggered from the user space program to deal with the hardware.
 
-Considering the RAM access, when a user space program starts, the OS provides to it something called a virtual memory address space, that only the OS knows how to map into real physical memory address space. This is necessary to make sure a program has a harder time messing with another program's memory, making the bad actors life's harder.
+Considering the RAM access, when a user space program starts, the OS provides to it something called a virtual memory address space, that only the OS knows how to map into real physical memory address space. This is necessary to make sure a program has a harder time messing with another program's memory, making life harder for bad actors.
 
 Both virtual and physical memory address spaces are divided into blocks with the same size, called **pages** at the virtual memory scope, and **frames** at the physical memory scope.
 
