@@ -33,7 +33,7 @@
     "unified": "^11.0.5"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^15.3.4",
+    "@next/eslint-plugin-next": "^15.4.2",
     "@types/node": "^24.0.13",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
