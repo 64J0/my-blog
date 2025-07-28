@@ -5,6 +5,11 @@ show: true
 tags: ["linux", "os", "low-level", "memory"]
 ---
 
+### Changelog
+
+- [2025-07-10 Thu] First version released.
+- [2025-07-28 Mon] Improved memory schema, add memory leak Wikipedia link, small tweaks at the code to improve readability.
+
 ## Introduction to processes
 
 Modern operational systems are capable of handling multiple processes running asynchronously, and sometimes concurrently.
@@ -25,22 +30,22 @@ The virtual memory of a process is divided into several regions or sections, wit
 
 ``` shell
   # +----------------------------------+
-  # |          Stack        (v)        |
+  # |    Stack      (grows downward v) |
   # +----------------------------------+
   # |                                  |
   # |    ~~~~~ available space ~~~~    |
   # |                                  |
   # +----------------------------------+
   # |                                  |
-  # |          Heap         (^)        |
+  # |    Heap        (grows upward ^)  |
   # |                                  |
   # +----------------------------------+
-  # |          BSS                     |
+  # |    BSS                           |
   # +----------------------------------+
-  # |          Data                    |
+  # |    Data                          |
   # +----------------------------------+
   # |                                  |
-  # |          Text / Code             |
+  # |    Text / Code                   |
   # |                                  |
   # +----------------------------------+
 ```
@@ -95,13 +100,13 @@ The heap is used for dynamically allocated memory. Think in terms of C's *malloc
 
 The memory allocator keeps track of which parts of the memory are free, and which are in use. It's also responsible for allocating the memory space and later freeing it according to the program demands.
 
-If the program does not release the unnecessary memory blocks after their usage, these memory blocks will remain unusable until the program exits. This problem is known as `memory leak`, and over time causes the blocked memory blocks to pile up, eventually crashing the program.
+If the program does not release the unnecessary memory blocks after their usage, these memory blocks will remain unusable until the program exits. This problem is known as *memory leak* [4], and over time causes the blocked memory blocks to pile up, eventually crashing the program.
 
 As the program demands more memory in runtime, the heap usually grows upward, from lower addresses to higher ones.
 
 ### Stack
 
-Instead of growing upward like the heap, the stack grows downward, from higher memory addresses to lower ones. It uses a basic last-in first-out (LIFO) data structure, which is why it's called a stack.
+Instead of growing upward like the heap, the stack grows downward, from higher memory addresses to lower ones. It uses a basic last-in first-out (**LIFO**) data structure, which is why it's called a stack.
 
 When the program calls a function, the function's local variables, any passed parameters, the caller’s return address, and potentially other data are stored at the stack, in a structure called a stack frame.
 
@@ -125,6 +130,7 @@ If you found this interesting and would like to check a real life assembly code,
 
 ## References
 
--   [1] Why Programs Use Stack, Heap, and Other Memory Segments. YouTube [link](https://www.youtube.com/watch?v=EXIxAPITb7U). My main inspiration to write this post, to keep its lessons documented for fast consulting and studying.
--   [2] Beginning x64 Assembly Programming. Amazon [link](https://a.co/d/hE556TU).
--   [3] Understanding the Memory Layout of Linux Executables. GitHub Gist [link](https://gist.github.com/CMCDragonkai/10ab53654b2aa6ce55c11cfc5b2432a4).
+-   [1] - Why Programs Use Stack, Heap, and Other Memory Segments. BitLemon. YouTube [link](https://www.youtube.com/watch?v=EXIxAPITb7U). *My main inspiration to write this post, to keep its lessons documented for fast consulting.*
+-   [2] - Beginning x64 Assembly Programming. Amazon [link](https://a.co/d/hE556TU).
+-   [3] - Understanding the Memory Layout of Linux Executables. GitHub Gist [link](https://gist.github.com/CMCDragonkai/10ab53654b2aa6ce55c11cfc5b2432a4).
+-   [4] - Memory leak. Wikipedia [link](https://en.wikipedia.org/wiki/Memory_leak).
