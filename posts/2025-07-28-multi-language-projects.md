@@ -11,13 +11,13 @@ tags: ["linux", "os", "low-level", "compiler", "memory"]
 
 ## Introduction
 
-Have you ever seem a project that combines more than one programming language to build a single application? If not, let me give you some examples:
+Have you ever seen a project that combines more than one programming language to build a single application? If not, let me give you some examples:
 
 -   [pytorch/pytorch](https://github.com/pytorch/pytorch)
 -   [duckdb/duckdb](https://github.com/duckdb/duckdb)
 -   [FFmpeg/FFmpeg](https://github.com/FFmpeg/FFmpeg)
 
-This combination, when properly done, results in better performance, leveraging the different language strengths. And the key to understand how this works is to understand how the compiler works.
+This combination, when properly done, delivers better performance by leveraging the different language strengths. The key to understanding how this works is to understand how the compiler works.
 
 ### Reasons for combining different programming languages
 
@@ -40,7 +40,7 @@ So, with no further ado, let's get a generic comprehension of how a compiler wor
   #               +-------------------+   +--------------+   +-----------+   +--------+
   #
   # - Obs.: To compile C++ code, we can just replace the Pre-Processor and
-  # Compiler to the appropriate boxes. In fact, we can replace any box there for
+  # Compiler with the appropriate boxes. In fact, we can replace any box there for
   # compiling different languages, like Fortran, Ada, Objective-C, etc. That's why
   # GCC is called GNU Compiler Collection nowadays.
   #
