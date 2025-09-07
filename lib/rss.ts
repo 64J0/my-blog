@@ -4,13 +4,22 @@ import matter from "gray-matter";
 
 interface NewFeedItem {
   title: string;
-  description: string | undefined;
+  description: string;
   link: string;
   pubDate: string;
   postId: string;
 }
 
 const postsDirectory = path.join(process.cwd(), "posts");
+
+// Minimal XML escaping for text nodes/attributes
+const xmlEscape = (s: string) =>
+  String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
 
 const createRssDoc = (items: string) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
@@ -25,11 +34,11 @@ const createRssDoc = (items: string) => `<?xml version="1.0" encoding="UTF-8" ?>
 const createNewFeedItem = ({ title, link, pubDate, postId, description }: NewFeedItem) => {
   return `
     <item>
-      <title>${title}</title>
-      <description>${description}</description>
-      <link>${link}</link>
-      <guid isPermaLink="false">${postId}</guid>
-      <pubDate>${pubDate}</pubDate>
+      <title>${xmlEscape(title)}</title>
+      <description>${xmlEscape(description)}</description>
+      <link>${xmlEscape(link)}</link>
+      <guid isPermaLink="false">${xmlEscape(postId)}</guid>
+      <pubDate>${xmlEscape(pubDate)}</pubDate>
     </item>`;
 };
 
@@ -56,7 +65,7 @@ export function getRssData(): string {
       const pubDate = date ? new Date(date).toUTCString() : "";
       return createNewFeedItem({
         title: matterResult.data.title,
-        description: matterResult.data.description,
+        description: matterResult.data.description ?? "",
         link: `https://gaio.dev/posts/${fileName.replace(/\.md$/, "")}`,
         pubDate,
         postId: fileName
