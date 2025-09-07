@@ -51,11 +51,14 @@ export function getRssData(): string {
       return matterResult.data.show;
     })
     .map(([ matterResult, fileName ]) => {
+      // Convert date to RFC 822 format for RSS compliance
+      const date = matterResult.data.date;
+      const pubDate = date ? new Date(date).toUTCString() : "";
       return createNewFeedItem({
         title: matterResult.data.title,
         description: matterResult.data.description,
         link: `https://gaio.dev/posts/${fileName.replace(/\.md$/, "")}`,
-        pubDate: matterResult.data.date,
+        pubDate,
         postId: fileName
       });
     })
