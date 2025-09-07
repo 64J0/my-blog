@@ -9,7 +9,7 @@ module.exports = {
     async headers() {
       return [
         {
-          source: '/rss.xml',
+          source: '/rss',
           headers: [
             {
               key: 'Content-Type',
