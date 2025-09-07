@@ -12,30 +12,25 @@ interface NewFeedItem {
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-const createRssDoc = (items: string) => `
-<?xml version="1.0" encoding="UTF-8" ?>
+const createRssDoc = (items: string) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
-    <channel>
-        <title>64J0's Blog</title>
-        <description>This is 64J0's personal blog, where I share my thoughts regarding technology, programming, philosophy, theology, and more.</description>
-        <link>https://gaio.dev/</link>
-
-        ${items}
-
-    </channel>
-</rss>
-`;
+  <channel>
+    <title>64J0's Blog</title>
+    <description>This is 64J0's personal blog, where I share my thoughts regarding technology, programming, philosophy, theology, and more.</description>
+    <link>https://gaio.dev/</link>
+    ${items}
+  </channel>
+</rss>`;
 
 const createNewFeedItem = ({ title, link, pubDate, postId, description }: NewFeedItem) => {
   return `
-<item>
-    <title>${title}</title>
-    <description>${description}</description>
-    <link>${link}</link>
-    <guid isPermaLink="false">${postId}</guid>
-    <pubDate>${pubDate}</pubDate>
-</item>
-  `;
+    <item>
+      <title>${title}</title>
+      <description>${description}</description>
+      <link>${link}</link>
+      <guid isPermaLink="false">${postId}</guid>
+      <pubDate>${pubDate}</pubDate>
+    </item>`;
 };
 
 export function getRssData(): string {
