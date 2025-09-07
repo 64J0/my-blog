@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 import Header from "../Header";
 
-export const siteTitle = "64j0 Blog";
+export const siteTitle = "64J0's Blog";
 
 interface LayoutProps {
     children: React.ReactNode;
