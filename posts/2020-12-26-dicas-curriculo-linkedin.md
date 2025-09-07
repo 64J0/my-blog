@@ -1,5 +1,5 @@
 ---
-title: "Dicas - Currículo & LinkedIn"
+title: "Dicas - Currículo e LinkedIn"
 date: "2020-12-26"
 show: true
 tags: ["curriculum vitae", "linkedin"]
