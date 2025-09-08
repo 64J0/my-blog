@@ -10,6 +10,7 @@ Changelog:
 -   **2022-09-18:** First version published.
 -   **2025-01-10:** Major rewrite with text enhancements.
 -   **2025-04-02:** Add reference to "The pragmatic open source contributor".
+-   **2025-09-08:** Add more examples.
 
 ## Introduction
 
@@ -77,6 +78,10 @@ typos and we're already improving the project.
 -   Example: [fslaborg.github.io#40 - Fix typos tutorial 001](https://github.com/fslaborg/fslaborg.github.io/pull/40)
 -   Example: [azure-docs#84922 - Update tutorial-django-aks-database.md](https://github.com/MicrosoftDocs/azure-docs/pull/84922)
 -   Example: [terraform-provider-azuread#827 - Update group.md](https://github.com/hashicorp/terraform-provider-azuread/pull/827)
+-   Example: [dotnet-docs#34503 - Fix F# snippet indentation](https://github.com/dotnet/docs/pull/34503)
+-   Example: [dotnet-docs#47613 - [F#] Update properties.md](https://github.com/dotnet/docs/pull/47613)
+-   Example: [dotnet-docs#47616 - [F#] Update methods.md](https://github.com/dotnet/docs/pull/47616)
+-   Example: [dotnet-docs#47633 - [F#] Update operator-overloading.md](https://github.com/dotnet/docs/pull/47633)
 
 The second error kind is way more complex to solve. Usually you can simply
 create an issue to document this piece of documentation with incorrect
@@ -93,7 +98,11 @@ more information when you noticed the lack of it.
 Still in this section, another thing that you can do to contribute on open
 source projects is to give ideas for new features.
 
--   Example: [Trivy#2298 - Enhance the HTML report table](https://github.com/aquasecurity/trivy/issues/2298)
+-   Example: [Trivy#47625 - Enhance the HTML report table](https://github.com/aquasecurity/trivy/issues/2298)
+
+Or raise the attention to problems.
+
+-   Example: [dotnet-docs#2298 - Why isn't F# listed at the "Development languages"?](https://github.com/dotnet/docs/issues/47625)
 
 Finally, other ideas related to this first step are:
 
@@ -135,8 +144,9 @@ because it depends on the understanding of the maintainers about this new
 feature that you're proposing.
 
 -   Example: [node-gitlab-2-github#149 - Dockerize this application](https://github.com/piceaTech/node-gitlab-2-github/pull/149)
--   Example: [p88#1 - Enhance Dockerfile security and README readability](https://github.com/rafaelbmateus/p88/pull/1)[
+-   Example: [p88#1 - Enhance Dockerfile security and README readability](https://github.com/rafaelbmateus/p88/pull/1)
 -   Example: [Saturn.CLI#39 - Fix the code generation feature due to .NET 6](https://github.com/SaturnFramework/Saturn.Cli/pull/39)
+-   Example: [SqlHydra#120 - Add Postgres' network address types and CI configuration to run the automated tests](https://github.com/JordanMarr/SqlHydra/pull/120)
 
 ## Conclusion
 
