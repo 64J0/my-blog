@@ -11,6 +11,7 @@ Changelog:
 -   **2025-01-10:** Major rewrite with text enhancements.
 -   **2025-04-02:** Add reference to "The pragmatic open source contributor".
 -   **2025-09-08:** Add more examples.
+-   **2025-10-14:** Add more examples.
 
 ## Introduction
 
@@ -82,6 +83,7 @@ typos and we're already improving the project.
 -   Example: [dotnet-docs#47613 - [F#] Update properties.md](https://github.com/dotnet/docs/pull/47613)
 -   Example: [dotnet-docs#47616 - [F#] Update methods.md](https://github.com/dotnet/docs/pull/47616)
 -   Example: [dotnet-docs#47633 - [F#] Update operator-overloading.md](https://github.com/dotnet/docs/pull/47633)
+-   Example: [dotnet-docs#49100 - [F#] Add FS0410 compiler message](https://github.com/dotnet/docs/pull/49100)
 
 The second error kind is way more complex to solve. Usually you can simply
 create an issue to document this piece of documentation with incorrect
@@ -94,6 +96,7 @@ Finally, the third idea is when you decide to contribute for the project adding
 more information when you noticed the lack of it.
 
 -   Example: [Saturn#315 - Add test instructions to the README.md and fix the test instructions in the CONTRIBUTING.md](https://github.com/SaturnFramework/Saturn/pull/315)
+-   Example: [ionide.github.io#27 - Add debug instructions for VS Code Ionide extension](https://github.com/ionide/ionide.github.io/pull/27)
 
 Still in this section, another thing that you can do to contribute on open
 source projects is to give ideas for new features.
