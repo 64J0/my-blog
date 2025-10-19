@@ -52,7 +52,7 @@ So, in Plato’s view:
 -   The **Forms** are eternal, perfect, and immaterial.
 -   The **particulars** (individual objects) are imperfect copies of those Forms.
 
-## Aristotle System: Bringing the Forms Down to Earth
+## Aristotle's System: Bringing the Forms Down to Earth
 
 Aristotle admired Plato but rejected the separation between the two worlds.
 
