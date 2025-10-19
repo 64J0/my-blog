@@ -11,7 +11,7 @@ tags: ["philosophy", "Aristotle", "Coursera"]
 
 ## Introduction
 
-This weekend I decided to start the Coursera's "Ancient Philosophy: Aristotle and His Successors" course [1], and for the first module we are introduced to the Aristotle's categories.
+This weekend I decided to start Coursera's "Ancient Philosophy: Aristotle and His Successors" course [1], and for the first module we are introduced to Aristotle's categories.
 
 I must confess that I found it difficult to keep myself engaged to those initial studies, since it deals with multiple abstract definitions like predicates and subjects relationships, primary and secondary substances, and more.
 
