@@ -78,7 +78,7 @@ This is the heart of their difference.
 
 ## References
 
--   [1] - Ancient Philosophy: Aristotle and His Successors. Coursera [link](https://www.coursera.org/learn/aristotle).
+-   [1] - Ancient Philosophy: Aristotle and His Successors. Coursera [course page](https://www.coursera.org/learn/aristotle).
 
 ### Disclaimer
 
