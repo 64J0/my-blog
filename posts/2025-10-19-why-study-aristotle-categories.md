@@ -7,7 +7,7 @@ tags: ["philosophy", "Aristotle", "Coursera"]
 
 ### Changelog
 
--   [2025-09-17 Wed] First version released.
+-   [2025-10-19 Sun] First version released.
 
 ## Introduction
 
