@@ -1,5 +1,5 @@
 ---
-title: "Why study Aristotle categories?"
+title: "Why study Aristotle's categories?"
 date: "2025-10-19"
 show: true
 tags: ["philosophy", "Aristotle", "Coursera"]
