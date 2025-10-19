@@ -37,7 +37,7 @@ Example questions:
 -   What is justice?
 -   What is beauty?
 
-## Plato System: the Realm of Forms
+## Plato's System: the Realm of Forms
 
 Before Aristotle, Plato already devised a system that can be used to answer those questions. However, Plato's system demands a new reality: **the realm of Forms**.
 
