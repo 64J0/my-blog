@@ -21,7 +21,7 @@ After knowing this, things started getting more interesting.
 
 ## Socrates' Questions
 
-Socrates, as we know from Plato texts, was interested in finding proper definitions and discovering essences, ex.: the universal form that makes all courageous or just actions **what they are**.
+Socrates, as we know from Plato's texts, was interested in finding proper definitions and discovering essences, ex.: the universal form that makes all courageous or just actions **what they are**.
 
 His method (the *elenchus*) revolved around:
 
