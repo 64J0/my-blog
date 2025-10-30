@@ -27,7 +27,7 @@ Furthermore, Azure Bicep can be used to enhance documentation and operational ta
 
 While many other features streamline operations, such as built-in functions for unique name generation and immediate access to new Azure services, they underscore Bicep's focus on ease of use.
 
-If you're interest in learning more check the ["Fundamentals of Bicep" learning path](https://learn.microsoft.com/en-us/training/paths/fundamentals-bicep/).
+If you're interested in learning more check the ["Fundamentals of Bicep" learning path](https://learn.microsoft.com/en-us/training/paths/fundamentals-bicep/).
 
 However, a key limitation must be considered: Bicep does not natively handle certain destructive modifications. For instance, if you rename a deployed resource, the tool won't automatically recognize this as a destroy-and-recreate operation. Instead, it will attempt to deploy the "new" resource and ignore the "old" one, requiring manual intervention to clean up the orphaned resource.
 
