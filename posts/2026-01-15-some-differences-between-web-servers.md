@@ -187,7 +187,7 @@ curl -s -S -v -X POST http://localhost:5000/hello
 * Connection #0 to host localhost left intact
 ```
 
-Ops... There's a difference.
+Oops... There's a difference.
 
 Using *Giraffe EndpointRouting*, if our request matches the path, but doesn't match the HTTP verb, our server returns a **405 Method Not Allowed** status code, and a new header is added to instruct the client which HTTP methods are available **Allow: GET**.
 
