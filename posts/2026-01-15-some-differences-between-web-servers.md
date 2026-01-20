@@ -28,12 +28,7 @@ open Microsoft.Extensions.DependencyInjection
 open Microsoft.Extensions.Hosting
 open Giraffe
 
-let notFoundHandler = "Not Found" |> text |> RequestErrors.notFound
-
-let endpoints =
-    choose
-        [ GET >=> route "/hello" >=> text "Hello from Giraffe!"
-          notFoundHandler ]
+let endpoints = choose [ GET >=> route "/hello" >=> text "Hello from Giraffe!" ]
 
 let configureApp (appBuilder: IApplicationBuilder) = appBuilder.UseGiraffe(endpoints)
 
@@ -46,14 +41,10 @@ let main args =
 
     let app = builder.Build()
 
-    if app.Environment.IsDevelopment() then
-        app.UseDeveloperExceptionPage() |> ignore
-
     configureApp app
     app.Run()
 
     0
-
 ```
 
 This is what you get after making different requests:
@@ -79,13 +70,11 @@ Hello from Giraffe!
 curl -s -S -v -X GET http://localhost:5000/notfound
 # ...
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:48 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:41 GMT
 < Server: Kestrel
 <
 * Connection #0 to host localhost left intact
-Not Found
 ```
 
 #### POST /hello
@@ -94,9 +83,8 @@ Not Found
 curl -s -S -v -X POST http://localhost:5000/hello
 # ...
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:27:48 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:40 GMT
 < Server: Kestrel
 <
 * Connection #0 to host localhost left intact
@@ -117,10 +105,8 @@ open Giraffe.EndpointRouting
 let endpoints =
     [ GET [ route "/hello" (text "Hello from Giraffe with Endpoint Routing!") ] ]
 
-let notFoundHandler = "Not Found" |> text |> RequestErrors.notFound
-
 let configureApp (appBuilder: IApplicationBuilder) =
-    appBuilder.UseRouting().UseGiraffe(endpoints).UseGiraffe(notFoundHandler)
+    appBuilder.UseRouting().UseGiraffe(endpoints) |> ignore
 
 let configureServices (services: IServiceCollection) =
     services.AddRouting().AddGiraffe() |> ignore
@@ -131,9 +117,6 @@ let main args =
     configureServices builder.Services
 
     let app = builder.Build()
-
-    if app.Environment.IsDevelopment() then
-        app.UseDeveloperExceptionPage() |> ignore
 
     configureApp app
     app.Run()
@@ -164,13 +147,11 @@ Hello from Giraffe with Endpoint Routing!
 curl -s -S -v -X GET http://localhost:5000/notfound
 # ...
 < HTTP/1.1 404 Not Found
-< Content-Length: 9
-< Content-Type: text/plain; charset=utf-8
-< Date: Tue, 20 Jan 2026 01:28:04 GMT
+< Content-Length: 0
+< Date: Tue, 20 Jan 2026 20:06:59 GMT
 < Server: Kestrel
 <
 * Connection #0 to host localhost left intact
-Not Found
 ```
 
 #### POST /hello
@@ -180,7 +161,7 @@ curl -s -S -v -X POST http://localhost:5000/hello
 # ...
 < HTTP/1.1 405 Method Not Allowed
 < Content-Length: 0
-< Date: Tue, 20 Jan 2026 01:28:04 GMT
+< Date: Tue, 20 Jan 2026 20:06:59 GMT
 < Server: Kestrel
 < Allow: GET
 <
