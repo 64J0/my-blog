@@ -358,7 +358,7 @@ func main() {
   c.String(200, "Hello from Gin (Go lang)!")
  })
 
- // 3. Run the server (default is port 5000)
+ // 3. Run the server on port 5000
  r.Run(":5000")
 }
 ```
