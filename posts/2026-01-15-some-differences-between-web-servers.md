@@ -32,7 +32,7 @@ let notFoundHandler = "Not Found" |> text |> RequestErrors.notFound
 
 let endpoints =
     choose
-        [ GET >=> route "/hello" >=> text "Hello from Giraffe with Endpoint Routing!"
+        [ GET >=> route "/hello" >=> text "Hello from Giraffe!"
           notFoundHandler ]
 
 let configureApp (appBuilder: IApplicationBuilder) = appBuilder.UseGiraffe(endpoints)
