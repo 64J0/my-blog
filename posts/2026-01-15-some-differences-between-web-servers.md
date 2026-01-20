@@ -12,9 +12,9 @@ tags: ["software", "engineering", "web", "server"]
 
 ## The Crux
 
-What should a WEB server do if a request matches the path but doesn't match the HTTP verb (i. e., request method)?
+What should a web server do if a request matches the path but doesn't match the HTTP verb (i.e., request method)?
 
-There are multiple answers to this question, and in this article I'm going to present some examples.
+There are multiple answers to this question, and in this article, I'm going to present some examples.
 
 - You can find the code used in this GitHub repository: [64J0/simple-servers](https://github.com/64J0/simple-servers).
 
@@ -187,9 +187,9 @@ curl -s -S -v -X POST http://localhost:5000/hello
 * Connection #0 to host localhost left intact
 ```
 
-Oops... There's a difference.
+There's an interesting difference here.
 
-Using *Giraffe EndpointRouting*, if our request matches the path, but doesn't match the HTTP verb, our server returns a **405 Method Not Allowed** status code, and a new header is added to instruct the client which HTTP methods are available **Allow: GET**.
+Using *Giraffe EndpointRouting*, if our request matches the path but doesn't match the HTTP verb, our server returns a **405 Method Not Allowed** status code, and a new header is added to instruct the client which HTTP methods are available: **Allow: GET**.
 
 Note that this is consistent with the text in the [RFC 7231](https://datatracker.ietf.org/doc/html/rfc7231#autoid-83) that defines the *Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content*:
 
@@ -221,7 +221,7 @@ Where we get a similar response from the server.
 
 ### Express.js
 
-Now, instead of .NET, let's consider the [Express.js](https://expressjs.com/en/starter/hello-world.html), which is another WEB server technology I have experience.
+Now, instead of .NET, let's consider [Express.js](https://expressjs.com/en/starter/hello-world.html), which is another web server technology I have experience with.
 
 This is the code I'm going to use:
 
@@ -319,9 +319,9 @@ Notice that the headers are different, and Express returns an HTML page by defau
 
 #### More differences
 
-Something else to note is that *Express.js* can't handle HTTP verbs if they're not all uppercase.
+Another interesting behavior is that *Express.js* can't handle HTTP verbs if they're not all uppercase.
 
-For example, check this request:
+For example, consider this request:
 
 ```bash
 curl -s -S -v -X get http://localhost:5000/hello
@@ -333,11 +333,11 @@ curl -s -S -v -X get http://localhost:5000/hello
 * Closing connection
 ```
 
-This doesn't happen for ASP.NET and Giraffe, for example, they work with those variations: *GET*, *Get* and *get*.
+This doesn't happen with ASP.NET and Giraffe; for example, they work with all these variations: *GET*, *Get*, and *get*.
 
 ### Gin
 
-Finally, I decided to check what happens in a Web API built using a popular Go lang library named [Gin](https://gin-gonic.com/en/docs/). The code used was:
+Finally, I decided to check what happens in a Web API built using a popular Go library named [Gin](https://gin-gonic.com/en/docs/). The code used was:
 
 ```go
 package main
@@ -413,4 +413,4 @@ Again, when using *Gin*, the server can't handle HTTP verbs if they're not all u
 
 ## Conclusion
 
-There's no consensus for this implementation, therefore you need to check what is the behavior of the tool you're using.
+There's no consensus for this implementation; therefore, you need to check what the behavior of the tool you're using is. Different web server frameworks handle mismatched HTTP verbs in different ways, so it's important to understand how your chosen technology behaves in these scenarios.
