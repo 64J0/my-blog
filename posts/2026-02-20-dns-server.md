@@ -19,7 +19,7 @@ This project is not prepared to be used in "production environments".
 
 ## References
 
-- [1] RFC 1035. DOMAIN NAMES - IMPLEMENTATION AND SPECIFICATION. Document [link](https://datatracker.ietf.org/doc/html/rfc1035).
+- [1] DOMAIN NAMES - IMPLEMENTATION AND SPECIFICATION. RFC 1035 [link](https://datatracker.ietf.org/doc/html/rfc1035).
 - [2] Building a DNS server in Rust. GitHub: [EmilHernvall/dnsguide](https://github.com/EmilHernvall/dnsguide).
 
 ## Related articles
