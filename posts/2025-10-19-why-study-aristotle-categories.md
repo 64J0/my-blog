@@ -1,5 +1,5 @@
 ---
-title: "Why study Aristotle's categories?"
+title: "Why study Aristotle's 'Categories'?"
 date: "2025-10-19"
 show: true
 tags: ["philosophy", "Aristotle", "Coursera"]
@@ -7,7 +7,8 @@ tags: ["philosophy", "Aristotle", "Coursera"]
 
 ### Changelog
 
--   [2025-10-19 Sun] First version released.
+- [2025-10-19 Sun] First version released.
+- [2026-02-26 Thu] Add complement based on Logos' book.
 
 ## Introduction
 
@@ -25,17 +26,17 @@ Socrates, as we know from Plato's texts, was interested in finding proper defini
 
 His method (the *elenchus*) revolved around:
 
-1.  Asking for **universal definitions** (What is X-ness itself?)
-2.  Testing answers for **consistency** and **universality**
-3.  Showing that knowledge requires understanding **what something is**, not just recognizing instances of it.
+1. Asking for **universal definitions** (What is X-ness itself?)
+2. Testing answers for **consistency** and **universality**
+3. Showing that knowledge requires understanding **what something is**, not just recognizing instances of it.
 
 But Socrates never gave us a system for how to identify or classify these essences — he just kept asking questions that led others to deeper reflection.
 
 Example questions:
 
--   What is courage?
--   What is justice?
--   What is beauty?
+- What is courage?
+- What is justice?
+- What is beauty?
 
 ## Plato's System: the Realm of Forms
 
@@ -47,10 +48,10 @@ When Socrates asked “What is Justice?”, Plato said:
 
 So, in Plato’s view:
 
--   Every thing in the physical world “participates in” or “imitates” its **Form**.
-    -   Example: All beautiful things share in **the Form of Beauty**.
--   The **Forms** are eternal, perfect, and immaterial.
--   The **particulars** (individual objects) are imperfect copies of those Forms.
+- Every thing in the physical world “participates in” or “imitates” its **Form**.
+  - Example: All beautiful things share in **the Form of Beauty**.
+- The **Forms** are eternal, perfect, and immaterial.
+- The **particulars** (individual objects) are imperfect copies of those Forms.
 
 ## Aristotle's System: Bringing the Forms Down to Earth
 
@@ -76,9 +77,34 @@ This is the heart of their difference.
 | Knowledge = grasping eternal Forms through intellect. | Knowledge = understanding the form within matter (the essence of each thing). |
 | Metaphysics is dualistic (two realms).                | Metaphysics is immanent (form and matter combined in one world).              |
 
+### Complement
+
+Recently, I read the "Categories" edition from Logos [2], and it presents a more detailed explanation of this book from Aristotle, and how it connects with the *órganon*; i.e., the aristotelian corpus about logic.
+
+To better understand it, we need to know the distinction between **formal** and **material** logic.
+
+According to the scholastics, **formal logic** deals with the validity of the reasoning; with the question of whether the conclusion follows from the propositions. Complementing it, **material logic** deals with the truth of the premises and their degree of certainty.
+
+"Categories" lives in the **material logic** category.
+
+> Conhecer as categorias sob as quais se distribuem os vários conceitos é útil para formular definições,
+> e a definição é uma espécie de proposição *per se nota*, que pode servir de ponto de partida para uma
+> definição.
+>
+> --- [2]
+
+For example:
+
+> Sabendo o que é "homem" e o que é "animal", entendemos que o homem é por definição um animal.
+>
+> --- [2]
+
+And this evidence can be the base for a higher reasoning.
+
 ## References
 
--   [1] - Ancient Philosophy: Aristotle and His Successors. Coursera [course page](https://www.coursera.org/learn/aristotle).
+- [1] - Ancient Philosophy: Aristotle and His Successors. Coursera [course page](https://www.coursera.org/learn/aristotle).
+- [2] - [Editora Logos](https://clubedefilosofia.com/).
 
 ### Disclaimer
 
