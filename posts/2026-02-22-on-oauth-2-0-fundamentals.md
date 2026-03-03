@@ -123,6 +123,7 @@ The differences from OAuth 2.0 can be found in the chapter 10 of this document (
 
 - [1] The OAuth 2.0 Authorization Framework. [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749).
 - [2] The OAuth 2.1 Authorization Framework. [Draft RFC](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1). Also, there's some information on [OAuth 2.1 website](https://oauth.net/2.1/).
+- [3] What is OAuth? [Leaflet link](https://leaflet.pub/p/did:plc:3vdrgzr2zybocs45yfhcr6ur/3mfd2oxx5v22b).
 
 ## Related articles
 
