@@ -140,7 +140,7 @@ The differences from OAuth 2.0 can be found in the chapter 10 of this document (
 ## References
 
 - [1] The OAuth 2.0 Authorization Framework. [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749). Accessed February 22, 2026.
-- [2] The OAuth 2.1 Authorization Framework. [Draft RFC](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1). Accessed February 22, 2026. Also, there's some information on [OAuth 2.1 website](https://oauth.net/2.1/). Accessed February 22, 2026.
+- [2] The OAuth 2.1 Authorization Framework. [Draft RFC](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1). Also, there's some information on [OAuth 2.1 website](https://oauth.net/2.1/). Both resources accessed February 22, 2026.
 - [3] What is OAuth? [Leaflet link](https://leaflet.pub/p/did:plc:3vdrgzr2zybocs45yfhcr6ur/3mfd2oxx5v22b). Accessed March 3, 2026.
 - [4] Wikipedia contributors. OAuth. Wikipedia, The Free Encyclopedia. February 14, 2026, 14:50 UTC. Available at: <https://en.wikipedia.org/w/index.php?title=OAuth&oldid=1338330955>. Accessed March 6, 2026.
 - [5] Why is OAuth still hard in 2026? Nango [blog link](https://nango.dev/blog/why-is-oauth-still-hard). Accessed March 6, 2026.
