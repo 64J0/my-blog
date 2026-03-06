@@ -117,7 +117,7 @@ As you might expect, there's more regarding this RFC. But I think this is enough
 
 The short answer is no. SSO stands for "Single Sign-On", and it is an authentication process that allows a user to access multiple applications with a single username and password [6].
 
-Check this example from the same reference to futher understand SSO:
+Check this example from the same reference to further understand SSO:
 
 > Let's take an example to understand SSO better. Consider Google's implementation of SSO.
 > When you log in to your Gmail account, you are implicitly logged in to YouTube, Google Drive,
