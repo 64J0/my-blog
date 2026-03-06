@@ -150,4 +150,4 @@ The differences from OAuth 2.0 can be found in the chapter 10 of this document (
 
 If you liked this post, perhaps you'll be interested in:
 
-- [DNS server in F#](https://gaio.dev/posts/2026-02-20-dns-server).
+- [DNS server in F#](https://gaio.dev/posts/2026-02-20-dns-server)
