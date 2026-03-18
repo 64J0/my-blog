@@ -1,13 +1,13 @@
 ---
 title: "On absolute truth"
-date: "2026-03-16"
+date: "2026-03-14"
 show: true
 tags: ["philosophy", "logic"]
 ---
 
 ## Introduction
 
-In this article, I'm going to present a formalization using the first order logic for the argument in favor of the absolute truth.
+In this article, I'm going to present a formalization using the first-order logic for the argument in favor of the absolute truth.
 
 For this formalization, I'm using the reference [1].
 
@@ -27,9 +27,9 @@ $$
 
 ## Conclusion
 
-A contradiction. An absurd.
+A contradiction, an absurdity.
 
-Therefore, to have a consistent system the only option is to accept that there are absolute truths, and we have access to some of it.
+Therefore, to have a consistent system the only option is to accept that there are absolute truths, and we have access to some of them.
 
 ## References
 
