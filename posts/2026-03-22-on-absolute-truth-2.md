@@ -7,7 +7,7 @@ tags: ["philosophy", "logic"]
 
 ## Introduction
 
-Following the argument presented in [On absolute truth](./2026-03-14-on-absolute-truth.md), now I'm going to discuss other arguments that doesn't necessarily entails a contradiction.
+Following the argument presented in [On absolute truth](./2026-03-14-on-absolute-truth), now I'm going to discuss other arguments that doesn't necessarily entails a contradiction.
 
 ## Argument 1
 
