@@ -1,5 +1,5 @@
 ---
-title: "On absolute truth 2"
+title: "On absolute truth II"
 date: "2026-03-22"
 show: true
 tags: ["philosophy", "logic"]
@@ -37,9 +37,13 @@ TODO
 
 No contradiction, no absurdity, the system is consistent.
 
-However, these arguments look more arbitrary than what was presented in the first part, and in some sense, they pose more constraints to the world model.
+However, those arguments look more arbitrary than what was presented in the first post. In a sense this is a gnostic point of view, posing more constraints to the world model by limiting what can be considered an absolute truth.
 
-Finally, for both arguments presented here, it's still necessary to accept at least 1 absolute truth.
+![Holzschnitt aus Camille Flammarion: L'Atmosphere - Météorologie Populaire. Paris 1888. Kolorierung: Heikenwaelder Hugo, Wien 1998. Image from: https://commons.wikimedia.org/wiki/File:Universum.jpg.](/post-images/on-absolute-truth-ii/FlammarionWoodcut.jpg "Holzschnitt aus Camille Flammarion: L'Atmosphere - Météorologie Populaire. Paris 1888. Kolorierung : Heikenwaelder Hugo, Wien 1998. Image from: https://commons.wikimedia.org/wiki/File:Universum.jpg.")
+
+Furthermore, notice that for both arguments presented here it's still necessary to accept at least 1 absolute truth.
+
+Finally, it seems a more humble opinion to just accept that those absolute truths exist, without delimiting which ones are effectively right or not given our limited and imperfect knowledge.
 
 ## References
 

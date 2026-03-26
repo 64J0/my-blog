@@ -7,7 +7,7 @@ tags: ["philosophy", "logic"]
 
 ## Introduction
 
-In this article, I'm going to present a formalization using the first-order logic for the argument in favor of the absolute truth.
+In this article, I'm going to present a formalization using the first-order logic for the argument in favor of the absolute truth as an epistemic necessity.
 
 For this formalization, I'm using the reference [1].
 
