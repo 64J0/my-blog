@@ -1,7 +1,7 @@
 ---
 title: "On absolute truth"
 date: "2026-03-14"
-show: true
+show: false
 tags: ["philosophy", "logic"]
 ---
 
