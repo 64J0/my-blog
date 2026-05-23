@@ -1,7 +1,7 @@
 ---
 title: "On absolute truth"
 date: "2026-03-14"
-show: false
+show: true
 tags: ["philosophy", "logic"]
 ---
 
@@ -36,6 +36,10 @@ Let the domain $$ \Gamma $$ be the set of all propositions, we can first conside
 
   $$ \neg \exists x \text{A} x $$
 
+  We can call this proposition "p" to help further manipulations later:
+
+  $$ \text{p} = \neg \exists x \text{A} x $$
+
 <!-- Note that this proposition autoreferences itself, which makes it more difficulty to analyze. -->
 
 Considering this proposition regarding its material logic, we find that there's an implicit, or hidden, proposition that isn't stated directly, but that is necessary for it to make some sense. The complete proposition can be phrased as:
@@ -44,9 +48,19 @@ Considering this proposition regarding its material logic, we find that there's 
 
   Which can be formalized as:
 
-  $$ \text{A} p \wedge \neg \exists x \text{A} x $$
+  $$ \exists ! x \text{A} x \wedge x = \text{p} $$
 
-Similar to what happens with the transformation from an enthymeme into a syllogism, this is not the only possible implicit proposition that can be added to the argument. However, it's the most commonly considered according to my experience.
+  *The uniqueness claim ("There is only one") is expressed using the uniqueness quantifier $$ \exists ! $$.
+
+  Which can be further expanded into:
+
+  $$ \exists x (\text{A} x \wedge \forall y (\text{A} y \rightarrow y = x) \wedge x = p) $$
+
+  And replacing $$ p $$ we have:
+
+  $$ \exists x (\text{A} x \wedge \forall y (\text{A} y \rightarrow y = x) \wedge x = \neg \exists x \text{A} x) $$
+
+Keep in mind that this is not the only possible implicit proposition that can be added to the argument. However, it's the most commonly considered according to my experience.
 
 ## Conclusion
 
