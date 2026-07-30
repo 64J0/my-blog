@@ -55,12 +55,9 @@ Essa interpretação tem fundamento histórico no segundo concílio de Niceia [4
 >
 > &#x2014; [4]
 
-# Referências
+## Referências
 
--   [1] Por que não sou protestante? Padre Paulo Ricardo. Disponível no plataforma paga através deste [link](https://padrepauloricardo.org/aulas/somos-idolatras). Um curso bastante didático e acessível, com bem mais detalhes e informações do que o apresentado neste curto artigo.
-
--   [2] De Bizâncio para o mundo. Collins Wells. Disponível em: [link](https://a.co/d/idYilfb). Este livro narra a história do império bizantino, sua influência e sua queda para o império otomano.
-
--   [3] Carta aos Jovens Sobre a Utilidade da Literatura Pagã. São Basílio. Disponível em: [link](https://a.co/d/hDjJl4q).
-
--   [4] Second Council of Nicaea. Wikipedia. Disponível em: [link](https://en.wikipedia.org/wiki/Second_Council_of_Nicaea).
+- [1] Por que não sou protestante? Padre Paulo Ricardo. Disponível no plataforma paga através deste [link](https://padrepauloricardo.org/aulas/somos-idolatras). Um curso bastante didático e acessível, com bem mais detalhes e informações do que o apresentado neste curto artigo.
+- [2] De Bizâncio para o mundo. Collins Wells. Disponível em: [link](https://a.co/d/idYilfb). Este livro narra a história do império bizantino, sua influência e sua queda para o império otomano.
+- [3] Carta aos Jovens Sobre a Utilidade da Literatura Pagã. São Basílio. Disponível em: [link](https://a.co/d/hDjJl4q).
+- [4] Second Council of Nicaea. Wikipedia. Disponível em: [link](https://en.wikipedia.org/wiki/Second_Council_of_Nicaea).

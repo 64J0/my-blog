@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaLinkedin, FaGithub, FaHome, FaUser } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaHome, FaUser, FaSearch } from "react-icons/fa";
 
 import headerStyles from "./styles.module.scss";
 
@@ -19,6 +19,11 @@ const Header: React.FC = () => {
         <li>
           <Link href="/about">
             <FaUser size="2rem" title="About" aria-label="Navigate to about page" />
+          </Link>
+        </li>
+        <li>
+          <Link href="/search">
+            <FaSearch size="2rem" title="Search" aria-label="Search posts" />
           </Link>
         </li>
         <li>

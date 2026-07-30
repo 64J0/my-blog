@@ -4,19 +4,15 @@ import Link from "next/link";
 
 import Layout, { siteTitle } from "../components/Layout";
 import { getSortedPostData } from "../lib/posts";
+import { SITE_URL } from "../lib/site";
 import Date from "../components/Date";
+import { PostMeta } from "../types/posts";
 
 import homeStyles from "../styles/home.module.css";
 
-interface AllPostsData {
-  id: string;
-  date: string;
-  title: string;
-}
+const SITE_DESCRIPTION = "Personal blog where I write about technology, programming, philosophy, theology, and more.";
+const DEFAULT_OG_IMAGE = "https://avatars1.githubusercontent.com/u/50725287?s=460&u=a543b28cd2cae2b76fdc3cd4ea1699c35b7b7f06&v=4";
 
-// This is a Next.js function that runs to get data from external sources
-// like API's, DB's or even the file-system like in this case.
-// In production, `getStaticProps` runs at build time
 export async function getStaticProps() {
   const allPostsData = getSortedPostData();
   return {
@@ -26,11 +22,24 @@ export async function getStaticProps() {
   };
 }
 
-const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => {
+const Home: React.FC<{ allPostsData: PostMeta[]; }> = ({ allPostsData }) => {
   return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
+        <meta name="description" content={SITE_DESCRIPTION} />
+        <link rel="canonical" href={SITE_URL} />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={SITE_DESCRIPTION} />
+        <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
       </Head>
 
       <div className={homeStyles.mainContent}>
@@ -43,11 +52,9 @@ const Home: React.FC<{ allPostsData: AllPostsData[]; }> = ({ allPostsData }) => 
           <h2>Posts</h2>
           <ul className={homeStyles.postsList}>
             {
-              allPostsData.map(({ id, date, title }: AllPostsData) => (
+              allPostsData.map(({ id, date, title }: PostMeta) => (
                 <li className={homeStyles.postsListItem} key={id}>
-                  <Link legacyBehavior href="/posts/[id]" as={`/posts/${id}`}>
-                    <a>{title}</a>
-                  </Link>
+                  <Link href={`/posts/${id}`}>{title}</Link>
                   <br />
                   <small className={homeStyles.postsListDate}>
                     <Date dateString={date} />

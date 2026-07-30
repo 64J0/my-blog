@@ -37,8 +37,8 @@ O resultado pode ser encontrado neste repositório no GitHub: [FormalTheology/Go
 
 ## Referências
 
-- [1] - [Anselmo de Cantuária](https://pt.wikipedia.org/wiki/Anselmo_de_Cantu%C3%A1ria). Wikipedia.
-- [2] - [Grandes Teses Da Filosofia Tomista](https://a.co/d/e5IV1oc). Amazon.
-- [3] - [Proslógio](https://a.co/d/gvMsEk4). Amazon.
-- [4] - [Argumento ontológico](https://pt.wikipedia.org/wiki/Argumento_ontol%C3%B3gico). Wikipedia.
-- [5] - [Gödel's ontological proof](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof). Wikipedia.
+- [1] [Anselmo de Cantuária](https://pt.wikipedia.org/wiki/Anselmo_de_Cantu%C3%A1ria). Wikipedia.
+- [2] [Grandes Teses Da Filosofia Tomista](https://a.co/d/e5IV1oc). Amazon.
+- [3] [Proslógio](https://a.co/d/gvMsEk4). Amazon.
+- [4] [Argumento ontológico](https://pt.wikipedia.org/wiki/Argumento_ontol%C3%B3gico). Wikipedia.
+- [5] [Gödel's ontological proof](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof). Wikipedia.

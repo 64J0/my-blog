@@ -166,14 +166,10 @@ O autor lista algumas situações em que os comentários podem ser utilizados de
 Neste capítulo são discutidas algumas ideias para resguardar o projeto que está sendo desenvolvido quando é utilizado código de terceiros, por exemplo de um projeto *open source*.
 
 ---
-## Referências:
+## Referências
 
-[1] - [Blog da Rocketseat](https://blog.rocketseat.com.br/).
-
-[2] - [Canal do Filipe Deschamps no youtube](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw).
-
-[3] - [Canal do Lucas Montano no youtube](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg).
-
-[4] - [Canal do Fábio Akita no youtube](https://www.youtube.com/user/AkitaOnRails).
-
-[5] - [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv).
+- [1] [Blog da Rocketseat](https://blog.rocketseat.com.br/).
+- [2] [Canal do Filipe Deschamps no youtube](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw).
+- [3] [Canal do Lucas Montano no youtube](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg).
+- [4] [Canal do Fábio Akita no youtube](https://www.youtube.com/user/AkitaOnRails).
+- [5] [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv).

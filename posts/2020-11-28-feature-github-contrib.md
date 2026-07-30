@@ -263,16 +263,11 @@ Ou seja, agora consigo mudar as cores de exibição dos quadradinhos caso eu que
 Por fim segue abaixo as referências mencionadas ao longo do texto para que possam ser consultadas posteriormente.
 
 ---
-## Referências:
+## Referências
 
-[1] - Github Chart API. Disponível neste [link](https://ghchart.rshah.org/).
-
-[2] - Criando um Web Scraper com NodeJs, *Mundo JS*. Disponível neste [link](https://www.mundojs.com.br/2020/05/25/criando-um-web-scraper-com-nodejs/).
-
-[3] - How to Scale SVG, *CSS tricks*. Disponível neste [link](https://css-tricks.com/scale-svg/).
-
-[4] - Cross-Origin Resource Sharing (CORS), *MDN*. Disponível neste [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
-
-[5] - Cheerio, *NPM*. Disponível neste [link](https://www.npmjs.com/package/cheerio).
-
-[6] - Axios, *NPM*. Disponível neste [link](https://www.npmjs.com/package/axios).
+- [1] Github Chart API. Disponível neste [link](https://ghchart.rshah.org/).
+- [2] Criando um Web Scraper com NodeJs, *Mundo JS*. Disponível neste [link](https://www.mundojs.com.br/2020/05/25/criando-um-web-scraper-com-nodejs/).
+- [3] How to Scale SVG, *CSS tricks*. Disponível neste [link](https://css-tricks.com/scale-svg/).
+- [4] Cross-Origin Resource Sharing (CORS), *MDN*. Disponível neste [link](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+- [5] Cheerio, *NPM*. Disponível neste [link](https://www.npmjs.com/package/cheerio).
+- [6] Axios, *NPM*. Disponível neste [link](https://www.npmjs.com/package/axios).

@@ -103,6 +103,6 @@ Assim como os ícones, as imagens e ilustrações também são importantes na co
 O atomic design detalha o que acontece durante a criação e manutenção de sistemas de design (design system), permitindo mais consistência e qualidade.
 
 ---
-## Referências:
+## Referências
 
-[1] - https://material.io/design/layout/understanding-layout.html
+- [1] [https://material.io/design/layout/understanding-layout.html](https://material.io/design/layout/understanding-layout.html)

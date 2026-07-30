@@ -149,8 +149,7 @@ Até a próxima.
 
 ---
 
-## Referências:
+## Referências
 
-[1] - Docker - Orientation and setup. https://docs.docker.com/get-started/
-
-[2] - Introdução aos containers Linux. https://www.redhat.com/pt-br/topics/containers
+- [1] Docker - Orientation and setup. [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
+- [2] Introdução aos containers Linux. [https://www.redhat.com/pt-br/topics/containers](https://www.redhat.com/pt-br/topics/containers)

@@ -3,10 +3,14 @@ import Head from "next/head";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import Layout from "../../components/Layout";
+import { SITE_URL } from "../../lib/site";
 
 import Age from "../../utils/Age";
 
 import contatoStyles from "./styles.module.scss";
+
+const ABOUT_DESCRIPTION = "About Vinícius Gajo: mechatronics engineer turned software engineer, working with functional programming (F#), infrastructure, and open source.";
+const DEFAULT_OG_IMAGE = "https://avatars1.githubusercontent.com/u/50725287?s=460&u=a543b28cd2cae2b76fdc3cd4ea1699c35b7b7f06&v=4";
 
 const Contato: React.FC = () => {
   const pEl = useRef<HTMLParagraphElement>(null);
@@ -29,6 +33,19 @@ const Contato: React.FC = () => {
     <Layout>
       <Head>
         <title>About me</title>
+        <meta name="description" content={ABOUT_DESCRIPTION} />
+        <link rel="canonical" href={`${SITE_URL}/about`} />
+
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content="About me" />
+        <meta property="og:description" content={ABOUT_DESCRIPTION} />
+        <meta property="og:url" content={`${SITE_URL}/about`} />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About me" />
+        <meta name="twitter:description" content={ABOUT_DESCRIPTION} />
+        <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
       </Head>
 
       <div className={contatoStyles.container}>

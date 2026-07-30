@@ -120,10 +120,8 @@ cat <USER_PATH>/hosts/hosts-test-1/hosts > hosts
 ```
 
 
-# References
+## References
 
--   [1] - <https://github.com/StevenBlack/hosts>
-
--   [2] - <https://tldp.org/LDP/solrhe/Securing-Optimizing-Linux-RH-Edition-v1.3/chap9sec95.html>
-
--   [3] - <https://unix.stackexchange.com/questions/421491/what-is-the-purpose-of-etc-hosts>
+- [1] [https://github.com/StevenBlack/hosts](https://github.com/StevenBlack/hosts)
+- [2] [https://tldp.org/LDP/solrhe/Securing-Optimizing-Linux-RH-Edition-v1.3/chap9sec95.html](https://tldp.org/LDP/solrhe/Securing-Optimizing-Linux-RH-Edition-v1.3/chap9sec95.html)
+- [3] [https://unix.stackexchange.com/questions/421491/what-is-the-purpose-of-etc-hosts](https://unix.stackexchange.com/questions/421491/what-is-the-purpose-of-etc-hosts)

@@ -301,20 +301,14 @@ It was a very cool and challenging situation, and my goal is to keep digging int
 
 <a id="orgd1ed74c"></a>
 
-# References
+## References
 
 Finally, this last section is used to keep a record of the sources where I found most of the information required to create this project.
 
-[1] - <https://en.wikipedia.org/wiki/Literate_programming>
-
-[2] - <https://orgmode.org/manual/Extracting-Source-Code.html>
-
-[3] - <https://orgmode.org/worg/org-contrib/babel/intro.html>
-
-[4] - <https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode>
-
-[5] - <http://howardism.org/Technical/Emacs/literate-programming-tutorial.html>
-
-[6] - <https://orgmode.org/manual/Working-with-Source-Code.html>
-
-[7] - <https://orgmode.org/worg/org-contrib/babel/languages/index.html>
+- [1] [https://en.wikipedia.org/wiki/Literate_programming](https://en.wikipedia.org/wiki/Literate_programming)
+- [2] [https://orgmode.org/manual/Extracting-Source-Code.html](https://orgmode.org/manual/Extracting-Source-Code.html)
+- [3] [https://orgmode.org/worg/org-contrib/babel/intro.html](https://orgmode.org/worg/org-contrib/babel/intro.html)
+- [4] [https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode](https://www.offerzen.com/blog/literate-programming-empower-your-writing-with-emacs-org-mode)
+- [5] [http://howardism.org/Technical/Emacs/literate-programming-tutorial.html](http://howardism.org/Technical/Emacs/literate-programming-tutorial.html)
+- [6] [https://orgmode.org/manual/Working-with-Source-Code.html](https://orgmode.org/manual/Working-with-Source-Code.html)
+- [7] [https://orgmode.org/worg/org-contrib/babel/languages/index.html](https://orgmode.org/worg/org-contrib/babel/languages/index.html)

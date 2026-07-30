@@ -26,6 +26,6 @@ No contexto dos estilos de programação, temos, para citar um exemplo básico:
 
     Um exemplo de ferramenta que aplica esse conceito é o Terraform, onde basicamente definimos quais componentes queremos provisionar usando uma linguagem chamada HSL, e o mínimo de configurações necessárias para que esses componentes funcionem corretamente. O provisionamento por sua vez é totalmente gerenciado por essa ferramenta.
 
-# Referências
+## Referências
 
--   [1] Mission-type tactics. Wikipedia. Disponível em: [link](https://en.wikipedia.org/wiki/Mission-type_tactics).
+- [1] Mission-type tactics. Wikipedia. Disponível em: [link](https://en.wikipedia.org/wiki/Mission-type_tactics).

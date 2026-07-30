@@ -131,6 +131,6 @@ Outro aspecto de projeto importante que ocorre na camada de enlace de dados (e t
 Para contornar essa situação são usadas comumente duas abordagens. Na primeira, chamada **controle de fluxo baseado em feedback**, o receptor envia de volta ao transmissor informações que permitam a ele enviar mais dados, ou que pelo menos mostrem ao transmissor a situação real do receptor. Na segunda, chamada **controle de fluxo baseado na velocidade**, o protocolo tem um mecanismo interno que limita a velocidade com que os transmissores podem enviar os dados, sem usar o feedback do receptor.
 
 ---
-## Referências:
+## Referências
 
-[1] - Redes de Computadores - 5ª edição.
+- [1] Redes de Computadores - 5ª edição.

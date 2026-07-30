@@ -74,10 +74,8 @@ Além disso, o Watson Machine Learning é capaz de encapsular pipelines e modelo
 Durante o desafio 2 da Maratona Behind the Code 2020 iremos aprender a construir uma Pipeline para um modelo de classificação e hospedá-lo como uma API com o auxílio do Watson Machine Learning.
 
 ---
-## Referências:
+## Referências
 
-1. Um guia para iniciantes sobre inteligência artificial, aprendizado de máquina e computação cognitiva. [Link para acesso](https://developer.ibm.com/br/articles/cc-beginner-guide-machine-learning-ai-cognitive/).
-
-2. Documentação do Cloud Pak for Data as a Service. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?audience=wdp&context=cpdaas).
-
-3. Visão geral: Watson Machine Learning. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html).
+- [1] Um guia para iniciantes sobre inteligência artificial, aprendizado de máquina e computação cognitiva. [Link para acesso](https://developer.ibm.com/br/articles/cc-beginner-guide-machine-learning-ai-cognitive/).
+- [2] Documentação do Cloud Pak for Data as a Service. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?audience=wdp&context=cpdaas).
+- [3] Visão geral: Watson Machine Learning. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html).

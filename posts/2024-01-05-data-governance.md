@@ -81,10 +81,10 @@ Other than that, if you're already using public cloud services like AWS, Azure o
 
 If you're not using public cloud, there are some data governance tools mentioned in reference [5] that could fit your need, just check their section on "Data governance vendors and tools".
 
-# References
+## References
 
--   [1] <https://cloud.google.com/learn/what-is-data-governance>
--   [2] <https://aws.amazon.com/what-is/data-governance/?nc1=h_ls>
--   [3] <https://www.ibm.com/topics/data-governance>
--   [4] <https://datagovernance.com/defining-data-governance/>
--   [5] <https://www.techtarget.com/searchdatamanagement/definition/data-governance>
+- [1] [https://cloud.google.com/learn/what-is-data-governance](https://cloud.google.com/learn/what-is-data-governance)
+- [2] [https://aws.amazon.com/what-is/data-governance/?nc1=h_ls](https://aws.amazon.com/what-is/data-governance/?nc1=h_ls)
+- [3] [https://www.ibm.com/topics/data-governance](https://www.ibm.com/topics/data-governance)
+- [4] [https://datagovernance.com/defining-data-governance/](https://datagovernance.com/defining-data-governance/)
+- [5] [https://www.techtarget.com/searchdatamanagement/definition/data-governance](https://www.techtarget.com/searchdatamanagement/definition/data-governance)

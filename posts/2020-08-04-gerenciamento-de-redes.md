@@ -165,6 +165,6 @@ Quando o pacote é descartado, o roteador que descartou envia uma mensagem *ICMP
 Na análise do resultado é necessário entender que os endereços da resposta nem sempre são da *interface* que recebeu a mensagem. Os endereços são, na realidade, da *interface* que **enviou** a mensagem de erro.
 
 ---
-#### Referências:
+## Referências
 
-[1] - [Introdução ao gerenciamento de redes](https://www.youtube.com/watch?v=RntTxnDsM9g&list=PLQq8-9yVHyOYDZ7F57KAsy6q2q10QaWtUs).
+- [1] [Introdução ao gerenciamento de redes](https://www.youtube.com/watch?v=RntTxnDsM9g&list=PLQq8-9yVHyOYDZ7F57KAsy6q2q10QaWtUs).
