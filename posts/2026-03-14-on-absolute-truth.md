@@ -33,4 +33,4 @@ Therefore, to have a consistent system the only option is to accept that there a
 
 ## References
 
-- [1] - Mortari, A. C. Introdução à lógica. 2nd ed., Editora Unesp, 2017. Amazon [link](https://a.co/d/063DhGgc).
+- [1] Mortari, A. C. Introdução à lógica. 2nd ed., Editora Unesp, 2017. Amazon [link](https://a.co/d/063DhGgc).

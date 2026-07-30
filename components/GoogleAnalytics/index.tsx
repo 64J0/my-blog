@@ -1,23 +1,21 @@
-import React, { useMemo } from "react";
+import React from "react";
+import Script from "next/script";
 
-const GoogleAnalytics: React.FC = () => {
-  const analyticsString = useMemo(() => {
-    return ("window.dataLayer = window.dataLayer || []; " +
-      "function gtag(){dataLayer.push(arguments);} " +
-      "gtag('js', new Date()); " +
-      "gtag('config', 'UA-174653740-1');");
-  }, []);
+const GA_ID = "G-6YQ15XLQDX";
 
-  return (
-    <>
-      {/* Global site tag (gtag.js) - Google Analytics */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174653740-1"></script>
-      <script dangerouslySetInnerHTML={{
-        __html: analyticsString
-      }}>
-      </script>
-    </>
-  );
-};
+const GoogleAnalytics: React.FC = () => (
+  <>
+    <Script
+      strategy="afterInteractive"
+      src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+    />
+    <Script strategy="afterInteractive" id="google-analytics">
+      {`window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GA_ID}');`}
+    </Script>
+  </>
+);
 
 export default GoogleAnalytics;

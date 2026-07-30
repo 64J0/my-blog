@@ -1,6 +1,6 @@
 {
   "name": "personal-blog-next",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "My personal blog built with TypeScript and Next.js.",
   "private": true,
   "author": {
@@ -11,13 +11,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "lint": "next lint",
-    "start": "next start"
+    "lint": "eslint .",
+    "start": "next start",
+    "test": "vitest run",
+    "check-posts": "tsx scripts/check-post-conventions.ts"
   },
   "dependencies": {
+    "@shikijs/rehype": "^4.3.1",
     "date-fns": "^4.1.0",
+    "fuse.js": "^7.5.0",
     "gray-matter": "^4.0.3",
-    "highlight.js": "^11.11.1",
+    "hast-util-to-string": "^3.0.1",
+    "image-size": "^2.0.2",
     "next": "^16.1.7",
     "polished": "^4.3.1",
     "react": "^19.1.0",
@@ -34,12 +39,15 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^16.0.7",
+    "@types/hast": "^3.0.5",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.1.6",
     "eslint-plugin-react": "^7.37.5",
-    "typescript": "^5.9.3"
+    "tsx": "^4.23.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.10"
   }
 }

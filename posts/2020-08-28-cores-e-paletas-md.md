@@ -68,4 +68,4 @@ A imagem abaixo mostra o resultado ao buscar uma paleta cuja cor primária é o 
 ---
 ## Referências
 
-[1] - The color system. Material Design Docs. Disponível [neste link](https://material.io/design/color/the-color-system.html#color-usage-and-palettes).
+- [1] The color system. Material Design Docs. Disponível [neste link](https://material.io/design/color/the-color-system.html#color-usage-and-palettes).

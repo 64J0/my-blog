@@ -46,17 +46,12 @@ Quando um indivíduo extrapola os limites de aplicação dessa doutrina, e come�
 
 Caso tenha interesse em se aprofundar na análise de outros erros filosóficos modernos, recomendo a leitura da referência [6]. Neste livro, temos no capítulo V "Valores Morais" uma discussão mais aprofundada, tratando das vertentes filosóficas que levam ao relativismo moral moderno, indo da antiguidade com Epicuro, até os tempos modernos com Hume, Spinoza, John Stuart Mill e A. J. Ayer.
 
-# Referências
+## Referências
 
--   [1] Relativismo cultural. Wikipedia. Disponível em: [link](https://pt.wikipedia.org/wiki/Relativismo_cultural). Acessado em 17 de junho de 2024.
-
--   [2] COMO REFUTAR O RELATIVISMO?! Marcelo Andrade. YouTube. Disponível em: [link](https://www.youtube.com/watch?v=84p7-vL4SKA).
-
--   [3] Sete Erros Fatais do Relativismo Moral. BÍBLIA CATÓLICA. Disponível em: [link](https://www.bibliacatolica.com.br/blog/sete-erros-fatais-do-relativismo-moral/).
-
--   [4] O que é relativismo moral? É uma filosofia ou a negação dela? Brasil Paralelo. Disponível em: [link](https://www.brasilparalelo.com.br/artigos/relativismo-moral).
-    -   *Vale a pena demais ler este artigo, trás bem mais insights que os apresentados aqui.*
-
--   [5] JULGAMENTO E IMPARCIALIDADE | COMO ESTUDAR HISTÓRIA? História do mundo. YouTube. Disponível em: [link](https://www.youtube.com/watch?v=_LRb0bungm8).
-
--   [6] Dez erros filosóficos. Mortimer J. Adler. Disponível em: [link](https://a.co/d/07ethfC).
+- [1] Relativismo cultural. Wikipedia. Disponível em: [link](https://pt.wikipedia.org/wiki/Relativismo_cultural). Acessado em 17 de junho de 2024.
+- [2] COMO REFUTAR O RELATIVISMO?! Marcelo Andrade. YouTube. Disponível em: [link](https://www.youtube.com/watch?v=84p7-vL4SKA).
+- [3] Sete Erros Fatais do Relativismo Moral. BÍBLIA CATÓLICA. Disponível em: [link](https://www.bibliacatolica.com.br/blog/sete-erros-fatais-do-relativismo-moral/).
+- [4] O que é relativismo moral? É uma filosofia ou a negação dela? Brasil Paralelo. Disponível em: [link](https://www.brasilparalelo.com.br/artigos/relativismo-moral).
+    - *Vale a pena demais ler este artigo, trás bem mais insights que os apresentados aqui.*
+- [5] JULGAMENTO E IMPARCIALIDADE | COMO ESTUDAR HISTÓRIA? História do mundo. YouTube. Disponível em: [link](https://www.youtube.com/watch?v=_LRb0bungm8).
+- [6] Dez erros filosóficos. Mortimer J. Adler. Disponível em: [link](https://a.co/d/07ethfC).

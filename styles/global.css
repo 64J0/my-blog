@@ -1,19 +1,65 @@
 :root, [data-color-mode=light] {
   --color-template-background: #ffffff;
+  --color-text: #111111;
   --color-anchor: #0070f3;
   --color-visited-anchor: #027148;
   --color-table-border: #333333;
   --color-table-header-background: #efefef;
+  --color-muted-text: #888888;
+  --color-border: rgba(0, 0, 0, 0.7);
+  --color-blockquote-background: rgba(0, 0, 128, 0.05);
+  --color-footer-background: #333333;
+  --color-skip-link-background: #000000;
+  --color-skip-link-text: #ffffff;
+  --color-button-background: #efefef;
+  --color-button-text: #111111;
+  --color-button-border: #333333;
+  --color-code-background: #e8ebee;
+  --color-code-border: rgba(0, 0, 0, 0.14);
+}
+
+[data-color-mode=dark] {
+  --color-template-background: #121212;
+  --color-text: #e5e5e5;
+  --color-anchor: #4da3ff;
+  --color-visited-anchor: #6fd6a3;
+  --color-table-border: #555555;
+  --color-table-header-background: #1e1e1e;
+  --color-muted-text: #aaaaaa;
+  --color-border: rgba(255, 255, 255, 0.7);
+  --color-blockquote-background: rgba(255, 255, 255, 0.05);
+  --color-footer-background: #1e1e1e;
+  --color-skip-link-background: #efefef;
+  --color-skip-link-text: #111111;
+  --color-button-background: #2a2a2a;
+  --color-button-text: #e5e5e5;
+  --color-button-border: #555555;
+  --color-code-background: #282c34;
+  --color-code-border: rgba(255, 255, 255, 0.14);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: monospace;
   line-height: 1.5;
   font-size: 13px;
   background-color: var(--color-template-background);
+  color: var(--color-text);
+}
+
+.app-root {
+  font-family: var(--font-sans), "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -22,6 +68,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -41,6 +88,111 @@ code {
   white-space: pre;
   word-break: normal;
   word-wrap: normal;
+  font-family: var(--font-roboto-mono), "SFMono-Regular", Consolas, monospace;
+}
+
+/* =========== Begin Shiki code highlighting =========== */
+.shiki,
+.shiki span {
+  color: var(--shiki-light);
+}
+
+[data-color-mode="dark"] .shiki,
+[data-color-mode="dark"] .shiki span {
+  color: var(--shiki-dark);
+}
+
+.shiki {
+  background-color: var(--color-code-background);
+  border: 1px solid var(--color-code-border);
+  padding: 1.25rem 1.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-muted-text) transparent;
+}
+
+.shiki::-webkit-scrollbar {
+  height: 8px;
+}
+
+.shiki::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.shiki::-webkit-scrollbar-thumb {
+  background-color: var(--color-muted-text);
+  border-radius: 4px;
+}
+
+.code-block {
+  position: relative;
+}
+
+.copy-code-button {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+
+  border: 1px solid var(--color-button-border);
+  border-radius: 4px;
+  background-color: var(--color-button-background);
+  color: var(--color-button-text);
+
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.copy-code-button::before {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: currentColor;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2' ry='2'/%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/%3E%3C/svg%3E");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='9' y='9' width='13' height='13' rx='2' ry='2'/%3E%3Cpath d='M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.copy-code-button.is-copied::before {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+
+.copy-code-button:hover,
+.copy-code-button:focus-visible {
+  opacity: 1;
+}
+
+.copy-code-button.is-copied {
+  opacity: 1;
+  color: var(--color-visited-anchor);
+  cursor: default;
+}
+/* =========== End Shiki code highlighting =========== */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 p {

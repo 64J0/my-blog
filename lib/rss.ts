@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+import { xmlEscape } from "./xml";
+
 interface NewFeedItem {
   title: string;
   description: string;
@@ -11,15 +13,6 @@ interface NewFeedItem {
 }
 
 const postsDirectory = path.join(process.cwd(), "posts");
-
-// Minimal XML escaping for text nodes/attributes
-const xmlEscape = (s: string) =>
-  String(s)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
 
 const createRssDoc = (items: string) => `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">

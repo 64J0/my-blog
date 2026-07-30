@@ -33,8 +33,7 @@ Os arquivos gerados pelo Webpack são otimizados para utilização no navegador 
 
 ---
 
-### Referências:
+## Referências
 
-[1] - Ricardo Sanches, *Webpack - Curso rápido para iniciantes*. Disponível neste [link](https://www.youtube.com/watch?v=sU3W2ZTt-8I).
-
-[2] - Douglas Matoso, *Webpack sem Medo*. Disponível neste [link](https://www.webdevdrops.com/webpack-sem-medo-introducao-af889eb659e7).
+- [1] Ricardo Sanches, *Webpack - Curso rápido para iniciantes*. Disponível neste [link](https://www.youtube.com/watch?v=sU3W2ZTt-8I).
+- [2] Douglas Matoso, *Webpack sem Medo*. Disponível neste [link](https://www.webdevdrops.com/webpack-sem-medo-introducao-af889eb659e7).

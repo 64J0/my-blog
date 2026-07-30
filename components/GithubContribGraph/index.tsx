@@ -27,7 +27,7 @@ const GithubContribGraph: React.FC<ContribChartHTML> = ({ contribChartHTML }) =>
     return svgMinScale / svgInitialWidth;
   }, []);
 
-  const handleSetSvgScale = useCallback(({ scale }) => {
+  const handleSetSvgScale = useCallback(({ scale }: { scale: number }) => {
     const svgElement = window.document.querySelector(".js-calendar-graph-svg");
     (svgElement as CustomSVG).currentScale = scale;
     (svgElement as CustomSVG).width.baseVal.value = svgInitialWidth * scale;

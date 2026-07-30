@@ -226,10 +226,8 @@ I know that this solution is not really what the community wants, but considerin
 
 By using this action you don't really need to remember to update the workflow whenever a new tag is created, you'll already have an open PR with the necessary changes waiting to be reviewed and merged.
 
-# References
+## References
 
--   [1] About workflows. GitHub Actions Docs. [Link](https://docs.github.com/en/actions/using-workflows/about-workflows).
-
--   [2] Events that trigger workflows: workflow\_dispatch. GitHub Actions Docs. [Link](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch).
-
--   [3] Default environment variables. GitHub Actions Docs. [Link](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables).
+- [1] About workflows. GitHub Actions Docs. [Link](https://docs.github.com/en/actions/using-workflows/about-workflows).
+- [2] Events that trigger workflows: workflow\_dispatch. GitHub Actions Docs. [Link](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#workflow_dispatch).
+- [3] Default environment variables. GitHub Actions Docs. [Link](https://docs.github.com/en/actions/learn-github-actions/variables#default-environment-variables).

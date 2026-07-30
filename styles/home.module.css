@@ -25,5 +25,5 @@
 }
 
 .postsListDate {
-  color: #888;
+  color: var(--color-muted-text);
 }

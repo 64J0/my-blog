@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 2rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin: 0 0 1rem;
+
+  font-family: inherit;
+  font-size: 1.1rem;
+
+  border: 1px solid var(--color-button-border);
+  border-radius: 6px;
+  background-color: var(--color-template-background);
+  color: var(--color-text);
+
+  &:focus-visible {
+    outline: 2px solid var(--color-anchor);
+    outline-offset: 2px;
+  }
+}
+
+.resultCount {
+  margin: 0 0 1rem;
+  text-indent: 0;
+  font-size: 1rem;
+  color: var(--color-muted-text);
+}
+
+.resultList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resultItem {
+  margin: 0 0 1.25rem;
+  font-size: 1.2rem;
+}
+
+.resultDate {
+  color: var(--color-muted-text);
+}
+
+.emptyState {
+  color: var(--color-muted-text);
+}

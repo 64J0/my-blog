@@ -653,42 +653,24 @@ In order to change the default configuration, and allow GitHub to check the lang
 ```
 
 
-# References
+## References
 
-[1] - [Terratest: Terraform "Hello, World" Example](https://github.com/gruntwork-io/terratest/tree/master/examples/terraform-hello-world-example)
-
-[2] - [64J0/custom-fsharp-gh-action-and-dynamic-matrix](https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix)
-
-[3] - [GitHub Docs: Types of Actions](https://docs.github.com/en/actions/creating-actions/about-custom-actions#types-of-actions)
-
-[4] - [GitHub Docs: Creating a Docker container action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action)
-
-[5] - [GitHub Docs: Metadata syntax for GitHub Actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
-
-[6] - [Docker Docs: Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
-
-[7] - [Nuget: Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/)
-
-[8] - [haf/expecto](https://github.com/haf/expecto)
-
-[9] - [GitHub Docs: Using a matrix for your jobs](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)
-
-[10] - [GitHub Community: Repository "Languages" showing incorrect information](https://github.com/orgs/community/discussions/54854)
-
-[11] - [github-linguist/linguist](https://github.com/github-linguist/linguist)
-
-[12] - [GitHub Docs: Events that trigger workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
-
-[13] - [Medium: Dynamic matrix in GitHub Action](https://vs-blogs.medium.com/dynamic-matrix-in-github-action-e516019cfdf5)
-
-[14] - [GitHub Docs: GitHub Actions Documentation](https://docs.github.com/en/actions)
-
-[15] - [actions/checkout](https://github.com/actions/checkout)
-
-[16] - [tj-actions/changed-files](https://github.com/tj-actions/changed-files)
-
-[17] - [GitHub Docs: Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions)
-
-[18] - [actions/runner-images/images/linux/Ubuntu2204-Readme.md](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
-
-[19] - [fsprojects/fantomas](https://github.com/fsprojects/fantomas)
+- [1] [Terratest: Terraform "Hello, World" Example](https://github.com/gruntwork-io/terratest/tree/master/examples/terraform-hello-world-example)
+- [2] [64J0/custom-fsharp-gh-action-and-dynamic-matrix](https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix)
+- [3] [GitHub Docs: Types of Actions](https://docs.github.com/en/actions/creating-actions/about-custom-actions#types-of-actions)
+- [4] [GitHub Docs: Creating a Docker container action](https://docs.github.com/en/actions/creating-actions/creating-a-docker-container-action)
+- [5] [GitHub Docs: Metadata syntax for GitHub Actions](https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions)
+- [6] [Docker Docs: Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
+- [7] [Nuget: Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/)
+- [8] [haf/expecto](https://github.com/haf/expecto)
+- [9] [GitHub Docs: Using a matrix for your jobs](https://docs.github.com/en/actions/using-jobs/using-a-matrix-for-your-jobs)
+- [10] [GitHub Community: Repository "Languages" showing incorrect information](https://github.com/orgs/community/discussions/54854)
+- [11] [github-linguist/linguist](https://github.com/github-linguist/linguist)
+- [12] [GitHub Docs: Events that trigger workflows](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
+- [13] [Medium: Dynamic matrix in GitHub Action](https://vs-blogs.medium.com/dynamic-matrix-in-github-action-e516019cfdf5)
+- [14] [GitHub Docs: GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [15] [actions/checkout](https://github.com/actions/checkout)
+- [16] [tj-actions/changed-files](https://github.com/tj-actions/changed-files)
+- [17] [GitHub Docs: Expressions](https://docs.github.com/en/actions/learn-github-actions/expressions)
+- [18] [actions/runner-images/images/linux/Ubuntu2204-Readme.md](https://github.com/actions/runner-images/blob/main/images/linux/Ubuntu2204-Readme.md)
+- [19] [fsprojects/fantomas](https://github.com/fsprojects/fantomas)

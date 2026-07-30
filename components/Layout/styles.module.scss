@@ -8,6 +8,28 @@
   padding: 1rem 2rem;
 }
 
+.skipToContent {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    display: block;
+    padding: 0.5rem 1rem;
+    background: var(--color-skip-link-background);
+    color: var(--color-skip-link-text);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+}
+
 .mainContainer {
   padding-top: 0;
 }
@@ -25,12 +47,58 @@
 }
 
 .footer {
-  background: url("../../public/gifs/matrix-animation-background.gif") #fff;
-  background-repeat: no-repeat;
-  background-size: 100% 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
 
   width: 100%;
   min-width: 30rem;
-  padding: 6rem 0 0 0;
   margin: 4rem 0 1rem 0;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid var(--color-code-border);
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    display: inline-flex;
+    color: var(--color-muted-text);
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-anchor);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.footerEmail {
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+  text-indent: 0;
+  font-size: 1rem;
+  color: var(--color-muted-text);
+  word-break: break-word;
+}
+
+@media (max-width: 34rem) {
+  .footer {
+    min-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+
+  .footerLinks {
+    gap: 1.5rem;
+  }
 }

@@ -97,8 +97,8 @@ Types configuration.
 You can find my references in the next section. Please consult it for more
 information.
 
-# References
+## References
 
-+ [1] [Constellix - DNS Record Types Cheat Sheet](https://constellix.com/news/dns-record-types-cheat-sheet)
-+ [2] [Site24x7 - DNS Record Types: Defined and Explained](https://www.site24x7.com/learn/dns-record-types.html)
-+ [3] [Google Workspace Admin Help - DNS Basics](https://support.google.com/a/answer/48090?hl=en)
+- [1] [Constellix - DNS Record Types Cheat Sheet](https://constellix.com/news/dns-record-types-cheat-sheet)
+- [2] [Site24x7 - DNS Record Types: Defined and Explained](https://www.site24x7.com/learn/dns-record-types.html)
+- [3] [Google Workspace Admin Help - DNS Basics](https://support.google.com/a/answer/48090?hl=en)

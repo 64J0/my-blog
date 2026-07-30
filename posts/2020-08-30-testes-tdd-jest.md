@@ -346,10 +346,8 @@ Após tudo isso basta executar no terminal um *npm test* e o próprio sistema ir
 Por enquanto foi isso. A medida que for estudando e descobrindo mais coisas pretendo incrementar o texto, então fique atento.
 
 ---
-## Referências:
+## Referências
 
-[1] - Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
-
-[2] - Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
-
-[3] - When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).
+- [1] Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
+- [2] Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
+- [3] When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).

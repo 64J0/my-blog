@@ -204,13 +204,13 @@ Networking](https://dev.to/leandronsp/mastering-the-docker-networking-2h57), bot
 Also, if you understand portuguese, consider watching [this video](https://www.youtube.com/watch?v=lc6U93P4Sxw&ab_channel=FabioAkita) from Akita in
 YouTube.
 
-# References
+## References
 
-[1] - Backdoor (computing). Wikipedia. [Link](https://en.wikipedia.org/wiki/Backdoor_(computing)).
-[2] - What Is a Reverse Shell. Acunetix. [Link](https://www.acunetix.com/blog/web-security-zone/what-is-reverse-shell/).
-[3] - Reverse Shell vs Bind Shell. Anmol Shah - Medium. [Link](https://infosecwriteups.com/reverse-shell-vs-bind-shell-d5a1e80b6a6c).
-[4] - Complete Ethical Hacking Bootcamp 2022: Zero to Mastery. Udemy. [Link](https://www.udemy.com/share/103JJy3@a0EkDRAEX-pNEhfI6OoDiw3F8lW7lZSaG65cpAsbV9BI0wBF2F9Yb1JMegmVqRQc/).
-[5] - Networking in Compose. Docker docs. [Link](https://docs.docker.com/compose/networking/).
+- [1] Backdoor (computing). Wikipedia. [Link](https://en.wikipedia.org/wiki/Backdoor_(computing)).
+- [2] What Is a Reverse Shell. Acunetix. [Link](https://www.acunetix.com/blog/web-security-zone/what-is-reverse-shell/).
+- [3] Reverse Shell vs Bind Shell. Anmol Shah - Medium. [Link](https://infosecwriteups.com/reverse-shell-vs-bind-shell-d5a1e80b6a6c).
+- [4] Complete Ethical Hacking Bootcamp 2022: Zero to Mastery. Udemy. [Link](https://www.udemy.com/share/103JJy3@a0EkDRAEX-pNEhfI6OoDiw3F8lW7lZSaG65cpAsbV9BI0wBF2F9Yb1JMegmVqRQc/).
+- [5] Networking in Compose. Docker docs. [Link](https://docs.docker.com/compose/networking/).
 
 # Legal
 

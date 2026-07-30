@@ -109,9 +109,9 @@ That’s it, see you later.
 
 ## References
 
-* [How to create a NuGet package with the .NET CLI — Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/deploying/creating-nuget-packages)
-* [Publishing packages — Microsoft docs](https://docs.microsoft.com/en-us/nuget/nuget-org/publish-a-package)
-* [dotnet nuget push — Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-push)
+- [How to create a NuGet package with the .NET CLI — Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/deploying/creating-nuget-packages)
+- [Publishing packages — Microsoft docs](https://docs.microsoft.com/en-us/nuget/nuget-org/publish-a-package)
+- [dotnet nuget push — Microsoft docs](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-nuget-push)
 
 This post was originally published at [this link](https://dev.to/64j0/how-to-publish-a-nuget-package-using-dotnet-cli-3lhd).
 

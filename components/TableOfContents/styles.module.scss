@@ -1,0 +1,42 @@
+.toc {
+  margin: 0 0 2.5rem;
+  padding: 1rem 1.5rem;
+
+  border: 1px solid var(--color-code-border);
+  border-radius: 6px;
+  background-color: var(--color-code-background);
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  a {
+    color: var(--color-text);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-anchor);
+    }
+  }
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--color-muted-text);
+  text-indent: 0;
+}
+
+.subEntry {
+  list-style-type: circle;
+  margin-left: 1.25rem;
+}

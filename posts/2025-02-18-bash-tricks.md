@@ -35,4 +35,4 @@ enough.
 
 ## References
 
--   <https://askubuntu.com/a/423532>
+- [https://askubuntu.com/a/423532](https://askubuntu.com/a/423532)

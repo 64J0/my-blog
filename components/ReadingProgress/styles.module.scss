@@ -1,0 +1,17 @@
+.track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  z-index: 1001;
+  background-color: var(--color-code-background);
+}
+
+.bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-anchor), var(--color-visited-anchor));
+  box-shadow: 0 0 8px 0 var(--color-anchor);
+  border-radius: 0 3px 3px 0;
+  transition: width 0.15s ease-out;
+}

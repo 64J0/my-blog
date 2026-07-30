@@ -130,7 +130,7 @@ If you found this interesting and would like to check a real life assembly code,
 
 ## References
 
--   [1] - Why Programs Use Stack, Heap, and Other Memory Segments. BitLemon. YouTube [link](https://www.youtube.com/watch?v=EXIxAPITb7U). *My main inspiration to write this post, to keep its lessons documented for fast consulting.*
--   [2] - Beginning x64 Assembly Programming. Amazon [link](https://a.co/d/hE556TU).
--   [3] - Understanding the Memory Layout of Linux Executables. GitHub Gist [link](https://gist.github.com/CMCDragonkai/10ab53654b2aa6ce55c11cfc5b2432a4).
--   [4] - Memory leak. Wikipedia [link](https://en.wikipedia.org/wiki/Memory_leak).
+- [1] Why Programs Use Stack, Heap, and Other Memory Segments. BitLemon. YouTube [link](https://www.youtube.com/watch?v=EXIxAPITb7U). *My main inspiration to write this post, to keep its lessons documented for fast consulting.*
+- [2] Beginning x64 Assembly Programming. Amazon [link](https://a.co/d/hE556TU).
+- [3] Understanding the Memory Layout of Linux Executables. GitHub Gist [link](https://gist.github.com/CMCDragonkai/10ab53654b2aa6ce55c11cfc5b2432a4).
+- [4] Memory leak. Wikipedia [link](https://en.wikipedia.org/wiki/Memory_leak).

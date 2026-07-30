@@ -103,8 +103,8 @@ And this evidence can be the base for a higher reasoning.
 
 ## References
 
-- [1] - Ancient Philosophy: Aristotle and His Successors. Coursera [course page](https://www.coursera.org/learn/aristotle).
-- [2] - [Editora Logos](https://clubedefilosofia.com/).
+- [1] Ancient Philosophy: Aristotle and His Successors. Coursera [course page](https://www.coursera.org/learn/aristotle).
+- [2] [Editora Logos](https://clubedefilosofia.com/).
 
 ### Disclaimer
 

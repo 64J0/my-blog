@@ -18,8 +18,7 @@ E pra iniciar com o pé direito já vamos começar direto abordando algumas meto
 ## Metodologia Waterfall:
 
 ---
-## Referências:
+## Referências
 
-[1] - [My Software Engineer Roadmap](https://medium.com/swlh/my-software-engineer-roadmap-2fb0c02b8a08)
-
-[2] - [Guia da gestão de projetos: metodologia Waterfall](https://www.projectbuilder.com.br/blog/guia-da-gestao-de-projetos-metodologia-waterfall/)
+- [1] [My Software Engineer Roadmap](https://medium.com/swlh/my-software-engineer-roadmap-2fb0c02b8a08)
+- [2] [Guia da gestão de projetos: metodologia Waterfall](https://www.projectbuilder.com.br/blog/guia-da-gestao-de-projetos-metodologia-waterfall/)

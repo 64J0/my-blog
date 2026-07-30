@@ -64,12 +64,9 @@ Tenha uma boa relação com o cliente, de maneira proativa se posicione sempre d
 
 ---
 
-## Referências:
+## Referências
 
-[1] - Como iniciar uma carreira freelancer. [Link do youtube](https://www.youtube.com/watch?v=lp5OgstpFp4).
-
-[2] - Como Eu Ganhei R$ 3850 Em Uma Semana Como Freelancer De Programação. [Link do youtube](https://www.youtube.com/watch?v=_DXdmuGqXLg).
-
-[3] - Programador Freelancer: 5 pilares Essenciais. [Link do youtube](https://www.youtube.com/watch?v=XUPBNMjkJ0A).
-
-[4] - Meu primeiro FREELA, e agora? Dicas IMPORTANTES para seu primeiro trabalho freelancer. [Link do youtube](https://www.youtube.com/watch?v=vvniOL394rI)
+- [1] Como iniciar uma carreira freelancer. [Link do youtube](https://www.youtube.com/watch?v=lp5OgstpFp4).
+- [2] Como Eu Ganhei R$ 3850 Em Uma Semana Como Freelancer De Programação. [Link do youtube](https://www.youtube.com/watch?v=_DXdmuGqXLg).
+- [3] Programador Freelancer: 5 pilares Essenciais. [Link do youtube](https://www.youtube.com/watch?v=XUPBNMjkJ0A).
+- [4] Meu primeiro FREELA, e agora? Dicas IMPORTANTES para seu primeiro trabalho freelancer. [Link do youtube](https://www.youtube.com/watch?v=vvniOL394rI)
