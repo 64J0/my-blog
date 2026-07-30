@@ -84,8 +84,9 @@ Também serão mostrados em formato de tópico com alguns insights úteis.
 * É sempre bom criar alertas de vagas com os termos do cargo pretendido. Além disso tem uma configuração do perfil da rede que permite indicar o interesse a recrutadores em empresas para as quais os alertas de vagas são criados, dessa forma se destacando.
 
 ---
+
 ## Considerações finais
 
 Bom, o post de hoje foi esse pessoal. Espero que vocês tenham gostado e que as dicas sejam úteis.
 
-Caso tenha ficado alguma dúvida por favor me mande uma mensagem no LinkedIn, que está acessível atualmente neste link: https://www.linkedin.com/in/vinicius-gajo/.
+Caso tenha ficado alguma dúvida por favor me mande uma mensagem no LinkedIn, que está acessível atualmente neste link: <https://www.linkedin.com/in/vinicius-gajo/>.

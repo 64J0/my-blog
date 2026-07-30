@@ -38,7 +38,7 @@ Abaixo seguem alguns dos benefícios de utilizar *containers*:
 * **Escalável:** É possível aumentar e distribuir automaticamente réplicas de *containers* por um *datacenter* de maneira bastante fácil.
 * **Seguro:** Os *containers* aplicam restrições agressivas e isolam processos sem a necessidade de qualquer configuração por parte do usuário.
 
-## Images e Containers:
+## Images e Containers
 
 Fundamentalmente, um *container* não é nada mais que um processo executando com algumas funcionalidades encapsuladas aplicadas para mantê-lo isolado do *host* e de outros *containers*.
 
@@ -143,7 +143,7 @@ O *Kubernetes* oferece uma plataforma para que você possa programar e executar 
 
 Bom pessoal, o post de hoje foi esse. Como mencionei no início busquei abordar de uma maneira resumida e introdutória alguns conceitos e ferramentas ligadas ao mundo do *deploy* de aplicações e *devOps*.
 
-Espero ter sido claro e objetivo e qualquer dúvida pode entrar em contato comigo em alguma das minhas redes sociais que estão mostradas nessa página do blog: https://gaio.dev/contato.
+Espero ter sido claro e objetivo e qualquer dúvida pode entrar em contato comigo em alguma das minhas redes sociais que estão mostradas nessa página do blog: <https://gaio.dev/contato>.
 
 Até a próxima.
 
@@ -151,5 +151,5 @@ Até a próxima.
 
 ## Referências
 
-- [1] Docker - Orientation and setup. [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
-- [2] Introdução aos containers Linux. [https://www.redhat.com/pt-br/topics/containers](https://www.redhat.com/pt-br/topics/containers)
+* [1] Docker - Orientation and setup. [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
+* [2] Introdução aos containers Linux. [https://www.redhat.com/pt-br/topics/containers](https://www.redhat.com/pt-br/topics/containers)

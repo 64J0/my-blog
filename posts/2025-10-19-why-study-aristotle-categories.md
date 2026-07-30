@@ -5,10 +5,10 @@ show: true
 tags: ["philosophy", "Aristotle", "Coursera"]
 ---
 
-### Changelog
+## Changelog
 
-- [2025-10-19 Sun] First version released.
-- [2026-02-26 Thu] Add complement based on Logos' book.
+- 2025-10-19: First version released.
+- 2026-02-26: Add complement based on Logos' book.
 
 ## Introduction
 

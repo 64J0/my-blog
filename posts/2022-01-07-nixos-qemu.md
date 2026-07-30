@@ -48,7 +48,7 @@ According to the site, QEMU is a generic and open source machine emulator and vi
 
   Hardware or software that enables one computer system (called the host) to behave like another computer system (called the guest). An emulator typically enables the host system to run software or use peripheral devices designed for the guest system. Emulation refers to the ability of a computer program in an electronic device to emulate (or imitate) another program or device.
 
-2. Virtualizer -
+1. Virtualizer -
 
   Virtualization means a variety of technologies for managing computer resources by providing a software interface, known as an "abstraction layer", between the software (operating system and applications) and the hardware. Virtualization turns "physical" RAM and storage into "logical" resources.
 
@@ -69,9 +69,10 @@ According to the site, QEMU is a generic and open source machine emulator and vi
   Under the control of one operating system, a server is split into "containers" that each handle an application.
 
   With this tool it's possible to:
-  - Run operating systems for any machine, on any supported architechture. It provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS.
-  - Run programs for another Linux/BSD target, on any supported architechture.
-  - Run KVM and Xen virtual machines with near native performance.
+
+- Run operating systems for any machine, on any supported architechture. It provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS.
+- Run programs for another Linux/BSD target, on any supported architechture.
+- Run KVM and Xen virtual machines with near native performance.
 
 [YouTube - QEMU: A proper guide!](https://www.youtube.com/watch?v=AAfFewePE7c&ab_channel=DenshiVideo).
 
@@ -93,20 +94,20 @@ The process of memory swapping is managed by an operating system or by a virtual
 
   **Advantages of memory swapping:**
 
-  - More memory: memory swapping is a critical component of memory management, enabling an operating system to handle requests that would otherwise overwhelm a system.
+- More memory: memory swapping is a critical component of memory management, enabling an operating system to handle requests that would otherwise overwhelm a system.
 
-  - Continuous operations: swap file memory can be written to disk in a continuous manner, enabling faster lookup times for operations.
+- Continuous operations: swap file memory can be written to disk in a continuous manner, enabling faster lookup times for operations.
 
-  - System optimization: application processes of lesser importance and demand can be relegated to swap space, saving the higher performance physical memory for higher value operations.
+- System optimization: application processes of lesser importance and demand can be relegated to swap space, saving the higher performance physical memory for higher value operations.
 
   **Limitations of memory swapping:**
 
-  - Performance: disk storage space, when called up by memory
+- Performance: disk storage space, when called up by memory
 swapping, does not offer the same performance as physical RAM for process execution.
 
-  - Disk limitations: swap files are reliant on the stabiity and availability of storage media, which might not be as stable as system memory.
+- Disk limitations: swap files are reliant on the stabiity and availability of storage media, which might not be as stable as system memory.
 
-  - Capacity: memory swapping is limited by the available swap space that has been allocated by an operating system or hypervisor.
+- Capacity: memory swapping is limited by the available swap space that has been allocated by an operating system or hypervisor.
 
 ### LVM volumes
 
@@ -153,19 +154,20 @@ GPT is an abbreviation of GUID Partition Table, and is a newer standard that's s
 
 Some differences:
 
-* The maximum capacity of MBR partition tables is only about 2 TB. You can use a drive that's larger than 2 TB with MBR, but only the first 2 TB of the drive will be used. The rest of the storage on the drive will be wasted.
+- The maximum capacity of MBR partition tables is only about 2 TB. You can use a drive that's larger than 2 TB with MBR, but only the first 2 TB of the drive will be used. The rest of the storage on the drive will be wasted.
 
-* In contrast, GPT partition tables offer a maximum capacity of 9.7 ZB, where 1 ZB = 1 billion TB.
+- In contrast, GPT partition tables offer a maximum capacity of 9.7 ZB, where 1 ZB = 1 billion TB.
 
-* MBR partition tables can have a maximum of 4 separate partitions. However, one of those partitions can be configured to be an extended partition, which is a partition that can be split up into an 23 additional partitions. So the absolute maximum number of partitions an MBR partition table can have is 26 partitions.
+- MBR partition tables can have a maximum of 4 separate partitions. However, one of those partitions can be configured to be an extended partition, which is a partition that can be split up into an 23 additional partitions. So the absolute maximum number of partitions an MBR partition table can have is 26 partitions.
 
-* GPT partition tables allow for up to 128 separate partitions, which is more than enough for most real world applications.
+- GPT partition tables allow for up to 128 separate partitions, which is more than enough for most real world applications.
 
-* As MBR is older, it's usually paired with older Legacy BIOS systems, while GPT is found on newer UEFI systems. This means that MBR partitions have better software and hardware compatibility, though GPT is starting to catch up.
+- As MBR is older, it's usually paired with older Legacy BIOS systems, while GPT is found on newer UEFI systems. This means that MBR partitions have better software and hardware compatibility, though GPT is starting to catch up.
 
 ## Steps
 
 Choose an interface for the system
+
 - i3wm gaps
 - dwm -> built with C code
 - install the minimum system and install the interface later

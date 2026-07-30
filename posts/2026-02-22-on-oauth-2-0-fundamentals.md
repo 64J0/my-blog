@@ -5,30 +5,26 @@ show: true
 tags: ["software", "engineering", "identity"]
 ---
 
+## Changelog
+
+- 2026-02-22: First version released.
+- 2026-07-30: Clean text.
+
 ## Introduction
 
-OAuth 2.0 is one of the most popular authorization frameworks used in practice, being adopted by both small startups and big enterprise companies. However, it is still a black box for multiple developers (understandably to some extent, given the current implementation landscape, vide [5]).
+**OAuth 2.0** is one of the most popular authorization frameworks used in practice, being adopted by both small startups and big enterprise companies. However, it is still a black box for multiple developers, which is understendable given the current implementation landscape, vide [5].
 
-With this in mind, I decided to write this article to present the framework fundamentals in a clear and concise way, focusing on the high level concepts leveraging the contents of the official specification, the RFC 6749 [1].
+With this in mind, I decided to write this article to present the framework fundamentals in a clear and concise way. Notice that I'll focus on the high level concepts, leveraging the contents of the official specification (RFC 6749 [1]).
 
 ## Fundamentals
 
-According to [4], OAuth, the acronym, stands for "open authorization" and it's an open standard for access delegation focused on authorization (authz). *Notice that this acronym definition is not present in the official specification, so take it with a grain of salt.*
+According to [4], OAuth, the acronym, stands for "open authorization" and it's an **open standard for access delegation focused on authorization** (*authz*).
 
-But, why was the OAuth 2.0 authorization framework created? Before answering this question, we need to first define the four roles involved in its operations, as they are going to be used in future explanations:
-
-- **Resource owner:** An entity capable of granting access to a protected resource. When the resource owner is a person, it is referred to as an end-user. [1]
-- **Resource server:** The server hosting the protected resources, capable of accepting and responding to protected resource requests using access tokens. [1]
-- **Client:** An application making protected resource requests on behalf of the resource owner and with its authorization.  The term "client" does not imply any particular implementation characteristics (e.g., whether the application executes on a server, a desktop, or other devices). [1]
-- **Authorization server:** The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization. [1]
-
-Now, going back to explaining why this framework was created, imagine that you work in a big organization that uses multiple digital products developed by different companies.
-
-In this scenario, it would be very complex, laborious and error prone to use independent and different accounts for each service, therefore, having a single source of truth for authentication and authorization would be a huge win.
+This framework was created to help manage the authorization challenges faced by big organizations dealing with multiple digital products developed by different companies. In this scenario, it would be very complex, laborious and error prone to use independent and different accounts for each service, therefore, having a single source of truth for authentication and authorization is a huge win.
 
 With this in mind, the OAuth 2.0 authorization framework was created.
 
-In essence, instead of each digital product managing their own authentication and authorization flows and data, we can use this "Authorization server", as a centralized layer for granting those features.
+In essence, instead of each digital product managing their own authentication and authorization flows and data, we can use an "Authorization server", as a centralized layer for granting those features.
 
 > [...] In OAuth, the client requests access to resources controlled
 > by the resource owner and hosted by the resource server, and is
@@ -48,7 +44,7 @@ In essence, instead of each digital product managing their own authentication an
 
 To better understand the protocol flow, we can use this figure from the RFC document itself:
 
-> ```bash
+> ```
 > +--------+                               +---------------+
 > |        |--(A)- Authorization Request ->|   Resource    |
 > |        |                               |     Owner     |
@@ -111,13 +107,11 @@ Where the authorization grant mentioned in the text is explained right after:
 >
 > --- [1], 1.3. Authorization Grant section.
 
-As you might expect, there's more regarding this RFC. But I think this is enough to begin with.
-
 ## Is OAuth The Same As SSO?
 
-The short answer is no. SSO stands for "Single Sign-On", and it is an authentication process that allows a user to access multiple applications with a single username and password [6].
+The short answer is no.
 
-Check this example from the same reference to further understand SSO:
+SSO stands for "Single Sign-On", and it is an authentication process that allows a user to access multiple applications with a single username and password [6]:
 
 > Let's take an example to understand SSO better. Consider Google's implementation of SSO.
 > When you log in to your Gmail account, you are implicitly logged in to YouTube, Google Drive,
@@ -133,9 +127,36 @@ Check this example from the same reference to further understand SSO:
 
 So, what's next?
 
-Well, there's already work going on for the OAuth 2.1 specification, and you can find its draft in [2].
+Well, there's already work going on for the **OAuth 2.1** specification, and you can find its draft in [2].
 
-The differences from OAuth 2.0 can be found in the chapter 10 of this document (version 14), so you can open its link and check it there, assuming that it will be most up to date there.
+The differences from **OAuth 2.0** can be found in the *chapter 10* of the document (*version 14*):
+
+> A non-normative list of changes from OAuth 2.0 is listed below:
+>
+> - The authorization code grant is extended with the functionality from PKCE [RFC7636] such that the default method of using the authorization code grant according to this specification requires the addition of the PKCE parameters
+>
+> - Redirect URIs must be compared using exact string matching as per Section 4.1.3 of [RFC9700]
+>
+> - The Implicit grant (response_type=token) is omitted from this specification as per Section 2.1.2 of [RFC9700]
+>
+> - The Resource Owner Password Credentials grant is omitted from this specification as per Section 2.4 of [RFC9700]
+>
+> - Bearer token usage omits the use of bearer tokens in the query string of URIs as per Section 4.3.2 of [RFC9700]
+>
+> - Refresh tokens for public clients must either be sender-constrained or one-time use as per Section 4.14.2 of [RFC9700]
+>
+> - The token endpoint request containing an authorization code no longer contains the redirect_uri parameter
+>
+> - Authorization servers must support client credentials in the request body
+>
+> --- [2]
+
+## Glossary
+
+- **Resource owner:** An entity capable of granting access to a protected resource. When the resource owner is a person, it is referred to as an end-user. [1]
+- **Resource server:** The server hosting the protected resources, capable of accepting and responding to protected resource requests using access tokens. [1]
+- **Client:** An application making protected resource requests on behalf of the resource owner and with its authorization.  The term "client" does not imply any particular implementation characteristics (e.g., whether the application executes on a server, a desktop, or other devices). [1]
+- **Authorization server:** The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization. [1]
 
 ## References
 

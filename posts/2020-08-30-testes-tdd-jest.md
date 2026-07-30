@@ -31,7 +31,7 @@ Em projetos maiores é de fundamental importância a utilização dos testes aut
 
 Existem basicamente três tipos de testes, que são definidos com relação ao escopo em que são aplicados.
 
-### Tipos de testes:
+### Tipos de testes
 
 1. Teste unitário:
 
@@ -39,17 +39,17 @@ Testam funcionalidades específicas e isoladas da aplicação (precisam ser fun�
 
 Esse tipo de teste **JAMAIS** realizará chamadas a API's, não apresenta efeitos colaterais e depende apenas da própria aplicação.
 
-2. Teste de integração:
+1. Teste de integração:
 
 Testam funcionalidades completas, passando por várias camadas da aplicação.
 
 Por exemplo, um teste que passe por arquivos de: Route -> Controller -> Service -> Repository -> ...
 
-3. Teste E2E (End-to-end):
+1. Teste E2E (End-to-end):
 
 São testes que simulam a ação do usuário dentro da aplicação. É uma categoria de teste mais comum nos códigos *front-end*.
 
-Exemplo: Clique no input de e-mail -> Preencha com vinicius.gajo@blog.com.br -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o *dashboard*.
+Exemplo: Clique no input de e-mail -> Preencha com <vinicius.gajo@blog.com.br> -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o *dashboard*.
 
 ## TDD (Test Driven Development)
 
@@ -71,12 +71,12 @@ Fonte da imagem: [3].
 
 De acordo com [1], temos diversos ganhos com esta estratégia:
 
-- ✔ Feedback rápido sobre a nova funcionalidade e sobre as outras existentes no projeto
-- ✔ Código mais limpo, já que escrevemos códigos simples para o teste passar
-- ✔ Segurança no Refactoring pois podemos ver o que estamos ou não afetando
-- ✔ Segurança na correção de bugs
-- ✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
-- ✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
+* ✔ Feedback rápido sobre a nova funcionalidade e sobre as outras existentes no projeto
+* ✔ Código mais limpo, já que escrevemos códigos simples para o teste passar
+* ✔ Segurança no Refactoring pois podemos ver o que estamos ou não afetando
+* ✔ Segurança na correção de bugs
+* ✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
+* ✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
 
 ## Jest
 
@@ -346,8 +346,9 @@ Após tudo isso basta executar no terminal um *npm test* e o próprio sistema ir
 Por enquanto foi isso. A medida que for estudando e descobrindo mais coisas pretendo incrementar o texto, então fique atento.
 
 ---
+
 ## Referências
 
-- [1] Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
-- [2] Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
-- [3] When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).
+* [1] Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
+* [2] Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
+* [3] When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).

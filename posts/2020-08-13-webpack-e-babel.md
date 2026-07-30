@@ -10,7 +10,7 @@ A ideia desse post surgiu quando estava navegando no youtube e encontrei esse [v
 
 ## Webpack
 
-O Webpack é basicamente um empacotador de módulos (*module bundler*) JS (ou TS) para aplicações front-end modernas que está presente na maioria dos frameworks atuais. Em outras palavras, essa ferramenta coleta todos os arquivos da aplicação que você está desenvolvendo, até mesmo as dependências externas, e transforma tudo em um arquivo só (ou mais de um) de forma otimizada e automática. 
+O Webpack é basicamente um empacotador de módulos (*module bundler*) JS (ou TS) para aplicações front-end modernas que está presente na maioria dos frameworks atuais. Em outras palavras, essa ferramenta coleta todos os arquivos da aplicação que você está desenvolvendo, até mesmo as dependências externas, e transforma tudo em um arquivo só (ou mais de um) de forma otimizada e automática.
 
 ![Imagem do site do webpack](/post-images/webpack-e-babel/webpack-site.JPG)
 
@@ -35,5 +35,5 @@ Os arquivos gerados pelo Webpack são otimizados para utilização no navegador 
 
 ## Referências
 
-- [1] Ricardo Sanches, *Webpack - Curso rápido para iniciantes*. Disponível neste [link](https://www.youtube.com/watch?v=sU3W2ZTt-8I).
-- [2] Douglas Matoso, *Webpack sem Medo*. Disponível neste [link](https://www.webdevdrops.com/webpack-sem-medo-introducao-af889eb659e7).
+* [1] Ricardo Sanches, *Webpack - Curso rápido para iniciantes*. Disponível neste [link](https://www.youtube.com/watch?v=sU3W2ZTt-8I).
+* [2] Douglas Matoso, *Webpack sem Medo*. Disponível neste [link](https://www.webdevdrops.com/webpack-sem-medo-introducao-af889eb659e7).

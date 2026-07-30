@@ -22,6 +22,7 @@ O primeiro protocolo de acesso múltiplo a ter sucesso foi o protocolo ALOHA, de
 A solução encontrada usava rádios de curta distância, com cada terminal de usuário compartilhando a mesma frequência upstream para enviar quadros ao computador principal. Isso incluía um método simples e elegante para resolver o problema de alocação de canal. Seu trabalho foi ampliado por vários pesquisadores desde então. Embora o trabalho de Abramson, denominado sistema ALOHA, usasse a radiofrequência terrestre, a ideia básica é aplicável a qualquer sistema em que usuários sem nenhuma coordenação estão competindo pelo uso de um único canal compartilhado.
 
 ---
+
 ## Referências
 
 - [1] Redes de Computadores - 5ª edição.

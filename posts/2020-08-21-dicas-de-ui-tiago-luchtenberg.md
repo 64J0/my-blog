@@ -67,6 +67,7 @@ Local para pesquisar: [Google Fonts](https://fonts.google.com/).
 Esse é um padrão modular para escalar tipografias hierarquicamente. Você vai pegar o tamanho da fonte de texto base e multiplicar por 1,5.
 
 Por exemplo:
+
 * Complementos: 12px
 * Texto base: 16px ou 18px (*depende da fonte*)
 * Título secundário: 24px
@@ -103,6 +104,7 @@ Assim como os ícones, as imagens e ilustrações também são importantes na co
 O atomic design detalha o que acontece durante a criação e manutenção de sistemas de design (design system), permitindo mais consistência e qualidade.
 
 ---
+
 ## Referências
 
-- [1] [https://material.io/design/layout/understanding-layout.html](https://material.io/design/layout/understanding-layout.html)
+* [1] [https://material.io/design/layout/understanding-layout.html](https://material.io/design/layout/understanding-layout.html)

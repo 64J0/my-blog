@@ -5,7 +5,7 @@ show: true
 tags: ["emacs", "org-mode", "latex"]
 ---
 
-# Introduction
+## Introduction
 
 Recently, I started taking some classes from the ElvenWorks Bootcamp on SRE
 (Site Reliability Engineering), and among the extra lessons (they share these
@@ -76,7 +76,7 @@ in a good look manner.
 You can read more about it in its Wikipedia article:
 [link](https://en.wikipedia.org/wiki/LaTeX "LaTeX wikipedia article").
 
-# The Docs
+## The Docs
 
 First of all, in my journey I consulted the following links from the Org-Mode
 documentation:
@@ -90,7 +90,7 @@ documentation:
 Consider reading it to get more deeper knowledge that I did not touch on in this
 short article.
 
-# The Goal
+## The Goal
 
 My initial goal in this journey was to be able to compile the LaTeX formulas,
 ideally in an automated way, and display the result in the body of the document
@@ -109,7 +109,7 @@ The command mentioned before works like a toggle button, so, if you want to
 disable the image preview and work again in the LaTeX code, you can simply call
 it again with the cursor in the preview image.
 
-## dvipng
+### dvipng
 
 According to the docs, there are two methods we can use for LaTeX preview:
 **dvipng** and **imagemagick**. I decided to pick the first, for no special
@@ -161,7 +161,7 @@ for example:
 (setq org-highlight-latex-and-related '(native))
 ```
 
-## Automate the Preview Generation
+### Automate the Preview Generation
 
 According to the documentation, you can automatically turn on the LaTeX preview
 feature by adding this property to the Org file:
@@ -176,7 +176,7 @@ And, to disable it:
 #+STARTUP: nolatexpreview
 ```
 
-# Conclusion
+## Conclusion
 
 In this article, I have presented a quick overview of the LaTeX visualization
 features available in GNU Emacs + Org-Mode. The idea to write about it was the

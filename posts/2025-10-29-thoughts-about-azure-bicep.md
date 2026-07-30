@@ -5,9 +5,9 @@ show: true
 tags: ["Azure", "Microsoft", "IaC"]
 ---
 
-### Changelog
+## Changelog
 
--   [2025-10-29 Wed] First version released.
+- 2025-10-29: First version released.
 
 ## About Azure Bicep
 

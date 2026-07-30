@@ -15,7 +15,7 @@ Para quem não sabe, o **Syntax Highlight** serve para destacar trechos de códi
 
 Bom, para início de conversa vou deixar claro aqui que este blog foi criado com o **Next.js** devido aos motivos mencionados nos primeiros posts e por isso ele segue algumas regras bastante específicas.
 
-Caso queria ver o código completo do blog, ele está disponível num repositório do meu **GitHub** onde guardo meus projetos feitos com o **Next.js**: (https://github.com/64J0/Nextjs-projects/tree/master/nextjs-blog).
+Caso queria ver o código completo do blog, ele está disponível num repositório do meu **GitHub** onde guardo meus projetos feitos com o **Next.js**: (<https://github.com/64J0/Nextjs-projects/tree/master/nextjs-blog>).
 
 Como eu gosto bastante de programar e este blog serve como um lugar onde deposito informações a respeito de coisas que estou estudando é natural pensar que uma hora ele receberia trechos de código.
 
@@ -108,4 +108,4 @@ Por exemplo: "language-javascript" ==> "javascript".
 
 Em seguida é chamado o método que aplica o highlight propriamente dito.
 
-Bom, neste post foi isso, espero que tenha ajudado vocês a implementarem essa funcionalidade em seus projetos também. Caso tenham alguma dúvida podem me procurar nas redes sociais da página de contato: https://gaio.dev/contato.
+Bom, neste post foi isso, espero que tenha ajudado vocês a implementarem essa funcionalidade em seus projetos também. Caso tenham alguma dúvida podem me procurar nas redes sociais da página de contato: <https://gaio.dev/contato>.

@@ -9,9 +9,9 @@ tags: ["fsharp", "prometheus", ".net", "api", "metrics", "backend", "giraffe", "
 
 Recently, I invested some time into the development of a new open-source project: [64J0/fsharp-monitoring](https://github.com/64J0/fsharp-monitoring). The goal of this project was to:
 
-1.  Create a simple F# API using Giraffe and [prometheus-net](https://github.com/prometheus-net/prometheus-net);
-2.  Expose the necessary metrics from this API to Prometheus in order to monitor the "four golden signals" as defined by Google's SRE book: [link](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals);
-3.  Present the metrics collected using a Grafana dashboard.
+1. Create a simple F# API using Giraffe and [prometheus-net](https://github.com/prometheus-net/prometheus-net);
+2. Expose the necessary metrics from this API to Prometheus in order to monitor the "four golden signals" as defined by Google's SRE book: [link](https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals);
+3. Present the metrics collected using a Grafana dashboard.
 
 With time, I decided to add other features on top of those, but for now, with this post, I'm going to focus on the Giraffe middlewares and their interaction with prometheus-net's custom metrics.
 
@@ -71,11 +71,11 @@ Notice that this module provides a bunch of helper functions which are useful to
 
 Now, using those helper functions to create the Prometheus custom metrics, I started working on the custom middlewares:
 
--   **requestCounter:** As the name suggests, it counts how many requests reached the server. And to make this metric a bit more useful, we're tracking, using its labels, the response status code too.
+- **requestCounter:** As the name suggests, it counts how many requests reached the server. And to make this metric a bit more useful, we're tracking, using its labels, the response status code too.
 
     Note that for this to work correctly, this middleware needs to wait the request to reach its end, and then collect this information from the response object. This is why, in the code presented below, I'm using this block of code to wait the request to finish: **let! \_ = next ctx**.
 
--   **requestDuration:** As the name suggests, this middleware handles the request duration metric, presenting the result as a histogram in different buckets.
+- **requestDuration:** As the name suggests, this middleware handles the request duration metric, presenting the result as a histogram in different buckets.
 
 ```fsharp
 module API.PrometheusMiddleware

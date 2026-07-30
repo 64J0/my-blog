@@ -19,12 +19,12 @@ Podemos traçar alguns paralelos entre esta abordagem militar e estilos de geren
 
 No contexto dos estilos de programação, temos, para citar um exemplo básico:
 
--   Programação imperativa: O programa deve especificar detalhadamente quais comandos e instruções serão executados para alcançar determinado resultado. Pode gerar um programa mais otimizado para determinada plataforma, mas em alguns cenários de mudança, por exemplo no hardware, essas otimizações podem ser perdidas, ou pior, podem piorar o seu desempenho.
+- Programação imperativa: O programa deve especificar detalhadamente quais comandos e instruções serão executados para alcançar determinado resultado. Pode gerar um programa mais otimizado para determinada plataforma, mas em alguns cenários de mudança, por exemplo no hardware, essas otimizações podem ser perdidas, ou pior, podem piorar o seu desempenho.
 
-    Um exemplo de linguagem onde temos este paradigma é com o código Assembly.
--   Programação declarativa: Assim como o auftragstaktik, nosso foco ao escrever os programas é descrever os resultados desejados, sem necessariamente especificar as etapas para alcançá-los. Deixamos a decisão de usar determinada otimização a cargo de outros componentes como o compilador, por exemplo.
+  Um exemplo de linguagem onde temos este paradigma é com o código Assembly.
+- Programação declarativa: Assim como o auftragstaktik, nosso foco ao escrever os programas é descrever os resultados desejados, sem necessariamente especificar as etapas para alcançá-los. Deixamos a decisão de usar determinada otimização a cargo de outros componentes como o compilador, por exemplo.
 
-    Um exemplo de ferramenta que aplica esse conceito é o Terraform, onde basicamente definimos quais componentes queremos provisionar usando uma linguagem chamada HSL, e o mínimo de configurações necessárias para que esses componentes funcionem corretamente. O provisionamento por sua vez é totalmente gerenciado por essa ferramenta.
+  Um exemplo de ferramenta que aplica esse conceito é o Terraform, onde basicamente definimos quais componentes queremos provisionar usando uma linguagem chamada HSL, e o mínimo de configurações necessárias para que esses componentes funcionem corretamente. O provisionamento por sua vez é totalmente gerenciado por essa ferramenta.
 
 ## Referências
 

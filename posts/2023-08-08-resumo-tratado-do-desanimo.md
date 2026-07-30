@@ -31,13 +31,13 @@ Para entender o perigo do desânimo, o autor examina a conduta ordinária das pe
 
 Esse raciocínio é apresentado de maneira mais didática em seguida:
 
-> 1.  A vista da sua fraqueza lança-a primeiramente na irresolução, na perturbação;
-> 2.  Nesse estado, toda ocupada da dificuldade que sente em combater, ela já não vê os princípios que devem guiá-la;
-> 3.  O temor de não ser bem-sucedida impede-a de enxergar os meios que Deus lhe apresenta e que deve adotar para vencer.
+> 1. A vista da sua fraqueza lança-a primeiramente na irresolução, na perturbação;
+> 2. Nesse estado, toda ocupada da dificuldade que sente em combater, ela já não vê os princípios que devem guiá-la;
+> 3. O temor de não ser bem-sucedida impede-a de enxergar os meios que Deus lhe apresenta e que deve adotar para vencer.
 >
 > Ela se entrega, pois, sem defesa ao inimigo. É como uma criança a quem a vista de um gigante que avança contra ela faz tremer, e que não pensa que uma pedra basta para o derrubar, se ela se servir dessa pedra em nome do Senhor.
 
--   Nota: no original não estão presentes os índices, porém decidi acrescentar pois acredito que facilite o entendimento.
+- Nota: no original não estão presentes os índices, porém decidi acrescentar pois acredito que facilite o entendimento.
 
 Ainda de acordo com o padre, para combater o bom combate, temos às nossa mãos as virtudes teologais: a Esperança (confiança em Deus), a Fé, e a Caridade.
 

@@ -4,7 +4,7 @@ date: "2020-09-14"
 show: false
 ---
 
-Fala clã, tudo jóia? 
+Fala clã, tudo jóia?
 
 Nesse post eu vou colocar um resumo de algumas coisas que aprendi lendo o livro **Código Limpo** (*Clean Code*) do Robert Cecil Martin.
 
@@ -12,7 +12,7 @@ A vontade de ler esse livro veio de várias recomendações de programadores que
 
 ---
 
-# Nomes Significativos
+## Nomes Significativos
 
 No universo da programação, quando estamos desenvolvendo nossos programas damos nomes para várias coisas de maneira bem corriqueira.
 
@@ -41,7 +41,7 @@ Algumas dicas relevantes:
 
 ---
 
-# Funções
+## Funções
 
 Nesse ponto o autor é direto: Funções tem que ser pequenas. Mas quão pequenas? O máximo possível!
 
@@ -49,7 +49,7 @@ Porém, novamente, devemos sempre prezar pela qualidade semântica do código, t
 
 ### A regra de ouro
 
-A principal regra para a implementação de funções é: 
+A principal regra para a implementação de funções é:
 
 * Funções devem fazer uma, e apenas uma coisa, executando essa tarefa da melhor maneira possível.
 
@@ -59,7 +59,7 @@ Neste caso, o processo de <u>tratar erros</u> é considerado uma coisa, portanto
 
 Além disso também é apresentada outra regra para a implementação de funções, uma bem mais estranha e que confesso, não entendi direito sua filosofia ainda.
 
-Para o autor as <u>funções devem ter o menor número possível de argumentos</u>, sendo uma função com zero argumentos a melhor situação. 
+Para o autor as <u>funções devem ter o menor número possível de argumentos</u>, sendo uma função com zero argumentos a melhor situação.
 
 Suas funções **não** devem apresentar *side effects*. Por exemplo, quando for alterar alguma coisa usando um método isso deve ficar claro de acordo com o nome do método.
 
@@ -101,9 +101,9 @@ Por outro lado, usando as excessões temos:
 
 <hr />
 
-# Comentários
+## Comentários
 
-Nesse ponto o autor do livro é bastante contrário à utilização de comentários no código. 
+Nesse ponto o autor do livro é bastante contrário à utilização de comentários no código.
 
 Como o código é bastante dinâmico alguns comentários podem ficar datados e com erros pois nem sempre são atualizados com a frequência necessária.
 
@@ -149,27 +149,28 @@ O autor lista algumas situações em que os comentários podem ser utilizados de
 
 <hr />
 
-# Formatação
+## Formatação
 
 <hr />
 
-# Objetos e estruturas
+## Objetos e estruturas
 
 <hr />
 
-# Lidando com erros
+## Lidando com erros
 
 <hr />
 
-# Fronteiras
+## Fronteiras
 
 Neste capítulo são discutidas algumas ideias para resguardar o projeto que está sendo desenvolvido quando é utilizado código de terceiros, por exemplo de um projeto *open source*.
 
 ---
+
 ## Referências
 
-- [1] [Blog da Rocketseat](https://blog.rocketseat.com.br/).
-- [2] [Canal do Filipe Deschamps no youtube](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw).
-- [3] [Canal do Lucas Montano no youtube](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg).
-- [4] [Canal do Fábio Akita no youtube](https://www.youtube.com/user/AkitaOnRails).
-- [5] [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv).
+* [1] [Blog da Rocketseat](https://blog.rocketseat.com.br/).
+* [2] [Canal do Filipe Deschamps no youtube](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw).
+* [3] [Canal do Lucas Montano no youtube](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg).
+* [4] [Canal do Fábio Akita no youtube](https://www.youtube.com/user/AkitaOnRails).
+* [5] [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv).

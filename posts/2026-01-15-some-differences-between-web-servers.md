@@ -5,10 +5,10 @@ show: true
 tags: ["software", "engineering", "web", "server"]
 ---
 
-### Changelog
+## Changelog
 
-- <span class="timestamp-wrapper"><span class="timestamp">[2026-01-15 Thu]</span></span> First draft created
-- <span class="timestamp-wrapper"><span class="timestamp">[2026-01-19 Mon]</span></span> First version released
+- 2026-01-15: First draft created.
+- 2026-01-19: First version released.
 
 ## The Crux
 

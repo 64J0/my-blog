@@ -5,7 +5,7 @@ show: true
 tags: ["security", "docker", "python", "devsecops"]
 ---
 
-# Introduction
+## Introduction
 
 I myself always had a curiosity about the hacking community and their tools,
 probably due to the media way to present it, with all its glamour and mystical
@@ -46,7 +46,7 @@ containers).
 
 If you got curious, just keep reading.
 
-# What is this project?
+## What is this project?
 
 The core idea of this project is to dockerize an insecure environment, composed
 of two applications (the attacker and the target), to make it easier to study
@@ -57,17 +57,17 @@ presented during the course in Udemy, so I'll not focus on it.
 
 You can find the code presented here at this Github link.
 
--   [64J0/Python-Backdoor-Dockerized](https://github.com/64J0/Python-Backdoor-Dockerized)
+- [64J0/Python-Backdoor-Dockerized](https://github.com/64J0/Python-Backdoor-Dockerized)
 
 So, let's go, first setting some base knowledge, and later exploring the Docker
 configuration.
 
-## Requirements:
+### Requirements
 
--   Docker version `20.10.17`
--   docker-compose version `1.29.1`
+- Docker version `20.10.17`
+- docker-compose version `1.29.1`
 
-# What is a backdoor?
+## What is a backdoor?
 
 Let's first set a basic common knowledge about the terms used in this
 article. In the sequence, please consider the definitions presented here.
@@ -88,7 +88,7 @@ The first term I'm going to set is the backdoor.
 In this article, the backdoor we'll tackle is a Python script that is used in
 the target machine to connect to the attacker machine.
 
-# What is a reverse shell?
+## What is a reverse shell?
 
 You can think of the shell as a tool to access the some machine and run
 commands, just like a terminal.
@@ -98,10 +98,10 @@ of some server machine.
 
 There are two ways to access the shell in the target machine:
 
--   Reverse shell
--   Bind shell
+- Reverse shell
+- Bind shell
 
-## Reverse shell
+### Reverse shell
 
 The idea of a reverse shell is that we're going to run a command in the target
 machine to make it connect to the attacker machine, leaving us with a terminal
@@ -113,7 +113,7 @@ pick since some firewalls can block operations in the other type of shell.
 Finally, there are many ways to set up a new reverse shell, and the reference
 [2] presents more details about this topic.
 
-## Bind shell
+### Bind shell
 
 Bind shell is a different approach where we connect to the target machine when
 its port is open, executing some vulnerable service and payload.
@@ -126,12 +126,12 @@ its port is open, executing some vulnerable service and payload.
 This approach is more hard to explore in the wild since firewalls are commonly
 configure to avoid it.
 
-# Network requirements
+## Network requirements
 
 There are some requirements in order for this project to work properly:
 
-1.  Containers must be in the same network, so they can reach each other.
-2.  The target machine must know the IP of the attacker machine. I know, this is
+1. Containers must be in the same network, so they can reach each other.
+2. The target machine must know the IP of the attacker machine. I know, this is
     not very good considering real scenarios, but it's fine for educational
     purposes.
 
@@ -141,12 +141,12 @@ it was very easy to stablish those requirements.
 I decided to use a private network (`10.0.45.0/24`), and assign static IPs to
 the containers:
 
--   Attacker IP: `10.0.45.15`
--   Target IP: `10.0.45.16`
+- Attacker IP: `10.0.45.15`
+- Target IP: `10.0.45.16`
 
 This way I can simply use this information when creating the script in Python.
 
-# How to run this project?
+## How to run this project?
 
 Although the `README.org` of the project already contains the information to run
 it, I decided to replicate those instructions here.
@@ -176,11 +176,11 @@ Read the following code in order to understand better.
     docker-compose down
 ```
 
-## Example:
+### Example
 
 ![Example output for the python backdoor in the container.](/post-images/python-backdoor-dockerized/example-backdoor.jpg "Example output for the python backdoor in the container")
 
-# Conclusion
+## Conclusion
 
 I consider myself a very lucky person by being able to work with brilliant
 people in many situations.
@@ -195,7 +195,7 @@ I would like to dedicate this article to my "mentors" in this step of my
 journey, which were respectively: Bellani, JZ and is currently Pedro from the
 R&D team.
 
-# Bonus Tip
+## Bonus Tip
 
 If you want to understand better the Linux networking with a hands-on content, I
 recommend reading [Building a Web server in Bash](https://dev.to/leandronsp/building-a-web-server-in-bash-part-i-sockets-2n8b), and [Mastering the Docker
@@ -212,7 +212,7 @@ YouTube.
 - [4] Complete Ethical Hacking Bootcamp 2022: Zero to Mastery. Udemy. [Link](https://www.udemy.com/share/103JJy3@a0EkDRAEX-pNEhfI6OoDiw3F8lW7lZSaG65cpAsbV9BI0wBF2F9Yb1JMegmVqRQc/).
 - [5] Networking in Compose. Docker docs. [Link](https://docs.docker.com/compose/networking/).
 
-# Legal
+## Legal
 
 Notice that I created this project for personal educational purposes only, and
 I'm not responsible for its misusage, or for enhanced variants created.

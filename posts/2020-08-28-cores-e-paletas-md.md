@@ -66,6 +66,7 @@ A imagem abaixo mostra o resultado ao buscar uma paleta cuja cor primária é o 
 ![Paleta com cor primária](/post-images/cores-e-paletas-md/paleta-cor-primaria.PNG "Paleta com cor primária")
 
 ---
+
 ## Referências
 
 - [1] The color system. Material Design Docs. Disponível [neste link](https://material.io/design/color/the-color-system.html#color-usage-and-palettes).

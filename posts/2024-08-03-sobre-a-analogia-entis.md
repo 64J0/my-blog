@@ -7,6 +7,8 @@ tags: ["philosophy", "theology"]
 
 ![A Incredulidade de São Tomé (Caravaggio).](/post-images/sobre-a-analogia-entis/640px-Caravaggio_-_The_Incredulity_of_Saint_Thomas.jpg "Por Caravaggio - ![img](http://www.christusrex.org/www2/art/images/carav10.jpg), Domínio público, <https://commons.wikimedia.org/w/index.php?curid=6804893>.")
 
+## Introdução
+
 - Notas e observações pessoais sobre o curso da referência [1].
 
 [Karl Barth](https://en.wikipedia.org/wiki/Karl_Barth), teólogo protestante e pastor da igreja reformada, consolidou num único princípio a razão pela qual não poderia tornar-se um católico, de modo que resolvendo este problema, estaria resolvido o problema da sua conversão.

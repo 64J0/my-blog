@@ -5,7 +5,7 @@ show: true
 tags: ["project", "open-source"]
 ---
 
-# Introduction
+## Introduction
 
 After some time surfing the web, we eventually step into some cool projects, usually from the open-source community. If we are not careful enough, we can end up forgetting and losing those projects, which is something really sad.
 
@@ -13,36 +13,31 @@ With this in mind, I had the idea to start a new post category for my personal b
 
 For this first article, I'm going to talk about the [StevenBlack/hosts](https://github.com/StevenBlack/hosts) project.
 
-
-# Project overview
+## Project overview
 
 Before talking about this project, I'd like to record how I discovered it. Basically, one day I was checking some HackerNews posts and noticed a post from someone sharing this project.
 
 Since it was aligned with one of my personal goals (you can make your life easier by blocking the enemy), I decided to investigate it and later added to my configuration.
 
-
 ### But, what is it?
 
 In essence, it's a collection of known **/etc/hosts** configuration to avoid certain category of hostnames. With this configuration, you can set your own "hostname blocker".
-
 
 ### What are the categories that one can filter?
 
 As the time of writing, the categories are:
 
--   adware
--   malware
--   fakenews
--   gambling
--   porn
+- adware
+- malware
+- fakenews
+- gambling
+- porn
 
 And multiple combinations of it.
-
 
 ### Where does those hosts come from?
 
 One can find this information reading the project's README: [link](https://github.com/StevenBlack/hosts#sources-of-hosts-data-unified-in-this-variant).
-
 
 ### [Linux] What is /etc/hosts
 
@@ -64,11 +59,9 @@ You can find the manual in Linux by using the command **man hosts**, but if you 
 >
 > &#x2013; [3]
 
-
 ### Is this project still maintained?
 
 Yes, the last update merged to the master branch, considering the time of writing this article, was from 10 hours ago. Indeed, it was the release of version **3.13.3**.
-
 
 ### Why they use 0.0.0.0 instead of 127.0.0.1?
 
@@ -82,13 +75,11 @@ This is something I was intrigued as well. But it's explained in the project's R
 >
 > &#x2013; [1]
 
-
 ### How to reload the hosts file?
 
 After updating the **/etc/hosts** file, the operating system can take some time before realizing we made this change, due to OS DNS lookups cache.
 
 To cope with this problem, they provide the instructions to force this reload without rebooting the machine considering different operational systems in their README: [link](https://github.com/StevenBlack/hosts#reloading-hosts-file).
-
 
 # How to use it?
 
@@ -118,7 +109,6 @@ cp hosts hosts-2
 # 3. Update the contents
 cat <USER_PATH>/hosts/hosts-test-1/hosts > hosts
 ```
-
 
 ## References
 

@@ -9,7 +9,7 @@ Boa tarde pessoal, tudo jóia? Espero que sim.
 
 Meus caros, no post de hoje vou compartilhar o processo de desenvolvimento de uma nova feature aqui pro blog. Vou falar sobre minha linha de raciocínio nessa implementação ilustrando sempre que for conveniente com o código implementado.
 
-## A ideia:
+## A ideia
 
 A ideia pra essa feature surgiu quando estava scrollando pelo meu perfil no GitHub e notei o gráfico de contribuições, muito semelhante à imagem mostrada abaixo.
 
@@ -19,7 +19,7 @@ Como esse gráfico é bonito pensei... Hum... E se eu colocasse isso no meu blog
 
 Inicialmente minha intenção é colocar apenas na página de *contato do blog* (que pode ser acessada clicando em qualquer foto minha em qualquer página) pois é onde acredito que faça mais sentido atualmente.
 
-## Desenvolvimento:
+## Desenvolvimento
 
 No início estava muito iludido e acreditava que seria super simples implementar a feature, bastando apenas chamar alguma rota da API do GitHub, que por sinal é super bem feita e documentada, e **SHAZAM**, apareceria todo configurado na página certa.
 
@@ -29,9 +29,9 @@ Como a ideia inicial teve um resultado negativo corri ao Google para procurar ma
 
 Encontrei algumas ferramentas que poderiam ser utilizadas para automatizar a captura desse gráfico e cheguei em uma totalmente funcional e muito bacana que basicamente importa uma imagem das contribuições atualizadas de maneira transparente para o usuário da ferramenta.
 
-Estou falando do projeto **Github Chart API**, que pode ser acessado neste link: https://ghchart.rshah.org/.
+Estou falando do projeto **Github Chart API**, que pode ser acessado neste link: <https://ghchart.rshah.org/>.
 
-Essa ferramenta foi desenvolvida em *Ruby* e para utilizá-la basta preencher ao final da URL com o seu nome de usuário do Github, por exemplo: https://ghchart.rshah.org/64J0.
+Essa ferramenta foi desenvolvida em *Ruby* e para utilizá-la basta preencher ao final da URL com o seu nome de usuário do Github, por exemplo: <https://ghchart.rshah.org/64J0>.
 
 O resultado de chamar essa rota é uma imagem, com a qual podemos apenas associá-la à propriedade *src* de uma tag *img*, como ilustrado no trecho de código abaixo.
 
@@ -71,7 +71,7 @@ Pronto. Agora bastava apenas aplicar esse pacote e pegar o conteúdo da *div*. P
 
 Então fiz apenas essa pequena correção no algoritmo e continuei o desenvolvimento.
 
-## Back-end:
+## Back-end
 
 Como alguns de vocês já devem ter percebido, esse blog está sendo desenvolvido com o **Next.js** e o código fonte está disponibilizado integralmente no meu perfil do [Github neste link](https://github.com/64J0/Nextjs-projects/tree/master/nextjs-blog).
 
@@ -142,7 +142,7 @@ Nesta função eu utilizei o **Axios** [6], outro pacote do *NPM*, para fazer um
 
 Posteriomente, com o *HTML* dessa página e utilizando o **Cheerio** fiz apenas uma busca pela classe alvo e o resultado disso é encaminhado como resposta, ou seja, o conteúdo da tag *svg* do site do Github.
 
-## Front-end:
+## Front-end
 
 É isso, agora basta apenas chamar essa função dentro do componente para renderizar e tudo certo, já vai ficar a imagem bacana e responsiva igual no site do Github... Só que não!!!!
 
@@ -232,7 +232,7 @@ O resultado de tudo isso pode ser visto na página de [Contato](https://gaio.dev
 
 ![Github Contrib no meu blog](/post-images/feature-github-contrib/screenshot-blog.png "Gráfico de contribuições do meu blog")
 
-## Conclusões:
+## Conclusões
 
 Com a realização deste projeto pude experimentar o gostinho de ter criado meu próprio algoritmo e vê-lo funcionando da maneira como desejava, em contraste com uma solução já desenvolvida e disponibilizada online.
 
@@ -263,6 +263,7 @@ Ou seja, agora consigo mudar as cores de exibição dos quadradinhos caso eu que
 Por fim segue abaixo as referências mencionadas ao longo do texto para que possam ser consultadas posteriormente.
 
 ---
+
 ## Referências
 
 - [1] Github Chart API. Disponível neste [link](https://ghchart.rshah.org/).

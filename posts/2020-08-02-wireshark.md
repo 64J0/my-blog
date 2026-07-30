@@ -59,6 +59,7 @@ Com base nas informações coletadas pelo software é possível fazer análises 
 Com base nestas informações fica claro o poder deste software. Particularmente, pretendo usa-lo atualmente apenas para estudo dos protocolos de rede, mas futuramente caso surja a necessidade com certeza utilizarei para fazer análises mais detalhadas.
 
 ---
+
 ## Referências
 
-- [1] Wireshark Docs: 1.1. What is Wireshark? Disponível [neste link](https://www.wireshark.org/docs/wsug_html_chunked/ChapterIntroduction.html#ChIntroWhatIs).
+* [1] Wireshark Docs: 1.1. What is Wireshark? Disponível [neste link](https://www.wireshark.org/docs/wsug_html_chunked/ChapterIntroduction.html#ChIntroWhatIs).

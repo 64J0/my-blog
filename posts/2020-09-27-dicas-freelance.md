@@ -9,7 +9,7 @@ Eae clã, tudo jóia? No post de hoje vou citar algumas dicas sobre *freelance* 
 
 Devido ao meu contexto atual como estudante acredito que faça muito sentido investir nessa área para ganhar conhecimento e criar um portfólio atrativo para futuras vagas de emprego (além de ganhar uma grana haha).
 
-## Dicas [1]:
+## Dicas [1]
 
 Faça o seu nome profissionalmente, criando uma rede de *network*, publicando artigos em redes sociais e expondo suas habilidades publicamente. É essencial ter um portfólio para convencer os clientes a comprarem seus serviços.
 
@@ -21,7 +21,7 @@ Não fique preso apenas ao LinkedIn. Na nossa área de atuação como desenvolve
 
 Dica de plataformas de captação: LinkedIn, Workana.
 
-## Dicas [2]:
+## Dicas [2]
 
 Reputação é muito importante para conseguir fechar negócios pois com uma boa reputação o cliente terá mais confiança para fechar negócios com você.
 
@@ -29,7 +29,7 @@ Portanto sempre divulgue seus trabalhos e seus conhecimentos.
 
 A segunda dica é não ficar esperando ter todo o conhecimento para começar a trabalhar. Nós nunca estaremos 100% preparados para os projetos, portanto sempre se dedique ao máximo para aprender novas coisas e melhorar suas habilidades.
 
-## Dicas [3]:
+## Dicas [3]
 
 O autogerenciamento é uma habilidade fundamental para conseguir trabalhar como freelancer. Busque criar uma rotina e sempre segui-la.
 
@@ -57,7 +57,7 @@ Tenha uma boa relação com o cliente, de maneira proativa se posicione sempre d
 
 ---
 
-## O que ainda não foi abordado:
+## O que ainda não foi abordado
 
 * Como calcular um orçamento de projeto web.
 * Como escrever o contrato de serviço.
@@ -66,7 +66,7 @@ Tenha uma boa relação com o cliente, de maneira proativa se posicione sempre d
 
 ## Referências
 
-- [1] Como iniciar uma carreira freelancer. [Link do youtube](https://www.youtube.com/watch?v=lp5OgstpFp4).
-- [2] Como Eu Ganhei R$ 3850 Em Uma Semana Como Freelancer De Programação. [Link do youtube](https://www.youtube.com/watch?v=_DXdmuGqXLg).
-- [3] Programador Freelancer: 5 pilares Essenciais. [Link do youtube](https://www.youtube.com/watch?v=XUPBNMjkJ0A).
-- [4] Meu primeiro FREELA, e agora? Dicas IMPORTANTES para seu primeiro trabalho freelancer. [Link do youtube](https://www.youtube.com/watch?v=vvniOL394rI)
+* [1] Como iniciar uma carreira freelancer. [Link do youtube](https://www.youtube.com/watch?v=lp5OgstpFp4).
+* [2] Como Eu Ganhei R$ 3850 Em Uma Semana Como Freelancer De Programação. [Link do youtube](https://www.youtube.com/watch?v=_DXdmuGqXLg).
+* [3] Programador Freelancer: 5 pilares Essenciais. [Link do youtube](https://www.youtube.com/watch?v=XUPBNMjkJ0A).
+* [4] Meu primeiro FREELA, e agora? Dicas IMPORTANTES para seu primeiro trabalho freelancer. [Link do youtube](https://www.youtube.com/watch?v=vvniOL394rI)

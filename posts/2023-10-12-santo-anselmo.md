@@ -5,9 +5,11 @@ show: true
 tags: ["philosophy", "theology"]
 ---
 
-Changelog:
+## Changelog
 
 - 2024-04-03: Adicionei uma referência ao repositório com a formalização do argumento de Gödel, que é baseada principalmente no argumento de Santo Anselmo e de Gottfried Leibniz. [Link](https://en.wikipedia.org/wiki/G%C3%B6del%27s_ontological_proof) para a página da Wikipedia para mais informações.
+
+## Introdução
 
 Também conhecido como argumento ontológico de Santo Anselmo, esta foi uma das primeiras tentativas na história de conciliar razão e fé católica para "provar" a existência de Deus (uma verdade da fé).
 
@@ -23,7 +25,7 @@ Em seguida temos o "Proslógio" propriamente dito, que foi o livro onde Santo An
 
 Pois bem, passando agora ao argumento, este pode ser apresentado resumidamente como:
 
-+ Um ser perfeito conforme concebido pelo intelecto (acima do qual não se pode pensar nada maior) requer necessariamente sua existência, pois caso este ser perfeito não exista, ele não seria O ser perfeito, visto que existiria outro ainda mais perfeito. Portanto, essa ideia do ser perfeito implica sua existência.
+- Um ser perfeito conforme concebido pelo intelecto (acima do qual não se pode pensar nada maior) requer necessariamente sua existência, pois caso este ser perfeito não exista, ele não seria O ser perfeito, visto que existiria outro ainda mais perfeito. Portanto, essa ideia do ser perfeito implica sua existência.
 
 E ele é chamado de argumento ontológico pois, um argumento ontológico é qualquer argumento que defende a existência de Deus através da ideia de que Ele é obrigatoriamente um ser perfeito e, portanto, deve existir.
 
