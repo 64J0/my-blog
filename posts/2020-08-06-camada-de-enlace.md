@@ -9,7 +9,7 @@ Neste post irei escrever um resumo dos meus estudos acerca da segunda camada da 
 
 De acordo com [1], a segunda camada da pilha do modelo OSI é chamada **camada de enlace de dados**. Essa camada implementa diversos algoritmos que permitem uma comunicação eficiente e confiável de unidades de informação inteiras, chamadas de quadros (ou *frames*, em inglês), em vez de bits individuais, como na camada física, entre dois computadores adjacentes.
 
-* MODELO OSI:
+- MODELO OSI:
 
 <table>
   <tr>
@@ -72,13 +72,13 @@ O gerenciamento de quadros constitui o núcleo das atividades da camada de enlac
 
 O principal equipamento que opera nesta camada é o **switch**, que é responsável por realizar o tráfego de dados dentro de uma mesma rede LAN. Algumas características desse dispositivo são:
 
-* Trabalha de modo local (LAN);
-* Equipamento mais barato que os roteadores;
-* Conecta vários dispositivos no mesmo domínio de *broadcast*;
-* Apresenta várias interfaces (portas para conexão);
-* N domínios de colisão;
-* 1 domínio de *broadcast* (pode ser alterado com a utilização de VLAN's);
-* Utilizado para grandes taxas de banda.
+- Trabalha de modo local (LAN);
+- Equipamento mais barato que os roteadores;
+- Conecta vários dispositivos no mesmo domínio de *broadcast*;
+- Apresenta várias interfaces (portas para conexão);
+- N domínios de colisão;
+- 1 domínio de *broadcast* (pode ser alterado com a utilização de VLAN's);
+- Utilizado para grandes taxas de banda.
 
 ![image info](/post-images/camada-de-enlace/dominio-switch.png "Domínio de colisão do switch")
 
@@ -86,9 +86,9 @@ O principal equipamento que opera nesta camada é o **switch**, que é responsá
 
 Foi um dispositivo muito usado principalmente nos anos 70, antes da popularização dos *switchs*. Porém, devido aos problemas apresentados foi logo substituído por novas tecnologias. Algumas características desse dispositivo são:
 
-* 1 domínio de *broadcast*;
-* 1 domínio de colisão, ou seja, apenas um equipamento pode se comunicar por vez;
-* Hoje em dia é utilizado para ligações de equipamentos USB (Hub USB).
+- 1 domínio de *broadcast*;
+- 1 domínio de colisão, ou seja, apenas um equipamento pode se comunicar por vez;
+- Hoje em dia é utilizado para ligações de equipamentos USB (Hub USB).
 
 ## Serviço orientado a conexões
 
@@ -134,4 +134,4 @@ Para contornar essa situação são usadas comumente duas abordagens. Na primeir
 
 ## Referências
 
-* [1] Redes de Computadores - 5ª edição.
+- [1] Redes de Computadores - 5ª edição.

@@ -48,8 +48,8 @@ Das ferramentas que serão utilizadas a principal é a linguagem Python. Não é
 
 Algumas biblitecas que serão usadas com o Python:
 
-* Scikit-learn -> treinamento e criação de modelos de machine learning, ou aprendizado estatístico;
-* Pandas -> manipulação e processamento de machine learning;
+- Scikit-learn -> treinamento e criação de modelos de machine learning, ou aprendizado estatístico;
+- Pandas -> manipulação e processamento de machine learning;
 
 O robô virtual já está pronto e basta integrá-lo com a API disponbilizada pelo modelo de machine learning do Watson.
 
@@ -77,6 +77,6 @@ Durante o desafio 2 da Maratona Behind the Code 2020 iremos aprender a construir
 
 ## Referências
 
-* [1] Um guia para iniciantes sobre inteligência artificial, aprendizado de máquina e computação cognitiva. [Link para acesso](https://developer.ibm.com/br/articles/cc-beginner-guide-machine-learning-ai-cognitive/).
-* [2] Documentação do Cloud Pak for Data as a Service. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?audience=wdp&context=cpdaas).
-* [3] Visão geral: Watson Machine Learning. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html).
+- [1] Um guia para iniciantes sobre inteligência artificial, aprendizado de máquina e computação cognitiva. [Link para acesso](https://developer.ibm.com/br/articles/cc-beginner-guide-machine-learning-ai-cognitive/).
+- [2] Documentação do Cloud Pak for Data as a Service. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/getting-started/welcome-main.html?audience=wdp&context=cpdaas).
+- [3] Visão geral: Watson Machine Learning. [Link para acesso](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-overview.html).

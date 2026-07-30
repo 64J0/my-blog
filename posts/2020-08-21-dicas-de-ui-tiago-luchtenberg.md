@@ -23,26 +23,26 @@ A técnica especifica que devemos usar sempre múltiplos de 8 para definir os es
 
 O grid é de extrema importância para criar alinhamento e harmonia na interface. Ele vai te ajudar a criar blocos de texto e imagens.
 
-* Desktop
-  * 1440
-  * Count: 12
-  * Width: 64
-  * Gutter: 32
-* Tablet
-  * 768
-  * Count: 8
-  * Width: 56
-  * Gutter: 32
-* Mobile Android
-  * 360
-  * Count: 4
-  * Width: 56
-  * Gutter: 16
-* Mobile iOS
-  * 375
-  * Count: 6
-  * Width: 41
-  * Gutter: 16
+- Desktop
+  - 1440
+  - Count: 12
+  - Width: 64
+  - Gutter: 32
+- Tablet
+  - 768
+  - Count: 8
+  - Width: 56
+  - Gutter: 32
+- Mobile Android
+  - 360
+  - Count: 4
+  - Width: 56
+  - Gutter: 16
+- Mobile iOS
+  - 375
+  - Count: 6
+  - Width: 41
+  - Gutter: 16
 
 A imagem abaixo, retirada da referência [1], ilustra algumas propriedades mencionadas nesse tópico.
 
@@ -68,12 +68,12 @@ Esse é um padrão modular para escalar tipografias hierarquicamente. Você vai 
 
 Por exemplo:
 
-* Complementos: 12px
-* Texto base: 16px ou 18px (*depende da fonte*)
-* Título secundário: 24px
-* Subtítulo: 36px
-* Título principal: 54px
-* Chamada: 80px (*era pra ser 81*)
+- Complementos: 12px
+- Texto base: 16px ou 18px (*depende da fonte*)
+- Título secundário: 24px
+- Subtítulo: 36px
+- Título principal: 54px
+- Chamada: 80px (*era pra ser 81*)
 
 ## Cores e círculo cromático
 
@@ -107,4 +107,4 @@ O atomic design detalha o que acontece durante a criação e manutenção de sis
 
 ## Referências
 
-* [1] [https://material.io/design/layout/understanding-layout.html](https://material.io/design/layout/understanding-layout.html)
+- [1] [https://material.io/design/layout/understanding-layout.html](https://material.io/design/layout/understanding-layout.html)

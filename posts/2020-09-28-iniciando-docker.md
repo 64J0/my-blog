@@ -31,12 +31,12 @@ Segundo a própria documentação da ferramenta [1], o *Docker* é uma plataform
 
 Abaixo seguem alguns dos benefícios de utilizar *containers*:
 
-* **Flexibilidade:** Mesmo as aplicações mais complexas podem ser transformadas em *containers*.
-* **Leve:** *Containers* usam e compartilham o *kernel* do *host*, tornando muito mais eficiente em termos de recursos do sistema que as máquinas virtuais.
-* **Portável:** È possível *buildar* localmente, *deployar* pra *cloud* e rodar em qualquer lugar.
-* **Pouco acoplados:** *Containers* são altamente auto-suficientes e encapsulados, permitindo trocar ou melhorar um sem afetar outros.
-* **Escalável:** É possível aumentar e distribuir automaticamente réplicas de *containers* por um *datacenter* de maneira bastante fácil.
-* **Seguro:** Os *containers* aplicam restrições agressivas e isolam processos sem a necessidade de qualquer configuração por parte do usuário.
+- **Flexibilidade:** Mesmo as aplicações mais complexas podem ser transformadas em *containers*.
+- **Leve:** *Containers* usam e compartilham o *kernel* do *host*, tornando muito mais eficiente em termos de recursos do sistema que as máquinas virtuais.
+- **Portável:** È possível *buildar* localmente, *deployar* pra *cloud* e rodar em qualquer lugar.
+- **Pouco acoplados:** *Containers* são altamente auto-suficientes e encapsulados, permitindo trocar ou melhorar um sem afetar outros.
+- **Escalável:** É possível aumentar e distribuir automaticamente réplicas de *containers* por um *datacenter* de maneira bastante fácil.
+- **Seguro:** Os *containers* aplicam restrições agressivas e isolam processos sem a necessidade de qualquer configuração por parte do usuário.
 
 ## Images e Containers
 
@@ -97,13 +97,13 @@ CMD [ "npm", "start" ]
 
 A receita que o *Dockerfile* acima está especificando em outras palavras está dizendo:
 
-* Iniciando de uma imagem pré-existente do **Node.js** (*node:current-slim*).
-* Usamos o WORKDIR para especificar que todas as ações subsequentes devem ser feitas no diretório */usr/src/app* nos arquivos de sistema da imagem (nunca os arquivos de sistema do *host*).
-* Copiamos o arquivo **package.json** do *host* para a localização atual ( . ) <u>na imagem</u> (neste caso */usr/src/app/package.json*).
-* Executamos o comando *npm install* dentro dos arquivos de sistema da imagem (que irá ler o *package.json* para determinar as dependências e instalá-las).
-* Em seguida definimos qual a porta o container irá usar para expor a aplicação (8080).
-* Após isso iremos copiar o resto do código fonte do *host* para os arquivos de sistema da imagem.
-* Por fim, executamos o comando *npm start* para iniciar a aplicação.
+- Iniciando de uma imagem pré-existente do **Node.js** (*node:current-slim*).
+- Usamos o WORKDIR para especificar que todas as ações subsequentes devem ser feitas no diretório */usr/src/app* nos arquivos de sistema da imagem (nunca os arquivos de sistema do *host*).
+- Copiamos o arquivo **package.json** do *host* para a localização atual ( . ) <u>na imagem</u> (neste caso */usr/src/app/package.json*).
+- Executamos o comando *npm install* dentro dos arquivos de sistema da imagem (que irá ler o *package.json* para determinar as dependências e instalá-las).
+- Em seguida definimos qual a porta o container irá usar para expor a aplicação (8080).
+- Após isso iremos copiar o resto do código fonte do *host* para os arquivos de sistema da imagem.
+- Por fim, executamos o comando *npm start* para iniciar a aplicação.
 
 Observação: O *node:current-slim* é uma imagem oficial construída pela equipe do *node.js* e validada pela equipe do *Docker* como uma imagem de alta qualidade contendo o interpretador e dependências básicas do *Node.js* na versão de longo suporte (**LTS - Long Term Support**).
 
@@ -121,9 +121,9 @@ sudo docker run --publish 8000:8080 --detach --name bb projectname:1.0
 
 As *flags* usadas aqui são:
 
-* --publish: orienta o Docker a redirecionar o tráfego chegando na porta 8080 do host para a porta 8080 do container. Os containers tem seu próprio conjunto de portas privadas, então se você quiser alcançar alguma pela rede, você deve redirecionar o tráfego deste modo. Em outro caso as regras de firewall irão bloquear o tráfego de chegar ao container, como uma postura de segurança padrão.
-* --detach: orienta o Docker a executar o container no background.
-* --name: especifica o nome com o qual podemos nos referir ao container nos comandos subsequentes, neste caso bb.
+- --publish: orienta o Docker a redirecionar o tráfego chegando na porta 8080 do host para a porta 8080 do container. Os containers tem seu próprio conjunto de portas privadas, então se você quiser alcançar alguma pela rede, você deve redirecionar o tráfego deste modo. Em outro caso as regras de firewall irão bloquear o tráfego de chegar ao container, como uma postura de segurança padrão.
+- --detach: orienta o Docker a executar o container no background.
+- --name: especifica o nome com o qual podemos nos referir ao container nos comandos subsequentes, neste caso bb.
 
 Neste caso, apesar a imagem estar sendo executada no *container* a partir da porta 8080, no host ela estará disponível na porta 8000.
 
@@ -151,5 +151,5 @@ Até a próxima.
 
 ## Referências
 
-* [1] Docker - Orientation and setup. [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
-* [2] Introdução aos containers Linux. [https://www.redhat.com/pt-br/topics/containers](https://www.redhat.com/pt-br/topics/containers)
+- [1] Docker - Orientation and setup. [https://docs.docker.com/get-started/](https://docs.docker.com/get-started/)
+- [2] Introdução aos containers Linux. [https://www.redhat.com/pt-br/topics/containers](https://www.redhat.com/pt-br/topics/containers)

@@ -22,9 +22,9 @@ Sempre dê nomes significativos para todos os componentes do código, isso evita
 
 Para saber se um nome foi escolhido corretamente verifique se ele transmite as seguintes informações:
 
-* Porque isso existe?
-* O que isso faz?
-* Como isso é usado?
+- Porque isso existe?
+- O que isso faz?
+- Como isso é usado?
 
 Caso não, pense um pouco mais e tente atribuir essa informação da melhor forma possível, de forma clara e concisa, baseando-se em <u>termos do domínio do problema ou da solução</u>.
 
@@ -32,12 +32,12 @@ Segundo o autor a diferença entre um programador inteligente e um programador p
 
 Algumas dicas relevantes:
 
-* Nomeie classes usando substantivos ou frases relacionadas a substativos, mas nunca um verbo. Por exemplo *Customer, WikiPage, Account*;
-* Nomeie métodos e funções com verbos ou frases relacionadas a verbos *postPayment, deletePage, save*;
-* Evite brincadeiras e trocadilhos ao dar nome às coisas, pois outras pessoas podem não ter o background necessários para entender a mensagem - *Say what you mean. Mean what you say.*;
-* Escolha uma palavra por conceito abstrato. Por exemplo, seria confuso ter métodos *fetch, retrive* e *get* como métodos equivalentes em classes diferentes;
-* Evite suar a mesma palavra para dois propósitos diferentes;
-* Use nomes do domínio da solução ou do domínio do problema, ou seja, <u>termos técnicos</u>, pois as pessoas que lerão seu código *teoricamente* terão uma bagagem intectual para entender os termos.
+- Nomeie classes usando substantivos ou frases relacionadas a substativos, mas nunca um verbo. Por exemplo *Customer, WikiPage, Account*;
+- Nomeie métodos e funções com verbos ou frases relacionadas a verbos *postPayment, deletePage, save*;
+- Evite brincadeiras e trocadilhos ao dar nome às coisas, pois outras pessoas podem não ter o background necessários para entender a mensagem - *Say what you mean. Mean what you say.*;
+- Escolha uma palavra por conceito abstrato. Por exemplo, seria confuso ter métodos *fetch, retrive* e *get* como métodos equivalentes em classes diferentes;
+- Evite suar a mesma palavra para dois propósitos diferentes;
+- Use nomes do domínio da solução ou do domínio do problema, ou seja, <u>termos técnicos</u>, pois as pessoas que lerão seu código *teoricamente* terão uma bagagem intectual para entender os termos.
 
 ---
 
@@ -51,7 +51,7 @@ Porém, novamente, devemos sempre prezar pela qualidade semântica do código, t
 
 A principal regra para a implementação de funções é:
 
-* Funções devem fazer uma, e apenas uma coisa, executando essa tarefa da melhor maneira possível.
+- Funções devem fazer uma, e apenas uma coisa, executando essa tarefa da melhor maneira possível.
 
 Neste caso, o processo de <u>tratar erros</u> é considerado uma coisa, portanto idealmente uma função que trata erros deve fazer apenas isso.
 
@@ -130,9 +130,9 @@ Já no exemplo abaixo, a funcionalidade foi encapsulada em uma função que já 
 
 O autor lista algumas situações em que os comentários podem ser utilizados de maneira boa. Abaixo segue um resumo dessas situações.
 
-* Comentários legais, por exemplo de *copyright*, que são exigidos pela organização.
+- Comentários legais, por exemplo de *copyright*, que são exigidos pela organização.
 
-* Informar sobre expressões regulares (RegEx):
+- Informar sobre expressões regulares (RegEx):
 
 ```java
   // format matched kk:mm:ss EEE, MMM dd, yyyy
@@ -141,11 +141,11 @@ O autor lista algumas situações em que os comentários podem ser utilizados de
   );
 ```
 
-* Explicar a intenção do código, discutindo porque foi tomada alguma decisão de implementação.
+- Explicar a intenção do código, discutindo porque foi tomada alguma decisão de implementação.
 
-* Avisar sobre consequências de executar alguma ação.
+- Avisar sobre consequências de executar alguma ação.
 
-* Listar coisas que ainda devem ser feitas (*TODO List*).
+- Listar coisas que ainda devem ser feitas (*TODO List*).
 
 <hr />
 
@@ -169,8 +169,8 @@ Neste capítulo são discutidas algumas ideias para resguardar o projeto que est
 
 ## Referências
 
-* [1] [Blog da Rocketseat](https://blog.rocketseat.com.br/).
-* [2] [Canal do Filipe Deschamps no youtube](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw).
-* [3] [Canal do Lucas Montano no youtube](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg).
-* [4] [Canal do Fábio Akita no youtube](https://www.youtube.com/user/AkitaOnRails).
-* [5] [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv).
+- [1] [Blog da Rocketseat](https://blog.rocketseat.com.br/).
+- [2] [Canal do Filipe Deschamps no youtube](https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw).
+- [3] [Canal do Lucas Montano no youtube](https://www.youtube.com/channel/UCyHOBY6IDZF9zOKJPou2Rgg).
+- [4] [Canal do Fábio Akita no youtube](https://www.youtube.com/user/AkitaOnRails).
+- [5] [Canal do Código Fonte TV](https://www.youtube.com/user/codigofontetv).

@@ -35,13 +35,13 @@ O autogerenciamento é uma habilidade fundamental para conseguir trabalhar como 
 
 <u>Garanta pelo menos 3 meses de autonomia financeira.</u>
 
-* Marca pessoal: Tenha um bom portfólio (site, currículo digital, etc). Solicite aos seus clientes um depoimento sobre seu trabalho com seus pontos positivos e diferenciais. Mantenha seu Github ativo e em ordem com projetos interessantes que você tenha criado ou participado.
+- Marca pessoal: Tenha um bom portfólio (site, currículo digital, etc). Solicite aos seus clientes um depoimento sobre seu trabalho com seus pontos positivos e diferenciais. Mantenha seu Github ativo e em ordem com projetos interessantes que você tenha criado ou participado.
 
-* Evolução constante: Expanda sua visão sobre a área de programação participando de eventos presenciais ou online. Consuma mais conteúdos sobre programação, <u>empreendedorismo e marketing</u>. Participe de grupos online para ampliar seu networking, tirar dúvidas e se manter atualizado.
+- Evolução constante: Expanda sua visão sobre a área de programação participando de eventos presenciais ou online. Consuma mais conteúdos sobre programação, <u>empreendedorismo e marketing</u>. Participe de grupos online para ampliar seu networking, tirar dúvidas e se manter atualizado.
 
-* Persistência: Seja paciente e continue se esforçando, aprendendo o básico para ter seus primeiros resultados expressivos.
+- Persistência: Seja paciente e continue se esforçando, aprendendo o básico para ter seus primeiros resultados expressivos.
 
-* Trate como um négocio: Foque em um nicho específico. Crie um planejamento de entregas realistas. Aprenda a buscar jobs. Cuide bem de cada cliente. Tenha todas as informações organizadas e de fácil acesso.
+- Trate como um négocio: Foque em um nicho específico. Crie um planejamento de entregas realistas. Aprenda a buscar jobs. Cuide bem de cada cliente. Tenha todas as informações organizadas e de fácil acesso.
 
 ## Dicas [4]
 
@@ -59,14 +59,14 @@ Tenha uma boa relação com o cliente, de maneira proativa se posicione sempre d
 
 ## O que ainda não foi abordado
 
-* Como calcular um orçamento de projeto web.
-* Como escrever o contrato de serviço.
+- Como calcular um orçamento de projeto web.
+- Como escrever o contrato de serviço.
 
 ---
 
 ## Referências
 
-* [1] Como iniciar uma carreira freelancer. [Link do youtube](https://www.youtube.com/watch?v=lp5OgstpFp4).
-* [2] Como Eu Ganhei R$ 3850 Em Uma Semana Como Freelancer De Programação. [Link do youtube](https://www.youtube.com/watch?v=_DXdmuGqXLg).
-* [3] Programador Freelancer: 5 pilares Essenciais. [Link do youtube](https://www.youtube.com/watch?v=XUPBNMjkJ0A).
-* [4] Meu primeiro FREELA, e agora? Dicas IMPORTANTES para seu primeiro trabalho freelancer. [Link do youtube](https://www.youtube.com/watch?v=vvniOL394rI)
+- [1] Como iniciar uma carreira freelancer. [Link do youtube](https://www.youtube.com/watch?v=lp5OgstpFp4).
+- [2] Como Eu Ganhei R$ 3850 Em Uma Semana Como Freelancer De Programação. [Link do youtube](https://www.youtube.com/watch?v=_DXdmuGqXLg).
+- [3] Programador Freelancer: 5 pilares Essenciais. [Link do youtube](https://www.youtube.com/watch?v=XUPBNMjkJ0A).
+- [4] Meu primeiro FREELA, e agora? Dicas IMPORTANTES para seu primeiro trabalho freelancer. [Link do youtube](https://www.youtube.com/watch?v=vvniOL394rI)

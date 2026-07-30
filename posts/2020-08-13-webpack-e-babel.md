@@ -16,10 +16,10 @@ O Webpack é basicamente um empacotador de módulos (*module bundler*) JS (ou TS
 
 Segundo [2], dividir sua aplicação em módulo é uma boa prática pelos seguintes benefícios:
 
-* **Manutenibilidade**: as funcionalidades ficam menos acopladas, é mais fácil alterar uma parte do código sem afetar o sistema inteiro.
-* **Isolamento**: variáveis e funções declaradas dentro de um módulo são acessíveis apenas dentro dele (exceto aquilo que o módulo explicitamente exporta), evitando conflitos de variáveis e acesso desnessário de uma parte do código a outra não relacionada.
-* **Reusabilidade**: um módulo com uma funcionalidade bem definida é como uma peça de um quebra-cabeça. Pode ser reutilizada em outras partes do mesmo sistema, ou em outros sistemas.
-* **Testabilidade**: com o código menos acoplado fica mais fácil escrever testes unitários para validar cada funcionalidade.
+- **Manutenibilidade**: as funcionalidades ficam menos acopladas, é mais fácil alterar uma parte do código sem afetar o sistema inteiro.
+- **Isolamento**: variáveis e funções declaradas dentro de um módulo são acessíveis apenas dentro dele (exceto aquilo que o módulo explicitamente exporta), evitando conflitos de variáveis e acesso desnessário de uma parte do código a outra não relacionada.
+- **Reusabilidade**: um módulo com uma funcionalidade bem definida é como uma peça de um quebra-cabeça. Pode ser reutilizada em outras partes do mesmo sistema, ou em outros sistemas.
+- **Testabilidade**: com o código menos acoplado fica mais fácil escrever testes unitários para validar cada funcionalidade.
 
 ## Babel
 
@@ -35,5 +35,5 @@ Os arquivos gerados pelo Webpack são otimizados para utilização no navegador 
 
 ## Referências
 
-* [1] Ricardo Sanches, *Webpack - Curso rápido para iniciantes*. Disponível neste [link](https://www.youtube.com/watch?v=sU3W2ZTt-8I).
-* [2] Douglas Matoso, *Webpack sem Medo*. Disponível neste [link](https://www.webdevdrops.com/webpack-sem-medo-introducao-af889eb659e7).
+- [1] Ricardo Sanches, *Webpack - Curso rápido para iniciantes*. Disponível neste [link](https://www.youtube.com/watch?v=sU3W2ZTt-8I).
+- [2] Douglas Matoso, *Webpack sem Medo*. Disponível neste [link](https://www.webdevdrops.com/webpack-sem-medo-introducao-af889eb659e7).

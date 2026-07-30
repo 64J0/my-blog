@@ -61,9 +61,9 @@ Segundo [1], o TDD se baseia em pequenos ciclos de repetições, onde para cada 
 
 Essa metodologia apresenta três estágios:
 
-* **Red:** Nesta fase os testes são escritos e consequentemente vão falhar quando executados, pois não existe a lógica ainda;
-* **Green:** Após serem definidos os testes são escritos os códigos que atendem os requisitos definidos na fase anterior;
-* **Refactor:** Por fim, nesta última fase, o código escrito na etapa anterior é refatorado para implementar as melhores práticas do desenvolvimento de *software*.
+- **Red:** Nesta fase os testes são escritos e consequentemente vão falhar quando executados, pois não existe a lógica ainda;
+- **Green:** Após serem definidos os testes são escritos os códigos que atendem os requisitos definidos na fase anterior;
+- **Refactor:** Por fim, nesta última fase, o código escrito na etapa anterior é refatorado para implementar as melhores práticas do desenvolvimento de *software*.
 
 ![Ciclo do TDD](/post-images/testes-tdd-jest/tdd-cycle.jpg "Ciclo do TDD")
 
@@ -71,12 +71,12 @@ Fonte da imagem: [3].
 
 De acordo com [1], temos diversos ganhos com esta estratégia:
 
-* ✔ Feedback rápido sobre a nova funcionalidade e sobre as outras existentes no projeto
-* ✔ Código mais limpo, já que escrevemos códigos simples para o teste passar
-* ✔ Segurança no Refactoring pois podemos ver o que estamos ou não afetando
-* ✔ Segurança na correção de bugs
-* ✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
-* ✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
+- ✔ Feedback rápido sobre a nova funcionalidade e sobre as outras existentes no projeto
+- ✔ Código mais limpo, já que escrevemos códigos simples para o teste passar
+- ✔ Segurança no Refactoring pois podemos ver o que estamos ou não afetando
+- ✔ Segurança na correção de bugs
+- ✔ Confiança do desenvolvedor na correção de bugs, pois qualquer passo errado será mostrado pelos testes
+- ✔ Código da aplicação mais flexível, já que para escrever testes temos que separar em pequenos "pedaços" o nosso código, para que sejam testáveis, ou seja, nosso código estará menos acoplado.
 
 ## Jest
 
@@ -349,6 +349,6 @@ Por enquanto foi isso. A medida que for estudando e descobrindo mais coisas pret
 
 ## Referências
 
-* [1] Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
-* [2] Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
-* [3] When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).
+- [1] Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).
+- [2] Testando API REST com Mocha e Chai. Pode ser acessado [neste link](https://medium.com/@rafaelvicio/testando-api-rest-com-mocha-e-chai-bf3764ac2797).
+- [3] When I follow TDD. Pode ser acessado [neste link](https://kentcdodds.com/blog/when-i-follow-tdd).
