@@ -5,7 +5,7 @@ show: true
 tags: ["project", "fsharp", "github actions"]
 ---
 
-# Introduction
+## Introduction
 
 Last year, I wrote the post [Custom GH Action using F# and dynamic matrix configuration](./2023-05-10-custom-fsharp-gh-action-and-dynamic-matrix) explaining how I created a custom GitHub Action using F# for generating a dynamic matrix configuration. By that time, my goal was only to tackle a personal necessity regarding a Terraform automation workflow, so I decided not to publish the action.
 
@@ -101,9 +101,9 @@ and generates something like this, configured to take as much as **VALUES\_TO\_T
 
 For example, suppose that you sent this:
 
--   **VALUES\_TO\_TAKE** = 5
--   **WORKFLOW\_KEY** = version
--   **GIT\_TAGS** = [v0.0.010, v0.0.009, v0.0.008, v0.0.007, v0.0.006, v0.0.005, v0.0.004, v0.0.003, v0.0.002, v0.0.001]
+- **VALUES\_TO\_TAKE** = 5
+- **WORKFLOW\_KEY** = version
+- **GIT\_TAGS** = [v0.0.010, v0.0.009, v0.0.008, v0.0.007, v0.0.006, v0.0.005, v0.0.004, v0.0.003, v0.0.002, v0.0.001]
 
 It will generate this file:
 

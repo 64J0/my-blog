@@ -5,9 +5,9 @@ show: true
 tags: ["philosophy"]
 ---
 
-### Changelog
+## Changelog
 
-- <span class="timestamp-wrapper"><span class="timestamp">[2026-01-11 Sun]</span></span> First version released
+- 2026-01-11: First version released.
 
 ## On Determinism and Rationality
 

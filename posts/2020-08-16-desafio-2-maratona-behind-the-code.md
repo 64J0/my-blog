@@ -38,7 +38,7 @@ Abaixo será mostrado um conjunto de atividades genérico e detalhado do que dev
 4. Importar o projeto fornecido [deste repositório](https://github.com/maratonadev-br/desafio-2-2020/blob/master/cloud-pak-project-ptbr-2.zip) no *Watson Studio*;
 5. Ler e executar as instruções contidas no Notebook *parte-1.ipynb*;
 6. Ler e executar as instruções contidas no Notebook *parte-2.ipynb*;
-7. Aessar a página https://uninassau.maratona.dev/, testar e submeter sua solução.
+7. Aessar a página <https://uninassau.maratona.dev/>, testar e submeter sua solução.
 
 ## Vídeo-tutorial do desafio
 
@@ -48,8 +48,8 @@ Das ferramentas que serão utilizadas a principal é a linguagem Python. Não é
 
 Algumas biblitecas que serão usadas com o Python:
 
-* Scikit-learn -> treinamento e criação de modelos de machine learning, ou aprendizado estatístico;
-* Pandas -> manipulação e processamento de machine learning;
+- Scikit-learn -> treinamento e criação de modelos de machine learning, ou aprendizado estatístico;
+- Pandas -> manipulação e processamento de machine learning;
 
 O robô virtual já está pronto e basta integrá-lo com a API disponbilizada pelo modelo de machine learning do Watson.
 
@@ -74,6 +74,7 @@ Além disso, o Watson Machine Learning é capaz de encapsular pipelines e modelo
 Durante o desafio 2 da Maratona Behind the Code 2020 iremos aprender a construir uma Pipeline para um modelo de classificação e hospedá-lo como uma API com o auxílio do Watson Machine Learning.
 
 ---
+
 ## Referências
 
 - [1] Um guia para iniciantes sobre inteligência artificial, aprendizado de máquina e computação cognitiva. [Link para acesso](https://developer.ibm.com/br/articles/cc-beginner-guide-machine-learning-ai-cognitive/).

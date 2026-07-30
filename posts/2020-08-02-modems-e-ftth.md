@@ -42,7 +42,6 @@ Existem basicamente dois tipos de PON:
 
 Para compartilhar a capacidade de uma única fibra na estação final entre diferentes casas é preciso que haja algum protocolo. A direção downstream é fácil. A estação final pode enviar mensagens a cada casa diferente na ordem que desejar. Na direção upstream, porém, as mensagens de diferentes casas não podem ser enviadas ao mesmo tempo, ou diferentes sinais colidiriam. As casas também não podem escutar as transmissões umas das outras, de modo que não podem escutar antes de transmitir. A solução é que o equipamento nas casas solicite e receba fatias de tempo para utilizar o equipamento na estação final. Para que isso funcione existe um processo de localização para ajustar os tempos de transmissão a partir das casas, de modo que todos os sinais recebidos na estação fnal sejam sincronizados.
 
-
 ---
 Referências:
 

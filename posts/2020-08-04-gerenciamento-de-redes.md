@@ -26,21 +26,23 @@ No mundo das redes a ideia é a mesma. Para garantir o funcionamento correto de 
   - Quantidade de CPU e memória utilizados
 
 ---
+
 ## Gerenciamento de grupo de IP's
 
 Quando as redes começam a ficar maiores é importante manter um documento com a relação de IP's disponíveis e IP's utilizados. O termo técnico para o documento que fazer essa gestão é **IPAM** (IP Address Management).
 
 Dentre as ferramentas já criadas que merecem destaque temos:
 
-* **IPplan:** Essa ferramenta foi desenvolvida em 2001 e funciona como apoio ao planejamento de redes, para configuração de DNS e DHCP, suporta o IPv6 porém sua última atualização foi em 2010.
+- **IPplan:** Essa ferramenta foi desenvolvida em 2001 e funciona como apoio ao planejamento de redes, para configuração de DNS e DHCP, suporta o IPv6 porém sua última atualização foi em 2010.
 
-* **phpIPAM:** Possui funções semelhantes ao IPplan, com suporte a VLAN's, interface mais amigável.
+- **phpIPAM:** Possui funções semelhantes ao IPplan, com suporte a VLAN's, interface mais amigável.
 
-* **NetDot:** Ferramenta mais completa. É capaz de descobrir automaticamente os nós da rede utilizando o protocolo SNMP. Faz o mapeamento da topologia da rede. Gera scripts para ferramentas de gerenciamento como Nagios, RANCID e Cacti.
+- **NetDot:** Ferramenta mais completa. É capaz de descobrir automaticamente os nós da rede utilizando o protocolo SNMP. Faz o mapeamento da topologia da rede. Gera scripts para ferramentas de gerenciamento como Nagios, RANCID e Cacti.
 
-* **GestióIP:** É capaz de descobrir automaticamente os nós da rede utilizando o protocolo SNMP. Apresenta ferramentas mais simples de gerenciamento de dispositivos, testes de disponibilidade e logs.
+- **GestióIP:** É capaz de descobrir automaticamente os nós da rede utilizando o protocolo SNMP. Apresenta ferramentas mais simples de gerenciamento de dispositivos, testes de disponibilidade e logs.
 
 ---
+
 ## IDS
 
 Nas redes de computadores existem ferramentas que monitoram o tráfego de pacotes gerando alertas caso o tráfego apresente comportamento fora do normal para aquela rede, identificando uma possível tentativa de invasão.
@@ -56,6 +58,7 @@ Quando o **snort** é usado com estes programas complementares ele torna-se um *
 É necessário ter um conhecimento mais aprofundado para configurar o **IDS**, pois caso seja configurado incorretamente pode tornar a rede bem mais lenta.
 
 ---
+
 ## SNMP
 
 O **SNMP** é o protocolo padrão para monitorar dispositivos em redes IP e consequentemente determinar a saúde da rede e dos equipamentos. Essa sigla significa *Simple Network Management Protocol*.
@@ -80,6 +83,7 @@ Já o **SNMP** é o protocolo responsável apenas pela comunicação entre os Ag
 Na parte de análise e interpretação dos dados podem ser utilizados outros *softwares* para traduzir e facilitar a visualização dos dados por seres humanos.
 
 ---
+
 ## Ferramentas para monitoraramento
 
 Para administrar uma rede de computadores é fundamental a utilização de ferramentas de monitoramento. Podemos classificar o monitoramento da rede em dois tipos:
@@ -91,14 +95,15 @@ Para realizar o monitoramento dos equipamentos em uma rede podem ser utilizados 
 
 Algumas das ferramentas disponíveis são:
 
-* **MRTG:** Ferramenta básica, *open source*, feita com *Pearl* e capaz de obter informações via **SNMP** de diversos dispositivos e então gerar gráficos com os dados.
-* **RRDtool:** Ferramenta básica, *open source*, especializada em armazenar dados periodicamente e gerar gráficos. Essa ferramenta implementa um banco de dados no formato Round-Robin, o que significa que tem um tamanho fixo e os dados mais novos sobrescrevem os mais antigos. Pode ser usado em conjunto com o **MRTG** ou outros programas para melhorar o desempenho do sistema.
-* **Cacti:** Ferramenta com interface Web, grátis, e utiliza o **RRDtool** para gerar os gráficos. Além de ter suporte ao **SNMP**, permite a execuçao de *scripts* personalizados.
-* **Zabbix:** Possui suporte ao **SNMP** e implementa agentes de monitoramento que geram alertas automaticamente, que podem ser enviados por e-mail, sms ou mensagem instantânea.
-* **Nagios:** Possui suporte ao **SNMP** e implementa agentes de monitoramento que geram alertas automaticamente, que podem ser enviados por e-mail, sms ou mensagem instantânea.
-* **Icinga:** Possui suporte ao **SNMP** e implementa agentes de monitoramento que geram alertas automaticamente, que podem ser enviados por e-mail, sms ou mensagem instantânea.
+- **MRTG:** Ferramenta básica, *open source*, feita com *Pearl* e capaz de obter informações via **SNMP** de diversos dispositivos e então gerar gráficos com os dados.
+- **RRDtool:** Ferramenta básica, *open source*, especializada em armazenar dados periodicamente e gerar gráficos. Essa ferramenta implementa um banco de dados no formato Round-Robin, o que significa que tem um tamanho fixo e os dados mais novos sobrescrevem os mais antigos. Pode ser usado em conjunto com o **MRTG** ou outros programas para melhorar o desempenho do sistema.
+- **Cacti:** Ferramenta com interface Web, grátis, e utiliza o **RRDtool** para gerar os gráficos. Além de ter suporte ao **SNMP**, permite a execuçao de *scripts* personalizados.
+- **Zabbix:** Possui suporte ao **SNMP** e implementa agentes de monitoramento que geram alertas automaticamente, que podem ser enviados por e-mail, sms ou mensagem instantânea.
+- **Nagios:** Possui suporte ao **SNMP** e implementa agentes de monitoramento que geram alertas automaticamente, que podem ser enviados por e-mail, sms ou mensagem instantânea.
+- **Icinga:** Possui suporte ao **SNMP** e implementa agentes de monitoramento que geram alertas automaticamente, que podem ser enviados por e-mail, sms ou mensagem instantânea.
 
 ---
+
 ## ICMP
 
 O **ICMP**, ou *Internet Control Message Protocol*, é um protocolo bastante simples, mas muito útil para identificar problemas na rede, como por exemplo falha na disponibilidade de um nó da rede, erros no processamento de pacotes IP ou problemas em seu envio.
@@ -165,6 +170,7 @@ Quando o pacote é descartado, o roteador que descartou envia uma mensagem *ICMP
 Na análise do resultado é necessário entender que os endereços da resposta nem sempre são da *interface* que recebeu a mensagem. Os endereços são, na realidade, da *interface* que **enviou** a mensagem de erro.
 
 ---
+
 ## Referências
 
 - [1] [Introdução ao gerenciamento de redes](https://www.youtube.com/watch?v=RntTxnDsM9g&list=PLQq8-9yVHyOYDZ7F57KAsy6q2q10QaWtUs).

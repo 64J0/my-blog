@@ -15,9 +15,10 @@ Pretendo dar alguns toques pessoais no caminho pois acredito que nem tudo será 
 
 E pra iniciar com o pé direito já vamos começar direto abordando algumas metodologias de desenvolvimento, mais especificamente a **Waterfall**, **Scrum** e **Kanban**.
 
-## Metodologia Waterfall:
+## Metodologia Waterfall
 
 ---
+
 ## Referências
 
 - [1] [My Software Engineer Roadmap](https://medium.com/swlh/my-software-engineer-roadmap-2fb0c02b8a08)

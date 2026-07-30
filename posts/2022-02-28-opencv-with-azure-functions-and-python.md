@@ -282,14 +282,14 @@ As you can see, with those different weights we get different results. I would r
 
 Also, as a continuation idea, it would be cool if the user could send those threshold values through the request.
 
-**Recommendation**: as a rule of thumb, always set the bigger threshold as three times the value of the small threshold.
+__Recommendation__: as a rule of thumb, always set the bigger threshold as three times the value of the small threshold.
 
 After setting the code and testing locally, the final step is to publish this Azure Function. To do it you first need to have an Azure account and the [Azure CLI tool](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=script) installed.
 
 Now you must first log in using the CLI with:
 
 ```bash
-$ az login
+az login
 ```
 
 After using this command a new window will open in your browser and you'll be prompted to login in your Azure account. Just follow those instructions.
@@ -336,7 +336,7 @@ $ az functionapp create \
 Finally, the last step is to publish our Azure Function using the following command:
 
 ```bash
-$ func azure functionapp publish opencvhttptrigger
+func azure functionapp publish opencvhttptrigger
 ```
 
 In my local development scenario, the first time I used this command it did not work properly. At least I did not get the expected result. But in the second run everything worked fine.
@@ -363,30 +363,17 @@ Finally, just copy this link and update the URL you used to test this project lo
 
 Now you have an Azure Function deployed where you can send an image and get its detected edges. Pretty cool!
 
-### Submission Category:
+### Submission Category
 
-[Note]: # (AI Aces, Computing Captains, Low-Code Legends, Java Jackpot, or Wacky Wildcards:)
-
-* **Computing Captains**.
+* __Computing Captains__.
 
 On this project I used basically just Azure Functions and its related services.
 
 ### Link to Code on GitHub
 
-[Note]: # (Our markdown editor supports pretty embeds. Try this syntax: `{% github link_to_your_repo %}` to share a GitHub repository)
-[Note]: # (Your repository must include a README)
-[Note]: # (You must use and list a permissive license for your code: MIT, Apache-2)
-
 {% github https://github.com/64J0/AzureFunctions-OpenCV %}
 
-
 ### Additional Resources / Info
-
-[Note]: # (Screenshots/demo videos are encouraged!)
-
-[Note]: # (Be sure to include the DEV usernames of your collaborators, if any. Prizes for winning projects with multiple collaborators will be sent to the person who posts this submission and they will distribute the prize evenly. DEV will not split prizes as per our rules)
-
-[Reminder]: # (Submissions are due on March 8, 2022 @ 11:59 PM UTC)
 
 Finally, in this section I'll just share some additional resources and some links that I used while developing this project.
 
@@ -398,4 +385,4 @@ Apart from those, there are some cool references in the code script in comments.
 
 Last thing I want to present is a demo video I recorded to show how this project works. Take a look here:
 
-{% embed https://youtu.be/GKwS6sofgo8 %}
+{% embed <https://youtu.be/GKwS6sofgo8> %}

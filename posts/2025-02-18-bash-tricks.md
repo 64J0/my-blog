@@ -13,15 +13,15 @@ keyboard instead of using the mouse.
 In order to create a new bash terminal tab using the keyboard one can use the
 following keys:
 
--   *Ctrl + Shift + t*
--   *C-S-t* using Emacs terminology
+- *Ctrl + Shift + t*
+- *C-S-t* using Emacs terminology
 
 ## Switching between tabs
 
 And to switch between different terminal tabs one can use:
 
--   *Alt + tab_number* (example: *Alt + 1*)
--   *M-{number}* using Emacs terminology
+- *Alt + tab_number* (example: *Alt + 1*)
+- *M-{number}* using Emacs terminology
 
 ## Searching at the history
 

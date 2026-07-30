@@ -5,10 +5,12 @@ show: true
 tags: ["english", "philosophy", "virtues", "Aristotle"]
 ---
 
-Changelog:
+## Changelog
 
-- [2025-05-08 Thu] Add virtue as the middle example (thanks JZ for pointing this
-  improvement idea).
+- 2025-04-27: First version released.
+- 2025-05-08: Add virtue as the middle example (thanks JZ for pointing this improvement idea).
+
+## Main
 
 When you start studying the Greek classical philosophers it may become evident
 that a side-effect of their search for the **Objective Truth** is to answer the
@@ -72,8 +74,5 @@ Well, there are some directives you can consider before jumping into action:
 These books were my main reference while writing this post, and if you'd like to
 get a deeper understanding, I'd suggest reading it in the following order.
 
-- [1] - *Nicomachean Ethics* - Aristotle. Amazon
-  [link](https://a.co/d/j6kxRkd). This is my favorite edition, from Loeb
-  Classical Library.
-- [2] - *A cultura importa: fé e sentimento em um mundo sitiado* (*Culture
-  matters*) - Roger Scruton. Amazon [link](https://a.co/d/3dDRwsy).
+- [1] - *Nicomachean Ethics* - Aristotle. Amazon [link](https://a.co/d/j6kxRkd). This is my favorite edition, from Loeb Classical Library.
+- [2] - *A cultura importa: fé e sentimento em um mundo sitiado* (*Culture matters*) - Roger Scruton. Amazon [link](https://a.co/d/3dDRwsy).

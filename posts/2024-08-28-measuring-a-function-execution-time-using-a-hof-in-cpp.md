@@ -11,8 +11,8 @@ But first, what is a higher-order function?
 
 > In mathematics and computer science, a higher-order function (HOF) is a function that does at least one of the following:
 >
-> -   takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
-> -   returns a function or value as its result.
+> - takes one or more functions as arguments (i.e. a procedural parameter, which is a parameter of a procedure that is itself a procedure),
+> - returns a function or value as its result.
 >
 > &#x2014; From Wikipedia [link](https://en.wikipedia.org/wiki/Higher-order_function).
 
@@ -81,6 +81,6 @@ int main() {
 
 The complete code for this project can be found at this repository on GitHub:
 
--   [64J0/poc-cpp-functional](https://github.com/64J0/poc-cpp-functional)
+- [64J0/poc-cpp-functional](https://github.com/64J0/poc-cpp-functional)
 
 The curied version of the *NumpyCpp::linspace* mentioned before, which is called *NumpyCpp::linspace\_curied* is presented there, so check it out if you're interested.

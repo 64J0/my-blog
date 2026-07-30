@@ -5,13 +5,19 @@ show: true
 tags: ["automated tests"]
 ---
 
-Changelog:
+### Changelog
 
 - 2024-07-15: Add mutation testing section.
+- 2026-07-30: Add Dijkstra quote.
+
+## Introduction
+
+> "Program testing can be used to show the presence of bugs, but never to show their absence!"
+> --- Edsger W. Dijkstra
 
 Here, I'm dumping my annotations from the the book "Unit Testing: Principles, Practices and Patterns" ([link](https://a.co/d/05D7uKaK)).
 
-# Introduction
+## Unit tests
 
 What is the goal of unit testing?
 
@@ -19,7 +25,7 @@ What is the goal of unit testing?
 
 It could be helpful when planning a big refactor too, since you'll have a fast feedback to guarantee that the system is still working properly at unit level. Check this article from Dropbox.Tech for a real life example: [link](https://dropbox.tech/infrastructure/-testing-our-new-sync-engine) (thx for sharing Cecília).
 
-## About metrics
+### About metrics
 
 Metrics like [code coverage](https://en.wikipedia.org/wiki/Code_coverage) and branch coverage aren't good indicators for test quality, since they can be misleading. In fact, unit tests really shine when we use it to test the business logic - the domain model.
 
@@ -27,39 +33,38 @@ The rationale is that the business logic will not change very often (in theory),
 
 With this in mind, let's define what unit tests are not targeted:
 
--   Infrastructure code (if your project is not related to this domain);
--   External services and dependencies, such as database and third-party systems;
--   Code that glues everything together.
+- Infrastructure code (if your project is not related to this domain);
+- External services and dependencies, such as database and third-party systems;
+- Code that glues everything together.
 
 > **TIP** Tests shouldn't verify units of code. Rather, they should verify units of behavior: something that is meaningful for the problem domain and, ideally, something that a business person can recognize as useful. The number of classes it takes to implement such a unit of behavior is irrelevant. The unit could span across multiple classes or only one class, or even take up just a tiny method.
 >
 > &#x2014; Unit Testing: PPP
 
-
-# Four pillars of a good unit test
+## Four pillars of a good unit test
 
 "A good unit test has the following four attributes:"
 
--   Protection against regressions;
--   Resistance to refactoring;
--   Maintainability (easy to evolve and adapt);
--   Fast and correct feedback.
+- Protection against regressions;
+- Resistance to refactoring;
+- Maintainability (easy to evolve and adapt);
+- Fast and correct feedback.
 
 "These four attributes are foundational. You can use them to analyze any automated test, be it unit, integration, or end-to-end."
 
-# The value of unit tests
+## The value of unit tests
 
 "Units tests are less useful in a setting without algorithmic or business complexity - they quickly descend into trivial tests." And this type of test could easily become brittle along the time.
 
 "At the same time, integration tests retain their value - it's still important to verify how code, however simple it is, works in integration with other subsystems, such as the database. As a result, you may end up with fewer unit tests and more integration tests. In the most trivial examples, the number of integration tests may even be greater than the number of unit tests."
 
-# More content
+## More content
 
 If you're interested in more contents, I have an old article (2020), where I talk about "Tests, TDD and Jest", you can find it here: [link](./2020-08-30-testes-tdd-jest). Notice that it was written in Portuguese.
 
 Also, check the main reference book for a more rich discussion and details of the ideas presented here.
 
-## Mutation testing
+### Mutation testing
 
 While studying some chaos tests references I found this [mutation testing](https://stryker-mutator.io/docs/) concept, which looks like a good complement for the unit tests idea (thx for sharing Carvalho). It is useful to know how good your unit tests are.
 

@@ -31,7 +31,7 @@ Em projetos maiores é de fundamental importância a utilização dos testes aut
 
 Existem basicamente três tipos de testes, que são definidos com relação ao escopo em que são aplicados.
 
-### Tipos de testes:
+### Tipos de testes
 
 1. Teste unitário:
 
@@ -39,17 +39,17 @@ Testam funcionalidades específicas e isoladas da aplicação (precisam ser fun�
 
 Esse tipo de teste **JAMAIS** realizará chamadas a API's, não apresenta efeitos colaterais e depende apenas da própria aplicação.
 
-2. Teste de integração:
+1. Teste de integração:
 
 Testam funcionalidades completas, passando por várias camadas da aplicação.
 
 Por exemplo, um teste que passe por arquivos de: Route -> Controller -> Service -> Repository -> ...
 
-3. Teste E2E (End-to-end):
+1. Teste E2E (End-to-end):
 
 São testes que simulam a ação do usuário dentro da aplicação. É uma categoria de teste mais comum nos códigos *front-end*.
 
-Exemplo: Clique no input de e-mail -> Preencha com vinicius.gajo@blog.com.br -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o *dashboard*.
+Exemplo: Clique no input de e-mail -> Preencha com <vinicius.gajo@blog.com.br> -> Clique no input de senha -> Preencha 123456 -> Clique no botão "Logar" -> Espero que a página tenha enviado o usuário para o *dashboard*.
 
 ## TDD (Test Driven Development)
 
@@ -61,9 +61,9 @@ Segundo [1], o TDD se baseia em pequenos ciclos de repetições, onde para cada 
 
 Essa metodologia apresenta três estágios:
 
-* **Red:** Nesta fase os testes são escritos e consequentemente vão falhar quando executados, pois não existe a lógica ainda;
-* **Green:** Após serem definidos os testes são escritos os códigos que atendem os requisitos definidos na fase anterior;
-* **Refactor:** Por fim, nesta última fase, o código escrito na etapa anterior é refatorado para implementar as melhores práticas do desenvolvimento de *software*.
+- **Red:** Nesta fase os testes são escritos e consequentemente vão falhar quando executados, pois não existe a lógica ainda;
+- **Green:** Após serem definidos os testes são escritos os códigos que atendem os requisitos definidos na fase anterior;
+- **Refactor:** Por fim, nesta última fase, o código escrito na etapa anterior é refatorado para implementar as melhores práticas do desenvolvimento de *software*.
 
 ![Ciclo do TDD](/post-images/testes-tdd-jest/tdd-cycle.jpg "Ciclo do TDD")
 
@@ -346,6 +346,7 @@ Após tudo isso basta executar no terminal um *npm test* e o próprio sistema ir
 Por enquanto foi isso. A medida que for estudando e descobrindo mais coisas pretendo incrementar o texto, então fique atento.
 
 ---
+
 ## Referências
 
 - [1] Test Driven Development: TDD Simples e Prático. DEVMEDIA. Pode ser acessado [neste link](https://www.devmedia.com.br/test-driven-development-tdd-simples-e-pratico/18533).

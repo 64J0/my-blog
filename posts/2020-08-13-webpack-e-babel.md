@@ -10,16 +10,16 @@ A ideia desse post surgiu quando estava navegando no youtube e encontrei esse [v
 
 ## Webpack
 
-O Webpack é basicamente um empacotador de módulos (*module bundler*) JS (ou TS) para aplicações front-end modernas que está presente na maioria dos frameworks atuais. Em outras palavras, essa ferramenta coleta todos os arquivos da aplicação que você está desenvolvendo, até mesmo as dependências externas, e transforma tudo em um arquivo só (ou mais de um) de forma otimizada e automática. 
+O Webpack é basicamente um empacotador de módulos (*module bundler*) JS (ou TS) para aplicações front-end modernas que está presente na maioria dos frameworks atuais. Em outras palavras, essa ferramenta coleta todos os arquivos da aplicação que você está desenvolvendo, até mesmo as dependências externas, e transforma tudo em um arquivo só (ou mais de um) de forma otimizada e automática.
 
 ![Imagem do site do webpack](/post-images/webpack-e-babel/webpack-site.JPG)
 
 Segundo [2], dividir sua aplicação em módulo é uma boa prática pelos seguintes benefícios:
 
-* **Manutenibilidade**: as funcionalidades ficam menos acopladas, é mais fácil alterar uma parte do código sem afetar o sistema inteiro.
-* **Isolamento**: variáveis e funções declaradas dentro de um módulo são acessíveis apenas dentro dele (exceto aquilo que o módulo explicitamente exporta), evitando conflitos de variáveis e acesso desnessário de uma parte do código a outra não relacionada.
-* **Reusabilidade**: um módulo com uma funcionalidade bem definida é como uma peça de um quebra-cabeça. Pode ser reutilizada em outras partes do mesmo sistema, ou em outros sistemas.
-* **Testabilidade**: com o código menos acoplado fica mais fácil escrever testes unitários para validar cada funcionalidade.
+- **Manutenibilidade**: as funcionalidades ficam menos acopladas, é mais fácil alterar uma parte do código sem afetar o sistema inteiro.
+- **Isolamento**: variáveis e funções declaradas dentro de um módulo são acessíveis apenas dentro dele (exceto aquilo que o módulo explicitamente exporta), evitando conflitos de variáveis e acesso desnessário de uma parte do código a outra não relacionada.
+- **Reusabilidade**: um módulo com uma funcionalidade bem definida é como uma peça de um quebra-cabeça. Pode ser reutilizada em outras partes do mesmo sistema, ou em outros sistemas.
+- **Testabilidade**: com o código menos acoplado fica mais fácil escrever testes unitários para validar cada funcionalidade.
 
 ## Babel
 

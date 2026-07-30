@@ -5,7 +5,7 @@ show: true
 tags: ["fsharp", "github", "github actions"]
 ---
 
-# Introduction
+## Introduction
 
 Suppose that you are the responsible for a central repository that takes care of several projects using infrastructure as code tools ([Terraform](https://developer.hashicorp.com/terraform/docs), for example), and that you can't know for certain how this repository is going to evolve, especially related to the instances of this project that will be needed.
 
@@ -13,9 +13,9 @@ Maybe you're thinking, why you decided to centralize everything in this reposito
 
 Well, good question. I'm going to present some reasons, in this illustrative scenario.
 
-1.  The first piece of information I'd like to present is that all those projects share the same context. They are related to different instances of the same product with some particularities, but in the long run, you expect that they are going to develop in the same basis.
-2.  The second piece of information is that your team is relatively small. So you want to optimize as much as possible. Since you're taking care of a single repository, you can share some of the updates through all the inner instances of the project, without the necessity to duplicate the code in other places. And this extends over the modularization of the IaC tool.
-3.  Third, and my last argument, is that it's easier to understand the puzzle when you have all the pieces together. If those projects were splitted among several repositories, it would be harder to keep track of all the instances, and even explain to other stakeholders and members of the team the full landscape.
+1. The first piece of information I'd like to present is that all those projects share the same context. They are related to different instances of the same product with some particularities, but in the long run, you expect that they are going to develop in the same basis.
+2. The second piece of information is that your team is relatively small. So you want to optimize as much as possible. Since you're taking care of a single repository, you can share some of the updates through all the inner instances of the project, without the necessity to duplicate the code in other places. And this extends over the modularization of the IaC tool.
+3. Third, and my last argument, is that it's easier to understand the puzzle when you have all the pieces together. If those projects were splitted among several repositories, it would be harder to keep track of all the instances, and even explain to other stakeholders and members of the team the full landscape.
 
 With this in mind, let's start disposing the next pieces of information.
 
@@ -27,15 +27,13 @@ This way, you can show and even motivate other people to create their own custom
 
 With this context in mind, we can start exploring how one can solve this problem, by leveraging a custom F# GitHub Action that is later used to build a dynamic matrix workflow configuration that evolves automatically along with the Terraform instances added to the central repository.
 
-
-# Development
+## Development
 
 Since I'm not intended to disclose any secret or critical information related to this project, I'm going to use a sample POC project with a very simple Terraform configuration. You can find it in this [repository link](https://github.com/64J0/custom-fsharp-gh-action-and-dynamic-matrix).
 
 With no further ado, let's dive deep into the POC.
 
-
-## IaC - Terraform
+### IaC - Terraform
 
 As mentioned before, my goal is to use a very simple Terraform configuration, that still let's me run the following commands:
 
@@ -88,8 +86,7 @@ terraform/
 
 In the future, we can simply add a new instance (say *instance-3*), and start working straight.
 
-
-## Custom GitHub Action with F#
+### Custom GitHub Action with F#
 
 Now that we talked about the Terraform configuration, we can start talking about the custom F# GitHub Action created.
 
@@ -111,8 +108,7 @@ But notice that it's the most restrictive option, since, for now, they can only 
 
 All the custom actions types have their trade-offs. If you're interested to dive deeper, you can consult the reference [[3]​](#orgb1aeb3c).
 
-
-### Creating the Docker Container Action
+#### Creating the Docker Container Action
 
 In order to learn how to create the Docker container action, I consulted the reference [[4]​](#orgb1aeb3c).
 
@@ -135,7 +131,7 @@ The structure of the custom action is described as follow:
 
 Each component is going to be presented in the following sections.
 
-1.  action.yml
+1. action.yml
 
     Let's start from the configuration file of the custom action, named *action.yml*.
 
@@ -181,7 +177,7 @@ Each component is going to be presented in the following sections.
 
     Finally, the last part of this action definition is describing the type of the action (Docker container), and how the action is executed, passing the argument defined in the *inputs*.
 
-2.  Dockerfile
+2. Dockerfile
 
     Next, let's explore the multi-stage Dockerfile that is responsible for containerizing the application.
 
@@ -222,7 +218,7 @@ Each component is going to be presented in the following sections.
 
     When launched in the GitHub Actions environment, this container will receive the input as argument. I have added some example commands that one can use to test it locally in the *.github/fsharp-custom-action/README.org* file.
 
-3.  src/Program.fs
+3. src/Program.fs
 
     Finally, this is the main part of the custom F# action, the F# code itself.
 
@@ -308,7 +304,7 @@ Each component is going to be presented in the following sections.
     echo "formatted-directories=value123" >> $GITHUB_OUTPUT
     ```
 
-4.  tests/Program.fs
+4. tests/Program.fs
 
     In order to automatically assert that the previous code was generating the expected output, I added some simple unit tests to the project.
 
@@ -379,8 +375,7 @@ Each component is going to be presented in the following sections.
     let main args = runTests defaultConfig tests
     ```
 
-
-### Using the Custom F# Action
+#### Using the Custom F# Action
 
 After defining the F# action code, now it's time to start using it.
 
@@ -485,7 +480,7 @@ jobs:
         run: terraform plan
 ```
 
-1.  Workflow Name
+1. Workflow Name
 
     The first line is used to define the workflow name, in this case: "Terraform Development". You need to always use a descriptive name, so it's easier to understand later.
 
@@ -493,7 +488,7 @@ jobs:
     name: Terraform Development
     ```
 
-2.  Workflow Triggers
+2. Workflow Triggers
 
     Next, we have the triggers configuration. It defines which events are going to start the workflow ([[12]​](#orgb1aeb3c)).
 
@@ -506,7 +501,7 @@ jobs:
 
     In this case, we're going to trigger it whenever a file with extension *.tf* that is inside the directory *terraform/* changes in some open pull request.
 
-3.  Concurrency
+3. Concurrency
 
     The next block already has a documentation comment, so I'm not going to explain it here again. There's also a link pointing to the place I found it.
 
@@ -519,7 +514,7 @@ jobs:
       cancel-in-progress: true
     ```
 
-4.  Job: get-modified-files
+4. Job: get-modified-files
 
     Now, we finally enter the jobs definition. And the first job, is the one where we'll use the custom F# action:
 
@@ -570,11 +565,11 @@ jobs:
     ${{ steps.<STEP_ID>.outputs.<OUTPUT_NAME> }}
     ```
 
-    -   Note: The `${{ ... }}` syntax stands for a GitHub Action expression. Read more about it in reference [[17]​](#orgb1aeb3c).
+    - Note: The `${{ ... }}` syntax stands for a GitHub Action expression. Read more about it in reference [[17]​](#orgb1aeb3c).
 
     Finally, we're defining the output of this step, so it's more readable to use it later, at least in my opinion.
 
-5.  Job: format
+5. Job: format
 
     Continuing the configuration, the next job is responsible for checking the formatting of the Terraform configuration.
 
@@ -609,8 +604,7 @@ jobs:
 
     And the same approach is replicated for the next jobs in the *tf-development.yml* file. They're used to validate the Terraform configuration and run the *terraform plan*, consecutively.
 
-
-# Conclusion
+## Conclusion
 
 In this article I covered my journey for creating a custom F# GitHub Action, and use it with a POC project that is itself using Terraform.
 
@@ -622,23 +616,20 @@ If you found some point to improve, don't hesitate to send a PR to the original 
 
 And that's it, see you another time.
 
+## Appendix
 
-# Appendix
-
-
-## Other Workflows
+### Other Workflows
 
 Along with the **tf-deployment.yml** workflow covered in this article, we can find other interesting jobs in the project repository.
 
 In this appendix section I'm going to give a quick overview of them.
 
--   **fsharp-auto-tests.yml:** This workflow is used to run the automated tests for the F# custom action automatically, whenever we send an update to a file with the extensions *fs*, *fsx* and *fsproj*.
--   **fsharp-lint.yml:** Used to check the lint of the code, with the same trigger used in the previous workflow. In this context, I'm assuming that the lint is related to stylistic formatting of the code. We use the tool named fantomas ([[19]​](#orgb1aeb3c)) with its default configuration to check the codebase.
--   **tf-apply.yml:** As expected, runs the *terraform apply* for the project and module defined in the input of the action. Notice that it has a *workflow_dispatch* trigger which accepts some inputs, which I decided to not cover in this article.
--   **tf-destroy.yml:** Similar to the workflow explored before, but runs the *terraform destroy* command instead.
+- **fsharp-auto-tests.yml:** This workflow is used to run the automated tests for the F# custom action automatically, whenever we send an update to a file with the extensions *fs*, *fsx* and *fsproj*.
+- **fsharp-lint.yml:** Used to check the lint of the code, with the same trigger used in the previous workflow. In this context, I'm assuming that the lint is related to stylistic formatting of the code. We use the tool named fantomas ([[19]​](#orgb1aeb3c)) with its default configuration to check the codebase.
+- **tf-apply.yml:** As expected, runs the *terraform apply* for the project and module defined in the input of the action. Notice that it has a *workflow_dispatch* trigger which accepts some inputs, which I decided to not cover in this article.
+- **tf-destroy.yml:** Similar to the workflow explored before, but runs the *terraform destroy* command instead.
 
-
-## .gitattributes
+### .gitattributes
 
 One thing to keep in mind is that GitHub ignores the content inside the *.github/* folder when checking the languages used in the repository.
 
@@ -651,7 +642,6 @@ In order to change the default configuration, and allow GitHub to check the lang
 ```sh
 .github/fsharp-custom-action/** -linguist-vendored
 ```
-
 
 ## References
 

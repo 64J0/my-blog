@@ -5,10 +5,10 @@ show: true
 tags: ["linux", "os", "low-level", "memory"]
 ---
 
-### Changelog
+## Changelog
 
-- [2025-07-10 Thu] First version released.
-- [2025-07-28 Mon] Improved memory schema, add memory leak Wikipedia link, small tweaks at the code to improve readability.
+- 2025-07-10: First version released.
+- 2025-07-28: Improved memory schema, add memory leak Wikipedia link, small tweaks at the code to improve readability.
 
 ## Introduction to processes
 
@@ -54,17 +54,17 @@ The virtual memory of a process is divided into several regions or sections, wit
 
 ## Why is memory divided into segments?
 
-1.  Security (access permissions and privilege level).
+1. Security (access permissions and privilege level).
 
     For example, at the *text/code* section, the memory is both **readable** and **executable**, but not **writable**, while the memory at the *heap* and *stack* sections are **readable** and **writable** but not **executable**.
 
     Mixing those memory sections would make access rights more difficult to enforce.
 
-2.  Access pattern differences (sequential vs. random).
+2. Access pattern differences (sequential vs. random).
 
     The stack grows in a predictable way, making memory allocation and release cheap. The heap otherwise, can behave unpredictably in a dynamic way, that makes its operations more expensive.
 
-3.  Isolation of bugs (buffer overflows).
+3. Isolation of bugs (buffer overflows).
 
     Buffer overflows, with this division, are less likely to corrupt data in other regions.
 
@@ -84,7 +84,6 @@ The OS knows upfront the exact amount of memory necessary to load the entire pro
 
 The data memory section contains initialized variables, i.e., variables that have an initial value.
 
-
 ### BSS
 
 This memory section contains uninitialized or zero-initialized variables.
@@ -92,7 +91,6 @@ This memory section contains uninitialized or zero-initialized variables.
 The BSS acronym stands for "Block Started by Symbol"
 
 By using this approach of separating initialized and uninitialized variables, the size of the program shrinks, and the start up is faster.
-
 
 ### Heap
 

@@ -5,7 +5,7 @@ show: true
 tags: ["telecom", "network", "devsecops", "devops"]
 ---
 
-# Introduction
+## Introduction
 
 During the lifetime of someone working in the DevSecOps role, you'll need to
 deal with networking topics, including DNS Record Types. Those are
@@ -27,7 +27,7 @@ In other words:
 > hostname or domain. These records include the current IP address for a
 > domain. --- [2]
 
-# DNS - Domain Name System
+## DNS - Domain Name System
 
 Before diving into the DNS Records topic, we need to set some basic
 knowledge. So, let's start with the DNS server.
@@ -40,7 +40,7 @@ knowledge. So, let's start with the DNS server.
 Also, according to [2], DNS records are stored in text files (zone files) on the
 **authoritative DNS server**.
 
-# DNS Record Types
+## DNS Record Types
 
 You can use the following table to better understand the most used DNS Record
 Types:
@@ -65,7 +65,7 @@ make sure to consult the platform documentation about this service.
 With the help of this table you can get a better understanding of what some
 configurations really means.
 
-# Other Configurations - TTL
+## Other Configurations - TTL
 
 Along with the DNS Record Type, we usually can configure the **TTL**, which
 stands for **Time To Live**.
@@ -89,7 +89,7 @@ stands for **Time To Live**.
 > which tells servers across the Internet to check every 24 hours for updates to
 > the record. --- [3]
 
-# Conclusion
+## Conclusion
 
 That's it for this post. It presents a very short introduction to the DNS Record
 Types configuration.

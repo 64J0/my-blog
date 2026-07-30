@@ -5,9 +5,9 @@ show: true
 tags: ["fsharp", "image-manipulation", "scripts"]
 ---
 
-### Changelog
+## Changelog
 
--   [2025-09-17 Wed] First version released.
+- 2025-09-17: First version released.
 
 ## The fsx script
 

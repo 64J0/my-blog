@@ -7,7 +7,7 @@ tags: ["emacs", "org-mode"]
 
 This post was originally intended to be only a [repository in GitHub](https://github.com/64J0/literate-prog-finance) where I would store the code that I wrote while studying Emacs + Literate Programming + Finances. But, eventually I decided to add it here, so it gets more visibility. I really believe that this topic must be shared and embraced in the industry for us to evolve faster.
 
-# Introduction
+## Introduction
 
 > Literate programming is a programming paradigm introduced in 1984 by Donald Knuth in which a computer program is given an explanation of its logic in a natural language, such as English, interspersed (embedded) with snippets of macros and traditional source code, from which compilable source code can be generated. The approach is used in scientific computing and in data science routinely for reproducible research and open access purposes. Literate programming tools are used by millions of programmers today.
 >
@@ -21,28 +21,26 @@ Also, if you want to really understand and appreciate this document, make sure t
 
 If you want to see the compiled version of this document in PDF, check this [link](https://github.com/64J0/literate-prog-finance/blob/master/README.pdf).
 
-
 <a id="org3639a8b"></a>
 
-## Setup
+### Setup
 
 When creating this example I used those software versions:
 
--   GNU Emacs 28.2.
--   The *.emacs* configuration mentioned in this repository release: [link](https://github.com/64J0/Emacs-config/releases/tag/v1.0.1).
+- GNU Emacs 28.2.
+- The *.emacs* configuration mentioned in this repository release: [link](https://github.com/64J0/Emacs-config/releases/tag/v1.0.1).
 
 Disclaimer 1: Some configurations will not work, even if you have the same *.emacs* file, since it will depend on external packages (LaTeX specific packages for example), and the file system structure of your computer.
 
 Disclaimer 2: This document is better understood if you download the *.org* file and open it in Emacs. This way you'll can see the outputs and some org configurations.
 
-
 <a id="orgf7858e1"></a>
 
-# The Problem
+## The Problem
 
 In this example, we're going to tackle an investment problem, which could be stated as:
 
--   Suppose you're going to invest your money into an application that gives you "h%" of this money invested each month, as long as you keep it there (normal investment scenario). During the time you keep it there, you can also add more money (in a month basis), and this money will follow the same rule stated before, but considering that it will start producing more only in the next month that you added it.
+- Suppose you're going to invest your money into an application that gives you "h%" of this money invested each month, as long as you keep it there (normal investment scenario). During the time you keep it there, you can also add more money (in a month basis), and this money will follow the same rule stated before, but considering that it will start producing more only in the next month that you added it.
 
 To make it more clear, let's use some mathematical notation.
 
@@ -99,10 +97,9 @@ For this specific example, I'm going to assume some values for the variables. Th
 | $h$    | 1,01      | 1% profitability       |
 | $n$    | 120       | 10 years = 120 months  |
 
-
 <a id="orgc713fb4"></a>
 
-# The Solution
+## The Solution
 
 The solution for this problem is pretty straightforward since we already have derived the equations for it. Now it's just a matter of implementing it using some programming language.
 
@@ -114,10 +111,9 @@ Due to it, instead of presenting only the F# block, I'm also going to present th
 
 Also, notice that the variables used in the SRC blocks were defined in this top level section, in the "#+PROPERTY:" configuration. This is a very convenient way to define common input values to the functions for different languages.
 
-
 <a id="org2b123f0"></a>
 
-## Python Solution
+### Python Solution
 
 When using Python, it's a bit tricky to make it show the result of the print statement. In order to fix it, I found [this answer](https://emacs.stackexchange.com/a/17928) in Stack Exchange pointing to the right header configuration for the block.
 
@@ -156,10 +152,9 @@ def main ():
 return main()
 ```
 
-
 <a id="org314e5f7"></a>
 
-## Fsharp Solution
+### Fsharp Solution
 
 And this is the same algorithm implemented in F#. Notice that the result is way more polluted (read the *.org* file to find the result).
 
@@ -190,10 +185,9 @@ main ()
 
 As one could see, this solution does not work very well. The result is very polluted, as mentioned before.
 
-
 <a id="orgca5be50"></a>
 
-### Fsharp in Shell
+#### Fsharp in Shell
 
 After testing many combinations of headers for the Fsharp SRC block, I went to the package repository in GitHub and asked the author about this behavior.
 
@@ -230,16 +224,15 @@ And this configuration worked properly, although it is not very optimized (you n
 
 <a id="org546f054"></a>
 
-# Org SRC Blocks
+## Org SRC Blocks
 
 After some time I decided to add this section to store some information related to the Org SRC blocks. Hope this is useful for quick consults, and to get a better understanding of this cool feature.
 
 Most of the information presented here is from reference [6] (you must read all that links to really understand Org SRC blocks).
 
-
 <a id="org8fa695f"></a>
 
-## Org SRC Operations
+### Org SRC Operations
 
 If you want to execute the scripts mentioned before, put the cursor inside the SRC block and hit *C-c C-c* (*org-babel-execute-src-block*). It will prompt for acceptance to run the script, so you need to type "yes".
 
@@ -249,10 +242,9 @@ Then, if you want to tangle the code (extract it to another file) to run in the 
 
 There is also *C-c C-v f* (*org-babel-tangle-file*), if you want to tangle to a custom file.
 
-
 <a id="orgf4e3b72"></a>
 
-## Org SRC Headers
+### Org SRC Headers
 
 In order to make it easier to understand the SRC blocks headers, I decided to add this section to the document.
 
@@ -285,10 +277,9 @@ With no further ado, check the following table for the list of most common heade
 | :no-expand   | By default Org expands code blocks during tangling. The ‘no-expand’ header argument turns off such expansions.                                                                                                                                                                                                                                                                                                                                                              | -                   | -                                                                                                                                                                                                        |
 | :noweb       | The ‘noweb’ header argument controls expansion of noweb syntax references. Expansions occur when source code blocks are evaluated, tangled, or exported.                                                                                                                                                                                                                                                                                                                    | "no"                | "yes", "no", "tangle", "no-export", "strip-export", "eval"                                                                                                                                               |
 
-
 <a id="org1f93bdc"></a>
 
-# Conclusion
+## Conclusion
 
 Literate programming is something that can have a huge impact in the organizations that adopt it. This technique makes it easier to keep the configuration documented, which makes it easier to onboard other people into the system.
 
@@ -297,7 +288,6 @@ In my case, I got the idea to create this project after reading the book "O home
 While writing this document I noticed how little I knew about org-mode and babel for SRC blocks. Then, I decided to start looking deeper into the documentation, trying to understand why some parts of the code did not work (F# part).
 
 It was a very cool and challenging situation, and my goal is to keep digging into this feature in order to really understand how it works and fix my setup.
-
 
 <a id="orgd1ed74c"></a>
 

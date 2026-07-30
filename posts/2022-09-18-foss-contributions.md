@@ -5,13 +5,13 @@ show: true
 tags: ["foss", "open-source", "github"]
 ---
 
-Changelog:
+## Changelog
 
-- **2022-09-18:** First version published.
-- **2025-01-10:** Major rewrite with text enhancements.
-- **2025-04-02:** Add reference to "The pragmatic open source contributor".
-- **2025-09-08:** Add more examples.
-- **2025-10-14:** Ibid.
+- 2022-09-18: First version published.
+- 2025-01-10: Major rewrite with text enhancements.
+- 2025-04-02: Add reference to "The pragmatic open source contributor".
+- 2025-09-08: Add more examples.
+- 2025-10-14: Ibid.
 
 ## Introduction
 

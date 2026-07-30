@@ -5,6 +5,8 @@ show: true
 tags: ["english"]
 ---
 
+## Introduction
+
 After many months (years) not updating this blog, I finally decided to come back to it. In this post I'm going to:
 
 * Explain what happened, and my decision to start posting in other platforms,
@@ -13,7 +15,7 @@ After many months (years) not updating this blog, I finally decided to come back
 
 Also, my intetion for now is to now delete the old articles written in portuguese, since they are still part of my journey, and I would like to keep it recorded.
 
-### Posting in other platforms
+## Posting in other platforms
 
 During this time that this blog was abandoned, I have used different platforms to host my articles, where I can cite those two:
 
@@ -30,13 +32,13 @@ When you write your post and publish in those websites, if they eventually die..
 
 So, although I intend to keep using those other platforms, I will also keep my articles in this website as a backup.
 
-### Why I'm getting back
+## Why I'm getting back
 
 There are many months since the last time I used Next.js and Typescript for a project. My idea is to sharpen my skill once again in those tools by enhancing this blog.
 
 Notice that this is a process that could take some time, so be patient if you encounter some random bug one day or other. I'm still in the process.
 
-### Why I decided to use english to write my articles
+## Why I decided to use english to write my articles
 
 Finally, I decided to write in english because this way I can talk with a bigger audience.
 
