@@ -70,8 +70,8 @@ According to the site, QEMU is a generic and open source machine emulator and vi
 
   With this tool it's possible to:
 
-- Run operating systems for any machine, on any supported architechture. It provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS.
-- Run programs for another Linux/BSD target, on any supported architechture.
+- Run operating systems for any machine, on any supported architecture. It provides a virtual model of an entire machine (CPU, memory and emulated devices) to run a guest OS.
+- Run programs for another Linux/BSD target, on any supported architecture.
 - Run KVM and Xen virtual machines with near native performance.
 
 [YouTube - QEMU: A proper guide!](https://www.youtube.com/watch?v=AAfFewePE7c&ab_channel=DenshiVideo).
@@ -105,7 +105,7 @@ The process of memory swapping is managed by an operating system or by a virtual
 - Performance: disk storage space, when called up by memory
 swapping, does not offer the same performance as physical RAM for process execution.
 
-- Disk limitations: swap files are reliant on the stabiity and availability of storage media, which might not be as stable as system memory.
+- Disk limitations: swap files are reliant on the stability and availability of storage media, which might not be as stable as system memory.
 
 - Capacity: memory swapping is limited by the available swap space that has been allocated by an operating system or hypervisor.
 

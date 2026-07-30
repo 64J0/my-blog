@@ -8,7 +8,7 @@ tags: ["automated tests"]
 ### Changelog
 
 - 2024-07-15: Add mutation testing section.
-- 2026-07-30: Add Djikstra quote.
+- 2026-07-30: Add Dijkstra quote.
 
 ## Introduction
 

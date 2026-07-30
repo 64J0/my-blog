@@ -12,7 +12,7 @@ tags: ["software", "engineering", "identity"]
 
 ## Introduction
 
-**OAuth 2.0** is one of the most popular authorization frameworks used in practice, being adopted by both small startups and big enterprise companies. However, it is still a black box for multiple developers, which is understendable given the current implementation landscape, vide [5].
+**OAuth 2.0** is one of the most popular authorization frameworks used in practice, being adopted by both small startups and big enterprise companies. However, it is still a black box for multiple developers, which is understandable given the current implementation landscape, vide [5].
 
 With this in mind, I decided to write this article to present the framework fundamentals in a clear and concise way. Notice that I'll focus on the high level concepts, leveraging the contents of the official specification (RFC 6749 [1]).
 

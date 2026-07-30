@@ -371,7 +371,7 @@ On this project I used basically just Azure Functions and its related services.
 
 ### Link to Code on GitHub
 
-{% github <https://github.com/64J0/AzureFunctions-OpenCV> %}
+{% github https://github.com/64J0/AzureFunctions-OpenCV %}
 
 ### Additional Resources / Info
 

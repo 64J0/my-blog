@@ -66,7 +66,7 @@ Deus confirmaria nossas ações de maneira contundente.
 E isso também está ancorado em algumas passagens da bíblia:
 
 - Nos Evangelhos são apresentados diversos milagres feitos por Jesus, baseados na fé das pessoas, logo os milagres ocorriam para validar a fé;
-- Os apóstolos receberam também o dom de relizar milagres. Como a Igreja consiste nos descendentes dos apóstolos, é de se esperar que ela consiga também operar milagres.
+- Os apóstolos receberam também o dom de realizar milagres. Como a Igreja consiste nos descendentes dos apóstolos, é de se esperar que ela consiga também operar milagres.
 
 Isso resolve o problema de ter que escolher outras religiões, ou doutrinas
 dentro da mesma religião (católicos vs protestantes vs ortodoxos vs etc).

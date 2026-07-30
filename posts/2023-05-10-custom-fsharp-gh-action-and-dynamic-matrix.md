@@ -86,7 +86,7 @@ terraform/
 
 In the future, we can simply add a new instance (say *instance-3*), and start working straight.
 
-### Custom GitHub Action with F #
+### Custom GitHub Action with F#
 
 Now that we talked about the Terraform configuration, we can start talking about the custom F# GitHub Action created.
 
