@@ -27,8 +27,8 @@ With this in mind, I decided to write this article to present the framework fund
 - **Authorization server:** The server issuing access tokens to the client after successfully authenticating the resource owner and obtaining authorization [[1]](#references).
 - **Scope:** The authorization and token endpoints allow the client to specify the scope of the access request using the "scope" request parameter. In turn, the authorization server uses the "scope" response parameter to inform the client of the scope of the access token issued [[1]](#references).
 - **Authorization grant:** An authorization grant is a credential representing the resource owner's authorization (to access its protected resources) used by the client to obtain an access token. This specification defines four grant types -- authorization code, implicit, resource owner password credentials, and client credentials -- as well as an extensibility mechanism for defining additional types [[1]](#references).
-- **Access token:** A string denoting a specific scope, lifetime, and other access attributes. Access tokens are issued to third-party clients by an authorization server with the approval of the resource owner.  The client uses the access token to access the protected resources hosted by the resource server [[1]](#references). Other access attributes typically includes:
-  - Token type - e.g. *Bearer* (bearer tokens can be used by anyone who has them) vs. sender-constrained types like *DPop* or *mTLS*-bound tokens (which tie the token to a specific client key/cert, mitigating theft) [[7]](#references).
+- **Access token:** A string denoting a specific scope, lifetime, and other access attributes. Access tokens are issued to third-party clients by an authorization server with the approval of the resource owner.  The client uses the access token to access the protected resources hosted by the resource server [[1]](#references). Other access attributes typically include:
+  - Token type - e.g. *Bearer* (bearer tokens can be used by anyone who has them) vs. sender-constrained types like *DPoP* or *mTLS*-bound tokens (which tie the token to a specific client key/cert, mitigating theft) [[7]](#references).
   - Audience (*aud*) - which resource server(s) the token is valid for. Important for preventing a token issued for API A from being replayed against API B [[7]](#references).
   - Issuer (*iss*) - which authorization server issued the token, so the resource server knows whom to trust/verify against [[7]](#references).
   - Subject (*sub*) - the resource owner's identifier the token was granted on behalf of [[7]](#references).
@@ -299,7 +299,7 @@ GET https://auth.example.com/authorize
   &client_id=abc123
   &redirect_uri=https%3A%2F%2Fapp.example.com%2Fcallback
   &scope=photos.read
-  &state=9f61e8
+  &state=9f61e8d4b0c24d2b9b9c5e1f0f4f0f0a
   &code_challenge=$CODE_CHALLENGE
   &code_challenge_method=S256
 ```
