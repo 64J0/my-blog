@@ -137,7 +137,7 @@ RFC 6749 defines four grant types, each targeting a different combination of cli
 
 #### Authorization Code
 
-The general-purpose grant for anything with a redirect-capable user-agent: web apps, mobile apps, SPAs. It's the only original grant type that cleanly supports refresh tokens, since the access token is fetched via a direct back-channel request rather than through the browser.
+The general-purpose grant for anything with a redirect-capable user-agent: web apps, mobile apps, SPAs. Unlike Implicit, the other redirect-based grant, the access token here is fetched via a direct back-channel request (step D below) rather than being returned through the browser — which is why it's the only redirect-based grant that can safely carry a refresh token.
 
 > 4.1. Authorization Code Grant
 >
