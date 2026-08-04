@@ -9,7 +9,7 @@ tags: ["software", "engineering", "identity"]
 
 - 2026-02-22: First version released.
 - 2026-07-30: Clean text.
-- 2026-08-03: Add Grant Types, "On The Wire" walkthrough, and Common Pitfalls sections; expand OAuth 2.1 motivations.
+- 2026-08-04: Add Grant Types, "On The Wire" walkthrough, "Refresh & Revoke" subsection, a Device Authorization Grant callout and Common Pitfalls sections; expand OAuth 2.1 motivations.
 
 ## Introduction
 
@@ -259,6 +259,8 @@ The access token was returned directly in the redirect URI fragment, skipping th
 
 The client collects the resource owner's username and password directly and exchanges them for a token. Intended only for highly trusted first-party clients, and even then it's now discouraged, see [Common Pitfalls](#common-pitfalls) below.
 
+> **Beyond the original four:** input-constrained clients that can't handle a redirect, like CLIs, smart TVs, IoT devices, typically use the Device Authorization Grant instead (RFC 8628 [[14]](#references)): the device displays a short code, the user enters it on a second screen (e.g. their phone), and the device polls the token endpoint until it's approved.
+
 ### Authorization Code vs. Client Credentials vs. (deprecated) Implicit/ROPC
 
 | Grant type | Resource owner involved? | Client type | Refresh tokens | Status |
@@ -333,6 +335,30 @@ Which returns something shaped like [[1]](#references), §5.1:
 ```
 
 To replicate this against a real server without registering an app with a provider, point a debugger like [oauthdebugger.com](https://oauthdebugger.com) [[11]](#references) at a test authorization server, or run a disposable one locally with [`mock-oauth2-server`](https://github.com/navikt/mock-oauth2-server) [[12]](#references).
+
+### Refresh & Revoke
+
+Note that `client_id=abc123` didn't come from nowhere: per [[1]](#references), §2, the client must have already registered with the authorization server out-of-band (typically through a developer console) and been issued a `client_id` — and, if confidential, a `client_secret` — before any of the flows above can run.
+
+Once the client holds a refresh token, it exchanges it for a new access token without involving the resource owner again ([[1]](#references), §6):
+
+```bash
+curl -s -X POST https://auth.example.com/token \
+  -d grant_type=refresh_token \
+  -d refresh_token=tGzv3JOkF0XG5Qx2TlKWIA \
+  -d client_id=abc123
+```
+
+This returns a fresh access token and, at the authorization server's discretion, a new refresh token. Going the other direction — invalidating a token early, e.g. because the user revoked access or a refresh token leaked — is standardized separately in RFC 7009 [[13]](#references):
+
+```bash
+curl -s -X POST https://auth.example.com/revoke \
+  -d token=tGzv3JOkF0XG5Qx2TlKWIA \
+  -d token_type_hint=refresh_token \
+  -d client_id=abc123
+```
+
+Revoking a refresh token should cascade to any access tokens issued from it ([[13]](#references), §2.1).
 
 ## Common Pitfalls
 
@@ -418,6 +444,8 @@ If you liked this post, perhaps you'll be interested in:
 - [10] Proof Key for Code Exchange by OAuth Public Clients (PKCE). [RFC 7636](https://datatracker.ietf.org/doc/html/rfc7636). Accessed August 3, 2026.
 - [11] OAuth 2.0 Debugger. [oauthdebugger.com](https://oauthdebugger.com). Accessed August 3, 2026.
 - [12] mock-oauth2-server. [GitHub repository](https://github.com/navikt/mock-oauth2-server). Accessed August 3, 2026.
+- [13] OAuth 2.0 Token Revocation. [RFC 7009](https://datatracker.ietf.org/doc/html/rfc7009). Accessed August 4, 2026.
+- [14] OAuth 2.0 Device Authorization Grant. [RFC 8628](https://datatracker.ietf.org/doc/html/rfc8628). Accessed August 4, 2026.
 
 <!--
 Footnotes
