@@ -23,7 +23,7 @@
     "gray-matter": "^4.0.3",
     "hast-util-to-string": "^3.0.1",
     "image-size": "^2.0.2",
-    "next": "^16.1.7",
+    "next": "^16.2.11",
     "polished": "^4.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.2.4",
