@@ -22,8 +22,8 @@
     "fuse.js": "^7.5.0",
     "gray-matter": "^4.0.3",
     "hast-util-to-string": "^3.0.1",
-    "image-size": "^2.0.2",
-    "next": "^16.2.11",
+    "image-size": "^2.0.3",
+    "next": "^16.3.8",
     "polished": "^4.3.1",
     "react": "^19.1.0",
     "react-dom": "^19.2.4",
@@ -48,6 +48,6 @@
     "eslint-plugin-react": "^7.37.5",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.10"
+    "vitest": "^5.0.5"
   }
 }
